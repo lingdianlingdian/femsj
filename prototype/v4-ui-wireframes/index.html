@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>femsj V4 UI Wireframes</title>
+<style>
+:root{--bg:#f4f1ec;--ink:#3f352f;--line:#8d7b70;--panel:#fffdf8;--accent:#f6a43a;--soft:#efe7dc}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,"Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink)}
+.app{display:grid;grid-template-columns:310px 1fr;min-height:100vh}
+aside{background:#27231f;color:#fff;padding:18px;overflow:auto;height:100vh;position:sticky;top:0}
+aside h1{font-size:18px;margin:0 0 12px}.screen-btn{width:100%;text-align:left;border:0;background:transparent;color:#ddd;padding:8px 10px;border-radius:8px;cursor:pointer}.screen-btn:hover,.screen-btn.active{background:#4b4038;color:#fff}
+main{padding:24px;display:grid;grid-template-columns:minmax(480px,780px) minmax(320px,1fr);gap:24px;align-items:start}
+.phone-wrap{display:flex;justify-content:center}
+.phone{position:relative;width:375px;height:667px;background:var(--panel);border:12px solid #24211e;border-radius:38px;box-shadow:0 18px 40px #0002;overflow:hidden}
+.safe{height:28px;background:#f5eee5;border-bottom:1px dashed #a89789;display:flex;align-items:center;justify-content:center;font-size:10px;color:#8c7b6f}
+.top{height:60px;border-bottom:2px solid var(--line);padding:6px;display:flex;gap:6px;background:#fff9f0}
+.content{position:relative;height:500px;padding:8px;background:#faf7f2;overflow:hidden}
+.bottom{height:55px;border-top:2px solid var(--line);padding:6px;display:flex;gap:6px;align-items:center;justify-content:center;background:#fff9f0}
+.box{border:2px solid var(--line);background:#fff;border-radius:9px;min-height:30px;padding:6px;font-size:10px;display:flex;align-items:center;justify-content:center;text-align:center}
+.top .box,.bottom .box{flex:1}
+.grid{display:grid;grid-template-columns:repeat(9,1fr);gap:2px;width:100%;aspect-ratio:9/7;margin-top:10px}.cell{border:1px solid #aa998c;background:#fff1d9}
+.cards{display:flex;gap:5px;overflow:hidden}.cards .box{min-width:105px;height:62px}
+.street{height:100%;border:2px dashed var(--line);border-radius:12px;position:relative;background:linear-gradient(#eee9df,#ddd5c6)}
+.street .node{position:absolute;width:82px;height:58px}.street .n1{left:20px;top:55px}.street .n2{right:20px;top:115px}.street .n3{left:75px;bottom:80px}
+.modal{position:absolute;inset:70px 22px 60px;background:#fff9ec;border:3px solid var(--line);border-radius:22px;padding:12px;box-shadow:0 6px 18px #0002;display:flex;flex-direction:column;gap:8px}
+.list{display:grid;gap:7px}.list .box{min-height:48px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}.gallery .box{min-height:92px}
+.detail h2{margin:0 0 10px}.detail code{white-space:pre-wrap;word-break:break-word}.pill{display:inline-block;padding:2px 7px;border-radius:999px;background:#e8dfd5;margin-right:4px;font-size:12px}
+.note{background:#fff6d8;border-left:4px solid var(--accent);padding:10px;margin-top:12px}
+@media(max-width:900px){.app{grid-template-columns:1fr}aside{height:auto;position:static;max-height:300px}main{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="app"><aside><h1>femsj V4 · 46页Wireframe</h1><div id="nav"></div></aside><main>
+<div class="phone-wrap"><div class="phone"><div class="safe">SAFE AREA / 平台胶囊</div><div class="top" id="top"></div><div class="content" id="content"></div><div class="bottom" id="bottom"></div></div></div>
+<div class="detail"><h2 id="title"></h2><div id="meta"></div><div class="note">这是生产线框，不是原作像素级复刻。用于确定信息层级、组件树、状态与跳转；正式视觉由原创美术规范接管。</div><h3>组件</h3><div id="components"></div><h3>状态</h3><div id="states"></div><h3>验收</h3><ul><li>SafeArea不遮挡CTA</li><li>最小热区≥88×88逻辑像素</li><li>弱网/错误态可恢复</li><li>资源扣减/领奖/购买幂等</li><li>中文文案+10%不爆版</li></ul></div>
+</main></div>
+<script>
+const screens=[
+["UI00","Boot/启动","boot",["Logo","版本","热更进度"]],
+["UI01","账号登录/渠道授权","list",["Logo","游客登录","微信登录","抖音登录","手机号/Apple","协议勾选"]],
+["UI02","资源更新","modal",["版本说明","下载进度","剩余大小","重试"]],
+["UI03","开场剧情","story",["角色立绘","名字","对白","跳过"]],
+["UI04","4×7教学棋盘","board",["教学手势","4×7棋盘","订单","发射器"]],
+["UI05","9×7合成主盘","board",["经营日","体力","金币","钻石","订单横条","9×7棋盘","仓库","菜谱","商店"]],
+["UI06","订单详情","modal",["顾客","需求物","拥有/需要","奖励","来源提示"]],
+["UI07","物品详情","modal",["物品图","名称等级","来源","用途","出售"]],
+["UI08","合成链图鉴","gallery",["链节点","锁定节点","来源生产器","相关菜谱"]],
+["UI09","发射器详情","modal",["生产器图","容量","冷却","产出类型","升级"]],
+["UI10","厨具加工面板","modal",["输入槽","菜谱","剩余时间","开始","加速"]],
+["UI11","菜谱图鉴","gallery",["分类","菜谱卡","材料","厨具"]],
+["UI12","仓库/储物柜","gallery",["仓库格","盘面预览","扩容","钻石价格"]],
+["UI13","体力补充","modal",["当前体力","恢复计时","广告","钻石补充","礼包"]],
+["UI14","主街/美食街","street",["资源栏","街区","建设点","NPC","活动入口","进入棋盘"]],
+["UI15","建设节点详情","modal",["前后效果","金币成本","奖励","建造"]],
+["UI16","建设完成","modal",["新建筑","奖励","下一节点","剧情入口"]],
+["UI17","剧情对白","story",["角色立绘","名字","对白","继续","跳过"]],
+["UI18","经营日完成","modal",["Day完成","奖励","新解锁","建设推进","下一天"]],
+["UI19","新内容解锁","modal",["新图标","名称","说明","去看看"]],
+["UI20","商店首页","shop",["商品网格","剩余次数","钻石价格","刷新倒计时","付费刷新"]],
+["UI21","钻石充值","shop",["充值档位","加赠","价格","恢复购买"]],
+["UI22","限时礼包","modal",["倒计时","礼包内容","价格","关闭"]],
+["UI23","升级礼包","modal",["里程碑","礼包内容","价格","倒计时"]],
+["UI24","奖励广告确认","modal",["奖励","今日剩余次数","观看","取消"]],
+["UI25","活动中心","list",["活动卡","倒计时","红点","状态"]],
+["UI26","时空追逐","event",["目标","里程碑","小组排名","倒计时"]],
+["UI27","芝士漂流","event",["路线进度","里程碑","终奖卡包","倒计时"]],
+["UI28","爆炒时刻","event",["倒计时","增强规则","受影响生成器","进度"]],
+["UI29","烹调争霸赛","event",["主题锅","倒计时","x1/x3/x10","进度","奖励"]],
+["UI30","卡册首页","gallery",["赛季","套组","完成度","星星"]],
+["UI31","卡组详情","gallery",["卡位","缺卡","套组奖励","星级"]],
+["UI32","开卡包","story",["卡包","逐卡揭示","NEW","重复价值","跳过"]],
+["UI33","重复卡/星星兑换","shop",["星星余额","兑换商品","保底"]],
+["UI34","赛季/通行证","event",["免费轨","付费轨","等级","任务","购买"]],
+["UI35","邮箱","list",["邮件","附件","过期时间","全部领取"]],
+["UI36","任务/成就","list",["日常","周常","成就","领取"]],
+["UI37","设置","list",["音乐","音效","震动","通知","语言","账号"]],
+["UI38","账号绑定","list",["UID","微信","抖音","手机号","Apple","冲突提示"]],
+["UI39","帮助/客服","list",["FAQ","联系客服","隐私","协议"]],
+["UI40","网络断开","modal",["错误说明","重试","离线提示"]],
+["UI41","资源不足通用弹窗","modal",["缺少资源","需要/拥有","获取途径","去获取"]],
+["UI42","通用奖励弹窗","modal",["奖励网格","确认"]],
+["UI43","排行榜","list",["我的名次","排行榜","奖励区间","倒计时"]],
+["UI44","公告/更新说明","list",["Banner","富文本","活动跳转"]],
+["UI45","隐私/用户协议","list",["协议正文","隐私正文","同意","拒绝"]]
+];
+const states=["LOADING","READY","EMPTY","ERROR","LOCKED","EXPIRED"];
+const nav=document.getElementById("nav"),topEl=document.getElementById("top"),content=document.getElementById("content"),bottom=document.getElementById("bottom");
+function b(t){return '<div class="box">'+t+'</div>'}
+screens.forEach((s,i)=>{const btn=document.createElement("button");btn.className="screen-btn";btn.textContent=s[0]+" "+s[1];btn.onclick=()=>render(i);nav.appendChild(btn)});
+function render(i){
+ document.querySelectorAll(".screen-btn").forEach((x,j)=>x.classList.toggle("active",i===j));
+ const [id,name,type,cs]=screens[i];document.getElementById("title").textContent=id+" · "+name;
+ document.getElementById("meta").innerHTML='<span class="pill">'+type+'</span><span class="pill">750×1334</span>';
+ topEl.innerHTML=(["UI05","UI14","UI20","UI25","UI30","UI34"].includes(id)?["Day","⚡体力","金币","钻石"]:["←","页面标题","×"]).map(b).join("");
+ bottom.innerHTML=(["UI05","UI14"].includes(id)?["仓库","菜谱","主操作","活动"]:["主CTA","次CTA"]).map(b).join("");
+ if(type==="board"){content.innerHTML='<div class="cards">'+cs.slice(0,4).map(b).join("")+'</div><div class="grid">'+Array(63).fill(0).map((_,x)=>'<div class="cell">'+(x<4?"?":"")+'</div>').join("")+'</div>'}
+ else if(type==="street"){content.innerHTML='<div class="street"><div class="box node n1">建设点A</div><div class="box node n2">店铺/NPC</div><div class="box node n3">建设点B</div></div>'}
+ else if(type==="modal"){content.innerHTML='<div style="opacity:.35">'+b("触发页背景")+'</div><div class="modal">'+cs.map(b).join("")+'</div>'}
+ else if(type==="gallery"||type==="shop"){content.innerHTML='<div class="gallery">'+cs.concat(["卡/格","卡/格","卡/格"]).map(b).join("")+'</div>'}
+ else if(type==="event"){content.innerHTML='<div class="box" style="height:120px">主题视觉 / 活动标题</div><div class="list" style="margin-top:8px">'+cs.map(b).join("")+'</div>'}
+ else if(type==="story"){content.innerHTML='<div class="box" style="height:310px">角色/主题视觉</div><div class="box" style="height:110px;margin-top:10px">对白 / 揭示内容</div>'}
+ else{content.innerHTML='<div class="list">'+cs.map(b).join("")+'</div>'}
+ document.getElementById("components").innerHTML='<ol>'+cs.map(x=>'<li>'+x+'</li>').join("")+'</ol>';
+ document.getElementById("states").innerHTML=states.map(x=>'<span class="pill">'+x+'</span>').join("");
+}
+render(5);
+</script></body></html>
