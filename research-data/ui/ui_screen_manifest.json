@@ -1,0 +1,370 @@
+[
+  {
+    "id": "UI00",
+    "name": "Boot/启动",
+    "evidenceType": "R",
+    "entry": "启动",
+    "modules": "Logo、版本号、热更进度",
+    "primaryExit": "自动→登录/主街"
+  },
+  {
+    "id": "UI01",
+    "name": "账号登录/渠道授权",
+    "evidenceType": "R",
+    "entry": "首次启动/登录失效",
+    "modules": "游客、微信/抖音/手机号/Apple绑定入口",
+    "primaryExit": "登录→主街"
+  },
+  {
+    "id": "UI02",
+    "name": "资源更新",
+    "evidenceType": "R",
+    "entry": "版本更新",
+    "modules": "下载进度、剩余大小、重试",
+    "primaryExit": "完成→主街"
+  },
+  {
+    "id": "UI03",
+    "name": "开场剧情",
+    "evidenceType": "E",
+    "entry": "首次进入",
+    "modules": "角色立绘、对白框、跳过",
+    "primaryExit": "剧情→教学棋盘"
+  },
+  {
+    "id": "UI04",
+    "name": "4×7教学棋盘",
+    "evidenceType": "E",
+    "entry": "开场剧情后",
+    "modules": "4×7盘、教学手势、发射器、订单",
+    "primaryExit": "完成→9×7主盘"
+  },
+  {
+    "id": "UI05",
+    "name": "9×7合成主盘",
+    "evidenceType": "E",
+    "entry": "主街/继续游戏",
+    "modules": "资源栏、横向订单、9×7盘、仓库/菜谱/商店入口",
+    "primaryExit": "核心页面"
+  },
+  {
+    "id": "UI06",
+    "name": "订单详情",
+    "evidenceType": "R",
+    "entry": "点击订单卡",
+    "modules": "顾客、需求物、缺口、奖励、来源提示",
+    "primaryExit": "关闭/定位所需链"
+  },
+  {
+    "id": "UI07",
+    "name": "物品详情",
+    "evidenceType": "R",
+    "entry": "点击/长按物品",
+    "modules": "名称、等级、合成来源、去向、出售",
+    "primaryExit": "合成链/出售"
+  },
+  {
+    "id": "UI08",
+    "name": "合成链图鉴",
+    "evidenceType": "R",
+    "entry": "物品详情/图鉴",
+    "modules": "链条、已解锁/未解锁、来源",
+    "primaryExit": "返回棋盘"
+  },
+  {
+    "id": "UI09",
+    "name": "发射器详情",
+    "evidenceType": "R",
+    "entry": "点击生产器信息",
+    "modules": "容量、冷却、掉落类型、升级信息",
+    "primaryExit": "关闭"
+  },
+  {
+    "id": "UI10",
+    "name": "厨具加工面板",
+    "evidenceType": "E/R",
+    "entry": "点击厨具",
+    "modules": "输入槽、菜谱、时间、开始/加速",
+    "primaryExit": "制作→计时"
+  },
+  {
+    "id": "UI11",
+    "name": "菜谱图鉴",
+    "evidenceType": "E/R",
+    "entry": "棋盘入口",
+    "modules": "分类、菜品、材料、厨具、解锁条件",
+    "primaryExit": "定位材料"
+  },
+  {
+    "id": "UI12",
+    "name": "仓库/储物柜",
+    "evidenceType": "E/R",
+    "entry": "棋盘入口",
+    "modules": "格子、扩容、钻石价格",
+    "primaryExit": "拖入/取出"
+  },
+  {
+    "id": "UI13",
+    "name": "体力补充",
+    "evidenceType": "E/R",
+    "entry": "体力为0/+按钮",
+    "modules": "自然恢复、广告、钻石、礼包",
+    "primaryExit": "补充后返回"
+  },
+  {
+    "id": "UI14",
+    "name": "主街/美食街",
+    "evidenceType": "E",
+    "entry": "棋盘返回/登录",
+    "modules": "场景、建设节点、NPC、活动入口、进入棋盘",
+    "primaryExit": "建设/剧情/活动"
+  },
+  {
+    "id": "UI15",
+    "name": "建设节点详情",
+    "evidenceType": "E/R",
+    "entry": "点击施工点",
+    "modules": "Before/After、金币成本、奖励、建造按钮",
+    "primaryExit": "建造→动画"
+  },
+  {
+    "id": "UI16",
+    "name": "建设完成",
+    "evidenceType": "R",
+    "entry": "建设完成",
+    "modules": "新建筑、奖励、下一节点",
+    "primaryExit": "关闭/剧情"
+  },
+  {
+    "id": "UI17",
+    "name": "剧情对白",
+    "evidenceType": "E",
+    "entry": "建造/经营日节点",
+    "modules": "头像/立绘、名字、对白、选择可选",
+    "primaryExit": "继续"
+  },
+  {
+    "id": "UI18",
+    "name": "经营日完成",
+    "evidenceType": "R",
+    "entry": "当天订单清完",
+    "modules": "Day完成、奖励、建设推进、新解锁",
+    "primaryExit": "下一日"
+  },
+  {
+    "id": "UI19",
+    "name": "新内容解锁",
+    "evidenceType": "R",
+    "entry": "系统/链/厨具解锁",
+    "modules": "图标、名称、简述、去看看",
+    "primaryExit": "跳转目标"
+  },
+  {
+    "id": "UI20",
+    "name": "商店首页",
+    "evidenceType": "E",
+    "entry": "棋盘/主街",
+    "modules": "钻石商品、材料商品、刷新计时",
+    "primaryExit": "购买/刷新"
+  },
+  {
+    "id": "UI21",
+    "name": "钻石充值",
+    "evidenceType": "E",
+    "entry": "钻石+",
+    "modules": "充值档位、首充/加赠可选",
+    "primaryExit": "支付"
+  },
+  {
+    "id": "UI22",
+    "name": "限时礼包",
+    "evidenceType": "E",
+    "entry": "资源卡点/升级",
+    "modules": "倒计时、礼包内容、价格",
+    "primaryExit": "支付/关闭"
+  },
+  {
+    "id": "UI23",
+    "name": "升级礼包",
+    "evidenceType": "E",
+    "entry": "里程碑",
+    "modules": "奖励对比、限时",
+    "primaryExit": "支付/关闭"
+  },
+  {
+    "id": "UI24",
+    "name": "奖励广告确认",
+    "evidenceType": "E/R",
+    "entry": "体力/资源入口",
+    "modules": "奖励、广告时长提示、今日次数",
+    "primaryExit": "观看/取消"
+  },
+  {
+    "id": "UI25",
+    "name": "活动中心",
+    "evidenceType": "R",
+    "entry": "主街浮标",
+    "modules": "活动列表、剩余时间、红点",
+    "primaryExit": "进入活动"
+  },
+  {
+    "id": "UI26",
+    "name": "时空追逐",
+    "evidenceType": "E",
+    "entry": "活动中心/浮标",
+    "modules": "目标、个人进度、竞速名次、阶段奖励",
+    "primaryExit": "领取/查看排行"
+  },
+  {
+    "id": "UI27",
+    "name": "芝士漂流",
+    "evidenceType": "E",
+    "entry": "活动中心",
+    "modules": "漂流进度、里程碑、五星卡包终奖",
+    "primaryExit": "推进/领奖"
+  },
+  {
+    "id": "UI28",
+    "name": "爆炒时刻",
+    "evidenceType": "E",
+    "entry": "达成火苗阈值",
+    "modules": "倒计时、倍率/无限生产说明、进度",
+    "primaryExit": "开始/进行中"
+  },
+  {
+    "id": "UI29",
+    "name": "烹调争霸赛",
+    "evidenceType": "E",
+    "entry": "活动中心",
+    "modules": "倒计时、倍率x1/x3/x10、进度条、奖励",
+    "primaryExit": "倍率切换/领奖"
+  },
+  {
+    "id": "UI30",
+    "name": "卡册首页",
+    "evidenceType": "E/R",
+    "entry": "活动/主街",
+    "modules": "赛季、卡组、完成度、星星",
+    "primaryExit": "进入卡组"
+  },
+  {
+    "id": "UI31",
+    "name": "卡组详情",
+    "evidenceType": "R",
+    "entry": "卡册",
+    "modules": "卡位、星级、重复、套组奖励",
+    "primaryExit": "查看卡片"
+  },
+  {
+    "id": "UI32",
+    "name": "开卡包",
+    "evidenceType": "R",
+    "entry": "获得卡包",
+    "modules": "拆包动画、逐卡揭示、NEW/重复",
+    "primaryExit": "继续"
+  },
+  {
+    "id": "UI33",
+    "name": "重复卡/星星兑换",
+    "evidenceType": "R",
+    "entry": "卡册",
+    "modules": "星星余额、兑换商品、保底",
+    "primaryExit": "兑换"
+  },
+  {
+    "id": "UI34",
+    "name": "赛季/通行证",
+    "evidenceType": "R",
+    "entry": "主街/活动",
+    "modules": "免费/付费轨、等级、任务",
+    "primaryExit": "领奖/购买"
+  },
+  {
+    "id": "UI35",
+    "name": "邮箱",
+    "evidenceType": "R",
+    "entry": "主街",
+    "modules": "系统奖励、过期活动补发、公告",
+    "primaryExit": "领取"
+  },
+  {
+    "id": "UI36",
+    "name": "任务/成就",
+    "evidenceType": "R",
+    "entry": "主街",
+    "modules": "日常/周常/成就",
+    "primaryExit": "领取"
+  },
+  {
+    "id": "UI37",
+    "name": "设置",
+    "evidenceType": "R",
+    "entry": "主街",
+    "modules": "音乐、音效、震动、通知、语言、账号",
+    "primaryExit": "保存"
+  },
+  {
+    "id": "UI38",
+    "name": "账号绑定",
+    "evidenceType": "R",
+    "entry": "设置",
+    "modules": "渠道绑定状态、UID",
+    "primaryExit": "绑定/解绑限制"
+  },
+  {
+    "id": "UI39",
+    "name": "帮助/客服",
+    "evidenceType": "R",
+    "entry": "设置",
+    "modules": "FAQ、问题反馈、隐私政策",
+    "primaryExit": "跳转"
+  },
+  {
+    "id": "UI40",
+    "name": "网络断开",
+    "evidenceType": "R",
+    "entry": "请求失败",
+    "modules": "重试、离线说明",
+    "primaryExit": "重试"
+  },
+  {
+    "id": "UI41",
+    "name": "资源不足通用弹窗",
+    "evidenceType": "R",
+    "entry": "金币/钻石/材料不足",
+    "modules": "缺口、获取途径",
+    "primaryExit": "去获取"
+  },
+  {
+    "id": "UI42",
+    "name": "通用奖励弹窗",
+    "evidenceType": "R",
+    "entry": "领取奖励",
+    "modules": "奖励飞入、确认",
+    "primaryExit": "关闭"
+  },
+  {
+    "id": "UI43",
+    "name": "排行榜",
+    "evidenceType": "R",
+    "entry": "竞速/活动",
+    "modules": "名次、头像、积分、奖励区间",
+    "primaryExit": "关闭"
+  },
+  {
+    "id": "UI44",
+    "name": "公告/更新说明",
+    "evidenceType": "R",
+    "entry": "登录/设置",
+    "modules": "富文本、活动入口",
+    "primaryExit": "关闭/跳转"
+  },
+  {
+    "id": "UI45",
+    "name": "隐私/用户协议",
+    "evidenceType": "R",
+    "entry": "首次启动/设置",
+    "modules": "协议内容、同意状态",
+    "primaryExit": "同意/拒绝"
+  }
+]
