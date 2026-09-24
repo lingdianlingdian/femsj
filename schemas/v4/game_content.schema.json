@@ -1,0 +1,874 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://femsj.local/schemas/v4/game_content.schema.json",
+  "title": "femsj V4 Production Content",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "configVersion",
+    "items",
+    "transformations",
+    "producers",
+    "cookwares",
+    "recipes",
+    "orders",
+    "days",
+    "buildNodes",
+    "events"
+  ],
+  "properties": {
+    "configVersion": {
+      "type": "string",
+      "pattern": "^4\\.[0-9]+(\\.[0-9]+)?$"
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/item"
+      }
+    },
+    "transformations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/transformation"
+      }
+    },
+    "producers": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/producer"
+      }
+    },
+    "cookwares": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/cookware"
+      }
+    },
+    "recipes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/recipe"
+      }
+    },
+    "orders": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/order"
+      }
+    },
+    "days": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/day"
+      }
+    },
+    "buildNodes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/buildNode"
+      }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/event"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9_\\-\\.]{2,63}$"
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "kind",
+        "confidence"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "OFFICIAL",
+            "PUBLIC_TEXT",
+            "PUBLIC_IMAGE",
+            "PUBLIC_VIDEO",
+            "PLAYER_REPORT",
+            "DEV_BLUEPRINT"
+          ]
+        },
+        "confidence": {
+          "enum": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ]
+        },
+        "sourceIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "observedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "channel": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "versionSensitive": {
+          "type": "boolean",
+          "default": false
+        },
+        "note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "reward": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "amount"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "COIN",
+            "GEM",
+            "ENERGY",
+            "ITEM",
+            "CARD_PACK",
+            "EVENT_CURRENCY",
+            "SPEEDUP",
+            "BUILD_MATERIAL"
+          ]
+        },
+        "id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "amount": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "itemId",
+        "count"
+      ],
+      "properties": {
+        "itemId": {
+          "$ref": "#/$defs/id"
+        },
+        "count": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 99
+        }
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "unlockDay",
+        "assetId",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "enum": [
+            "INGREDIENT",
+            "DISH",
+            "PRODUCER",
+            "COOKWARE",
+            "REWARD",
+            "CONTAINER",
+            "SPECIAL",
+            "BLOCKER"
+          ]
+        },
+        "chainId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "level": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 20
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999
+        },
+        "sellValue": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "transformation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "type",
+        "inputs",
+        "outputs",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "type": {
+          "enum": [
+            "MERGE2",
+            "COOK",
+            "OPEN",
+            "EXCHANGE",
+            "EVENT"
+          ]
+        },
+        "inputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/requirement"
+          }
+        },
+        "toolId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "durationSec": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "outputs": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/reward"
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "weightedItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "itemId",
+        "weight"
+      ],
+      "properties": {
+        "itemId": {
+          "$ref": "#/$defs/id"
+        },
+        "weight": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "minCount": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        },
+        "maxCount": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 1
+        }
+      }
+    },
+    "producer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "level",
+        "energyCost",
+        "capacity",
+        "cooldownSec",
+        "outputPool",
+        "unlockDay",
+        "assetId",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "energyCost": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 10
+        },
+        "capacity": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999
+        },
+        "cooldownSec": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 604800
+        },
+        "outputPool": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/weightedItem"
+          }
+        },
+        "upgradeTo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "cookware": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "level",
+        "queueSize",
+        "unlockDay",
+        "assetId",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "level": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "queueSize": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 10
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "speedModifier": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 1
+        },
+        "assetId": {
+          "$ref": "#/$defs/id"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "recipe": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "cookwareId",
+        "inputs",
+        "outputItemId",
+        "durationSec",
+        "unlockDay",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "cookwareId": {
+          "$ref": "#/$defs/id"
+        },
+        "inputs": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/$defs/requirement"
+          }
+        },
+        "outputItemId": {
+          "$ref": "#/$defs/id"
+        },
+        "durationSec": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 86400
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "speedupGemPerMin": {
+          "type": "number",
+          "minimum": 0
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "difficulty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "energyP50",
+        "energyP90",
+        "cookWaitSec",
+        "producerBlockSec",
+        "peakCells",
+        "manualActions"
+      ],
+      "properties": {
+        "energyP50": {
+          "type": "number",
+          "minimum": 0
+        },
+        "energyP90": {
+          "type": "number",
+          "minimum": 0
+        },
+        "cookWaitSec": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "producerBlockSec": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "peakCells": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 63
+        },
+        "manualActions": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "byproductUtilization": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      }
+    },
+    "order": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "day",
+        "slot",
+        "customerId",
+        "requirements",
+        "rewards",
+        "difficulty",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999
+        },
+        "slot": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 20
+        },
+        "customerId": {
+          "$ref": "#/$defs/id"
+        },
+        "requirements": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/$defs/requirement"
+          }
+        },
+        "rewards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/reward"
+          }
+        },
+        "producerIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "recipeIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "cookwareIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "difficulty": {
+          "$ref": "#/$defs/difficulty"
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "day": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "day",
+        "parallelSlots",
+        "orderIds",
+        "unlockIds",
+        "buildNodeIds",
+        "rewards",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 999
+        },
+        "parallelSlots": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 8
+        },
+        "orderIds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "unlockIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "buildNodeIds": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "storyBefore": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "storyAfter": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "eventHooks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rewards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reward"
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "buildNode": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "areaId",
+        "stage",
+        "coinCost",
+        "unlockDay",
+        "assetBefore",
+        "assetAfter",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "areaId": {
+          "$ref": "#/$defs/id"
+        },
+        "stage": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 20
+        },
+        "prerequisites": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/id"
+          },
+          "uniqueItems": true
+        },
+        "coinCost": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "assetBefore": {
+          "$ref": "#/$defs/id"
+        },
+        "assetAfter": {
+          "$ref": "#/$defs/id"
+        },
+        "storyId": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "rewards": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/reward"
+          }
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    },
+    "milestone": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "threshold",
+        "rewards"
+      ],
+      "properties": {
+        "threshold": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "rewards": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/reward"
+          }
+        }
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "type",
+        "unlockDay",
+        "progressSources",
+        "milestones",
+        "settlement",
+        "evidence"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string"
+        },
+        "type": {
+          "enum": [
+            "PROGRESS",
+            "RACE",
+            "BOOST",
+            "ALBUM",
+            "PASS",
+            "SHOP",
+            "BOARD"
+          ]
+        },
+        "unlockDay": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "progressSources": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "PRODUCER_TAP",
+              "ITEM_SPAWN",
+              "ITEM_MERGE",
+              "COOK_START",
+              "COOK_COMPLETE",
+              "ORDER_COMPLETE",
+              "DAY_COMPLETE",
+              "BUILD_COMPLETE",
+              "ENERGY_SPEND",
+              "AD_REWARD",
+              "PURCHASE"
+            ]
+          },
+          "uniqueItems": true
+        },
+        "milestones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/milestone"
+          }
+        },
+        "modifiers": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "settlement": {
+          "enum": [
+            "AUTO_MAIL",
+            "AUTO_CLAIM",
+            "MANUAL_WITH_MAIL_FALLBACK"
+          ]
+        },
+        "evidence": {
+          "$ref": "#/$defs/evidence"
+        }
+      }
+    }
+  }
+}
