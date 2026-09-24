@@ -1,0 +1,6 @@
+producer_id,name,level,energy_cost,capacity,cooldown_sec,output_item_id,weight,unlock_day,evidence_status,notes
+prod_shucaileizi,蔬菜篮子,,,,,,,,PLAYER_REPORT,"公开玩家资料点名；参数待采"
+prod_bingxiang,冰箱,,,,,,,,PLAYER_REPORT,"公开玩家资料点名；参数待采"
+prod_shuiguolanzi,水果篮子,,,,,,,,PLAYER_REPORT,"公开玩家资料点名；参数待采"
+prod_yinliaogui,饮料柜,,,,,item_nengliangyinliao,,75,PLAYER_REPORT,"Day75玩家称与香槟同源"
+prod_yinliaogui,饮料柜,,,,,item_xiangbin,,75,PLAYER_REPORT,"Day75玩家称与能量饮料同源"
