@@ -1,0 +1,264 @@
+{
+  "version": "4.0",
+  "events": [
+    {
+      "id": "event_time_race",
+      "name": "时空追逐型竞速",
+      "type": "RACE",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 12,
+      "durationHours": 72,
+      "progressSources": [
+        "ORDER_COMPLETE",
+        "DAY_COMPLETE"
+      ],
+      "matchmaking": {
+        "groupSize": 8,
+        "seedBy": "progress_band",
+        "lateJoinGraceHours": 12
+      },
+      "milestones": [
+        {
+          "threshold": 100,
+          "reward": [
+            {
+              "type": "ENERGY",
+              "amount": 20
+            }
+          ]
+        },
+        {
+          "threshold": 250,
+          "reward": [
+            {
+              "type": "ENERGY",
+              "amount": 30
+            }
+          ]
+        },
+        {
+          "threshold": 450,
+          "reward": [
+            {
+              "type": "ENERGY",
+              "amount": 40
+            }
+          ]
+        },
+        {
+          "threshold": 700,
+          "reward": [
+            {
+              "type": "ENERGY",
+              "amount": 50
+            }
+          ]
+        },
+        {
+          "threshold": 1000,
+          "reward": [
+            {
+              "type": "CARD_PACK",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "settlement": "AUTO_MAIL"
+    },
+    {
+      "id": "event_cheese_drift",
+      "name": "芝士漂流型里程碑",
+      "type": "PROGRESS",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 10,
+      "durationHours": 96,
+      "progressSources": [
+        "ITEM_MERGE",
+        "ORDER_COMPLETE"
+      ],
+      "milestones": [
+        {
+          "threshold": 50,
+          "reward": [
+            {
+              "type": "COIN",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "threshold": 120,
+          "reward": [
+            {
+              "type": "COIN",
+              "amount": 350
+            }
+          ]
+        },
+        {
+          "threshold": 220,
+          "reward": [
+            {
+              "type": "COIN",
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "threshold": 360,
+          "reward": [
+            {
+              "type": "COIN",
+              "amount": 650
+            }
+          ]
+        },
+        {
+          "threshold": 550,
+          "reward": [
+            {
+              "type": "COIN",
+              "amount": 800
+            }
+          ]
+        },
+        {
+          "threshold": 800,
+          "reward": [
+            {
+              "type": "CARD_PACK",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "settlement": "AUTO_MAIL"
+    },
+    {
+      "id": "event_stirfry_boost",
+      "name": "爆炒时刻型增强",
+      "type": "BOOST",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 8,
+      "durationMinutes": 20,
+      "trigger": {
+        "source": "ORDER_COMPLETE",
+        "meterTarget": 100
+      },
+      "modifiers": [
+        {
+          "type": "PRODUCER_UNLIMITED",
+          "targetTag": "event_related"
+        }
+      ],
+      "progressSources": [
+        "ORDER_COMPLETE"
+      ],
+      "milestones": [],
+      "settlement": "AUTO_CLAIM"
+    },
+    {
+      "id": "event_cook_contest",
+      "name": "烹调争霸赛型活动",
+      "type": "PROGRESS",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_UI",
+      "unlockDay": 20,
+      "durationHours": 24,
+      "progressSources": [
+        "COOK_COMPLETE",
+        "ORDER_COMPLETE"
+      ],
+      "multipliers": [
+        1,
+        3,
+        10
+      ],
+      "milestones": [
+        {
+          "threshold": 100,
+          "reward": [
+            {
+              "type": "GEM",
+              "amount": 3
+            }
+          ]
+        },
+        {
+          "threshold": 250,
+          "reward": [
+            {
+              "type": "GEM",
+              "amount": 5
+            }
+          ]
+        },
+        {
+          "threshold": 500,
+          "reward": [
+            {
+              "type": "GEM",
+              "amount": 7
+            }
+          ]
+        },
+        {
+          "threshold": 800,
+          "reward": [
+            {
+              "type": "GEM",
+              "amount": 9
+            }
+          ]
+        }
+      ],
+      "settlement": "AUTO_MAIL"
+    },
+    {
+      "id": "event_album_season",
+      "name": "赛季卡册",
+      "type": "ALBUM",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 15,
+      "durationDays": 28,
+      "cardCountDev": 108,
+      "rarities": [
+        "1STAR",
+        "2STAR",
+        "3STAR",
+        "4STAR",
+        "GOLD_4STAR",
+        "5STAR"
+      ],
+      "duplicateCurrency": "CARD_STAR",
+      "guarantee": {
+        "enabled": true,
+        "pityPoints": 100,
+        "directedMissingCard": true
+      },
+      "progressSources": [
+        "ORDER_COMPLETE",
+        "EVENT_REWARD",
+        "PURCHASE"
+      ],
+      "milestones": [],
+      "settlement": "AUTO_MAIL"
+    },
+    {
+      "id": "event_season_pass",
+      "name": "赛季通行证",
+      "type": "PASS",
+      "status": "DEV_BLUEPRINT",
+      "unlockDay": 7,
+      "durationDays": 28,
+      "levels": 30,
+      "progressSources": [
+        "ORDER_COMPLETE",
+        "DAY_COMPLETE",
+        "BUILD_COMPLETE"
+      ],
+      "premiumTrack": true,
+      "settlement": "AUTO_MAIL"
+    }
+  ]
+}
