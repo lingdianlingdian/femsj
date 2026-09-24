@@ -1,0 +1,114 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Character Canon",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "name",
+    "role",
+    "species",
+    "palette",
+    "proportions",
+    "expressions",
+    "animations",
+    "assetIds"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^char_[a-z0-9_]+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "enum": [
+        "PROTAGONIST",
+        "MAJOR_GUEST",
+        "MINOR_GUEST",
+        "BACKGROUND"
+      ]
+    },
+    "species": {
+      "type": "string"
+    },
+    "palette": {
+      "type": "object",
+      "required": [
+        "primary",
+        "secondary",
+        "outline"
+      ],
+      "properties": {
+        "primary": {
+          "type": "string"
+        },
+        "secondary": {
+          "type": "string"
+        },
+        "outline": {
+          "type": "string"
+        }
+      }
+    },
+    "proportions": {
+      "type": "object",
+      "required": [
+        "headBodyRatio",
+        "heightUnits"
+      ],
+      "properties": {
+        "headBodyRatio": {
+          "type": "number",
+          "minimum": 0.2,
+          "maximum": 2
+        },
+        "heightUnits": {
+          "type": "number",
+          "minimum": 0.5,
+          "maximum": 10
+        }
+      }
+    },
+    "invariantTraits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "forbiddenChanges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "expressions": {
+      "type": "array",
+      "minItems": 4,
+      "items": {
+        "type": "string"
+      }
+    },
+    "animations": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string"
+      }
+    },
+    "dialogueTraits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "assetIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}
