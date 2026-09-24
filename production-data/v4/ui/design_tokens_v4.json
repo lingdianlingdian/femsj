@@ -1,0 +1,116 @@
+{
+  "version": "4.0",
+  "canvas": {
+    "width": 750,
+    "height": 1334,
+    "orientation": "portrait",
+    "safeArea": "platform"
+  },
+  "spacing": {
+    "xs": 4,
+    "s": 8,
+    "m": 12,
+    "l": 16,
+    "xl": 24,
+    "xxl": 32,
+    "huge": 48
+  },
+  "radius": {
+    "s": 12,
+    "m": 16,
+    "l": 24,
+    "xl": 32,
+    "pill": 999
+  },
+  "typography": {
+    "titleXL": {
+      "size": 52,
+      "lineHeight": 62,
+      "weight": 700
+    },
+    "title": {
+      "size": 40,
+      "lineHeight": 50,
+      "weight": 700
+    },
+    "h2": {
+      "size": 34,
+      "lineHeight": 42,
+      "weight": 700
+    },
+    "button": {
+      "size": 30,
+      "lineHeight": 36,
+      "weight": 700
+    },
+    "body": {
+      "size": 26,
+      "lineHeight": 38,
+      "weight": 500
+    },
+    "caption": {
+      "size": 22,
+      "lineHeight": 30,
+      "weight": 500
+    },
+    "tiny": {
+      "size": 18,
+      "lineHeight": 24,
+      "weight": 500
+    }
+  },
+  "colors": {
+    "bg": "#FFF7E8",
+    "surface": "#FFFDF8",
+    "surfaceAlt": "#FFE8B8",
+    "text": "#543C2F",
+    "textSecondary": "#8B6B58",
+    "primary": "#F6A43A",
+    "primaryPressed": "#E68C22",
+    "accent": "#78C65A",
+    "energy": "#49B9F2",
+    "coin": "#F5C84C",
+    "gem": "#EF5471",
+    "danger": "#E7564A",
+    "disabled": "#C9BBAF",
+    "overlay": "rgba(54,38,28,0.55)",
+    "border": "#B87942",
+    "success": "#63B557",
+    "warning": "#F2A53C"
+  },
+  "shadows": {
+    "card": "0 6 14 rgba(109,73,45,0.18)",
+    "modal": "0 12 30 rgba(70,45,28,0.24)"
+  },
+  "motion": {
+    "fastMs": 120,
+    "normalMs": 220,
+    "slowMs": 420,
+    "easingDefault": "cubic-out",
+    "easingPop": "back-out(1.4)",
+    "pressedScale": 0.96,
+    "highlightScale": 1.06
+  },
+  "touch": {
+    "min": 88
+  },
+  "zOrder": {
+    "world": 0,
+    "hud": 100,
+    "dropdown": 300,
+    "modal": 500,
+    "tutorial": 800,
+    "toast": 1000
+  },
+  "board": {
+    "columns": 9,
+    "rows": 7,
+    "width": 684,
+    "cell": 76,
+    "framePadding": 8
+  },
+  "notes": [
+    "所有数值为V4开发基准，不声称等于原作内部设计文件。",
+    "颜色是原创同类项目建议Token；原作只用于结构与可读性研究。"
+  ]
+}
