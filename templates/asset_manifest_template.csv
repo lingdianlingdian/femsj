@@ -1,1 +1,7 @@
-The requested file reference is not currently visible. Use files.search or files.list to rediscover the file, then retry with a returned ref_id or file_id.
+﻿AssetId,Category,SubCategory,Name,SourceSize,RuntimeSize,Format,Bundle,States,Owner,Status,Notes
+ui_btn_primary,UI,Button,主按钮,600x180,300x90,PNG/9slice,core,Normal|Pressed|Disabled,,TODO,
+board_item_x,Board,Item,食材示例,256x256,64~72,PNG,items_01,Normal,,TODO,透明背景
+producer_x,Board,Producer,生成器示例,384x384,68~74,PNG/Spine,items_01,Ready|Tap|Cooldown|Boosted,,TODO,
+cookware_x,Board,Cookware,厨具示例,384x384,68~74,PNG/Spine,items_01,Idle|Cooking|Ready,,TODO,
+char_x,Character,Goose,顾客示例,2048x2048,按页面,PNG/Spine,story,6表情+动作,,TODO,
+street_shop_x,Street,Building,建筑示例,1536x1536,按世界比例,PNG/Spine,street_01,Before|After,,TODO,
