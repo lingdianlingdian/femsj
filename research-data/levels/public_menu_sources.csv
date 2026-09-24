@@ -1,0 +1,12 @@
+day_start,day_end,source_type,url,status,notes
+1,5,PUBLIC_TEXT,https://www.taptap.cn/moment/790520777484013452,TRANSCRIBED,"逐单文字已入order_registry"
+6,10,PUBLIC_TEXT,https://www.taptap.cn/moment/790611816005766899,TRANSCRIBED,"逐单文字已入order_registry"
+11,15,PUBLIC_IMAGE,https://www.taptap.cn/moment/793899686799870679,PENDING_TRANSCRIPTION,"单张长表公开截图；图像搜索可见"
+16,20,PUBLIC_IMAGE,https://www.taptap.cn/moment/793897976891182314,PENDING_TRANSCRIPTION,"5张公开截图"
+51,60,PUBLIC_VIDEO,https://www.douyin.com/video/7676889031837423225,PENDING_FRAME_TRANSCRIPTION,"公开视频"
+75,75,PLAYER_TEXT,https://www.taptap.cn/app/835993/topic,PARTIAL_ANCHOR,"能量饮料+香槟；饮料柜；约700-800体力"
+80,80,PUBLIC_IMAGE,https://www.taptap.cn/moment/790629105325312627,PENDING_TRANSCRIPTION,"公开食材+菜单截图"
+82,82,PUBLIC_IMAGE,https://www.taptap.cn/moment/790641292114657994,PENDING_TRANSCRIPTION,"作者注明无二次加工"
+83,84,PUBLIC_IMAGE,https://www.taptap.cn/moment/790906865650238207,PENDING_TRANSCRIPTION,"食材+菜单截图"
+101,105,PUBLIC_IMAGE,https://www.taptap.cn/moment/797858476368857347,PENDING_TRANSCRIPTION,"菜单+食谱+食材截图"
+106,110,PUBLIC_IMAGE,https://www.taptap.cn/app/835993/topic,PENDING_SOURCE_RESOLUTION,"论坛可见对应菜单条目"
