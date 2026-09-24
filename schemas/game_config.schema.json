@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MergeCookGameConfig",
+  "type": "object",
+  "required": [
+    "items",
+    "transformations",
+    "producers",
+    "cookwares",
+    "recipes",
+    "orders",
+    "days",
+    "buildNodes",
+    "events"
+  ],
+  "properties": {
+    "items": {
+      "type": "array"
+    },
+    "transformations": {
+      "type": "array"
+    },
+    "producers": {
+      "type": "array"
+    },
+    "cookwares": {
+      "type": "array"
+    },
+    "recipes": {
+      "type": "array"
+    },
+    "orders": {
+      "type": "array"
+    },
+    "days": {
+      "type": "array"
+    },
+    "buildNodes": {
+      "type": "array"
+    },
+    "events": {
+      "type": "array"
+    },
+    "offers": {
+      "type": "array"
+    },
+    "album": {
+      "type": "array"
+    }
+  }
+}
