@@ -1,0 +1,7 @@
+transform_id,type,input_items,tool_id,duration_sec,output_item,evidence_status,notes
+merge_rouchang_peigen,MERGE2,"item_rouchang*2",,,item_peigen,PUBLIC_IMAGE,"行业实机拆解"
+merge_peigen_rouwan,MERGE2,"item_peigen*2",,,item_rouwan,PUBLIC_IMAGE,"行业实机拆解"
+merge_rouwan_niuxiongrou,MERGE2,"item_rouwan*2",,,item_niuxiongrou,PUBLIC_IMAGE,"行业实机拆解"
+cook_rouchang_kaochang,COOK,"item_rouchang",cook_grill,,dish_kaochang,PUBLIC_IMAGE,"烤架分支"
+cook_niuxiongrou_yanxun,COOK,"item_niuxiongrou",cook_grill,,dish_yanxunniuxiongrou,PUBLIC_IMAGE,"烤架分支"
+cook_junxiangzhishijuan,COOK,"item_mogu+item_yangcong+item_zhishipian",cook_prep_station,,dish_junxiangzhishijuan,PUBLIC_IMAGE,"备菜台多输入"
