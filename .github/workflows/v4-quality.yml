@@ -94,6 +94,9 @@ jobs:
       - name: Full runtime balance trend gate
         run: npm run gate:balance:full
 
+      - name: Full 110-day balance reachability gate
+        run: npm run gate:balance:full-reachability
+
       - name: Validate Day1-10 runtime slice
         run: npm run validate:config -- production-data/v4/runtime/game_content_day001_010.json
 
