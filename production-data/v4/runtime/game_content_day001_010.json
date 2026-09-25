@@ -1024,8 +1024,8 @@
       "name": "蔬菜篮子",
       "level": 1,
       "energyCost": 1,
-      "capacity": 20,
-      "cooldownSec": 240,
+      "capacity": 40,
+      "cooldownSec": 90,
       "unlockDay": 1,
       "assetId": "art_prod_shucaileizi",
       "outputPool": [
@@ -1126,7 +1126,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=40, cooldownSec=90；仅为原创运行默认值。"
       }
     },
     {
@@ -1134,8 +1134,8 @@
       "name": "饮料柜",
       "level": 1,
       "energyCost": 1,
-      "capacity": 16,
-      "cooldownSec": 360,
+      "capacity": 32,
+      "cooldownSec": 120,
       "unlockDay": 2,
       "assetId": "art_prod_yinliaogui",
       "outputPool": [
@@ -1182,7 +1182,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=32, cooldownSec=120；仅为原创运行默认值。"
       }
     },
     {
@@ -1190,8 +1190,8 @@
       "name": "厨房补给箱",
       "level": 1,
       "energyCost": 1,
-      "capacity": 12,
-      "cooldownSec": 480,
+      "capacity": 24,
+      "cooldownSec": 180,
       "unlockDay": 4,
       "assetId": "art_prod_kitchen_supply",
       "outputPool": [
@@ -1250,7 +1250,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=24, cooldownSec=180；仅为原创运行默认值。"
       }
     }
   ],
