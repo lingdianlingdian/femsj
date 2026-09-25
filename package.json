@@ -1,0 +1,9 @@
+{
+  "name": "femsj-production-tools",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate:config": "node tools/config-validator/validate.mjs",
+    "simulate:balance": "node tools/balance-simulator/simulate.mjs"
+  }
+}
