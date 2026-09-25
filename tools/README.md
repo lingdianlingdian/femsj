@@ -26,3 +26,12 @@ node tools/balance-simulator/simulate.mjs production-data/v4/game_content.json 2
 ```
 
 当前计算“期望体力 + 等待时间 + 可达路径”。后续阶段加入真正 Monte Carlo、盘面占格、共享副产物复用和 P50/P90/P95。
+
+
+## 美术生产审计
+
+```powershell
+npm run audit:art
+```
+
+检查 AssetId、Style Anchor、首批生产队列、AI Job、正式产物 Manifest 与 APPROVED/INTEGRATED 门禁。
