@@ -361,14 +361,78 @@
       "channel": "TapTap",
       "claims": [
         "Day90公开详细菜谱截图",
-        "焦香洋葱饭加工面板倒计时4分32秒（272秒）"
+        "焦香洋葱饭加工面板倒计时4分32秒（272秒）",
+        "Day90菜单9张公开图片",
+        "作者称“差不多就这些”，不构成完整性保证"
       ],
-      "notes": "使用Day90第9张公开菜谱详情图闭合durationSec；不据此强填厨具名称/等级、speedup或精确unlockDay。"
+      "notes": "使用Day90第9张公开菜谱详情图闭合durationSec；不据此强填厨具名称/等级、speedup或精确unlockDay。；同帖9张底层图片已全部资产化。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY87_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/811355926735882115?group_id=1191393",
+      "observedAt": "2026-06-03",
+      "channel": "TapTap",
+      "claims": [
+        "Day87菜单10张公开图片",
+        "作者明确称“这次是全的，后面有详细的”"
+      ],
+      "notes": "完整性声明可用于Day87证据范围；逐单文字仍需从原图视觉转录。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY88_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/811614696531559002",
+      "observedAt": "2026-06-04",
+      "channel": "TapTap",
+      "claims": [
+        "Day88菜单9张公开图片"
+      ],
+      "notes": "作者未声明完整性；图片数量不能直接等同订单数。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY89_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/811935337432481938",
+      "observedAt": "2026-06-05",
+      "channel": "TapTap",
+      "claims": [
+        "Day89菜单9张公开图片",
+        "作者明确称“还有个咖啡没截图”"
+      ],
+      "notes": "明确为不完整证据组。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY99_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/841863369525825239?group_id=1191393",
+      "observedAt": "2026-08-26",
+      "channel": "TapTap",
+      "claims": [
+        "Day99菜单13张公开动态图片"
+      ],
+      "notes": "作者未声明完整性；13张底层图已全部资产化，逐图文字仍待视觉转录。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY98_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/841801833067315716",
+      "observedAt": "2026-08-26",
+      "channel": "TapTap",
+      "claims": [
+        "Day98菜单14张公开动态图片"
+      ],
+      "notes": "作者未声明完整性；14张底层图已全部资产化，逐图文字仍待视觉转录。"
     }
   ],
   "audit": {
-    "updatedAt": "2026-09-25",
+    "updatedAt": "2026-09-26",
     "note": "Eight exact recipe durations are visually bound: 糖拌番茄20s, 彩椒脆片40s, 菌香芝士卷32s, 生切胡萝卜条80s, 鲜榨蓝莓汁20s, 草莓果露10s, 手打柠檬汁80s, 焦香洋葱饭272s.",
-    "sourceCount": 30
+    "sourceCount": 35
   }
 }
