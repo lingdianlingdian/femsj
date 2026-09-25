@@ -105,3 +105,13 @@
 | Day1-10 可运行配置 | `production-data/v4/runtime/game_content_day001_010.json` |
 | V2数值阈值 | `production-data/v4/runtime/vertical_slice_balance_targets.json` |
 | V3盘面阈值 | `production-data/v4/runtime/vertical_slice_board_targets.json` |
+
+## Story / Localization
+
+| 用途 | 主文件 |
+|---|---|
+| 110日 Story Beat | `production-data/v4/story/story_beats_110.csv` |
+| Day1-10 可运行原创剧情 | `production-data/v4/story/story_dialogue_day001_010.json` |
+| Day1-10 zh-CN 本地化 | `production-data/v4/story/locale_zh-CN_day001_010.json` |
+| Story Schema | `schemas/v4/story_script.schema.json` |
+| Story Validator | `tools/story-validator/validate.mjs` |
