@@ -14,6 +14,7 @@
     "simulate:balance:v3": "node tools/balance-simulator-v3/simulate.mjs",
     "gate:balance:v3": "node tools/balance-simulator-v3/gate.mjs",
     "validate:story": "node tools/story-validator/validate.mjs",
-    "gate:economy:vertical": "node tools/economy-slice-auditor/audit.mjs"
+    "gate:economy:vertical": "node tools/economy-slice-auditor/audit.mjs",
+    "audit:art": "node tools/art-production-auditor/audit.mjs"
   }
 }
