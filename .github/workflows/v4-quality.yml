@@ -34,6 +34,9 @@ jobs:
       - name: Evidence persistence audit
         run: npm run audit:evidence
 
+      - name: Verify P0 research closure report
+        run: npm run research:closure:check
+
       - name: Content reference closure audit
         run: npm run audit:content
 
