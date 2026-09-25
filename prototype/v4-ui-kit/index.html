@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>femsj V4 Original UI Kit</title>
+<style>
+:root{
+ --cream:#FFF6E7;--paper:#FFFDF7;--ink:#4B382E;--muted:#8F7564;--orange:#F7A443;--orange2:#E88728;
+ --mint:#83C96B;--sky:#5AB9E8;--coin:#F2C94C;--gem:#EF627D;--red:#E85B53;--line:#CFA77C;
+ --shadow:0 8px 18px rgba(99,65,38,.16);--r:20px;
+}
+*{box-sizing:border-box}body{margin:0;background:#EFE8DF;font-family:Arial,"Microsoft YaHei",sans-serif;color:var(--ink)}
+.shell{display:grid;grid-template-columns:280px minmax(820px,1fr);min-height:100vh}
+nav{background:#352A24;color:#fff;padding:18px 14px;overflow:auto;height:100vh;position:sticky;top:0}
+nav h1{font-size:17px;margin:0 0 6px}.sub{font-size:11px;color:#BDAFA6;margin-bottom:14px}
+.navbtn{display:block;width:100%;border:0;text-align:left;padding:8px 10px;background:transparent;color:#D9CEC8;border-radius:10px;cursor:pointer;font-size:12px}
+.navbtn:hover,.navbtn.on{background:#57463B;color:#fff}
+main{padding:26px;display:grid;grid-template-columns:430px 1fr;gap:28px;align-items:start}
+.phone{width:390px;height:780px;background:var(--cream);border:11px solid #2B2521;border-radius:42px;box-shadow:0 28px 50px #0003;overflow:hidden;position:relative}
+.notch{height:30px;background:#2B2521;width:140px;border-radius:0 0 18px 18px;position:absolute;left:50%;transform:translateX(-50%);z-index:50}
+.status{height:44px;padding:19px 18px 0;font-size:10px;display:flex;justify-content:space-between;color:#755D4E}
+.topbar{height:64px;display:flex;gap:6px;padding:7px 9px}
+.chip{height:47px;border:2px solid #D4A46C;background:#fff;border-radius:18px;box-shadow:0 3px 0 #C78F55;display:flex;align-items:center;justify-content:center;padding:0 8px;font-weight:700;font-size:11px;min-width:70px}
+.chip.energy{border-color:#79BDE1}.chip.coin{border-color:#E3BC45}.chip.gem{border-color:#E7798E}.chip.day{background:#FFE2A5}
+.content{height:590px;overflow:hidden;padding:8px 10px;position:relative}
+.bottom{height:54px;margin:0 10px;border-radius:18px 18px 0 0;background:#FFF9EF;border:2px solid #DAB58D;display:flex;justify-content:space-around;align-items:center}
+.iconbtn{width:47px;height:43px;border:0;border-radius:14px;background:#FFF;box-shadow:0 3px 7px #0001;font-size:20px;cursor:pointer}
+.panel{background:var(--paper);border:2px solid #DAB58D;border-radius:var(--r);box-shadow:var(--shadow)}
+.title{font-size:18px;font-weight:800}.small{font-size:10px;color:var(--muted)}.muted{color:var(--muted)}
+.btn{border:0;border-radius:16px;background:linear-gradient(#FFB552,var(--orange));box-shadow:0 4px 0 var(--orange2);height:44px;padding:0 18px;color:#5A321A;font-weight:800;cursor:pointer}
+.btn:active{transform:translateY(2px);box-shadow:0 2px 0 var(--orange2)}
+.btn.secondary{background:#FFF;border:2px solid #CFA77C;box-shadow:none;color:var(--ink)}
+.orders{display:flex;gap:7px;overflow:hidden;height:105px}
+.order{min-width:158px;padding:8px;background:#fff;border:2px solid #DAB58D;border-radius:16px;box-shadow:0 4px 8px #0001}
+.avatar{width:35px;height:35px;border-radius:50%;background:#F0C991;display:inline-flex;align-items:center;justify-content:center;font-size:20px;border:2px solid #C99155}
+.itemdot{width:31px;height:31px;border-radius:11px;background:#F3E2C9;border:1px solid #D0AB80;display:inline-flex;align-items:center;justify-content:center;font-size:17px;margin:2px}
+.board{margin:8px auto 0;display:grid;grid-template-columns:repeat(9,1fr);gap:2px;background:#C9A87D;padding:5px;border-radius:16px;width:350px;height:278px}
+.cell{background:#F8E0B8;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:inset 0 -2px 0 #D8B581}
+.cell.lock{background:#BFAE99;color:#fff}.cell.prod{background:#CBE7B9}.cell.cook{background:#FFD29E}
+.cardgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}.card{min-height:112px;background:#FFF;border:2px solid #DAB58D;border-radius:17px;padding:8px;box-shadow:0 4px 8px #0001;text-align:center}
+.price{display:inline-block;background:#FFF0C2;border-radius:12px;padding:5px 9px;font-weight:800;font-size:11px;margin-top:6px}
+.modalMask{position:absolute;inset:0;background:#3D2C2266;display:flex;align-items:center;justify-content:center;padding:22px;z-index:20}
+.modal{width:100%;max-height:500px;background:#FFF9EA;border:3px solid #D89D58;border-radius:28px;box-shadow:0 15px 30px #0003;padding:15px;overflow:auto}
+.modalHead{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.close{border:0;width:34px;height:34px;border-radius:50%;background:#F6D2A5;color:#6B4936;font-weight:bold}
+.street{height:100%;border-radius:24px;background:linear-gradient(#BFE2F2 0 36%,#D3C59B 36% 100%);position:relative;overflow:hidden}
+.street:before{content:"";position:absolute;left:-40px;right:-40px;top:280px;height:150px;background:#C8AE82;transform:rotate(-3deg);border-top:10px solid #E9D9B4}
+.build{position:absolute;width:115px;height:105px;border-radius:18px 18px 8px 8px;background:#FFD98B;border:4px solid #9E7145;box-shadow:0 7px 0 #80603F;display:flex;align-items:center;justify-content:center;font-size:36px}
+.build.a{left:25px;top:105px}.build.b{right:20px;top:165px;background:#F9B08C}.build.c{left:120px;bottom:105px;background:#BDE3A7}
+.hot{position:absolute;width:38px;height:38px;border-radius:50%;background:#FFB33E;border:3px solid white;display:flex;align-items:center;justify-content:center;animation:pulse 1.3s infinite}
+@keyframes pulse{50%{transform:scale(1.12)}}.build .hot{right:-12px;top:-12px}
+.story{height:100%;background:linear-gradient(#F5D9C7,#FFF2DA);border-radius:20px;position:relative}
+.portrait{height:390px;display:flex;align-items:center;justify-content:center;font-size:150px}
+.dialogue{position:absolute;left:12px;right:12px;bottom:16px;background:#FFF;border:3px solid #C79765;border-radius:24px;padding:14px;box-shadow:var(--shadow);min-height:130px}
+.progress{height:15px;border-radius:99px;background:#E7D7C1;overflow:hidden;border:1px solid #C8A47E}.progress>i{display:block;height:100%;background:linear-gradient(90deg,#83C96B,#F7C24A);width:62%}
+.route{padding:12px;display:grid;gap:10px}.milestone{display:flex;align-items:center;gap:10px}.node{width:38px;height:38px;border-radius:50%;background:#F6B84B;border:3px solid #FFF;box-shadow:0 2px 5px #0002}
+.album{display:grid;grid-template-columns:repeat(3,1fr);gap:7px}.slot{aspect-ratio:.78;background:#FFF;border:3px solid #DAB58D;border-radius:14px;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:28px}.slot.missing{filter:grayscale(1);opacity:.6}
+.list{display:grid;gap:7px}.row{background:#FFF;border:2px solid #DAB58D;border-radius:15px;padding:10px;display:flex;align-items:center;gap:9px;min-height:58px}.row .grow{flex:1}
+.detail{background:#FFFDF8;border:2px solid #D8C4B2;border-radius:20px;padding:18px;box-shadow:var(--shadow);max-width:720px}
+.detail h2{margin:0 0 6px}.tag{display:inline-block;font-size:11px;background:#F4E6D5;border-radius:999px;padding:4px 9px;margin:3px}
+pre{font-size:11px;white-space:pre-wrap;background:#332C28;color:#F5EBDD;padding:12px;border-radius:12px}
+@media(max-width:1000px){.shell{grid-template-columns:1fr}nav{position:static;height:260px}.navlist{columns:2}main{grid-template-columns:1fr}.phone{margin:auto}}
+</style>
+</head><body>
+<div class="shell">
+<nav><h1>femsj · V4 Original UI Kit</h1><div class="sub">46 screens · original visual baseline</div><div class="navlist" id="nav"></div></nav>
+<main>
+<div>
+ <div class="phone">
+  <div class="notch"></div><div class="status"><span>9:41</span><span>●●● 100%</span></div>
+  <div class="topbar" id="top"></div><div class="content" id="content"></div><div class="bottom" id="bottom"></div>
+ </div>
+</div>
+<div class="detail"><h2 id="dt"></h2><div id="tags"></div><p id="desc" class="muted"></p><h3>Production notes</h3><div id="notes"></div><h3>Shared prefabs</h3><div id="prefs"></div><h3>States</h3><div id="states"></div></div>
+</main></div>
+<script>
+const S=[
+["UI00","Boot/启动","boot"],["UI01","账号登录/渠道授权","login"],["UI02","资源更新","patch"],["UI03","开场剧情","story"],["UI04","4×7教学棋盘","board"],["UI05","9×7合成主盘","board"],["UI06","订单详情","modal"],["UI07","物品详情","modal"],["UI08","合成链图鉴","gallery"],["UI09","发射器详情","modal"],["UI10","厨具加工面板","modal"],["UI11","菜谱图鉴","gallery"],["UI12","仓库/储物柜","gallery"],["UI13","体力补充","modal"],["UI14","主街/美食街","street"],["UI15","建设节点详情","modal"],["UI16","建设完成","modal"],["UI17","剧情对白","story"],["UI18","经营日完成","modal"],["UI19","新内容解锁","modal"],["UI20","商店首页","shop"],["UI21","钻石充值","shop"],["UI22","限时礼包","modal"],["UI23","升级礼包","modal"],["UI24","奖励广告确认","modal"],["UI25","活动中心","list"],["UI26","时空追逐","event"],["UI27","芝士漂流","event"],["UI28","爆炒时刻","event"],["UI29","烹调争霸赛","event"],["UI30","卡册首页","album"],["UI31","卡组详情","album"],["UI32","开卡包","story"],["UI33","重复卡/星星兑换","shop"],["UI34","赛季/通行证","pass"],["UI35","邮箱","list"],["UI36","任务/成就","list"],["UI37","设置","settings"],["UI38","账号绑定","list"],["UI39","帮助/客服","list"],["UI40","网络断开","modal"],["UI41","资源不足通用弹窗","modal"],["UI42","通用奖励弹窗","modal"],["UI43","排行榜","list"],["UI44","公告/更新说明","list"],["UI45","隐私/用户协议","legal"]];
+const prefs={
+ board:["ResourceBar","OrderCarousel","BoardGrid","BoardCell","BoardItem","ProducerNode","CookwareNode"],
+ modal:["CommonModal","PrimaryButton","SecondaryButton"],shop:["ProductCard","ResourceChip","Countdown"],event:["MilestoneTrack","Countdown","RewardGrid"],album:["AlbumSet","CardSlot"],story:["CharacterPortrait","DialogueBox"],list:["Row","EmptyState","ErrorState"],street:["BuildHotspot","NPCHotspot","EventCard"]
+};
+const notes={
+ UI05:["9×7=63格；盘面约350×278px于此预览比例","满盘生产绝不扣体力","订单可提交态不用颜色单独表达"],
+ UI10:["IDLE / COOKING / READY 三态","时间来自ServerTime","READY不强制全屏弹窗"],
+ UI14:["建设是主进度可视化，不做复杂NPC路径模拟","热点和拖动手势需8~12px阈值"],
+ UI20:["三列商品卡","售罄/次数/刷新时间同时可见","付费刷新二次确认"],
+ UI29:["倍率必须同时展示成本与收益","结束自动结算到邮箱"],
+ UI30:["总卡数/已收集数明显","重复卡有明确价值","缺卡/稀有度不可只靠颜色"],
+ UI38:["业务PlayerId与渠道绑定分离","冲突不可静默覆盖云存档"]
+};
+function chips(){return '<div class="chip day">DAY 84</div><div class="chip energy">⚡ 76</div><div class="chip coin">🪙 12.4K</div><div class="chip gem">◆ 128</div>'}
+function bottom(){return ['🏠','🧺','🍳','🎪'].map(x=>'<button class="iconbtn">'+x+'</button>').join('')}
+function orders(){return '<div class="orders">'+[1,2,3].map((x,i)=>'<div class="order"><span class="avatar">'+['🐱','🐻','🐼'][i]+'</span> <b>订单 '+x+'</b><div><span class="itemdot">'+['🍅','🥛','🍋'][i]+'</span><span class="itemdot">'+['🥕','🍞','🧀'][i]+'</span></div><span class="small">🪙 '+(80+i*40)+'</span></div>').join('')+'</div>'}
+function board(){const icons=['🍅','🥕','🥛','🍋','🧀','🥔','🧊','🍇','🥩','🍞','🫐','🍄'];return orders()+'<div class="board">'+Array.from({length:63},(_,i)=>{let cl='cell',v='';if(i===4||i===22){cl+=' prod';v='🧺'}else if(i===30){cl+=' cook';v='🍳'}else if(i%13===0){cl+=' lock';v='🔒'}else if(i<24&&i%3===0)v=icons[i%icons.length];return '<div class="'+cl+'">'+v+'</div>'}).join('')+'</div>'}
+function street(){return '<div class="street"><div class="build a">🍜<div class="hot">!</div></div><div class="build b">🥐<div class="hot">🔨</div></div><div class="build c">🥤</div></div>'}
+function story(){return '<div class="story"><div class="portrait">🧑‍🍳</div><div class="dialogue"><b>店长</b><p>今天的街区似乎又热闹了一点。完成订单后，我们去看看新的建设节点吧。</p><button class="btn">继续</button></div></div>'}
+function modal(name){return '<div style="height:100%;opacity:.25">'+board()+'</div><div class="modalMask"><div class="modal"><div class="modalHead"><span class="title">'+name+'</span><button class="close">×</button></div><div class="cardgrid"><div class="card">🍲<br><b>内容 A</b><br><span class="small">状态 / 数量</span></div><div class="card">🎁<br><b>奖励</b><br><span class="price">🪙 120</span></div><div class="card">⏱️<br><b>时间</b><br><span class="small">12:34</span></div></div><br><button class="btn" style="width:100%">主操作</button></div></div>'}
+function gallery(kind){return '<div class="panel" style="padding:10px"><div class="title">'+kind+'</div><p class="small">分类 · 已解锁 · 进度</p><div class="'+(kind.includes('卡册')?'album':'cardgrid')+'">'+Array.from({length:9},(_,i)=>'<div class="'+(kind.includes('卡册')?'slot':'card')+(i%4===0?' missing':'')+'">'+['🍜','🥐','🍱','🥤','🍰','🍤'][i%6]+'<br><span class="small">'+(i%4===0?'未解锁':'Lv.'+(i+1))+'</span></div>').join('')+'</div></div>'}
+function shop(name){return '<div class="panel" style="padding:10px"><div class="title">'+name+'</div><div class="cardgrid" style="margin-top:10px">'+Array.from({length:6},(_,i)=>'<div class="card">'+['⚡','🥕','🍞','🎁','◆','⏩'][i]+'<br><b>'+['体力','材料','面包','礼包','钻石','加速'][i]+'</b><br><span class="price">'+(i<4?'◆ '+(10+i*5):'¥ '+(6+i*6))+'</span></div>').join('')+'</div><div class="row" style="margin-top:10px"><span>⏱️ 11:42:18 后免费刷新</span><span class="grow"></span><button class="btn secondary">刷新 ◆10</button></div></div>'}
+function event(name){return '<div class="panel" style="padding:12px;height:100%"><div style="text-align:center;font-size:60px">🍲✨</div><div class="title" style="text-align:center">'+name+'</div><p class="small" style="text-align:center">剩余 21:36:08</p><div class="progress"><i></i></div><div class="route">'+[100,250,500,800].map((x,i)=>'<div class="milestone"><div class="node">'+(i<2?'✓':'')+'</div><div class="grow"><b>'+x+' 进度</b><div class="small">'+(i<2?'已完成':'继续完成订单获得积分')+'</div></div><span>🎁</span></div>').join('')+'</div></div>'}
+function list(name){return '<div class="panel" style="padding:10px"><div class="title">'+name+'</div><div class="list" style="margin-top:9px">'+Array.from({length:7},(_,i)=>'<div class="row"><div class="avatar">'+['🎪','✉️','✅','🏆','🔔','👤','❓'][i]+'</div><div class="grow"><b>列表项目 '+(i+1)+'</b><div class="small">说明文字 / 进度 / 状态</div></div><button class="btn secondary">查看</button></div>').join('')+'</div></div>'}
+function render(i){
+ document.querySelectorAll('.navbtn').forEach((x,j)=>x.classList.toggle('on',i===j));
+ const [id,name,type]=S[i];document.getElementById('dt').textContent=id+' · '+name;
+ document.getElementById('tags').innerHTML='<span class="tag">750×1334</span><span class="tag">'+type+'</span><span class="tag">ORIGINAL UI</span>';
+ document.getElementById('desc').textContent='基于已研究的信息架构制作的原创视觉基线；不复制《肥鹅美食街》的角色、美术资源或像素级UI。';
+ document.getElementById('top').innerHTML=['board','street','shop','event','album','pass'].includes(type)?chips():'<div class="chip">←</div><div class="chip" style="flex:1">'+name+'</div><div class="chip">⋯</div>';
+ document.getElementById('bottom').innerHTML=bottom();
+ let c='';
+ if(type==='board')c=board();else if(type==='street')c=street();else if(type==='story')c=story();else if(type==='modal')c=modal(name);else if(type==='gallery')c=gallery(name);else if(type==='album')c=gallery('卡册');else if(type==='shop')c=shop(name);else if(type==='event'||type==='pass')c=event(name);else if(type==='list'||type==='settings'||type==='legal'||type==='login'||type==='patch')c=list(name);else c='<div class="panel" style="height:100%;display:flex;align-items:center;justify-content:center"><div style="text-align:center"><div style="font-size:80px">🍊</div><div class="title">'+name+'</div><br><button class="btn">继续</button></div></div>';
+ document.getElementById('content').innerHTML=c;
+ document.getElementById('notes').innerHTML='<ul>'+((notes[id]||['遵循全局SafeArea、弱网、幂等和状态矩阵规范']).map(x=>'<li>'+x+'</li>').join(''))+'</ul>';
+ const ps=prefs[type]||['PrimaryButton','CommonModal','Loading','ErrorState'];document.getElementById('prefs').innerHTML=ps.map(x=>'<span class="tag">'+x+'</span>').join('');
+ document.getElementById('states').innerHTML=['READY','LOADING','ERROR','LOCKED','EXPIRED'].map(x=>'<span class="tag">'+x+'</span>').join('');
+}
+S.forEach((s,i)=>{const b=document.createElement('button');b.className='navbtn';b.textContent=s[0]+' '+s[1];b.onclick=()=>render(i);document.getElementById('nav').appendChild(b)});render(5);
+</script></body></html>
