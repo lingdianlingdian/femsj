@@ -1,49 +1,99 @@
 # femsj
 
-《肥鹅美食街》竞品研究与同类原创产品开发主仓库。
+《肥鹅美食街》公开资料竞品研究 + 同类原创产品 Production Bible 主仓库。
 
 ## 项目目标
 
-把公开研究推进到可直接供策划、UI、美术、Cocos/TypeScript、后端、QA 与 Codex/AI 工程代理使用的 Production Bible。
+把公开研究、产品设计、关卡、UI、美术、技术、QA 和工具链统一在一个可审计仓库中，最终做到可直接供策划、UI、美术、Cocos/TypeScript、后端、QA 与 Codex/AI 工程代理执行。
 
-## 证据规则
+## 强制规则
 
-- `E-*`：来自公开资料的证据层。
-- `D-BLUEPRINT`：为了开发完整性补齐的设计推导。
-- 不把推导内容冒充原作后台配置，不复制受版权保护的原作美术、角色、文案或剧情资产。
+- `OFFICIAL / PUBLIC_* / PLAYER_REPORT`：公开证据层。
+- `DEV_BLUEPRINT`：原创开发补全。
+- 不把开发推导冒充原作后台配置。
+- 不复制原作角色造型、受版权保护美术、剧情全文、文案、图标和UI皮肤。
+- 无证据的数值保持 `null / UNRESOLVED`。
+- 后续所有主版本统一在本仓库 `main` 维护。
 
-## 当前目录
+详细规则：`AGENTS.md`
+
+## 当前版本
+
+**V4 Production Bible（进行中）**
+
+### 已完成的生产骨架
+
+- 110日节奏蓝图
+- Order Registry：651 个槽位
+- 公开逐项验证订单：113 个，稳定 ItemId 映射 0 unresolved
+- 46/46 页面 Production Bible
+- 46页低保真交互 Wireframe
+- 46页原创高保真 UI Kit 原型
+- 41 个共享 UI Component / Prefab 合同
+- 225 条 Asset Manifest
+- 4个原创街区布局 + 相机/热点/NPC挂点规范
+- 26个原创角色 Canon
+- 42条音频资产规格 + Motion Manifest
+- 48个建设节点
+- 110日 Story Beat
+- 6套 LiveOps 活动蓝图
+- OpenAPI 后端合同
+- Remote Config / 灰度 / 回滚合同
+- 109条 QA Test Case
+- GitHub Actions 自动质量门禁
+- Config Validator
+- Evidence / CSV / Content Reference Auditor
+- Balance Simulator Monte Carlo v2
+
+## 目录
 
 ```text
+AGENTS.md
+api/
 docs/
+├─ audit/
 ├─ research/
-│  ├─ V1/
-│  └─ V2/
-├─ production/
-│  └─ V3/
-└─ audit/
+└─ production/V4/
+production-data/v4/
+├─ art/
+├─ audio/
+├─ build/
+├─ characters/
+├─ content/
+├─ economy/
+├─ events/
+├─ levels/
+├─ liveops/
+├─ story/
+└─ ui/
+prototype/
+├─ v4-ui-wireframes/
+└─ v4-ui-kit/
+qa/v4/
 research-data/
-schemas/
-templates/
+schemas/v4/
+tools/
+.github/workflows/
 ```
 
-## V3
+## 当前真实缺口
 
-- 完整关卡与 110 日节奏蓝图
-- 全界面页面清单与核心 UI 规格
-- 全美术规格框架
-- Cocos 开发配置与技术实现
-- 证据索引与未确认项
-- 缺口审计报告
+优先级最高：
 
-## 下一阶段：V4 Production Bible
+1. Day11–20、51–60、82/83、87–90、92–99、106–110 等公开菜单继续逐项转录。
+2. Producer 精确 output weight / capacity / cooldown / 高阶直出概率。
+3. Recipe 精确 cookware / duration / speedup。
+4. 110日所有 Order 的 reward / dependency 生产配置。
+5. 最终正式原创 Item / Producer / Cookware / Character / Building 美术资产。
+6. Balance Simulator v3：真实63格盘面、副产物复用、仓库策略与 P(full board)。
 
-P0 必补：
+## 快速检查
 
-1. 110 日逐单关卡数据库
-2. 全 Item / Producer / Recipe / Cookware 数据库
-3. 46 页逐页 Wireframe + 全状态设计
-4. 全量 Asset Manifest + 角色/建筑 Canon
-5. 完整经济 / 建设 / 活动 / 剧情数据库
+```powershell
+npm run audit:data
+npm run audit:evidence
+npm run audit:content
+```
 
-后续本项目资料与开发工作统一在本仓库迭代。
+完整状态：`docs/production/V4/STATUS.md`  
+仓库清单：`docs/production/V4/REPOSITORY_MANIFEST.md`
