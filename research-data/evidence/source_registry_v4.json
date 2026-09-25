@@ -165,6 +165,76 @@
         "Day16-20五张菜单图"
       ],
       "notes": "作者称应该没漏"
+    },
+    {
+      "id": "SRC_DAY75_ENERGY_POST",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/842720298632478922",
+      "claims": [
+        "Day75能量饮料+香槟同为饮料柜产出",
+        "玩家估算700-800体力"
+      ],
+      "notes": "独立帖子，优于论坛聚合页"
+    },
+    {
+      "id": "SRC_TAPTAP_STORAGE_RULE",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/topic?group_label_id=3038150&page=2",
+      "claims": [
+        "储物柜扩容越来越贵",
+        "玩家称好像是每次增加5钻石"
+      ],
+      "notes": "评论措辞含‘好像’，低置信版本敏感"
+    },
+    {
+      "id": "SRC_TAPTAP_COOLDOWN_FEEDBACK",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/789449424957866215",
+      "claims": [
+        "蔬菜篮子/冰箱/水果篮子存在产出耗尽/冷却情境",
+        "早期版本评论称当时无奖励广告"
+      ],
+      "notes": "2026-04早期版本"
+    },
+    {
+      "id": "SRC_TAPTAP_LATEGAME_FEEDBACK",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/topic?group_label_id=3038150&page=2",
+      "claims": [
+        "144天玩家称周常高消耗",
+        "礼包价格从12到20再到60元的个人观察"
+      ],
+      "notes": "单玩家长期体验，不作为普适后台规则"
+    },
+    {
+      "id": "SRC_TAPTAP_108_CARDS",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/topic",
+      "claims": [
+        "一轮卡册108张",
+        "107/108缺最后金色四星",
+        "集齐后进入第二轮",
+        "旧星星清零的玩家观察"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_40MIN_COOK",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/forum/g1191393",
+      "claims": [
+        "玩家反馈存在四十多分钟烹饪等待"
+      ],
+      "notes": "论坛聚合页，需继续找原始评论固定锚点"
     }
-  ]
+  ],
+  "audit": {
+    "updatedAt": "2026-09-25",
+    "note": "Added specific player-report sources for economy/cooldown/Day75/card evidence."
+  }
 }
