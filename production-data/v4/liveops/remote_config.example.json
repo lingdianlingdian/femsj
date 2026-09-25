@@ -1,0 +1,62 @@
+{
+  "configVersion": "4.1.0",
+  "contentRevision": "20260925-a001",
+  "environment": "STAGING",
+  "publishedAt": "2026-09-25T13:50:00+08:00",
+  "validFrom": "2026-09-25T14:00:00+08:00",
+  "validTo": null,
+  "minAppVersion": "1.0.0",
+  "maxAppVersion": null,
+  "rollout": {
+    "percentage": 10,
+    "seedKey": "PLAYER_ID",
+    "allowPlayerIds": [],
+    "denyPlayerIds": []
+  },
+  "payload": {
+    "economy": {
+      "energyCap": 100,
+      "energyRegenSecPerPoint": 120,
+      "adEnergy": {
+        "enabled": true,
+        "energyPerAd": 15,
+        "dailyCount": 4
+      },
+      "gemEnergyPurchases": [
+        {
+          "purchaseIndex": 1,
+          "gemCost": 10,
+          "energy": 100
+        },
+        {
+          "purchaseIndex": 2,
+          "gemCost": 20,
+          "energy": 100
+        }
+      ]
+    },
+    "events": [],
+    "offers": [],
+    "shop": {
+      "freeRefreshSec": 43200,
+      "paidRefreshGem": 10
+    },
+    "featureFlags": {
+      "longPressProducer": true,
+      "autoMailExpiredRewards": true,
+      "albumDuplicateProtection": true
+    },
+    "channelOverrides": {
+      "WECHAT": {},
+      "DOUYIN": {},
+      "IOS": {}
+    }
+  },
+  "signature": {
+    "algorithm": "ED25519",
+    "keyId": "staging-k1",
+    "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "signature": "PLACEHOLDER_SIGNATURE"
+  },
+  "rollbackOf": null
+}
