@@ -93,6 +93,8 @@ jobs:
             'production-data/v4/art/ai_art_jobs_v4.json',
             'production-data/v4/art/ai_art_batch_s1_s3_v4.json',
             'production-data/v4/art/art_output_manifest_v4.json',
+            'production-data/v4/art/render_waves_day001_010_v4.json',
+            'production-data/v4/art/day001_010_art_coverage_v4.json',
             'schemas/v4/art_output_manifest.schema.json',
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
