@@ -7,6 +7,8 @@
     "simulate:balance": "node tools/balance-simulator/simulate.mjs",
     "audit:evidence": "node tools/evidence-auditor/audit.mjs",
     "audit:data": "node tools/data-auditor/audit.mjs",
-    "audit:content": "node tools/content-reference-auditor/audit.mjs"
+    "audit:content": "node tools/content-reference-auditor/audit.mjs",
+    "audit:runtime": "node tools/runtime-readiness/audit.mjs",
+    "audit:runtime:strict": "node tools/runtime-readiness/audit.mjs --strict"
   }
 }
