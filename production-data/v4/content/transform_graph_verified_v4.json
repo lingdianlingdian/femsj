@@ -1,0 +1,1977 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "semantics": {
+    "MERGE2": "Two identical items merge into one higher-tier item.",
+    "COOK_CONFIRMED": "Public hands-on evidence confirms cookware/process relationship.",
+    "PROCESS_RECIPE_VISUAL": "Public recipe table confirms ingredient dependency, but exact cookware/time may remain unknown.",
+    "DIRECT_ITEM": "Menu/table row is directly the item itself; do not create a fake transformation."
+  },
+  "counts": {
+    "baseRelations": 24,
+    "day101_105Visual": 40,
+    "day101_105Direct": 9
+  },
+  "relations": [
+    {
+      "id": "merge_rouchang_peigen",
+      "relationType": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_rouchang",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "item_peigen",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "行业实机拆解"
+      }
+    },
+    {
+      "id": "merge_peigen_rouwan",
+      "relationType": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_peigen",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "item_rouwan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "行业实机拆解"
+      }
+    },
+    {
+      "id": "merge_rouwan_niuxiongrou",
+      "relationType": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_rouwan",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "item_niuxiongrou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "行业实机拆解"
+      }
+    },
+    {
+      "id": "cook_rouchang_kaochang",
+      "relationType": "COOK_CONFIRMED",
+      "inputs": [
+        {
+          "itemId": "item_rouchang",
+          "count": 1
+        }
+      ],
+      "toolId": "cook_grill",
+      "durationSec": null,
+      "outputItemId": "dish_kaochang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "烤架分支"
+      }
+    },
+    {
+      "id": "cook_niuxiongrou_yanxun",
+      "relationType": "COOK_CONFIRMED",
+      "inputs": [
+        {
+          "itemId": "item_niuxiongrou",
+          "count": 1
+        }
+      ],
+      "toolId": "cook_grill",
+      "durationSec": null,
+      "outputItemId": "dish_yanxunniuxiongrou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "烤架分支"
+      }
+    },
+    {
+      "id": "cook_junxiangzhishijuan",
+      "relationType": "COOK_CONFIRMED",
+      "inputs": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        },
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        },
+        {
+          "itemId": "item_zhishipian",
+          "count": 1
+        }
+      ],
+      "toolId": "cook_prep_station",
+      "durationSec": null,
+      "outputItemId": "dish_junxiangzhishijuan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "note": "备菜台多输入"
+      }
+    },
+    {
+      "id": "merge_li_shuimitao",
+      "relationType": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_li",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "item_shuimitao",
+      "evidence": {
+        "kind": "PLAYER_REPORT",
+        "confidence": "C",
+        "note": "玩家公开抱怨明确描述两个梨合成水蜜桃；source=SRC_TAPTAP_PEAR"
+      }
+    },
+    {
+      "id": "ev_d080_fresh_orange_juice",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "鲜榨橙汁",
+      "inputs": [
+        {
+          "itemId": "item_chengzi",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_xianzhachengzhi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d080_tequila_screwdriver",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "龙舌兰螺丝刀",
+      "inputs": [
+        {
+          "itemId": "item_longshulan",
+          "count": 1
+        },
+        {
+          "itemId": "dish_xianzhachengzhi",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_longshulan_luosidao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C-",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": "菜名视觉转录，需第二来源复核"
+      }
+    },
+    {
+      "id": "ev_d080_grilled_sausage",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "炭烤烤肉肠",
+      "inputs": [
+        {
+          "itemId": "item_rouchang",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_tankao_rouchang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d080_hotdog_bun",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "烤热狗面包",
+      "inputs": [
+        {
+          "itemId": "item_kuangquanshui",
+          "count": 1
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1
+        },
+        {
+          "itemId": "item_boliwan",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_kaoregoumianbao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": "玻璃碗在截图中列为材料/中间依赖，系统角色待确认"
+      }
+    },
+    {
+      "id": "ev_d080_cheese_hotdog",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "芝士热狗",
+      "inputs": [
+        {
+          "itemId": "item_zhishipian",
+          "count": 1
+        },
+        {
+          "itemId": "dish_tankao_rouchang",
+          "count": 1
+        },
+        {
+          "itemId": "dish_kaoregoumianbao",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_zhishiregou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d080_garlic_bread",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "蒜香面包",
+      "inputs": [
+        {
+          "itemId": "item_suan",
+          "count": 1
+        },
+        {
+          "itemId": "item_zhishipian",
+          "count": 1
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_suanxiangmianbao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d080_berry_oat",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 80,
+      "name": "浆果蜂蜜燕麦碗",
+      "inputs": [
+        {
+          "itemId": "item_lanmei",
+          "count": 1
+        },
+        {
+          "itemId": "item_caomei",
+          "count": 1
+        },
+        {
+          "itemId": "item_fengmi",
+          "count": 1
+        },
+        {
+          "itemId": "item_yanmai",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_jiangguofengmiyanmaiwang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_golden_pork_knuckle",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "黄金烤肘子",
+      "inputs": [
+        {
+          "itemId": "item_zhouzi",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_huangjinkaozhouzi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_onion_rice",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "焦香洋葱饭",
+      "inputs": [
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        },
+        {
+          "itemId": "item_dami",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_jiaoxiangyangcongfan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_grilled_chicken_breast",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "炭烤鸡胸肉",
+      "inputs": [
+        {
+          "itemId": "item_jixiongrou",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_tankaojixiongrou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_butter_rice",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "黄油拌饭",
+      "inputs": [
+        {
+          "itemId": "item_huangyou",
+          "count": 1
+        },
+        {
+          "itemId": "item_dami",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_huangyoubanfan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_honey_chicken",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "蜜汁烤鸡",
+      "inputs": [
+        {
+          "itemId": "item_daiguquanji",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_mizhikaoji",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_fresh_oyster",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "新鲜生蚝",
+      "inputs": [
+        {
+          "itemId": "item_shenghao",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_xinxianshenghao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_rum_cola",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "朗姆可乐",
+      "inputs": [
+        {
+          "itemId": "item_langmu",
+          "count": 1
+        },
+        {
+          "itemId": "item_kele",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_langmukele",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_berry_oat",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "浆果蜂蜜燕麦碗",
+      "inputs": [
+        {
+          "itemId": "item_lanmei",
+          "count": 1
+        },
+        {
+          "itemId": "item_caomei",
+          "count": 1
+        },
+        {
+          "itemId": "item_fengmi",
+          "count": 1
+        },
+        {
+          "itemId": "item_yanmai",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_jiangguofengmiyanmaiwang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_garden_salad",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "田园沙拉",
+      "inputs": [
+        {
+          "itemId": "item_shengcai",
+          "count": 1
+        },
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        },
+        {
+          "itemId": "item_xilanhua",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_tianyuanshala",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "ev_d084_moscow_mule",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 84,
+      "name": "莫斯科之骡",
+      "inputs": [
+        {
+          "itemId": "item_ningmeng",
+          "count": 1
+        },
+        {
+          "itemId": "item_futejia",
+          "count": 1
+        },
+        {
+          "itemId": "item_jiangzhishui",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": null,
+      "outputItemId": "dish_moscow_mule",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrls": [
+          "https://www.taptap.cn/moment/790629105325312627",
+          "https://www.taptap.cn/moment/790906865650238207"
+        ],
+        "note": null
+      }
+    },
+    {
+      "id": "r101_02",
+      "day": 101,
+      "name": "酥烤肥蟹",
+      "inputs": [
+        {
+          "itemId": "item_pangxie",
+          "count": 1,
+          "raw": "螃蟹"
+        }
+      ],
+      "outputItemId": "dish_sukao_feixie",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r101_04",
+      "day": 101,
+      "name": "早餐三明治",
+      "inputs": [
+        {
+          "itemId": "item_zhishipian",
+          "count": 1,
+          "raw": "芝士片"
+        },
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "蛋"
+        },
+        {
+          "itemId": "item_peigen",
+          "count": 1,
+          "raw": "培根"
+        },
+        {
+          "itemId": "item_chunniunai",
+          "count": 1,
+          "raw": "纯牛奶"
+        },
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "蛋"
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1,
+          "raw": "小麦粉"
+        },
+        {
+          "itemId": "item_boliwan",
+          "count": 1,
+          "raw": "玻璃碗"
+        }
+      ],
+      "outputItemId": "dish_zaocan_sanmingzhi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": "截图中配方为多段中间食谱，先保存原始可见材料文字，后续拆DAG",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r101_06",
+      "day": 101,
+      "name": "晶莹鲜虾饺",
+      "inputs": [
+        {
+          "itemId": "item_xia",
+          "count": 1,
+          "raw": "虾"
+        },
+        {
+          "itemId": "item_kuangquanshui",
+          "count": 1,
+          "raw": "矿泉水"
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1,
+          "raw": "小麦粉"
+        },
+        {
+          "itemId": "tool_zhenglong",
+          "count": 1,
+          "raw": "蒸笼"
+        }
+      ],
+      "outputItemId": "dish_jingying_xianxiajiao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": "tool_zhenglong",
+      "durationSec": null
+    },
+    {
+      "id": "r101_08",
+      "day": 101,
+      "name": "朗姆可乐",
+      "inputs": [
+        {
+          "itemId": "item_langmu",
+          "count": 1,
+          "raw": "朗姆"
+        },
+        {
+          "itemId": "item_kele",
+          "count": 1,
+          "raw": "可乐"
+        }
+      ],
+      "outputItemId": "dish_langmukele",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r101_09",
+      "day": 101,
+      "name": "手撕紫甘蓝",
+      "inputs": [
+        {
+          "itemId": "item_ziganlan",
+          "count": 1,
+          "raw": "紫甘蓝"
+        }
+      ],
+      "outputItemId": "dish_shousi_ziganlan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r101_10",
+      "day": 101,
+      "name": "酥香鳕鱼",
+      "inputs": [
+        {
+          "itemId": "item_xueyu",
+          "count": 1,
+          "raw": "鳕鱼"
+        }
+      ],
+      "outputItemId": "dish_suxiang_xueyu",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_11",
+      "day": 102,
+      "name": "炭烤琵琶腿",
+      "inputs": [
+        {
+          "itemId": "item_pipatui",
+          "count": 1,
+          "raw": "琵琶腿"
+        }
+      ],
+      "outputItemId": "dish_tankao_pipatui",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_12",
+      "day": 102,
+      "name": "香菇肠粉",
+      "inputs": [
+        {
+          "itemId": "item_xianggu",
+          "count": 1,
+          "raw": "香菇"
+        },
+        {
+          "itemId": "special_tea_formula_3",
+          "count": 1,
+          "raw": "茶楼秘制配方3"
+        },
+        {
+          "itemId": "item_feie_jiangyou",
+          "count": 1,
+          "raw": "肥鹅牌酱油"
+        }
+      ],
+      "outputItemId": "dish_xianggu_changfen",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_14",
+      "day": 102,
+      "name": "椰汁奶白小丸",
+      "inputs": [
+        {
+          "itemId": "item_bingtang",
+          "count": 1,
+          "raw": "冰糖"
+        },
+        {
+          "itemId": "item_yenai",
+          "count": 1,
+          "raw": "椰奶"
+        },
+        {
+          "itemId": "special_tea_formula_1",
+          "count": 1,
+          "raw": "茶楼秘制配方1"
+        }
+      ],
+      "outputItemId": "dish_yezhi_naibai_xiaowan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_15",
+      "day": 102,
+      "name": "新鲜生蚝",
+      "inputs": [
+        {
+          "itemId": "item_shenghao",
+          "count": 1,
+          "raw": "生蚝"
+        }
+      ],
+      "outputItemId": "dish_xinxianshenghao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_16",
+      "day": 102,
+      "name": "威士忌苏打",
+      "inputs": [
+        {
+          "itemId": "item_weishiji",
+          "count": 1,
+          "raw": "威士忌"
+        },
+        {
+          "itemId": "item_sudashui",
+          "count": 1,
+          "raw": "苏打水"
+        }
+      ],
+      "outputItemId": "dish_weishiji_suda",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_18",
+      "day": 102,
+      "name": "流沙奶黄包",
+      "inputs": [
+        {
+          "itemId": "item_huangyou",
+          "count": 1,
+          "raw": "黄油"
+        },
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "鸡蛋"
+        },
+        {
+          "itemId": "item_bingtang",
+          "count": 1,
+          "raw": "冰糖"
+        },
+        {
+          "itemId": "item_kuangquanshui",
+          "count": 1,
+          "raw": "矿泉水"
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1,
+          "raw": "小麦粉"
+        },
+        {
+          "itemId": "special_tea_formula_2",
+          "count": 1,
+          "raw": "茶楼秘制配方2"
+        },
+        {
+          "itemId": "item_boliwan",
+          "count": 1,
+          "raw": "玻璃碗"
+        },
+        {
+          "itemId": "tool_zhenglong",
+          "count": 1,
+          "raw": "蒸笼"
+        }
+      ],
+      "outputItemId": "dish_liusha_naihuangbao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": "tool_zhenglong",
+      "durationSec": null
+    },
+    {
+      "id": "r102_19",
+      "day": 102,
+      "name": "大杯美式",
+      "inputs": [],
+      "outputItemId": "item_dabei_meishi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r102_20",
+      "day": 102,
+      "name": "手撕紫甘蓝",
+      "inputs": [
+        {
+          "itemId": "item_ziganlan",
+          "count": 1,
+          "raw": "紫甘蓝"
+        }
+      ],
+      "outputItemId": "dish_shousi_ziganlan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_21",
+      "day": 103,
+      "name": "烤土豆片",
+      "inputs": [
+        {
+          "itemId": "item_tudou",
+          "count": 1,
+          "raw": "土豆"
+        }
+      ],
+      "outputItemId": "dish_kao_tudoupian",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_22",
+      "day": 103,
+      "name": "新鲜生蚝",
+      "inputs": [
+        {
+          "itemId": "item_shenghao",
+          "count": 1,
+          "raw": "生蚝"
+        }
+      ],
+      "outputItemId": "dish_xinxianshenghao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_23",
+      "day": 103,
+      "name": "葡萄果肉饮",
+      "inputs": [
+        {
+          "itemId": "item_putao",
+          "count": 1,
+          "raw": "葡萄"
+        }
+      ],
+      "outputItemId": "dish_putao_guorouyin",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_24",
+      "day": 103,
+      "name": "焦糖马拉糕",
+      "inputs": [
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "鸡蛋"
+        },
+        {
+          "itemId": "item_jiaotang",
+          "count": 1,
+          "raw": "焦糖"
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1,
+          "raw": "小麦粉"
+        },
+        {
+          "itemId": "special_tea_formula_1",
+          "count": 1,
+          "raw": "茶楼秘制配方1"
+        },
+        {
+          "itemId": "tool_zhenglong",
+          "count": 1,
+          "raw": "蒸笼"
+        }
+      ],
+      "outputItemId": "dish_jiaotang_malagao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": "tool_zhenglong",
+      "durationSec": null
+    },
+    {
+      "id": "r103_25",
+      "day": 103,
+      "name": "黄金烤肘子",
+      "inputs": [
+        {
+          "itemId": "item_zhouzi",
+          "count": 1,
+          "raw": "肘子"
+        }
+      ],
+      "outputItemId": "dish_huangjinkaozhouzi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_26",
+      "day": 103,
+      "name": "威士忌苏打",
+      "inputs": [
+        {
+          "itemId": "item_weishiji",
+          "count": 1,
+          "raw": "威士忌"
+        },
+        {
+          "itemId": "item_sudashui",
+          "count": 1,
+          "raw": "苏打水"
+        }
+      ],
+      "outputItemId": "dish_weishiji_suda",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_27",
+      "day": 103,
+      "name": "燕麦",
+      "inputs": [],
+      "outputItemId": "item_yanmai",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_28",
+      "day": 103,
+      "name": "手撕紫甘蓝",
+      "inputs": [
+        {
+          "itemId": "item_ziganlan",
+          "count": 1,
+          "raw": "紫甘蓝"
+        }
+      ],
+      "outputItemId": "dish_shousi_ziganlan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r103_29",
+      "day": 103,
+      "name": "大杯美式",
+      "inputs": [],
+      "outputItemId": "item_dabei_meishi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_30",
+      "day": 104,
+      "name": "什锦海鲜汤",
+      "inputs": [
+        {
+          "itemId": "item_fanqie",
+          "count": 1,
+          "raw": "番茄"
+        },
+        {
+          "itemId": "item_hunhexiangye",
+          "count": 1,
+          "raw": "混合香叶"
+        },
+        {
+          "itemId": "item_youyu",
+          "count": 1,
+          "raw": "鱿鱼"
+        },
+        {
+          "itemId": "item_shanbei",
+          "count": 1,
+          "raw": "扇贝"
+        }
+      ],
+      "outputItemId": "dish_shijin_haixiantang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_31",
+      "day": 104,
+      "name": "甜蛋酒",
+      "inputs": [
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "鸡蛋"
+        },
+        {
+          "itemId": "special_tea_formula_5",
+          "count": 1,
+          "raw": "茶楼秘制配方5"
+        }
+      ],
+      "outputItemId": "dish_tiandanjiu",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_32",
+      "day": 104,
+      "name": "烟熏牛胸肉",
+      "inputs": [
+        {
+          "itemId": "item_niuxiongrou",
+          "count": 1,
+          "raw": "牛胸肉"
+        }
+      ],
+      "outputItemId": "dish_yanxunniuxiongrou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_33",
+      "day": 104,
+      "name": "新鲜生蚝",
+      "inputs": [
+        {
+          "itemId": "item_shenghao",
+          "count": 1,
+          "raw": "生蚝"
+        }
+      ],
+      "outputItemId": "dish_xinxianshenghao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_34",
+      "day": 104,
+      "name": "鹅鹅手打柠檬茶",
+      "inputs": [
+        {
+          "itemId": "item_huacha",
+          "count": 1,
+          "raw": "花茶"
+        },
+        {
+          "itemId": "item_ningmeng",
+          "count": 1,
+          "raw": "柠檬"
+        }
+      ],
+      "outputItemId": "dish_ee_shouda_ningmengcha",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_35",
+      "day": 104,
+      "name": "黄金烤肘子",
+      "inputs": [
+        {
+          "itemId": "item_zhouzi",
+          "count": 1,
+          "raw": "肘子"
+        }
+      ],
+      "outputItemId": "dish_huangjinkaozhouzi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_36",
+      "day": 104,
+      "name": "手撕紫甘蓝",
+      "inputs": [
+        {
+          "itemId": "item_ziganlan",
+          "count": 1,
+          "raw": "紫甘蓝"
+        }
+      ],
+      "outputItemId": "dish_shousi_ziganlan",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_37",
+      "day": 104,
+      "name": "炭烧金枪鱼排",
+      "inputs": [
+        {
+          "itemId": "item_jinqiangyu",
+          "count": 1,
+          "raw": "金枪鱼"
+        }
+      ],
+      "outputItemId": "dish_tanshao_jinqiangyupai",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": "菜名依据截图视觉转录，后续用第二来源复核",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r104_39",
+      "day": 104,
+      "name": "蜜汁烤鸡",
+      "inputs": [
+        {
+          "itemId": "item_daiguquanji",
+          "count": 1,
+          "raw": "带骨全鸡"
+        }
+      ],
+      "outputItemId": "dish_mizhikaoji",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_40",
+      "day": 105,
+      "name": "珍珠奶茶",
+      "inputs": [
+        {
+          "itemId": "item_lvcha",
+          "count": 1,
+          "raw": "绿茶"
+        },
+        {
+          "itemId": "item_chunniunai",
+          "count": 1,
+          "raw": "纯牛奶"
+        },
+        {
+          "itemId": "item_tangjiang",
+          "count": 1,
+          "raw": "糖浆"
+        }
+      ],
+      "outputItemId": "dish_zhenzhunaicha",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_41",
+      "day": 105,
+      "name": "咸水角",
+      "inputs": [
+        {
+          "itemId": "item_xianggu",
+          "count": 1,
+          "raw": "香菇"
+        },
+        {
+          "itemId": "item_wuhuarou",
+          "count": 1,
+          "raw": "五花肉"
+        },
+        {
+          "itemId": "item_dami",
+          "count": 1,
+          "raw": "大米"
+        },
+        {
+          "itemId": "special_tea_formula_4",
+          "count": 1,
+          "raw": "茶楼秘制配方4"
+        }
+      ],
+      "outputItemId": "dish_xianshuijiao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_42",
+      "day": 105,
+      "name": "鹅鹅手打柠檬茶",
+      "inputs": [
+        {
+          "itemId": "item_huacha",
+          "count": 1,
+          "raw": "花茶"
+        },
+        {
+          "itemId": "item_ningmeng",
+          "count": 1,
+          "raw": "柠檬"
+        }
+      ],
+      "outputItemId": "dish_ee_shouda_ningmengcha",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_43",
+      "day": 105,
+      "name": "酥炸大鸡腿",
+      "inputs": [
+        {
+          "itemId": "item_yangcong",
+          "count": 1,
+          "raw": "洋葱"
+        },
+        {
+          "itemId": "item_jitui",
+          "count": 1,
+          "raw": "鸡腿"
+        }
+      ],
+      "outputItemId": "dish_suzha_dajitui",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_44",
+      "day": 105,
+      "name": "威士忌酸酒",
+      "inputs": [
+        {
+          "itemId": "item_bingtang",
+          "count": 1,
+          "raw": "冰糖"
+        },
+        {
+          "itemId": "item_weishiji",
+          "count": 1,
+          "raw": "威士忌"
+        },
+        {
+          "itemId": "item_ningmeng",
+          "count": 1,
+          "raw": "柠檬"
+        }
+      ],
+      "outputItemId": "dish_weishiji_suanjiu",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_45",
+      "day": 105,
+      "name": "流沙奶黄包",
+      "inputs": [
+        {
+          "itemId": "item_huangyou",
+          "count": 1,
+          "raw": "黄油"
+        },
+        {
+          "itemId": "item_jidan",
+          "count": 1,
+          "raw": "鸡蛋"
+        },
+        {
+          "itemId": "item_bingtang",
+          "count": 1,
+          "raw": "冰糖"
+        },
+        {
+          "itemId": "item_kuangquanshui",
+          "count": 1,
+          "raw": "矿泉水"
+        },
+        {
+          "itemId": "item_xiaomaifen",
+          "count": 1,
+          "raw": "小麦粉"
+        },
+        {
+          "itemId": "special_tea_formula_2",
+          "count": 1,
+          "raw": "茶楼秘制配方2"
+        },
+        {
+          "itemId": "item_boliwan",
+          "count": 1,
+          "raw": "玻璃碗"
+        },
+        {
+          "itemId": "tool_zhenglong",
+          "count": 1,
+          "raw": "蒸笼"
+        }
+      ],
+      "outputItemId": "dish_liusha_naihuangbao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": "tool_zhenglong",
+      "durationSec": null
+    },
+    {
+      "id": "r105_47",
+      "day": 105,
+      "name": "彩椒土豆丝",
+      "inputs": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1,
+          "raw": "彩椒"
+        },
+        {
+          "itemId": "item_tudou",
+          "count": 1,
+          "raw": "土豆"
+        }
+      ],
+      "outputItemId": "dish_caijiao_tudousi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    },
+    {
+      "id": "r105_48",
+      "day": 105,
+      "name": "酥烤肥蟹",
+      "inputs": [
+        {
+          "itemId": "item_pangxie",
+          "count": 1,
+          "raw": "螃蟹"
+        }
+      ],
+      "outputItemId": "dish_sukao_feixie",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "toolId": null,
+      "durationSec": null
+    }
+  ],
+  "directItems": [
+    {
+      "id": "r101_01",
+      "day": 101,
+      "name": "奶油",
+      "inputs": [
+        {
+          "itemId": "item_naiyou",
+          "count": 1,
+          "raw": "奶油"
+        }
+      ],
+      "outputItemId": "item_naiyou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r101_03",
+      "day": 101,
+      "name": "乌龙茶",
+      "inputs": [
+        {
+          "itemId": "item_wulongcha",
+          "count": 1,
+          "raw": "乌龙茶"
+        }
+      ],
+      "outputItemId": "item_wulongcha",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r101_05",
+      "day": 101,
+      "name": "汤力水",
+      "inputs": [
+        {
+          "itemId": "item_tanglishui",
+          "count": 1,
+          "raw": "汤力水"
+        }
+      ],
+      "outputItemId": "item_tanglishui",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r101_07",
+      "day": 101,
+      "name": "糖豆",
+      "inputs": [
+        {
+          "itemId": "item_tangdou",
+          "count": 1,
+          "raw": "糖豆"
+        }
+      ],
+      "outputItemId": "item_tangdou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY101"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r102_13",
+      "day": 102,
+      "name": "乌龙茶",
+      "inputs": [
+        {
+          "itemId": "item_wulongcha",
+          "count": 1,
+          "raw": "乌龙茶"
+        }
+      ],
+      "outputItemId": "item_wulongcha",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r102_17",
+      "day": 102,
+      "name": "姜汁水",
+      "inputs": [
+        {
+          "itemId": "item_jiangzhishui",
+          "count": 1,
+          "raw": "姜汁水"
+        }
+      ],
+      "outputItemId": "item_jiangzhishui",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r104_38",
+      "day": 104,
+      "name": "巧克力",
+      "inputs": [
+        {
+          "itemId": "item_qiaokeli",
+          "count": 1,
+          "raw": "巧克力"
+        }
+      ],
+      "outputItemId": "item_qiaokeli",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r105_46",
+      "day": 105,
+      "name": "奶油",
+      "inputs": [
+        {
+          "itemId": "item_naiyou",
+          "count": 1,
+          "raw": "奶油"
+        }
+      ],
+      "outputItemId": "item_naiyou",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
+      },
+      "note": null,
+      "relationType": "DIRECT_ITEM"
+    },
+    {
+      "id": "r103_syrup",
+      "day": 103,
+      "name": "糖浆",
+      "inputs": [
+        {
+          "itemId": "item_tangjiang",
+          "count": 1,
+          "raw": "糖浆"
+        }
+      ],
+      "outputItemId": "item_tangjiang",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
+        "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
+      },
+      "note": "该行是成品/基础项，不代表存在额外烹饪转换；保留为菜单/食谱证据节点",
+      "relationType": "DIRECT_ITEM"
+    }
+  ]
+}
