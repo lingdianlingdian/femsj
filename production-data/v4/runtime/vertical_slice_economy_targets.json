@@ -1,0 +1,19 @@
+{
+  "version": "4.0",
+  "scope": "DAY001_010_VERTICAL_ECONOMY",
+  "generatedAt": "2026-09-25",
+  "configPath": "production-data/v4/runtime/game_content_day001_010.json",
+  "assumptions": {
+    "startCoin": 0,
+    "settlementOrder": "ORDER_REWARDS_BEFORE_SAME_DAY_BUILD",
+    "note": "Conservative DEV_BLUEPRINT audit. Only configured COIN rewards and Build coinCost are included."
+  },
+  "gates": {
+    "minCumulativeCoin": 0,
+    "endingCoinMin": 300,
+    "endingCoinMax": 900,
+    "sourceSinkRatioMin": 1.5,
+    "sourceSinkRatioMax": 2.2,
+    "maxDailyBuildToSourceRatio": 1.3
+  }
+}
