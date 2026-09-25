@@ -1,0 +1,114 @@
+{
+  "version": "4.1.0",
+  "generatedAt": "2026-09-25",
+  "evidenceKind": "DEV_BLUEPRINT",
+  "policy": "All dialogue, character interactions and story events are original production content; competitor story text is not copied.",
+  "totalDays": 110,
+  "totalSlices": 11,
+  "totalScenes": 268,
+  "totalLines": 821,
+  "storyBeatFile": "production-data/v4/story/story_beats_110.csv",
+  "schemaFile": "schemas/v4/story_script.schema.json",
+  "validator": "tools/story-validator/validate-all.mjs",
+  "slices": [
+    {
+      "minDay": 1,
+      "maxDay": 10,
+      "storyFile": "production-data/v4/story/story_dialogue_day001_010.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day001_010.json",
+      "scenes": 26,
+      "lines": 80,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 11,
+      "maxDay": 20,
+      "storyFile": "production-data/v4/story/story_dialogue_day011_020.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day011_020.json",
+      "scenes": 26,
+      "lines": 80,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 21,
+      "maxDay": 30,
+      "storyFile": "production-data/v4/story/story_dialogue_day021_030.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day021_030.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 31,
+      "maxDay": 40,
+      "storyFile": "production-data/v4/story/story_dialogue_day031_040.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day031_040.json",
+      "scenes": 24,
+      "lines": 74,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 41,
+      "maxDay": 50,
+      "storyFile": "production-data/v4/story/story_dialogue_day041_050.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day041_050.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 51,
+      "maxDay": 60,
+      "storyFile": "production-data/v4/story/story_dialogue_day051_060.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day051_060.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 61,
+      "maxDay": 70,
+      "storyFile": "production-data/v4/story/story_dialogue_day061_070.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day061_070.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 71,
+      "maxDay": 80,
+      "storyFile": "production-data/v4/story/story_dialogue_day071_080.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day071_080.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 81,
+      "maxDay": 90,
+      "storyFile": "production-data/v4/story/story_dialogue_day081_090.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day081_090.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 91,
+      "maxDay": 100,
+      "storyFile": "production-data/v4/story/story_dialogue_day091_100.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day091_100.json",
+      "scenes": 24,
+      "lines": 73,
+      "status": "VALIDATED"
+    },
+    {
+      "minDay": 101,
+      "maxDay": 110,
+      "storyFile": "production-data/v4/story/story_dialogue_day101_110.json",
+      "localeFile": "production-data/v4/story/locale_zh-CN_day101_110.json",
+      "scenes": 24,
+      "lines": 76,
+      "status": "VALIDATED"
+    }
+  ]
+}
