@@ -8,7 +8,7 @@
     "DIRECT_ITEM": "Menu/table row is directly the item itself; do not create a fake transformation."
   },
   "counts": {
-    "baseRelations": 25,
+    "baseRelations": 28,
     "day101_105Visual": 40,
     "day101_105Direct": 9
   },
@@ -152,6 +152,72 @@
         "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
         "sourceVisualId": "DAY7_RECIPE_PANEL_CARROT_80S",
         "note": "Day7公开实机图将胡萝卜加工面板与生切胡萝卜条订单关联，倒计时1m20s；器具图标可见但名称未可靠确认，因此toolId保持null。"
+      }
+    },
+    {
+      "id": "cook_caijiaocuipian",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 6,
+      "name": "彩椒脆片",
+      "inputs": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 40,
+      "outputItemId": "dish_caijiaocuipian",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY6_RECIPE_PANEL_PEPPER_40S",
+        "note": "Day6公开实机图由彩椒脆片订单箭头指向彩椒加工面板，倒计时40s；器具名称未可靠确认，因此toolId保持null。"
+      }
+    },
+    {
+      "id": "cook_caomeiguolu",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 8,
+      "name": "草莓果露",
+      "inputs": [
+        {
+          "itemId": "item_caomei",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 10,
+      "outputItemId": "dish_caomeiguolu",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY8_RECIPE_PANEL_STRAWBERRY_10S",
+        "note": "Day8公开实机图中“冰糖+草莓果露”订单箭头指向草莓加工面板，倒计时10s；仅将草莓→草莓果露加工关系与时长入库，冰糖属于订单的另一独立需求。"
+      }
+    },
+    {
+      "id": "cook_shoudaningmengzhi",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 9,
+      "name": "手打柠檬汁",
+      "inputs": [
+        {
+          "itemId": "item_ningmeng",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 80,
+      "outputItemId": "dish_shoudaningmengzhi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY9_RECIPE_PANEL_LEMON_80S",
+        "note": "Day9公开实机图将柠檬加工面板与手打柠檬汁订单闭合，倒计时1m20s；器具名称未可靠确认，因此toolId保持null。"
       }
     },
     {
