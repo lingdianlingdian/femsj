@@ -16,6 +16,7 @@
     "validate:story": "node tools/story-validator/validate.mjs",
     "gate:economy:vertical": "node tools/economy-slice-auditor/audit.mjs",
     "audit:art": "node tools/art-production-auditor/audit.mjs",
-    "validate:story:day11-20": "node tools/story-validator/validate.mjs production-data/v4/story/story_dialogue_day011_020.json production-data/v4/story/locale_zh-CN_day011_020.json - 11 20"
+    "validate:story:day11-20": "node tools/story-validator/validate.mjs production-data/v4/story/story_dialogue_day011_020.json production-data/v4/story/locale_zh-CN_day011_020.json - 11 20",
+    "art:next": "node tools/art-production-auditor/next.mjs"
   }
 }
