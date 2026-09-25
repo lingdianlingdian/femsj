@@ -67,6 +67,9 @@ jobs:
       - name: Validate Day1-10 story references
         run: npm run validate:story
 
+      - name: Vertical economy source-sink gate
+        run: npm run gate:economy:vertical
+
       - name: Parse critical JSON files
         shell: bash
         run: |
@@ -85,6 +88,7 @@ jobs:
             'production-data/v4/runtime/game_content_day001_010.json',
             'production-data/v4/runtime/vertical_slice_balance_targets.json',
             'production-data/v4/runtime/vertical_slice_board_targets.json',
+            'production-data/v4/runtime/vertical_slice_economy_targets.json',
             'production-data/v4/story/story_dialogue_day001_010.json',
             'production-data/v4/story/locale_zh-CN_day001_010.json',
             'schemas/v4/story_script.schema.json',
