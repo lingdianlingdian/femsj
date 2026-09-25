@@ -4833,7 +4833,7 @@
         }
       ],
       "outputItemId": "dish_jiaoxiangyangcongfan",
-      "durationSec": 240,
+      "durationSec": 272,
       "unlockDay": 84,
       "speedupGemPerMin": 0.77,
       "evidence": {
@@ -4843,7 +4843,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Executable recipe. Ingredient relation seeded from PUBLIC_IMAGE; remaining runtime parameters are original defaults."
+        "note": "Executable recipe. Ingredient relation seeded from PUBLIC_IMAGE; evidence duration retained; remaining runtime parameters are original defaults."
       }
     },
     {
