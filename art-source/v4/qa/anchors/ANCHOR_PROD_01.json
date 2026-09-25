@@ -1,0 +1,37 @@
+{
+  "version": "4.0",
+  "anchor_id": "ANCHOR_PROD_01",
+  "job_id": "JOB_ANCHOR_PROD_01",
+  "file_path": "art-source/v4/anchors/ANCHOR_PROD_01.png",
+  "createdAt": "2026-09-25T08:51:07.539Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T08:51:07.539Z",
+  "decision": "APPROVE",
+  "hardGates": {
+    "originality": true,
+    "target_scope_only": true,
+    "no_baked_readable_text": true,
+    "no_unrequested_subjects": true,
+    "style_consistency": true
+  },
+  "acceptance": [
+    {
+      "criterion": "producer silhouette distinct from items",
+      "pass": true,
+      "note": "Deterministic V4 procedural canon; exact scope and palette contract."
+    },
+    {
+      "criterion": "clear interaction face",
+      "pass": true,
+      "note": "Deterministic V4 procedural canon; exact scope and palette contract."
+    },
+    {
+      "criterion": "space reserved for state FX",
+      "pass": true,
+      "note": "Deterministic V4 procedural canon; exact scope and palette contract."
+    }
+  ],
+  "notes": [
+    "Generated from repository-owned original procedural renderer; no third-party protected artwork."
+  ]
+}

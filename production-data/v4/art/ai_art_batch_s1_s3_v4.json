@@ -1,6 +1,6 @@
 {
-  "version": "4.1",
-  "generatedAt": "2026-09-25",
+  "version": "4.2-full-manifest",
+  "generatedAt": "2026-09-25T08:51:07.531Z",
   "scope": "ART-S1/S2/S3 + ART-S4 full 110-day content production jobs",
   "sourceQueue": "production-data/v4/art/art_production_queue_v4.csv",
   "rules": {
@@ -22,7 +22,7 @@
       "Transparent asset jobs are isolated objects, not style-guide posters."
     ]
   },
-  "jobCount": 213,
+  "jobCount": 353,
   "jobs": [
     {
       "job_id": "JOB_UI_BG_GLOBAL",
@@ -8929,6 +8929,4915 @@
         "asset id traceability",
         "state readability",
         "perspective consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_CARD_SHOP",
+      "asset_id": "ui_card_shop",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "420x500",
+      "transparent": true,
+      "states": [
+        "Normal",
+        "SoldOut"
+      ],
+      "prompt_spec": "Original V4 production asset for 商店商品卡; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_card_shop.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_SLOT_ALBUM",
+      "asset_id": "ui_slot_album",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "360x460",
+      "transparent": true,
+      "states": [
+        "Locked",
+        "Empty",
+        "Owned",
+        "New"
+      ],
+      "prompt_spec": "Original V4 production asset for 卡册卡位; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_slot_album.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_ICON_CLOSE",
+      "asset_id": "ui_icon_close",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal",
+        "Pressed"
+      ],
+      "prompt_spec": "Original V4 production asset for 关闭; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_icon_close.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_ICON_BACK",
+      "asset_id": "ui_icon_back",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal",
+        "Pressed"
+      ],
+      "prompt_spec": "Original V4 production asset for 返回; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_icon_back.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_ICON_LOCK",
+      "asset_id": "ui_icon_lock",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 锁; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_icon_lock.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_ICON_TIMER",
+      "asset_id": "ui_icon_timer",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 计时; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_icon_timer.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_UI_ICON_AD",
+      "asset_id": "ui_icon_ad",
+      "anchor_id": "ANCHOR_UI_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "UI",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 广告; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "ui_icon_ad.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "no baked copy"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_ROUCHANG",
+      "asset_id": "art_item_rouchang",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 肉肠; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_rouchang.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_PEIGEN",
+      "asset_id": "art_item_peigen",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 培根; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_peigen.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_ROUWAN",
+      "asset_id": "art_item_rouwan",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 肉丸; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_rouwan.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_NIUXIONGROU",
+      "asset_id": "art_item_niuxiongrou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 牛胸肉; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_niuxiongrou.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_KAOCHANG",
+      "asset_id": "art_dish_kaochang",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 烤肠; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_kaochang.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_YANXUNNIUXIONGROU",
+      "asset_id": "art_dish_yanxunniuxiongrou",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 烟熏牛胸肉; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_yanxunniuxiongrou.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_NENGLIANGYINLIAO",
+      "asset_id": "art_item_nengliangyinliao",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 能量饮料; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_nengliangyinliao.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XIANGBIN",
+      "asset_id": "art_item_xiangbin",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original V4 production asset for 香槟; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_xiangbin.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "recognizable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_007_AVATAR",
+      "asset_id": "char_goose_007_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客007头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_007_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_007_SPINE",
+      "asset_id": "char_goose_007_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客007场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_007_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_008_AVATAR",
+      "asset_id": "char_goose_008_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客008头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_008_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_008_SPINE",
+      "asset_id": "char_goose_008_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客008场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_008_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_009_AVATAR",
+      "asset_id": "char_goose_009_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客009头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_009_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_009_SPINE",
+      "asset_id": "char_goose_009_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客009场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_009_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_010_AVATAR",
+      "asset_id": "char_goose_010_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客010头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_010_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_010_SPINE",
+      "asset_id": "char_goose_010_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客010场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_010_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_011_AVATAR",
+      "asset_id": "char_goose_011_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客011头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_011_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_011_SPINE",
+      "asset_id": "char_goose_011_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客011场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_011_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_012_AVATAR",
+      "asset_id": "char_goose_012_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客012头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_012_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_012_SPINE",
+      "asset_id": "char_goose_012_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客012场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_012_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_013_AVATAR",
+      "asset_id": "char_goose_013_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客013头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_013_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_013_SPINE",
+      "asset_id": "char_goose_013_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客013场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_013_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_014_AVATAR",
+      "asset_id": "char_goose_014_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客014头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_014_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_014_SPINE",
+      "asset_id": "char_goose_014_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客014场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_014_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_015_AVATAR",
+      "asset_id": "char_goose_015_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客015头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_015_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_015_SPINE",
+      "asset_id": "char_goose_015_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客015场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_015_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_016_AVATAR",
+      "asset_id": "char_goose_016_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客016头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_016_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_016_SPINE",
+      "asset_id": "char_goose_016_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客016场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_016_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_017_AVATAR",
+      "asset_id": "char_goose_017_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客017头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_017_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_017_SPINE",
+      "asset_id": "char_goose_017_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客017场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_017_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_018_AVATAR",
+      "asset_id": "char_goose_018_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客018头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_018_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_018_SPINE",
+      "asset_id": "char_goose_018_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客018场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_018_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_019_AVATAR",
+      "asset_id": "char_goose_019_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客019头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_019_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_019_SPINE",
+      "asset_id": "char_goose_019_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客019场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_019_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_020_AVATAR",
+      "asset_id": "char_goose_020_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客020头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_020_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_020_SPINE",
+      "asset_id": "char_goose_020_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客020场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_020_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_021_AVATAR",
+      "asset_id": "char_goose_021_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客021头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_021_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_021_SPINE",
+      "asset_id": "char_goose_021_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客021场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_021_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_022_AVATAR",
+      "asset_id": "char_goose_022_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客022头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_022_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_022_SPINE",
+      "asset_id": "char_goose_022_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客022场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_022_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_023_AVATAR",
+      "asset_id": "char_goose_023_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客023头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_023_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_023_SPINE",
+      "asset_id": "char_goose_023_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客023场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_023_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_024_AVATAR",
+      "asset_id": "char_goose_024_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客024头像; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_024_avatar.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_024_SPINE",
+      "asset_id": "char_goose_024_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original V4 production asset for 肥鹅顾客024场景角色; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_024_spine.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_07_BEFORE",
+      "asset_id": "street_01_build_07_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑7改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_07_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_07_AFTER",
+      "asset_id": "street_01_build_07_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑7改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_07_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_08_BEFORE",
+      "asset_id": "street_01_build_08_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑8改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_08_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_08_AFTER",
+      "asset_id": "street_01_build_08_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑8改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_08_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_09_BEFORE",
+      "asset_id": "street_01_build_09_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑9改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_09_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_09_AFTER",
+      "asset_id": "street_01_build_09_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑9改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_09_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_10_BEFORE",
+      "asset_id": "street_01_build_10_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑10改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_10_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_10_AFTER",
+      "asset_id": "street_01_build_10_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑10改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_10_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_11_BEFORE",
+      "asset_id": "street_01_build_11_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑11改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_11_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_11_AFTER",
+      "asset_id": "street_01_build_11_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑11改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_11_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_12_BEFORE",
+      "asset_id": "street_01_build_12_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑12改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_12_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_12_AFTER",
+      "asset_id": "street_01_build_12_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域1建筑12改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_12_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_01_BEFORE",
+      "asset_id": "street_02_build_01_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑1改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_01_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_01_AFTER",
+      "asset_id": "street_02_build_01_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑1改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_01_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_02_BEFORE",
+      "asset_id": "street_02_build_02_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑2改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_02_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_02_AFTER",
+      "asset_id": "street_02_build_02_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑2改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_02_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_03_BEFORE",
+      "asset_id": "street_02_build_03_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑3改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_03_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_03_AFTER",
+      "asset_id": "street_02_build_03_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑3改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_03_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_04_BEFORE",
+      "asset_id": "street_02_build_04_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑4改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_04_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_04_AFTER",
+      "asset_id": "street_02_build_04_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑4改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_04_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_05_BEFORE",
+      "asset_id": "street_02_build_05_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑5改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_05_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_05_AFTER",
+      "asset_id": "street_02_build_05_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑5改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_05_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_06_BEFORE",
+      "asset_id": "street_02_build_06_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑6改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_06_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_06_AFTER",
+      "asset_id": "street_02_build_06_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑6改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_06_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_07_BEFORE",
+      "asset_id": "street_02_build_07_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑7改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_07_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_07_AFTER",
+      "asset_id": "street_02_build_07_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑7改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_07_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_08_BEFORE",
+      "asset_id": "street_02_build_08_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑8改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_08_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_08_AFTER",
+      "asset_id": "street_02_build_08_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑8改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_08_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_09_BEFORE",
+      "asset_id": "street_02_build_09_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑9改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_09_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_09_AFTER",
+      "asset_id": "street_02_build_09_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑9改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_09_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_10_BEFORE",
+      "asset_id": "street_02_build_10_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑10改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_10_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_10_AFTER",
+      "asset_id": "street_02_build_10_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑10改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_10_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_11_BEFORE",
+      "asset_id": "street_02_build_11_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑11改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_11_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_11_AFTER",
+      "asset_id": "street_02_build_11_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑11改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_11_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_12_BEFORE",
+      "asset_id": "street_02_build_12_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑12改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_12_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_02_BUILD_12_AFTER",
+      "asset_id": "street_02_build_12_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域2建筑12改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_02_build_12_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_01_BEFORE",
+      "asset_id": "street_03_build_01_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑1改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_01_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_01_AFTER",
+      "asset_id": "street_03_build_01_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑1改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_01_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_02_BEFORE",
+      "asset_id": "street_03_build_02_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑2改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_02_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_02_AFTER",
+      "asset_id": "street_03_build_02_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑2改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_02_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_03_BEFORE",
+      "asset_id": "street_03_build_03_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑3改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_03_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_03_AFTER",
+      "asset_id": "street_03_build_03_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑3改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_03_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_04_BEFORE",
+      "asset_id": "street_03_build_04_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑4改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_04_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_04_AFTER",
+      "asset_id": "street_03_build_04_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑4改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_04_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_05_BEFORE",
+      "asset_id": "street_03_build_05_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑5改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_05_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_05_AFTER",
+      "asset_id": "street_03_build_05_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑5改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_05_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_06_BEFORE",
+      "asset_id": "street_03_build_06_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑6改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_06_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_06_AFTER",
+      "asset_id": "street_03_build_06_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑6改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_06_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_07_BEFORE",
+      "asset_id": "street_03_build_07_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑7改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_07_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_07_AFTER",
+      "asset_id": "street_03_build_07_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑7改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_07_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_08_BEFORE",
+      "asset_id": "street_03_build_08_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑8改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_08_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_08_AFTER",
+      "asset_id": "street_03_build_08_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑8改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_08_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_09_BEFORE",
+      "asset_id": "street_03_build_09_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑9改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_09_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_09_AFTER",
+      "asset_id": "street_03_build_09_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑9改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_09_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_10_BEFORE",
+      "asset_id": "street_03_build_10_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑10改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_10_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_10_AFTER",
+      "asset_id": "street_03_build_10_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑10改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_10_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_11_BEFORE",
+      "asset_id": "street_03_build_11_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑11改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_11_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_11_AFTER",
+      "asset_id": "street_03_build_11_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑11改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_11_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_12_BEFORE",
+      "asset_id": "street_03_build_12_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑12改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_12_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_03_BUILD_12_AFTER",
+      "asset_id": "street_03_build_12_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域3建筑12改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_03_build_12_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_01_BEFORE",
+      "asset_id": "street_04_build_01_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑1改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_01_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_01_AFTER",
+      "asset_id": "street_04_build_01_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑1改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_01_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_02_BEFORE",
+      "asset_id": "street_04_build_02_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑2改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_02_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_02_AFTER",
+      "asset_id": "street_04_build_02_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑2改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_02_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_03_BEFORE",
+      "asset_id": "street_04_build_03_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑3改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_03_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_03_AFTER",
+      "asset_id": "street_04_build_03_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑3改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_03_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_04_BEFORE",
+      "asset_id": "street_04_build_04_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑4改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_04_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_04_AFTER",
+      "asset_id": "street_04_build_04_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑4改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_04_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_05_BEFORE",
+      "asset_id": "street_04_build_05_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑5改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_05_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_05_AFTER",
+      "asset_id": "street_04_build_05_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑5改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_05_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_06_BEFORE",
+      "asset_id": "street_04_build_06_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑6改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_06_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_06_AFTER",
+      "asset_id": "street_04_build_06_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑6改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_06_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_07_BEFORE",
+      "asset_id": "street_04_build_07_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑7改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_07_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_07_AFTER",
+      "asset_id": "street_04_build_07_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑7改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_07_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_08_BEFORE",
+      "asset_id": "street_04_build_08_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑8改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_08_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_08_AFTER",
+      "asset_id": "street_04_build_08_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑8改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_08_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_09_BEFORE",
+      "asset_id": "street_04_build_09_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑9改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_09_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_09_AFTER",
+      "asset_id": "street_04_build_09_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑9改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_09_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_10_BEFORE",
+      "asset_id": "street_04_build_10_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑10改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_10_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_10_AFTER",
+      "asset_id": "street_04_build_10_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑10改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_10_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_11_BEFORE",
+      "asset_id": "street_04_build_11_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑11改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_11_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_11_AFTER",
+      "asset_id": "street_04_build_11_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑11改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_11_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_12_BEFORE",
+      "asset_id": "street_04_build_12_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑12改造前; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_12_before.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_04_BUILD_12_AFTER",
+      "asset_id": "street_04_build_12_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original V4 production asset for 区域4建筑12改造后; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_04_build_12_after.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "stable pivot/footprint",
+        "before/after family consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_FX_REWARD_FLY",
+      "asset_id": "fx_reward_fly",
+      "anchor_id": "ANCHOR_FX_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "VFX",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Play"
+      ],
+      "prompt_spec": "Original V4 production asset for 资源飞入; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "fx_reward_fly.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability"
+      ]
+    },
+    {
+      "job_id": "JOB_FX_BUILD_REVEAL",
+      "asset_id": "fx_build_reveal",
+      "anchor_id": "ANCHOR_FX_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "VFX",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Play"
+      ],
+      "prompt_spec": "Original V4 production asset for 建设完成; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "fx_build_reveal.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability"
+      ]
+    },
+    {
+      "job_id": "JOB_FX_UNLOCK",
+      "asset_id": "fx_unlock",
+      "anchor_id": "ANCHOR_FX_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "VFX",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Play"
+      ],
+      "prompt_spec": "Original V4 production asset for 新内容解锁; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "fx_unlock.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability"
+      ]
+    },
+    {
+      "job_id": "JOB_FX_CARD_REVEAL",
+      "asset_id": "fx_card_reveal",
+      "anchor_id": "ANCHOR_FX_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "VFX",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Play"
+      ],
+      "prompt_spec": "Original V4 production asset for 卡牌揭示; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "fx_card_reveal.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability"
+      ]
+    },
+    {
+      "job_id": "JOB_FX_EVENT_BOOST",
+      "asset_id": "fx_event_boost",
+      "anchor_id": "ANCHOR_FX_01",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "VFX",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Play"
+      ],
+      "prompt_spec": "Original V4 production asset for 活动增强; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "fx_event_boost.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability"
       ]
     }
   ]

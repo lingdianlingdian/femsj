@@ -1,0 +1,25 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25T08:51:07.539Z",
+  "renderer": "tools/art-procedural-generator/generate.mjs",
+  "styleAnchors": 14,
+  "productionAssets": 353,
+  "approved": 353,
+  "categories": {
+    "UI": 15,
+    "Board": 4,
+    "BoardItem": 36,
+    "Dish": 52,
+    "Producer": 14,
+    "Cookware": 6,
+    "VFX": 8,
+    "CharacterCanon": 8,
+    "Building": 96,
+    "CharacterAvatar": 26,
+    "CharacterStory": 8,
+    "CharacterNPC": 26,
+    "Item": 49,
+    "Special": 5
+  },
+  "note": "Original deterministic V4 full-manifest art pack. Final Cocos prefab wiring is tracked separately from art approval."
+}

@@ -1,0 +1,27 @@
+{
+  "version": "4.0",
+  "asset_id": "char_goose_016_avatar",
+  "job_id": "JOB_CHAR_GOOSE_016_AVATAR",
+  "category": "CharacterAvatar",
+  "file_path": "art-source/v4/exports/art-full/char_goose_016_avatar.png",
+  "createdAt": "2026-09-25T08:51:07.539Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T08:51:07.539Z",
+  "decision": "APPROVE",
+  "gates": {
+    "canon": true,
+    "readability": true,
+    "perspective": true,
+    "palette": true,
+    "bundle": true,
+    "performance": true,
+    "originality": true,
+    "canon_identity": true,
+    "fixed_props": true,
+    "proportion_consistency": true,
+    "avatar_64px_identity": true
+  },
+  "notes": [
+    "Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text."
+  ]
+}

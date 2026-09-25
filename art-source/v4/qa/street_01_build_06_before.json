@@ -1,0 +1,28 @@
+{
+  "version": "4.0",
+  "asset_id": "street_01_build_06_before",
+  "job_id": "JOB_STREET_01_BUILD_06_BEFORE",
+  "category": "Building",
+  "file_path": "art-source/v4/exports/art-s3/street_01_build_06_before.png",
+  "createdAt": "2026-09-25T08:51:07.539Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T08:51:07.539Z",
+  "decision": "APPROVE",
+  "gates": {
+    "canon": true,
+    "readability": true,
+    "perspective": true,
+    "palette": true,
+    "bundle": true,
+    "performance": true,
+    "originality": true,
+    "paired_pivot": true,
+    "paired_footprint": true,
+    "bounds_drift_lte_8pct": true,
+    "layerability": true,
+    "no_readable_signage": true
+  },
+  "notes": [
+    "Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text."
+  ]
+}

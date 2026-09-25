@@ -1,0 +1,26 @@
+{
+  "version": "4.0",
+  "asset_id": "ui_icon_lock",
+  "job_id": "JOB_UI_ICON_LOCK",
+  "category": "UI",
+  "file_path": "art-source/v4/exports/art-full/ui_icon_lock.png",
+  "createdAt": "2026-09-25T08:51:07.539Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T08:51:07.539Z",
+  "decision": "APPROVE",
+  "gates": {
+    "canon": true,
+    "readability": true,
+    "perspective": true,
+    "palette": true,
+    "bundle": true,
+    "performance": true,
+    "originality": true,
+    "nine_slice_safe": true,
+    "state_readability": true,
+    "no_baked_copy": true
+  },
+  "notes": [
+    "Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text."
+  ]
+}

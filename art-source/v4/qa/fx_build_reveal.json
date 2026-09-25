@@ -1,0 +1,25 @@
+{
+  "version": "4.0",
+  "asset_id": "fx_build_reveal",
+  "job_id": "JOB_FX_BUILD_REVEAL",
+  "category": "VFX",
+  "file_path": "art-source/v4/exports/art-full/fx_build_reveal.png",
+  "createdAt": "2026-09-25T08:51:07.539Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T08:51:07.539Z",
+  "decision": "APPROVE",
+  "gates": {
+    "canon": true,
+    "readability": true,
+    "perspective": true,
+    "palette": true,
+    "bundle": true,
+    "performance": true,
+    "originality": true,
+    "low_end_fallback": true,
+    "critical_ui_clear": true
+  },
+  "notes": [
+    "Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text."
+  ]
+}
