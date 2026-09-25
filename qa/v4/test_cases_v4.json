@@ -1,0 +1,1812 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "count": 109,
+  "severity": {
+    "P0": "Release blocker",
+    "P1": "Must pass before public release",
+    "P2": "Polish/quality"
+  },
+  "cases": [
+    {
+      "id": "TC_BOARD_001",
+      "area": "BOARD",
+      "title": "空格移动物品",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "棋盘存在A格物品，B格为空",
+      "steps": [
+        "拖A到B"
+      ],
+      "expected": [
+        "A变空",
+        "B持有同一instanceId",
+        "revision+1"
+      ],
+      "tags": [
+        "atomic"
+      ]
+    },
+    {
+      "id": "TC_BOARD_002",
+      "area": "BOARD",
+      "title": "相同物品合法合并",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "A/B为同Item同Level",
+      "steps": [
+        "A拖到B"
+      ],
+      "expected": [
+        "A/B两个实例消耗",
+        "只生成1个目标实例",
+        "无重复instanceId"
+      ],
+      "tags": [
+        "merge"
+      ]
+    },
+    {
+      "id": "TC_BOARD_003",
+      "area": "BOARD",
+      "title": "不同物品禁止合并",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "A/B物品不同",
+      "steps": [
+        "A拖到B"
+      ],
+      "expected": [
+        "状态不变",
+        "无资源变化",
+        "有非法反馈"
+      ],
+      "tags": [
+        "merge"
+      ]
+    },
+    {
+      "id": "TC_BOARD_004",
+      "area": "BOARD",
+      "title": "满盘移动不丢物",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "63格满盘",
+      "steps": [
+        "尝试拖拽交换到非合法目标"
+      ],
+      "expected": [
+        "原实例仍存在唯一位置"
+      ],
+      "tags": [
+        "invariant"
+      ]
+    },
+    {
+      "id": "TC_BOARD_005",
+      "area": "BOARD",
+      "title": "合并动画期间切后台",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "开始合法合并",
+      "steps": [
+        "触发后立即后台",
+        "恢复"
+      ],
+      "expected": [
+        "最终状态仅一次合并",
+        "无双实例"
+      ],
+      "tags": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "TC_BOARD_006",
+      "area": "BOARD",
+      "title": "强杀后恢复移动",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "刚完成Move命令未等视觉结束",
+      "steps": [
+        "强杀",
+        "重启"
+      ],
+      "expected": [
+        "服务端/快照恢复最终正确位置"
+      ],
+      "tags": [
+        "save"
+      ]
+    },
+    {
+      "id": "TC_BOARD_007",
+      "area": "BOARD",
+      "title": "锁定格不可放置",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "存在LOCKED cell",
+      "steps": [
+        "拖物到锁格"
+      ],
+      "expected": [
+        "拒绝",
+        "物品回原位"
+      ],
+      "tags": [
+        "locked"
+      ]
+    },
+    {
+      "id": "TC_BOARD_008",
+      "area": "BOARD",
+      "title": "Blocked格不可操作",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "存在BLOCKED cell",
+      "steps": [
+        "点击/拖拽"
+      ],
+      "expected": [
+        "拒绝且不触发资源"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_BOARD_009",
+      "area": "BOARD",
+      "title": "拖出棋盘回弹",
+      "severity": "P2",
+      "automation": "MANUAL",
+      "preconditions": "有可拖物",
+      "steps": [
+        "拖出棋盘释放"
+      ],
+      "expected": [
+        "0.18~0.24s回弹",
+        "实例位置不变"
+      ],
+      "tags": [
+        "ux"
+      ]
+    },
+    {
+      "id": "TC_BOARD_010",
+      "area": "BOARD",
+      "title": "订单需求高亮正确",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "订单需要ItemX且盘上存在",
+      "steps": [
+        "选择订单"
+      ],
+      "expected": [
+        "所有ItemX实例高亮",
+        "其他不高亮"
+      ],
+      "tags": [
+        "projection"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_001",
+      "area": "PRODUCER",
+      "title": "正常产出扣体力一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "Producer READY；体力>0；有空格",
+      "steps": [
+        "ProducerTap"
+      ],
+      "expected": [
+        "生成1次配置结果",
+        "体力按energyCost扣1次"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_002",
+      "area": "PRODUCER",
+      "title": "0体力禁止产出",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "体力0",
+      "steps": [
+        "ProducerTap"
+      ],
+      "expected": [
+        "无物品",
+        "无负体力",
+        "返回ENERGY_NOT_ENOUGH"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_003",
+      "area": "PRODUCER",
+      "title": "满盘禁止扣体力",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "盘满；体力>0",
+      "steps": [
+        "ProducerTap"
+      ],
+      "expected": [
+        "无产物",
+        "体力不变",
+        "BOARD_FULL"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_004",
+      "area": "PRODUCER",
+      "title": "容量耗尽进入冷却",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "remainingCapacity=1",
+      "steps": [
+        "ProducerTap"
+      ],
+      "expected": [
+        "产出后capacity=0",
+        "cooldownEndAt设置"
+      ],
+      "tags": [
+        "timer"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_005",
+      "area": "PRODUCER",
+      "title": "冷却中不可产出",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "cooldownEndAt>serverTime",
+      "steps": [
+        "ProducerTap"
+      ],
+      "expected": [
+        "不产出",
+        "不扣体力",
+        "返回剩余时间"
+      ],
+      "tags": [
+        "timer"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_006",
+      "area": "PRODUCER",
+      "title": "冷却结束自动READY",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "cooldown接近结束",
+      "steps": [
+        "推进ServerTime"
+      ],
+      "expected": [
+        "恢复capacity",
+        "状态READY"
+      ],
+      "tags": [
+        "timer"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_007",
+      "area": "PRODUCER",
+      "title": "修改本机时间不跳冷却",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "Producer cooldown",
+      "steps": [
+        "设备时间+24h",
+        "回游戏"
+      ],
+      "expected": [
+        "仍按ServerTime剩余"
+      ],
+      "tags": [
+        "anti-cheat"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_008",
+      "area": "PRODUCER",
+      "title": "Boost无限生产不消耗capacity",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "PRODUCER_UNLIMITED modifier ACTIVE",
+      "steps": [
+        "连续产出20次"
+      ],
+      "expected": [
+        "capacity不减少",
+        "体力规则按modifier配置"
+      ],
+      "tags": [
+        "event"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_009",
+      "area": "PRODUCER",
+      "title": "Boost结束恢复真实capacity",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "无限生产即将结束",
+      "steps": [
+        "跨结束时间产出"
+      ],
+      "expected": [
+        "结束后按原capacity继续"
+      ],
+      "tags": [
+        "event"
+      ]
+    },
+    {
+      "id": "TC_PRODUCER_010",
+      "area": "PRODUCER",
+      "title": "长按连续生产停止条件",
+      "severity": "P1",
+      "automation": "MANUAL",
+      "preconditions": "启用长按生产",
+      "steps": [
+        "长按直到体力0/满盘/冷却"
+      ],
+      "expected": [
+        "遇任一条件立即停止",
+        "不多扣1次"
+      ],
+      "tags": [
+        "ux"
+      ]
+    },
+    {
+      "id": "TC_COOK_001",
+      "area": "COOK",
+      "title": "合法配方开始烹饪",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "厨具IDLE；输入齐全",
+      "steps": [
+        "StartCooking"
+      ],
+      "expected": [
+        "原子消耗输入",
+        "state=COOKING",
+        "finishAt=ServerTime+duration"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_COOK_002",
+      "area": "COOK",
+      "title": "缺材料不能开始",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "缺1个输入",
+      "steps": [
+        "StartCooking"
+      ],
+      "expected": [
+        "材料不消耗",
+        "保持IDLE"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_COOK_003",
+      "area": "COOK",
+      "title": "忙碌厨具拒绝新配方",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "state=COOKING",
+      "steps": [
+        "StartCooking第二个配方"
+      ],
+      "expected": [
+        "拒绝",
+        "原配方不受影响"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_COOK_004",
+      "area": "COOK",
+      "title": "完成只领取一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "state=READY",
+      "steps": [
+        "并发Collect两次"
+      ],
+      "expected": [
+        "只发1份成品",
+        "第二次返回已领取/冲突"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_COOK_005",
+      "area": "COOK",
+      "title": "后台跨完成时间",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "剩余10秒",
+      "steps": [
+        "后台60秒",
+        "回来"
+      ],
+      "expected": [
+        "state=READY",
+        "不重复产物"
+      ],
+      "tags": [
+        "lifecycle"
+      ]
+    },
+    {
+      "id": "TC_COOK_006",
+      "area": "COOK",
+      "title": "改系统时间不提前完成",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "正在烹饪",
+      "steps": [
+        "设备时间+2h"
+      ],
+      "expected": [
+        "finishAt基于ServerTime"
+      ],
+      "tags": [
+        "anti-cheat"
+      ]
+    },
+    {
+      "id": "TC_COOK_007",
+      "area": "COOK",
+      "title": "加速扣钻石与完成原子",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "可加速；钻石足够",
+      "steps": [
+        "SpeedUp"
+      ],
+      "expected": [
+        "钻石只扣一次",
+        "状态按规则提前/完成"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_COOK_008",
+      "area": "COOK",
+      "title": "加速钻石不足",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "钻石不足",
+      "steps": [
+        "SpeedUp"
+      ],
+      "expected": [
+        "不扣、不改变finishAt"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_COOK_009",
+      "area": "COOK",
+      "title": "Ready视觉不覆盖计时数据",
+      "severity": "P2",
+      "automation": "MANUAL",
+      "preconditions": "state READY",
+      "steps": [
+        "观察界面"
+      ],
+      "expected": [
+        "Ready明确且仍可查看菜名/产物"
+      ],
+      "tags": [
+        "ui"
+      ]
+    },
+    {
+      "id": "TC_COOK_010",
+      "area": "COOK",
+      "title": "活动加速结束边界",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "COOK_SPEED modifier即将结束",
+      "steps": [
+        "结束前开炉",
+        "跨结束"
+      ],
+      "expected": [
+        "finishAt按开始时规则或配置明确策略一致"
+      ],
+      "tags": [
+        "event"
+      ]
+    },
+    {
+      "id": "TC_ORDER_001",
+      "area": "ORDER",
+      "title": "需求齐全提交",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "订单满足",
+      "steps": [
+        "SubmitOrder"
+      ],
+      "expected": [
+        "原子消耗物品",
+        "奖励入账",
+        "订单完成/替换"
+      ],
+      "tags": [
+        "atomic",
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_ORDER_002",
+      "area": "ORDER",
+      "title": "需求不足提交失败",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "缺1个物品",
+      "steps": [
+        "SubmitOrder"
+      ],
+      "expected": [
+        "不消耗已有材料",
+        "不发奖励"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ORDER_003",
+      "area": "ORDER",
+      "title": "同一实例不能供两个订单",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "两个订单都需要同一唯一实例",
+      "steps": [
+        "并发提交"
+      ],
+      "expected": [
+        "最多一个成功"
+      ],
+      "tags": [
+        "concurrency"
+      ]
+    },
+    {
+      "id": "TC_ORDER_004",
+      "area": "ORDER",
+      "title": "重复Submit幂等",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同Idempotency-Key",
+      "steps": [
+        "重复请求10次"
+      ],
+      "expected": [
+        "奖励只发一次"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_ORDER_005",
+      "area": "ORDER",
+      "title": "订单卡拥有数量实时刷新",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "订单缺ItemX",
+      "steps": [
+        "合成出ItemX"
+      ],
+      "expected": [
+        "owned数量更新"
+      ],
+      "tags": [
+        "projection"
+      ]
+    },
+    {
+      "id": "TC_ORDER_006",
+      "area": "ORDER",
+      "title": "提交后奖励飞入时机",
+      "severity": "P2",
+      "automation": "MANUAL",
+      "preconditions": "成功提交",
+      "steps": [
+        "观察动画"
+      ],
+      "expected": [
+        "服务端确认后才播放最终资源飞入"
+      ],
+      "tags": [
+        "ui"
+      ]
+    },
+    {
+      "id": "TC_ORDER_007",
+      "area": "ORDER",
+      "title": "活动积分与订单奖励同事务",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "活动监听ORDER_COMPLETE",
+      "steps": [
+        "提交订单"
+      ],
+      "expected": [
+        "订单奖励与活动进度不重复/不丢"
+      ],
+      "tags": [
+        "event"
+      ]
+    },
+    {
+      "id": "TC_ORDER_008",
+      "area": "ORDER",
+      "title": "活动结束瞬间订单提交",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "serverTime接近event end",
+      "steps": [
+        "在边界提交"
+      ],
+      "expected": [
+        "按服务器接收/命令时间规则唯一判定"
+      ],
+      "tags": [
+        "boundary"
+      ]
+    },
+    {
+      "id": "TC_ORDER_009",
+      "area": "ORDER",
+      "title": "订单替换不覆盖待领取状态",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "完成订单触发新单",
+      "steps": [
+        "网络重试"
+      ],
+      "expected": [
+        "不会同时出现两个相同slot active"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ORDER_010",
+      "area": "ORDER",
+      "title": "多需求物显示不溢出",
+      "severity": "P2",
+      "automation": "MANUAL",
+      "preconditions": "订单4个requirements",
+      "steps": [
+        "打开主盘/详情"
+      ],
+      "expected": [
+        "布局不爆版"
+      ],
+      "tags": [
+        "ui"
+      ]
+    },
+    {
+      "id": "TC_DAY_001",
+      "area": "DAY",
+      "title": "完成全部订单进入结算",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "仅剩最后单",
+      "steps": [
+        "完成"
+      ],
+      "expected": [
+        "Day状态SETTLEMENT",
+        "奖励可领取"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_DAY_002",
+      "area": "DAY",
+      "title": "日奖励只领一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "Day complete",
+      "steps": [
+        "重复Claim"
+      ],
+      "expected": [
+        "只发一次"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_DAY_003",
+      "area": "DAY",
+      "title": "Next Day前保存完成",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "Day完成",
+      "steps": [
+        "点击Next",
+        "立即强杀"
+      ],
+      "expected": [
+        "重启后Day不可回退/重复领奖"
+      ],
+      "tags": [
+        "save"
+      ]
+    },
+    {
+      "id": "TC_DAY_004",
+      "area": "DAY",
+      "title": "新解锁队列顺序",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "同日多个unlock",
+      "steps": [
+        "结算"
+      ],
+      "expected": [
+        "按配置顺序展示",
+        "全部可恢复"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_DAY_005",
+      "area": "DAY",
+      "title": "Build节点与Day解锁一致",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "day进入节点unlockDay",
+      "steps": [
+        "切到街区"
+      ],
+      "expected": [
+        "可用节点准确"
+      ],
+      "tags": [
+        "build"
+      ]
+    },
+    {
+      "id": "TC_DAY_006",
+      "area": "DAY",
+      "title": "跨日活动Hook只触发一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "DayComplete触发活动",
+      "steps": [
+        "重连/重放"
+      ],
+      "expected": [
+        "Hook一次"
+      ],
+      "tags": [
+        "event"
+      ]
+    },
+    {
+      "id": "TC_SAVE_001",
+      "area": "SAVE",
+      "title": "启动加载最新revision",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "服务器revision高于本地",
+      "steps": [
+        "登录"
+      ],
+      "expected": [
+        "加载/合并到服务器最新revision"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SAVE_002",
+      "area": "SAVE",
+      "title": "Revision冲突处理",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "双设备revision分叉",
+      "steps": [
+        "旧设备提交"
+      ],
+      "expected": [
+        "409 REVISION_CONFLICT",
+        "不覆盖新进度"
+      ],
+      "tags": [
+        "concurrency"
+      ]
+    },
+    {
+      "id": "TC_SAVE_003",
+      "area": "SAVE",
+      "title": "快照+Journal重放一致",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "有snapshot+journal",
+      "steps": [
+        "重建状态"
+      ],
+      "expected": [
+        "hash等于服务器projection"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SAVE_004",
+      "area": "SAVE",
+      "title": "损坏本地缓存降级云端",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "破坏本地save",
+      "steps": [
+        "启动"
+      ],
+      "expected": [
+        "丢弃坏缓存",
+        "使用云快照"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SAVE_005",
+      "area": "SAVE",
+      "title": "Schema迁移",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "旧schemaVersion",
+      "steps": [
+        "升级客户端"
+      ],
+      "expected": [
+        "迁移成功且经济值不变"
+      ],
+      "tags": [
+        "migration"
+      ]
+    },
+    {
+      "id": "TC_SAVE_006",
+      "area": "SAVE",
+      "title": "迁移失败回滚",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "构造非法旧存档",
+      "steps": [
+        "迁移"
+      ],
+      "expected": [
+        "保留备份",
+        "不覆盖最后可用存档"
+      ],
+      "tags": [
+        "migration"
+      ]
+    },
+    {
+      "id": "TC_SAVE_007",
+      "area": "SAVE",
+      "title": "离线普通移动恢复",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "允许local-first操作",
+      "steps": [
+        "离线移动/合并",
+        "恢复网络"
+      ],
+      "expected": [
+        "安全命令同步"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SAVE_008",
+      "area": "SAVE",
+      "title": "离线关键经济禁止伪成功",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "断网",
+      "steps": [
+        "尝试支付/广告领奖"
+      ],
+      "expected": [
+        "不本地发正式奖励"
+      ],
+      "tags": [
+        "economy"
+      ]
+    },
+    {
+      "id": "TC_ECON_001",
+      "area": "ECON",
+      "title": "金币不可为负",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "金币<购买成本",
+      "steps": [
+        "购买"
+      ],
+      "expected": [
+        "拒绝",
+        "余额不变"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ECON_002",
+      "area": "ECON",
+      "title": "钻石不可为负",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "钻石不足",
+      "steps": [
+        "加速/刷新"
+      ],
+      "expected": [
+        "拒绝"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ECON_003",
+      "area": "ECON",
+      "title": "奖励Ledger唯一",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同source+claimId",
+      "steps": [
+        "重复发奖"
+      ],
+      "expected": [
+        "Ledger只1条"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_ECON_004",
+      "area": "ECON",
+      "title": "资源上溢规则",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "Energy接近cap",
+      "steps": [
+        "领取大量Energy"
+      ],
+      "expected": [
+        "按overflow规则处理，不静默丢"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ECON_005",
+      "area": "ECON",
+      "title": "自然恢复达到cap停止",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "energy=cap-1",
+      "steps": [
+        "推进时间"
+      ],
+      "expected": [
+        "到cap后停止累积自然恢复"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ECON_006",
+      "area": "ECON",
+      "title": "购买体力梯度按Remote Config",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "配置购买阶梯",
+      "steps": [
+        "连续购买"
+      ],
+      "expected": [
+        "成本与索引正确"
+      ],
+      "tags": [
+        "liveops"
+      ]
+    },
+    {
+      "id": "TC_ECON_007",
+      "area": "ECON",
+      "title": "Remote Config更新不篡改已发奖励",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "领奖前后切配置",
+      "steps": [
+        "执行"
+      ],
+      "expected": [
+        "一次操作使用单一配置版本"
+      ],
+      "tags": [
+        "liveops"
+      ]
+    },
+    {
+      "id": "TC_ECON_008",
+      "area": "ECON",
+      "title": "经济事件包含configVersion",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "任意资源变化",
+      "steps": [
+        "检查日志"
+      ],
+      "expected": [
+        "含configVersion/contentRevision"
+      ],
+      "tags": [
+        "observability"
+      ]
+    },
+    {
+      "id": "TC_ADS_001",
+      "area": "ADS",
+      "title": "广告验证成功发奖一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "有效verificationToken",
+      "steps": [
+        "Claim"
+      ],
+      "expected": [
+        "发奖一次",
+        "次数-1"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ADS_002",
+      "area": "ADS",
+      "title": "广告验证失败不扣次数",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "无效token",
+      "steps": [
+        "Claim"
+      ],
+      "expected": [
+        "不发奖",
+        "次数不减"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ADS_003",
+      "area": "ADS",
+      "title": "广告重复回调幂等",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同token/idem key",
+      "steps": [
+        "重复10次"
+      ],
+      "expected": [
+        "只发1次"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_ADS_004",
+      "area": "ADS",
+      "title": "广告中断",
+      "severity": "P1",
+      "automation": "MANUAL",
+      "preconditions": "开始广告",
+      "steps": [
+        "杀进程/来电中断"
+      ],
+      "expected": [
+        "未验证完成不发奖"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ADS_005",
+      "area": "ADS",
+      "title": "每日次数Remote Config",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "dailyCount变化",
+      "steps": [
+        "跨配置/跨自然日"
+      ],
+      "expected": [
+        "按生效配置和reset规则"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PAY_001",
+      "area": "PAY",
+      "title": "正常支付发货一次",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "有效receipt",
+      "steps": [
+        "Verify"
+      ],
+      "expected": [
+        "Entitlement发放",
+        "Ledger有transactionId"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PAY_002",
+      "area": "PAY",
+      "title": "重复支付回调",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同transactionId",
+      "steps": [
+        "Verify 10次"
+      ],
+      "expected": [
+        "只发货一次",
+        "返回原结果"
+      ],
+      "tags": [
+        "idempotent"
+      ]
+    },
+    {
+      "id": "TC_PAY_003",
+      "area": "PAY",
+      "title": "支付成功客户端崩溃",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "平台已扣款，发货响应前崩溃",
+      "steps": [
+        "重启",
+        "reconcile"
+      ],
+      "expected": [
+        "补发且不重复"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PAY_004",
+      "area": "PAY",
+      "title": "非法receipt",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "伪造receipt",
+      "steps": [
+        "Verify"
+      ],
+      "expected": [
+        "422",
+        "不发货"
+      ],
+      "tags": [
+        "anti-cheat"
+      ]
+    },
+    {
+      "id": "TC_PAY_005",
+      "area": "PAY",
+      "title": "SKU价格使用平台返回",
+      "severity": "P0",
+      "automation": "MANUAL",
+      "preconditions": "平台价格本地化",
+      "steps": [
+        "打开充值页"
+      ],
+      "expected": [
+        "显示SDK价格，不硬编码"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PAY_006",
+      "area": "PAY",
+      "title": "礼包过期点击支付",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "offer已过期",
+      "steps": [
+        "Buy"
+      ],
+      "expected": [
+        "OFFER_EXPIRED",
+        "不创建订单"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PAY_007",
+      "area": "PAY",
+      "title": "退款/撤销后端可追踪",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "模拟provider revoke",
+      "steps": [
+        "处理webhook"
+      ],
+      "expected": [
+        "Ledger标记并执行产品策略"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_001",
+      "area": "LIVEOPS",
+      "title": "签名验证通过",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "合法ED25519配置",
+      "steps": [
+        "bootstrap"
+      ],
+      "expected": [
+        "接受并缓存last-known-good"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_002",
+      "area": "LIVEOPS",
+      "title": "签名失败拒绝",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "篡改payload",
+      "steps": [
+        "bootstrap"
+      ],
+      "expected": [
+        "拒绝",
+        "继续使用last-known-good"
+      ],
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "id": "TC_LIVEOPS_003",
+      "area": "LIVEOPS",
+      "title": "validFrom前不生效",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "未来配置",
+      "steps": [
+        "拉取"
+      ],
+      "expected": [
+        "缓存但不激活"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_004",
+      "area": "LIVEOPS",
+      "title": "灰度桶稳定",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "10% rollout",
+      "steps": [
+        "同PlayerId多次计算"
+      ],
+      "expected": [
+        "始终同桶"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_005",
+      "area": "LIVEOPS",
+      "title": "回滚新Envelope",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "生产配置异常",
+      "steps": [
+        "发布rollbackOf"
+      ],
+      "expected": [
+        "切回稳定payload",
+        "版本号递增"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_006",
+      "area": "LIVEOPS",
+      "title": "旧客户端未知Flag默认false",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "新flag",
+      "steps": [
+        "旧客户端加载"
+      ],
+      "expected": [
+        "不崩溃",
+        "默认false"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_007",
+      "area": "LIVEOPS",
+      "title": "活动SCHEDULED到ACTIVE",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "跨startAt",
+      "steps": [
+        "推进ServerTime"
+      ],
+      "expected": [
+        "状态正确"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_008",
+      "area": "LIVEOPS",
+      "title": "ACTIVE到SETTLING到ENDED",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "跨endAt",
+      "steps": [
+        "结算"
+      ],
+      "expected": [
+        "已达成奖励AUTO_MAIL"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_009",
+      "area": "LIVEOPS",
+      "title": "活动入口消失不吞奖励",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "结束前达成未点领取",
+      "steps": [
+        "跨endAt"
+      ],
+      "expected": [
+        "邮箱收到"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_LIVEOPS_010",
+      "area": "LIVEOPS",
+      "title": "渠道Override隔离",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "WECHAT和IOS override不同",
+      "steps": [
+        "分别bootstrap"
+      ],
+      "expected": [
+        "仅拿本渠道值"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ACCOUNT_001",
+      "area": "ACCOUNT",
+      "title": "微信绑定到PlayerId",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "登录游客号",
+      "steps": [
+        "Bind WECHAT"
+      ],
+      "expected": [
+        "PlayerId不变",
+        "binding新增"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ACCOUNT_002",
+      "area": "ACCOUNT",
+      "title": "身份已绑定其他Player冲突",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "微信身份属于另一个号",
+      "steps": [
+        "Bind"
+      ],
+      "expected": [
+        "ACCOUNT_CONFLICT",
+        "显示两边摘要"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ACCOUNT_003",
+      "area": "ACCOUNT",
+      "title": "不静默覆盖高进度云存档",
+      "severity": "P0",
+      "automation": "MANUAL",
+      "preconditions": "本地Day5，云Day80",
+      "steps": [
+        "绑定冲突"
+      ],
+      "expected": [
+        "必须用户明确选择/客服流程"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ACCOUNT_004",
+      "area": "ACCOUNT",
+      "title": "多渠道绑定保持同存档",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同Player绑定微信+手机号",
+      "steps": [
+        "分别登录"
+      ],
+      "expected": [
+        "相同PlayerId/revision"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_ACCOUNT_005",
+      "area": "ACCOUNT",
+      "title": "游客升级账号不丢进度",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "游客有进度",
+      "steps": [
+        "绑定手机号"
+      ],
+      "expected": [
+        "进度保持"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_001",
+      "area": "UI",
+      "title": "750×1334适配",
+      "severity": "P1",
+      "automation": "VISUAL",
+      "preconditions": "全部46页",
+      "steps": [
+        "截图测试"
+      ],
+      "expected": [
+        "无裁切/遮挡"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_002",
+      "area": "UI",
+      "title": "750×1624适配",
+      "severity": "P1",
+      "automation": "VISUAL",
+      "preconditions": "全部46页",
+      "steps": [
+        "截图测试"
+      ],
+      "expected": [
+        "无裁切/关键内容稳定"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_003",
+      "area": "UI",
+      "title": "SafeArea适配",
+      "severity": "P0",
+      "automation": "MANUAL",
+      "preconditions": "刘海/灵动岛/安卓打孔设备",
+      "steps": [
+        "进入46页"
+      ],
+      "expected": [
+        "CTA不被遮挡"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_004",
+      "area": "UI",
+      "title": "文本+10%",
+      "severity": "P1",
+      "automation": "VISUAL",
+      "preconditions": "全局字体scale 1.1",
+      "steps": [
+        "截图"
+      ],
+      "expected": [
+        "不爆版"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_005",
+      "area": "UI",
+      "title": "8位数资源显示",
+      "severity": "P1",
+      "automation": "VISUAL",
+      "preconditions": "金币99999999",
+      "steps": [
+        "进入各资源页"
+      ],
+      "expected": [
+        "不溢出"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_006",
+      "area": "UI",
+      "title": "色弱非颜色唯一状态",
+      "severity": "P1",
+      "automation": "MANUAL",
+      "preconditions": "READY/ERROR/LOCKED等",
+      "steps": [
+        "灰度/色弱模拟"
+      ],
+      "expected": [
+        "仍可理解"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_007",
+      "area": "UI",
+      "title": "Modal栈只一个主Modal",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "自动弹活动/礼包同时触发",
+      "steps": [
+        "进入页面"
+      ],
+      "expected": [
+        "按优先级只展示一个"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_008",
+      "area": "UI",
+      "title": "关闭礼包同会话不反复弹",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "关闭限时Offer",
+      "steps": [
+        "继续操作"
+      ],
+      "expected": [
+        "本会话不再强弹"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_UI_009",
+      "area": "UI",
+      "title": "Reduce Motion",
+      "severity": "P2",
+      "automation": "MANUAL",
+      "preconditions": "系统减少动态开启",
+      "steps": [
+        "操作Merge/Reward/Build"
+      ],
+      "expected": [
+        "保留信息但降低运动"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_001",
+      "area": "PERF",
+      "title": "中端机主盘60fps",
+      "severity": "P1",
+      "automation": "PERF",
+      "preconditions": "63格+订单+Producer+VFX",
+      "steps": [
+        "连续操作5分钟"
+      ],
+      "expected": [
+        "P95帧时间<16.7ms或项目阈值"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_002",
+      "area": "PERF",
+      "title": "低端机主盘30fps",
+      "severity": "P0",
+      "automation": "PERF",
+      "preconditions": "低端目标设备",
+      "steps": [
+        "连续操作10分钟"
+      ],
+      "expected": [
+        "稳定≥30fps"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_003",
+      "area": "PERF",
+      "title": "主街NPC+VFX性能",
+      "severity": "P1",
+      "automation": "PERF",
+      "preconditions": "8 Spine+环境动画",
+      "steps": [
+        "拖动画面"
+      ],
+      "expected": [
+        "无明显卡顿"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_004",
+      "area": "PERF",
+      "title": "AssetBundle切换",
+      "severity": "P1",
+      "automation": "PERF",
+      "preconditions": "首次进新街区",
+      "steps": [
+        "加载"
+      ],
+      "expected": [
+        "主线程无>300ms卡顿"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_005",
+      "area": "PERF",
+      "title": "长会话内存",
+      "severity": "P1",
+      "automation": "PERF",
+      "preconditions": "30分钟往返主街/棋盘/活动",
+      "steps": [
+        "采内存"
+      ],
+      "expected": [
+        "无持续泄漏"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_PERF_006",
+      "area": "PERF",
+      "title": "弱网命令重试风暴",
+      "severity": "P0",
+      "automation": "PERF",
+      "preconditions": "20%丢包/500ms延迟",
+      "steps": [
+        "连续操作"
+      ],
+      "expected": [
+        "不重复经济，不无限重试"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SEC_001",
+      "area": "SEC",
+      "title": "修改本地Gem无效",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "篡改本地缓存",
+      "steps": [
+        "启动/购买"
+      ],
+      "expected": [
+        "服务器余额权威"
+      ],
+      "tags": [
+        "anti-cheat"
+      ]
+    },
+    {
+      "id": "TC_SEC_002",
+      "area": "SEC",
+      "title": "伪造活动积分无效",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "改本地EventRuntime",
+      "steps": [
+        "提交排行榜"
+      ],
+      "expected": [
+        "服务器重算/拒绝"
+      ],
+      "tags": [
+        "anti-cheat"
+      ]
+    },
+    {
+      "id": "TC_SEC_003",
+      "area": "SEC",
+      "title": "Idempotency-Key重放其他payload",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "同key不同payload",
+      "steps": [
+        "提交"
+      ],
+      "expected": [
+        "拒绝并记录安全事件"
+      ],
+      "tags": []
+    },
+    {
+      "id": "TC_SEC_004",
+      "area": "SEC",
+      "title": "请求日志不记录receipt明文",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "支付请求",
+      "steps": [
+        "检查日志"
+      ],
+      "expected": [
+        "敏感字段脱敏"
+      ],
+      "tags": [
+        "privacy"
+      ]
+    },
+    {
+      "id": "TC_SEC_005",
+      "area": "SEC",
+      "title": "客服日志可由requestId追踪",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "制造500错误",
+      "steps": [
+        "查询日志"
+      ],
+      "expected": [
+        "完整链路"
+      ],
+      "tags": [
+        "observability"
+      ]
+    }
+  ]
+}
