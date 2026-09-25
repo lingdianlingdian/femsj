@@ -1,0 +1,141 @@
+{
+  "activity_patterns": [
+    {
+      "name": "爆炒时刻",
+      "duration_class": "短期",
+      "mechanic": "完成订单积累火苗；达到目标后在限时窗口内，相关生成器拥有无限发射次数。",
+      "source": "S03",
+      "confidence": "B"
+    },
+    {
+      "name": "限时礼盒奖励",
+      "duration_class": "短期",
+      "mechanic": "倒计时结束前完成目标订单，开启礼盒获得额外奖励。",
+      "source": "S03",
+      "confidence": "B"
+    },
+    {
+      "name": "时空追逐",
+      "duration_class": "限时竞速",
+      "mechanic": "主线进度比拼，较先完成目标的玩家获得更好奖励。",
+      "source": "S02",
+      "confidence": "B"
+    },
+    {
+      "name": "芝士漂流",
+      "duration_class": "限时进度",
+      "mechanic": "通过合成和完成订单推进；最终大奖包含五星卡包，并与甜蜜季节卡牌收集关联。",
+      "source": "S02",
+      "confidence": "B"
+    },
+    {
+      "name": "甜蜜季节",
+      "duration_class": "长线收集",
+      "mechanic": "卡牌收集型Meta；玩家社区记录显示一轮存在108张卡。",
+      "source": [
+        "S02",
+        "S09"
+      ],
+      "confidence": "B/C"
+    }
+  ],
+  "monetization": {
+    "official_ios_iap_tiers_cny": [
+      3,
+      6,
+      8,
+      12,
+      18,
+      25,
+      30,
+      40,
+      60,
+      128
+    ],
+    "official_source": "S01",
+    "observed_patterns": [
+      {
+        "pattern": "体力耗尽后弹20分钟限定能量礼包",
+        "source": "S03",
+        "confidence": "B"
+      },
+      {
+        "pattern": "短周期低价礼包包含3元、8元价位",
+        "source": "S03",
+        "confidence": "B"
+      },
+      {
+        "pattern": "玩家反馈存在月卡",
+        "source": "S10",
+        "confidence": "C"
+      },
+      {
+        "pattern": "玩家反馈后期可见奖励广告换体力，次数/奖励量会随版本或渠道变化",
+        "source": "S09",
+        "confidence": "C",
+        "version_sensitive": true
+      }
+    ]
+  },
+  "runtime_observations": [
+    {
+      "field": "energy_regen_sec_per_point",
+      "value": 120,
+      "observedAt": "2026-06-10",
+      "channel": "App Store player report",
+      "source": "S01",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家原话明确为“两分钟一个体力”；不是官方配置披露。"
+    },
+    {
+      "field": "energy_purchase",
+      "value": {
+        "first_gem_cost": 10,
+        "energy": 100,
+        "second_gem_cost": 20
+      },
+      "observedAt": "2026-08",
+      "channel": "TapTap player report",
+      "source": "S09",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "高天数玩家经验，需避免外推为全渠道永久档位。"
+    },
+    {
+      "field": "reward_ad_energy",
+      "value": {
+        "energy_per_ad": 15,
+        "daily_count_reported": "约4次"
+      },
+      "observedAt": "2026",
+      "channel": "TapTap player report",
+      "source": "S09",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家表述带“好像”，次数置信度低于单次15体力。"
+    },
+    {
+      "field": "cooking_wait",
+      "value": {
+        "reported_example": "40+分钟"
+      },
+      "observedAt": "2026-09",
+      "channel": "TapTap player report",
+      "source": "S09",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "session_return_cadence",
+      "value": {
+        "reported": "约3小时回来清一次体力"
+      },
+      "observedAt": "2026-09",
+      "channel": "TapTap player report",
+      "source": "S10",
+      "confidence": "C",
+      "versionSensitive": true
+    }
+  ]
+}
