@@ -79,6 +79,9 @@ jobs:
       - name: Validate Day11-20 story references
         run: npm run validate:story:day11-20
 
+      - name: Validate all story slices
+        run: npm run validate:story:all
+
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
 
@@ -116,6 +119,10 @@ jobs:
             'production-data/v4/story/locale_zh-CN_day001_010.json',
             'production-data/v4/story/story_dialogue_day011_020.json',
             'production-data/v4/story/locale_zh-CN_day011_020.json',
+            'production-data/v4/story/locale_zh-CN_day031_040.json',
+            'production-data/v4/story/story_dialogue_day031_040.json',
+            'production-data/v4/story/locale_zh-CN_day021_030.json',
+            'production-data/v4/story/story_dialogue_day021_030.json',
             'schemas/v4/story_script.schema.json',
             'research-data/evidence/source_registry_v4.json',
             'research-data/levels/public_image_assets_v4.json',
