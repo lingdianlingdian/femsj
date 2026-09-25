@@ -1,0 +1,96 @@
+{
+  "version": "4.0",
+  "policy": "Observed values are evidence snapshots, not universal fixed config.",
+  "observations": [
+    {
+      "field": "energy_regen_sec_per_point",
+      "value": 120,
+      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "energy_cap",
+      "value": 100,
+      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "late_game_single_dish_energy",
+      "value": ">100",
+      "dayContext": "~Day25",
+      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "iap_ratio_observation",
+      "value": "6 CNY -> 40 gems",
+      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家评论，不等于所有渠道长期固定"
+    },
+    {
+      "field": "limited_energy_offer_duration_min",
+      "value": 20,
+      "sourceId": "SRC_YOUXICHA",
+      "confidence": "B",
+      "versionSensitive": true
+    },
+    {
+      "field": "low_price_offer_examples_cny",
+      "value": [
+        3,
+        8
+      ],
+      "sourceId": "SRC_YOUXICHA",
+      "confidence": "B",
+      "versionSensitive": true
+    },
+    {
+      "field": "premium_membership_price_cny",
+      "value": 45,
+      "sourceId": "SRC_TAPTAP_MEMBER",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家表述'高级会员'，权益待核验"
+    },
+    {
+      "field": "storage_expand_pattern",
+      "value": "reported roughly +5 gems per expansion",
+      "sourceId": "SRC_TAPTAP_STORAGE",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "album_card_count",
+      "value": 108,
+      "sourceId": "SRC_TAPTAP_FORUM",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "day75_energy_anchor",
+      "value": "700-800 energy",
+      "sourceId": "SRC_TAPTAP_FORUM",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "能量饮料+香槟，同源饮料柜"
+    }
+  ],
+  "officialIapPricePointsCny": [
+    3,
+    6,
+    8,
+    12,
+    18,
+    25,
+    30,
+    40,
+    60,
+    128
+  ],
+  "officialPriceSource": "SRC_APPSTORE_CN"
+}
