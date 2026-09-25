@@ -1,0 +1,13 @@
+{
+  "research_date":"2026-09-24",
+  "note":"名称来自玩家/实机资料；完整等级、容量、冷却、掉落权重仍待继续公网采集。",
+  "producers":[
+    {"name":"蔬菜篮子","evidence":"玩家评论明确点名，与蔬菜相关产出/冷却情境同时出现","source":"S09","confidence":"C"},
+    {"name":"冰箱","evidence":"玩家评论明确点名，作为会耗尽可用次数/进入不可产出状态的资源源","source":"S09","confidence":"C"},
+    {"name":"水果篮子","evidence":"玩家评论明确点名，与水果相关产出/冷却情境同时出现","source":"S09","confidence":"C"},
+    {"name":"饮料柜","evidence":"Day75玩家明确称能量饮料与香槟均由饮料柜产出","source":"S09","confidence":"C"}
+  ],
+  "known_shared_output_behavior":[
+    {"statement":"同一生成器可同时服务多条合成链/并行订单，而非严格一生成器一链。","source":"S03","confidence":"B"}
+  ]
+}
