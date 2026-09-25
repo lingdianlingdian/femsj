@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://femsj.local/schemas/v4/art_output_manifest.schema.json",
+  "title": "femsj V4 Art Output Manifest",
+  "type": "object",
+  "required": ["version", "statusFlow", "outputs"],
+  "properties": {
+    "version": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "statusFlow": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" },
+      "uniqueItems": true
+    },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "asset_id",
+          "job_id",
+          "file_path",
+          "width",
+          "height",
+          "format",
+          "sha256",
+          "status",
+          "gates"
+        ],
+        "properties": {
+          "asset_id": { "type": "string", "minLength": 1 },
+          "job_id": { "type": "string", "minLength": 1 },
+          "file_path": {
+            "type": "string",
+            "pattern": "^art-source/v4/exports/"
+          },
+          "width": { "type": "integer", "minimum": 1 },
+          "height": { "type": "integer", "minimum": 1 },
+          "format": { "enum": ["PNG", "WebP", "SVG", "Spine"] },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          },
+          "status": {
+            "enum": [
+              "GENERATED",
+              "CLEANUP",
+              "QA",
+              "APPROVED",
+              "INTEGRATED"
+            ]
+          },
+          "gates": {
+            "type": "object",
+            "required": [
+              "canon",
+              "readability",
+              "perspective",
+              "palette",
+              "bundle",
+              "performance",
+              "originality"
+            ],
+            "properties": {
+              "canon": { "type": "boolean" },
+              "readability": { "type": "boolean" },
+              "perspective": { "type": "boolean" },
+              "palette": { "type": "boolean" },
+              "bundle": { "type": "boolean" },
+              "performance": { "type": "boolean" },
+              "originality": { "type": "boolean" }
+            },
+            "additionalProperties": true
+          }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
