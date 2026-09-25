@@ -292,3 +292,13 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 5. Balance Simulator 已对 110 / 110 天跑通。
 - ✅ 6. Config Validator 0 error。
 - ⏳ 7. QA P0/P1 用例已有合同，但需在真实 Cocos Runtime 上执行并收证据。
+
+
+## P0-D Character Canon / 街区验收
+
+- ✅ 26/26 原创角色均绑定 CanonSheet / Avatar / StoryPortrait / NPC(Spine) 4 类正式 AssetId。
+- ✅ 每个 Canon Sheet 明确覆盖 Front / ThreeQuarter / Side / Back / Expressions。
+- ✅ Character Canon 正式 Schema 已与当前 registry 对齐，新增 `npm run validate:character-canon` 并进入 CI。
+- ✅ 4 个街区 / 48 BuildNode：坐标、相机边界、HitArea、NPC Socket、遮挡层级全部机器校验。
+- ✅ 48/48 建筑 Before/After 资产均 APPROVED，并校验共享 Pivot / Anchor；HitArea 由同一 BuildNode 定义共享。
+- P0-D 数据与美术合同已满足 Issue #4 验收；后续 Cocos Scene 实际挂载归入 P0-C 引擎接入，不再阻断角色/街区 Canon 数据层。
