@@ -43,6 +43,9 @@ jobs:
       - name: Binary art file audit
         run: npm run audit:art:files
 
+      - name: Art next-job gate smoke
+        run: npm run art:next -- 20
+
       - name: Runtime readiness report
         run: npm run audit:runtime
 
@@ -99,6 +102,8 @@ jobs:
             'production-data/v4/art/render_waves_day001_010_v4.json',
             'production-data/v4/art/day001_010_art_coverage_v4.json',
             'schemas/v4/art_output_manifest.schema.json',
+            'schemas/v4/style_anchor_output_manifest.schema.json',
+            'production-data/v4/art/style_anchor_outputs_v4.json',
             'schemas/v4/runtime_art_bindings.schema.json',
             'production-data/v4/art/w0_style_lock_review_v4.json',
             'production-data/v4/art/runtime_art_bindings_day001_010_v4.json',
