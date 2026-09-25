@@ -71,7 +71,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_manager_001_canon_sheet",
+        "char_manager_001_avatar",
+        "char_manager_001_story",
+        "char_manager_001_spine"
+      ]
     },
     {
       "id": "char_guide_001",
@@ -126,7 +139,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_guide_001_canon_sheet",
+        "char_guide_001_avatar",
+        "char_guide_001_story",
+        "char_guide_001_spine"
+      ]
     },
     {
       "id": "char_goose_001",
@@ -182,7 +208,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_001_canon_sheet",
+        "char_goose_001_avatar",
+        "char_goose_001_story",
+        "char_goose_001_spine"
+      ]
     },
     {
       "id": "char_goose_002",
@@ -238,7 +277,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_002_canon_sheet",
+        "char_goose_002_avatar",
+        "char_goose_002_story",
+        "char_goose_002_spine"
+      ]
     },
     {
       "id": "char_goose_003",
@@ -295,7 +347,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_003_canon_sheet",
+        "char_goose_003_avatar",
+        "char_goose_003_story",
+        "char_goose_003_spine"
+      ]
     },
     {
       "id": "char_goose_004",
@@ -351,7 +416,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_004_canon_sheet",
+        "char_goose_004_avatar",
+        "char_goose_004_story",
+        "char_goose_004_spine"
+      ]
     },
     {
       "id": "char_goose_005",
@@ -407,7 +485,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_005_canon_sheet",
+        "char_goose_005_avatar",
+        "char_goose_005_story",
+        "char_goose_005_spine"
+      ]
     },
     {
       "id": "char_goose_006",
@@ -463,7 +554,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_006_canon_sheet",
+        "char_goose_006_avatar",
+        "char_goose_006_story",
+        "char_goose_006_spine"
+      ]
     },
     {
       "id": "char_goose_007",
@@ -519,7 +623,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_007_canon_sheet",
+        "char_goose_007_avatar",
+        "char_goose_007_story",
+        "char_goose_007_spine"
+      ]
     },
     {
       "id": "char_goose_008",
@@ -575,7 +692,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_008_canon_sheet",
+        "char_goose_008_avatar",
+        "char_goose_008_story",
+        "char_goose_008_spine"
+      ]
     },
     {
       "id": "char_goose_009",
@@ -631,7 +761,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_009_canon_sheet",
+        "char_goose_009_avatar",
+        "char_goose_009_story",
+        "char_goose_009_spine"
+      ]
     },
     {
       "id": "char_goose_010",
@@ -687,7 +830,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_010_canon_sheet",
+        "char_goose_010_avatar",
+        "char_goose_010_story",
+        "char_goose_010_spine"
+      ]
     },
     {
       "id": "char_goose_011",
@@ -743,7 +899,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_011_canon_sheet",
+        "char_goose_011_avatar",
+        "char_goose_011_story",
+        "char_goose_011_spine"
+      ]
     },
     {
       "id": "char_goose_012",
@@ -799,7 +968,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_012_canon_sheet",
+        "char_goose_012_avatar",
+        "char_goose_012_story",
+        "char_goose_012_spine"
+      ]
     },
     {
       "id": "char_goose_013",
@@ -855,7 +1037,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_013_canon_sheet",
+        "char_goose_013_avatar",
+        "char_goose_013_story",
+        "char_goose_013_spine"
+      ]
     },
     {
       "id": "char_goose_014",
@@ -911,7 +1106,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_014_canon_sheet",
+        "char_goose_014_avatar",
+        "char_goose_014_story",
+        "char_goose_014_spine"
+      ]
     },
     {
       "id": "char_goose_015",
@@ -967,7 +1175,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_015_canon_sheet",
+        "char_goose_015_avatar",
+        "char_goose_015_story",
+        "char_goose_015_spine"
+      ]
     },
     {
       "id": "char_goose_016",
@@ -1023,7 +1244,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 1,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_016_canon_sheet",
+        "char_goose_016_avatar",
+        "char_goose_016_story",
+        "char_goose_016_spine"
+      ]
     },
     {
       "id": "char_goose_017",
@@ -1075,7 +1309,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_017_canon_sheet",
+        "char_goose_017_avatar",
+        "char_goose_017_story",
+        "char_goose_017_spine"
+      ]
     },
     {
       "id": "char_goose_018",
@@ -1126,7 +1373,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_018_canon_sheet",
+        "char_goose_018_avatar",
+        "char_goose_018_story",
+        "char_goose_018_spine"
+      ]
     },
     {
       "id": "char_goose_019",
@@ -1177,7 +1437,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_019_canon_sheet",
+        "char_goose_019_avatar",
+        "char_goose_019_story",
+        "char_goose_019_spine"
+      ]
     },
     {
       "id": "char_goose_020",
@@ -1228,7 +1501,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_020_canon_sheet",
+        "char_goose_020_avatar",
+        "char_goose_020_story",
+        "char_goose_020_spine"
+      ]
     },
     {
       "id": "char_goose_021",
@@ -1279,7 +1565,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_021_canon_sheet",
+        "char_goose_021_avatar",
+        "char_goose_021_story",
+        "char_goose_021_spine"
+      ]
     },
     {
       "id": "char_goose_022",
@@ -1330,7 +1629,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_022_canon_sheet",
+        "char_goose_022_avatar",
+        "char_goose_022_story",
+        "char_goose_022_spine"
+      ]
     },
     {
       "id": "char_goose_023",
@@ -1381,7 +1693,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_023_canon_sheet",
+        "char_goose_023_avatar",
+        "char_goose_023_story",
+        "char_goose_023_spine"
+      ]
     },
     {
       "id": "char_goose_024",
@@ -1432,7 +1757,20 @@
         "bodyBottom": 0.9
       },
       "sceneScale": 0.88,
-      "evidenceKind": "DEV_BLUEPRINT"
+      "evidenceKind": "DEV_BLUEPRINT",
+      "canonViews": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "assetIds": [
+        "char_goose_024_canon_sheet",
+        "char_goose_024_avatar",
+        "char_goose_024_story",
+        "char_goose_024_spine"
+      ]
     }
   ]
 }

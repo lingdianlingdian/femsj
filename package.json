@@ -31,6 +31,7 @@
     "runtime:check:full": "node tools/runtime-full-builder/build.mjs --check",
     "gate:balance:full": "node tools/balance-simulator/full-gate.mjs",
     "audit:art:runtime-full": "node tools/runtime-art-binding-auditor/audit.mjs",
-    "gate:balance:full-reachability": "node tools/balance-simulator/full-reachability-gate.mjs"
+    "gate:balance:full-reachability": "node tools/balance-simulator/full-reachability-gate.mjs",
+    "validate:character-canon": "node tools/character-canon-validator/validate.mjs"
   }
 }

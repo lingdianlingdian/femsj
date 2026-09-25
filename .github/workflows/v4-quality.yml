@@ -130,6 +130,9 @@ jobs:
       - name: Validate all story slices
         run: npm run validate:story:all
 
+      - name: Validate character canon and street layout
+        run: npm run validate:character-canon
+
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
 
