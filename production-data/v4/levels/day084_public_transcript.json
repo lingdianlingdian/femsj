@@ -1,0 +1,117 @@
+{
+  "version": "4.0",
+  "day": 84,
+  "sourceUrl": "https://www.taptap.cn/moment/790906865650238207",
+  "sourceImageRef": "turn294395view7",
+  "transcriptionConfidence": "C",
+  "orders": [
+    {
+      "slot": 1,
+      "menu": "芒果",
+      "rawIngredients": [
+        "芒果"
+      ]
+    },
+    {
+      "slot": 2,
+      "menu": "黄金烤肘子",
+      "rawIngredients": [
+        "肘子"
+      ]
+    },
+    {
+      "slot": 3,
+      "menu": "乌龙茶",
+      "rawIngredients": [
+        "乌龙茶"
+      ]
+    },
+    {
+      "slot": 4,
+      "menu": "焦香洋葱饭",
+      "rawIngredients": [
+        "洋葱",
+        "大米"
+      ]
+    },
+    {
+      "slot": 5,
+      "menu": "深烘咖啡",
+      "rawIngredients": [
+        "深烘咖啡"
+      ]
+    },
+    {
+      "slot": 6,
+      "menu": "炭烤鸡胸肉",
+      "rawIngredients": [
+        "鸡胸肉"
+      ]
+    },
+    {
+      "slot": 7,
+      "menu": "姜汁水",
+      "rawIngredients": [
+        "姜汁水"
+      ]
+    },
+    {
+      "slot": 8,
+      "menu": "黄油拌饭",
+      "rawIngredients": [
+        "黄油",
+        "大米"
+      ]
+    },
+    {
+      "slot": 9,
+      "menu": "蜜汁烤鸡",
+      "rawIngredients": [
+        "带骨全鸡"
+      ]
+    },
+    {
+      "slot": 10,
+      "menu": "新鲜生蚝",
+      "rawIngredients": [
+        "生蚝"
+      ]
+    },
+    {
+      "slot": 11,
+      "menu": "朗姆可乐",
+      "rawIngredients": [
+        "朗姆",
+        "可乐"
+      ]
+    },
+    {
+      "slot": 12,
+      "menu": "浆果蜂蜜燕麦碗",
+      "rawIngredients": [
+        "蓝莓",
+        "草莓",
+        "蜂蜜",
+        "燕麦"
+      ]
+    },
+    {
+      "slot": 13,
+      "menu": "田园沙拉",
+      "rawIngredients": [
+        "生菜",
+        "番茄",
+        "西兰花"
+      ]
+    },
+    {
+      "slot": 14,
+      "menu": "莫斯科之骡",
+      "rawIngredients": [
+        "柠檬",
+        "伏特加",
+        "姜汁水"
+      ]
+    }
+  ]
+}
