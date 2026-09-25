@@ -1,0 +1,169 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "policy": "Each row is an observed snapshot. Never overwrite a historical observation when later versions differ.",
+  "observations": [
+    {
+      "field": "energy_regen_sec_per_point",
+      "value": 120,
+      "unit": "sec",
+      "observedAt": "2026-06-10",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家明确写“两分钟一个体力”"
+    },
+    {
+      "field": "energy_cap",
+      "value": 100,
+      "unit": "energy",
+      "observedAt": "2026-06-11",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家明确写回复上限100"
+    },
+    {
+      "field": "energy_cap",
+      "value": 100,
+      "unit": "energy",
+      "observedAt": "2026-06-01",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "另一条评论再次称最多100"
+    },
+    {
+      "field": "late_game_single_dish_energy",
+      "value": ">100",
+      "unit": "energy",
+      "observedAt": "2026-06-01",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "context": "约Day25",
+      "note": "单菜100+且仍不能完成一个订单"
+    },
+    {
+      "field": "iap_observed_gem_pack",
+      "value": {
+        "cny": 6,
+        "gems": 40
+      },
+      "observedAt": "2026-06-01",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家称该档为6元40钻"
+    },
+    {
+      "field": "build_reward_energy_observation",
+      "value": 15,
+      "unit": "energy",
+      "observedAt": "2026-06-24",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家称后期装修价格很高但只奖励15能量"
+    },
+    {
+      "field": "producer_recovery_observation",
+      "value": ">3600",
+      "unit": "sec",
+      "observedAt": "2026-06-17",
+      "channel": "iOS App Store review",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家称有东西一个多小时后才能再次点出；未锁定具体Producer"
+    },
+    {
+      "field": "cross_channel_progress_sync",
+      "value": false,
+      "observedAt": "2026-06-10",
+      "channel": "Douyin mini-app -> iOS App",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "同手机号/抖音身份仍需重开"
+    },
+    {
+      "field": "wechat_to_app_progress_sync",
+      "value": false,
+      "observedAt": "2026-06-02",
+      "channel": "WeChat mini-app -> iOS App",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "App当时只允许手机号/Apple ID，无法继承微信小程序"
+    },
+    {
+      "field": "storage_expand_increment_pattern",
+      "value": "+5 gems per expansion (reported)",
+      "observedAt": "2026-08-07",
+      "channel": "TapTap",
+      "sourceId": "SRC_TAPTAP_STORAGE_RULE",
+      "confidence": "C-",
+      "versionSensitive": true,
+      "note": "评论带“好像”，低置信"
+    },
+    {
+      "field": "premium_membership_price_cny",
+      "value": 45,
+      "unit": "CNY",
+      "observedAt": "2026-06-05",
+      "channel": "TapTap",
+      "sourceId": "SRC_MEMBER_45_POST",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家称高级会员45元"
+    },
+    {
+      "field": "album_card_count",
+      "value": 108,
+      "unit": "cards",
+      "observedAt": "2026-08-25",
+      "channel": "TapTap",
+      "sourceId": "SRC_ALBUM_108_EXACT_POST",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "album_missing_last_card_example",
+      "value": "107/108, missing gold 4-star",
+      "observedAt": "2026-08-25",
+      "channel": "TapTap",
+      "sourceId": "SRC_ALBUM_108_EXACT_POST",
+      "confidence": "C",
+      "versionSensitive": true
+    },
+    {
+      "field": "album_five_star_offer_observation",
+      "value": 98,
+      "unit": "CNY",
+      "observedAt": "2026-08-25",
+      "channel": "TapTap",
+      "sourceId": "SRC_ALBUM_108_EXACT_POST",
+      "confidence": "C",
+      "versionSensitive": true,
+      "note": "玩家称活动临近结束出现98元五星卡包"
+    },
+    {
+      "field": "day75_energy_anchor",
+      "value": "700-800",
+      "unit": "energy",
+      "observedAt": "2026-08-29",
+      "channel": "TapTap",
+      "sourceId": "SRC_DAY75_ENERGY_POST",
+      "confidence": "C",
+      "versionSensitive": true,
+      "context": "能量饮料+香槟，同为饮料柜产出"
+    }
+  ]
+}
