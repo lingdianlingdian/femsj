@@ -40,6 +40,9 @@ jobs:
       - name: Art production contract audit
         run: npm run audit:art
 
+      - name: Binary art file audit
+        run: npm run audit:art:files
+
       - name: Runtime readiness report
         run: npm run audit:runtime
 
