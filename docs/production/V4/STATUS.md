@@ -306,3 +306,15 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 4 个街区 / 48 BuildNode：坐标、相机边界、HitArea、NPC Socket、遮挡层级全部机器校验。
 - ✅ 48/48 建筑 Before/After 资产均 APPROVED，并校验共享 Pivot / Anchor；HitArea 由同一 BuildNode 定义共享。
 - P0-D 数据与美术合同已满足 Issue #4 验收；后续 Cocos Scene 实际挂载归入 P0-C 引擎接入，不再阻断角色/街区 Canon 数据层。
+
+
+## P0-C Cocos 客户端接入启动
+
+- ✅ 新增正式 `client-cocos/` Cocos Creator 3.8 LTS 项目骨架（`package.json + assets/`）。
+- ✅ 46/46 Screen 已生成稳定 route / Prefab resources 路径合同。
+- ✅ 41/41 Shared Component 已映射原 Prefab 合同路径。
+- ✅ 新增 `ScreenContractRepository`、`ScreenRouter`、`SafeAreaRoot`、`BootController` TypeScript 基础层。
+- ✅ 架构固定为单持久 `App.scene` + 46 Screen Prefab，避免 46 个 Scene 反复切换。
+- ✅ 新增确定性 `tools/cocos-contract-builder/build.mjs` 与 `npm run cocos:contracts:check`，并接入 CI。
+- ⏳ 当前仍没有由 Cocos Editor 正式生成的 `.scene/.prefab/.meta`；状态保持 `PENDING_EDITOR_GENERATION`，禁止手写伪造序列化资源。
+- ⏳ 下一验收：Cocos Editor 生成 App.scene + UI00/UI01/UI02 首批 Prefab，随后扩至46/46，并做750×1334/750×1624截图、弱网、幂等与性能回归。
