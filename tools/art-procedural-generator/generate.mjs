@@ -32,7 +32,101 @@ const anchorJobs=JSON.parse(fs.readFileSync(ANCHOR_JOBS,'utf8'));
 const assets=parseCsv(fs.readFileSync(ASSETS,'utf8'));
 const queue=parseCsv(fs.readFileSync(QUEUE,'utf8'));
 const anchors=parseCsv(fs.readFileSync(ANCHORS,'utf8'));
+
 const assetMap=new Map(assets.rows.map(x=>[x.asset_id,x]));
+
+function synthJobCategory(a){
+  if(a.category==='UI') return 'UI';
+  if(a.category==='Board'){
+    if(a.subcategory==='Item') return 'BoardItem';
+    if(a.subcategory==='Dish') return 'Dish';
+    if(a.subcategory==='Producer') return 'Producer';
+    if(a.subcategory==='Cookware') return 'Cookware';
+    if(a.subcategory==='Special') return 'Special';
+    return 'Board';
+  }
+  if(a.category==='Character'){
+    if(a.subcategory==='Avatar') return 'CharacterAvatar';
+    if(a.subcategory==='NPC') return 'CharacterNPC';
+    if(a.subcategory==='CanonSheet') return 'CharacterCanon';
+    if(a.subcategory==='StoryPortrait') return 'CharacterStory';
+    return 'CharacterAvatar';
+  }
+  if(a.category==='Street') return 'Building';
+  if(a.category==='VFX') return 'VFX';
+  return 'Special';
+}
+function synthAnchor(a,cat){
+  const id=a.asset_id;
+  if(cat==='UI') return 'ANCHOR_UI_01';
+  if(cat==='Board') return 'ANCHOR_BOARD_01';
+  if(cat==='BoardItem'){
+    return /kafei|cha|yinliao|nai|tangjiang|xiangbin|nengliang/i.test(id) ? 'ANCHOR_DRINK_01' : 'ANCHOR_ITEM_01';
+  }
+  if(cat==='Dish') return 'ANCHOR_DISH_01';
+  if(cat==='Producer') return /coffee|kafei|yinliao|drink/i.test(id) ? 'ANCHOR_PROD_02' : 'ANCHOR_PROD_01';
+  if(cat==='Cookware') return 'ANCHOR_COOK_01';
+  if(cat==='CharacterCanon'||cat==='CharacterAvatar'||cat==='CharacterStory'||cat==='CharacterNPC'){
+    if(id.includes('manager')) return 'ANCHOR_CHAR_01';
+    if(id.includes('guide')) return 'ANCHOR_CHAR_02';
+    return 'ANCHOR_CHAR_03';
+  }
+  if(cat==='Building') return id.includes('_after') ? 'ANCHOR_BUILD_02' : 'ANCHOR_BUILD_01';
+  if(cat==='VFX') return 'ANCHOR_FX_01';
+  if(cat==='Special') return 'ANCHOR_ITEM_01';
+  return 'ANCHOR_ITEM_01';
+}
+function synthAcceptance(cat){
+  const base=['originality gate','palette/outline consistency','asset id traceability','mobile readability'];
+  if(cat==='BoardItem'||cat==='Dish') base.push('recognizable at 64px');
+  if(cat==='Building') base.push('stable pivot/footprint','before/after family consistency');
+  if(cat.startsWith('Character')) base.push('character identity consistency');
+  if(cat==='UI') base.push('no baked copy');
+  return base;
+}
+
+const existingJobAssets=new Set((jobs.jobs||[]).map(j=>j.asset_id));
+const existingQueueAssets=new Set(queue.rows.map(r=>r.asset_id));
+for(const a of assets.rows){
+  if(existingJobAssets.has(a.asset_id)) continue;
+  const category=synthJobCategory(a);
+  const anchor_id=synthAnchor(a,category);
+  jobs.jobs.push({
+    job_id:'JOB_'+a.asset_id.toUpperCase().replace(/[^A-Z0-9]+/g,'_'),
+    asset_id:a.asset_id,
+    anchor_id,
+    batch_id:'ART-FULL',
+    priority:'P1',
+    category,
+    source_size:/^\d+x\d+$/.test(a.source_size||'')?a.source_size:'1024x1024',
+    transparent:a.asset_id!=='ui_bg_global',
+    states:String(a.states||'').split('|').filter(Boolean),
+    prompt_spec:'Original V4 production asset for '+a.name+'; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.',
+    forbidden:['photorealistic','watermark','brand logo','baked-in readable text','competitor-specific protected visual design'],
+    output_contract:{filename:a.asset_id+'.png',workspace:'art-source/v4/exports/art-full/',metadata_required:true},
+    acceptance:synthAcceptance(category)
+  });
+  existingJobAssets.add(a.asset_id);
+  if(!existingQueueAssets.has(a.asset_id)){
+    queue.rows.push({
+      batch_id:'ART-FULL',
+      priority:'P1',
+      asset_id:a.asset_id,
+      category,
+      deliverable:a.name+'正式PNG',
+      gate:'Canon|Readability|Originality',
+      status:'READY_FOR_CONCEPT',
+      depends_on:anchor_id,
+      notes:'由 assets_master 全量补齐'
+    });
+    existingQueueAssets.add(a.asset_id);
+  }
+}
+jobs.version='4.2-full-manifest';
+jobs.generatedAt=new Date().toISOString();
+jobs.jobCount=jobs.jobs.length;
+fs.writeFileSync(JOBS,JSON.stringify(jobs,null,2)+'\n');
+writeCsv(QUEUE,queue.header,queue.rows);
 
 const C={
   cream:[255,247,232,255], surface:[255,253,248,255], surface2:[255,232,184,255],
@@ -114,8 +208,9 @@ function render(cv,job){
   const id=job.asset_id||job.target||job.job_id,cat=job.category||job.kind||'';
   if(cat==='UI')ui(cv,id);
   else if(cat==='Board')boardAsset(cv,id);
-  else if(cat==='BoardItem')ingredient(cv,id);
+  else if(cat==='BoardItem'||cat==='Item')ingredient(cv,id);
   else if(cat==='Dish')dish(cv,id);
+  else if(cat==='Special')ingredient(cv,id);
   else if(cat==='Producer')producer(cv,id);
   else if(cat==='Cookware')cookware(cv,id);
   else if(cat==='VFX')vfx(cv,id);
@@ -198,6 +293,6 @@ writeCsv(QUEUE,queue.header,queue.rows);
 fs.writeFileSync(OUT,JSON.stringify({version:'4.0',updatedAt:now,statusFlow:['PLANNED','READY_FOR_CONCEPT','CONCEPT_REVIEW','CANON_LOCKED','GENERATED','CLEANUP','QA','APPROVED','INTEGRATED'],outputs:outputRows},null,2)+'\n');
 
 // 3) Generation report.
-const report={version:'4.0',generatedAt:now,renderer:'tools/art-procedural-generator/generate.mjs',styleAnchors:anchorRows.length,productionAssets:outputRows.length,approved:outputRows.length,categories:Object.fromEntries([...new Set((jobs.jobs||[]).map(x=>x.category))].map(k=>[k,(jobs.jobs||[]).filter(x=>x.category===k).length])),note:'Original deterministic V4 vertical-slice art pack. Final Cocos prefab wiring is tracked separately from art approval.'};
+const report={version:'4.0',generatedAt:now,renderer:'tools/art-procedural-generator/generate.mjs',styleAnchors:anchorRows.length,productionAssets:outputRows.length,approved:outputRows.length,categories:Object.fromEntries([...new Set((jobs.jobs||[]).map(x=>x.category))].map(k=>[k,(jobs.jobs||[]).filter(x=>x.category===k).length])),note:'Original deterministic V4 full-manifest art pack. Final Cocos prefab wiring is tracked separately from art approval.'};
 fs.writeFileSync(P('production-data/v4/art/procedural_generation_report_v4.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
