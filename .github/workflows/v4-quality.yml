@@ -55,6 +55,12 @@ jobs:
       - name: Vertical slice balance gate
         run: npm run gate:balance:vertical
 
+      - name: Board-state smoke Day 1
+        run: npm run simulate:balance:v3 -- production-data/v4/runtime/game_content_day001_010.json 1 300 20260925 OPTIMIZED
+
+      - name: Board-state smoke Day 10
+        run: npm run simulate:balance:v3 -- production-data/v4/runtime/game_content_day001_010.json 10 300 20260925 OPTIMIZED
+
       - name: Parse critical JSON files
         shell: bash
         run: |
