@@ -1,7 +1,7 @@
 {
   "version": "4.1",
   "generatedAt": "2026-09-25",
-  "scope": "ART-S1/S2/S3 Day1-10 production closure",
+  "scope": "ART-S1/S2/S3 + ART-S4 full 110-day content production jobs",
   "sourceQueue": "production-data/v4/art/art_production_queue_v4.csv",
   "rules": {
     "originality": "Create original game art. Public references inform only generic information hierarchy, readability, camera/perspective and category conventions.",
@@ -22,7 +22,7 @@
       "Transparent asset jobs are isolated objects, not style-guide posters."
     ]
   },
-  "jobCount": 109,
+  "jobCount": 203,
   "jobs": [
     {
       "job_id": "JOB_UI_BG_GLOBAL",
@@ -4707,6 +4707,3771 @@
         "asset id traceability",
         "shared pivot/footprint with counterpart",
         "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_NAIYOU",
+      "asset_id": "art_item_naiyou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 奶油 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_naiyou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_PANGXIE",
+      "asset_id": "art_item_pangxie",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 螃蟹 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_pangxie.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_WULONGCHA",
+      "asset_id": "art_item_wulongcha",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 乌龙茶 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_wulongcha.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JIDAN",
+      "asset_id": "art_item_jidan",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鸡蛋 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jidan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XIAOMAIFEN",
+      "asset_id": "art_item_xiaomaifen",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 小麦粉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_xiaomaifen.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_TANGLISHUI",
+      "asset_id": "art_item_tanglishui",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 汤力水 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_tanglishui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XIA",
+      "asset_id": "art_item_xia",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 虾 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_xia.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_KUANGQUANSHUI",
+      "asset_id": "art_item_kuangquanshui",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 矿泉水 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_kuangquanshui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_TOOL_ZHENGLONG",
+      "asset_id": "art_tool_zhenglong",
+      "anchor_id": "ANCHOR_COOK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Cookware",
+      "source_size": "768x768",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Cooking",
+        "Ready",
+        "Collect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated cookware asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 蒸笼 as the only requested subject. Keep silhouette unmistakable at 68-74 px runtime size. Follow the locked V4 style-anchor family ANCHOR_COOK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_tool_zhenglong.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability",
+        "state readability",
+        "perspective consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_TANGDOU",
+      "asset_id": "art_item_tangdou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 糖豆 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_tangdou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_LANGMU",
+      "asset_id": "art_item_langmu",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 朗姆 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_langmu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_KELE",
+      "asset_id": "art_item_kele",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 可乐 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_kele.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_ZIGANLAN",
+      "asset_id": "art_item_ziganlan",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 紫甘蓝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_ziganlan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XUEYU",
+      "asset_id": "art_item_xueyu",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鳕鱼 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_xueyu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_PIPATUI",
+      "asset_id": "art_item_pipatui",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 琵琶腿 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_pipatui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XIANGGU",
+      "asset_id": "art_item_xianggu",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 香菇 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_xianggu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_SPECIAL_TEA_FORMULA_3",
+      "asset_id": "art_special_tea_formula_3",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Special",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated special asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 茶楼秘制配方3 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_special_tea_formula_3.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_FEIE_JIANGYOU",
+      "asset_id": "art_item_feie_jiangyou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 肥鹅牌酱油 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_feie_jiangyou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_YENAI",
+      "asset_id": "art_item_yenai",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 椰奶 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_yenai.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_SPECIAL_TEA_FORMULA_1",
+      "asset_id": "art_special_tea_formula_1",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Special",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated special asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 茶楼秘制配方1 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_special_tea_formula_1.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SHENGHAO",
+      "asset_id": "art_item_shenghao",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 生蚝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_shenghao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_WEISHIJI",
+      "asset_id": "art_item_weishiji",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 威士忌 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_weishiji.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SUDASHUI",
+      "asset_id": "art_item_sudashui",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 苏打水 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_sudashui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JIANGZHISHUI",
+      "asset_id": "art_item_jiangzhishui",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 姜汁水 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jiangzhishui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_SPECIAL_TEA_FORMULA_2",
+      "asset_id": "art_special_tea_formula_2",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Special",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated special asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 茶楼秘制配方2 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_special_tea_formula_2.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_TUDOU",
+      "asset_id": "art_item_tudou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 土豆 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_tudou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_PUTAO",
+      "asset_id": "art_item_putao",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 葡萄 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_putao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JIAOTANG",
+      "asset_id": "art_item_jiaotang",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 焦糖 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jiaotang.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_ZHOUZI",
+      "asset_id": "art_item_zhouzi",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 肘子 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_zhouzi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_HUNHEXIANGYE",
+      "asset_id": "art_item_hunhexiangye",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 混合香叶 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_hunhexiangye.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_YOUYU",
+      "asset_id": "art_item_youyu",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鱿鱼 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_youyu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SHANBEI",
+      "asset_id": "art_item_shanbei",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 扇贝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_shanbei.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_SPECIAL_TEA_FORMULA_5",
+      "asset_id": "art_special_tea_formula_5",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Special",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated special asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 茶楼秘制配方5 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_special_tea_formula_5.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JINQIANGYU",
+      "asset_id": "art_item_jinqiangyu",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 金枪鱼 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jinqiangyu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_QIAOKELI",
+      "asset_id": "art_item_qiaokeli",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 巧克力 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_qiaokeli.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_DAIGUQUANJI",
+      "asset_id": "art_item_daiguquanji",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 带骨全鸡 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_daiguquanji.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_WUHUAROU",
+      "asset_id": "art_item_wuhuarou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 五花肉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_wuhuarou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_DAMI",
+      "asset_id": "art_item_dami",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 大米 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_dami.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_SPECIAL_TEA_FORMULA_4",
+      "asset_id": "art_special_tea_formula_4",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Special",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated special asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 茶楼秘制配方4 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_special_tea_formula_4.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JITUI",
+      "asset_id": "art_item_jitui",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鸡腿 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jitui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_HUACHA",
+      "asset_id": "art_item_huacha",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 花茶 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_huacha.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_MANGGUO",
+      "asset_id": "art_item_mangguo",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 芒果 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_mangguo.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_JIXIONGROU",
+      "asset_id": "art_item_jixiongrou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鸡胸肉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_jixiongrou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_FENGMI",
+      "asset_id": "art_item_fengmi",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 蜂蜜 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_fengmi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_YANMAI",
+      "asset_id": "art_item_yanmai",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 燕麦 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_yanmai.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_XILANHUA",
+      "asset_id": "art_item_xilanhua",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 西兰花 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_xilanhua.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_FUTEJIA",
+      "asset_id": "art_item_futejia",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 伏特加 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_futejia.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_JIAOXIANGYANGCONGFAN",
+      "asset_id": "art_dish_jiaoxiangyangcongfan",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 焦香洋葱饭 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_jiaoxiangyangcongfan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TANKAOJIXIONGROU",
+      "asset_id": "art_dish_tankaojixiongrou",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 炭烤鸡胸肉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tankaojixiongrou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_HUANGYOUBANFAN",
+      "asset_id": "art_dish_huangyoubanfan",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 黄油拌饭 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_huangyoubanfan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_JIANGGUOFENGMIYANMAIWANG",
+      "asset_id": "art_dish_jiangguofengmiyanmaiwang",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 浆果蜂蜜燕麦碗 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_jiangguofengmiyanmaiwang.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TIANYUANSHALA",
+      "asset_id": "art_dish_tianyuanshala",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 田园沙拉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tianyuanshala.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_MOSCOW_MULE",
+      "asset_id": "art_dish_moscow_mule",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 莫斯科之骡 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_moscow_mule.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_LONGSHULAN",
+      "asset_id": "art_item_longshulan",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 龙舌兰 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_longshulan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_CHENGZI",
+      "asset_id": "art_item_chengzi",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 橙子 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_chengzi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_XIANZHACHENGZHI",
+      "asset_id": "art_dish_xianzhachengzhi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鲜榨橙汁 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_xianzhachengzhi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_LONGSHULAN_LUOSIDAO",
+      "asset_id": "art_dish_longshulan_luosidao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 龙舌兰螺丝刀 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_longshulan_luosidao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_ZHISHIREGOU",
+      "asset_id": "art_dish_zhishiregou",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 芝士热狗 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_zhishiregou.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TANKAO_ROUCHANG",
+      "asset_id": "art_dish_tankao_rouchang",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 炭烤烤肉肠 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tankao_rouchang.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_KAOREGOUMIANBAO",
+      "asset_id": "art_dish_kaoregoumianbao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 烤热狗面包 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_kaoregoumianbao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SUAN",
+      "asset_id": "art_item_suan",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 蒜 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_suan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SUANXIANGMIANBAO",
+      "asset_id": "art_dish_suanxiangmianbao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 蒜香面包 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_suanxiangmianbao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_HUANGJINKAOZHOUZI",
+      "asset_id": "art_dish_huangjinkaozhouzi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 黄金烤肘子 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_huangjinkaozhouzi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SHENHONGKAFEI",
+      "asset_id": "art_dish_shenhongkafei",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 深烘咖啡 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_shenhongkafei.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_JIANGZHISHUI",
+      "asset_id": "art_dish_jiangzhishui",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 姜汁水 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_jiangzhishui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_MIZHIKAOJI",
+      "asset_id": "art_dish_mizhikaoji",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 蜜汁烤鸡 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_mizhikaoji.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_XINXIANSHENGHAO",
+      "asset_id": "art_dish_xinxianshenghao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 新鲜生蚝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_xinxianshenghao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_LANGMUKELE",
+      "asset_id": "art_dish_langmukele",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 朗姆可乐 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_langmukele.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_LI",
+      "asset_id": "art_item_li",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 梨 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_li.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SHUIMITAO",
+      "asset_id": "art_item_shuimitao",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 水蜜桃 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DRINK_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_shuimitao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_YUMISUI",
+      "asset_id": "art_item_yumisui",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 玉米穗 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_yumisui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_BINGKUAI",
+      "asset_id": "art_item_bingkuai",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 冰块 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_bingkuai.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SUKAO_FEIXIE",
+      "asset_id": "art_dish_sukao_feixie",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 酥烤肥蟹 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_sukao_feixie.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_ZAOCAN_SANMINGZHI",
+      "asset_id": "art_dish_zaocan_sanmingzhi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 早餐三明治 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_zaocan_sanmingzhi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_JINGYING_XIANXIAJIAO",
+      "asset_id": "art_dish_jingying_xianxiajiao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 晶莹鲜虾饺 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_jingying_xianxiajiao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SHOUSI_ZIGANLAN",
+      "asset_id": "art_dish_shousi_ziganlan",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 手撕紫甘蓝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_shousi_ziganlan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SUXIANG_XUEYU",
+      "asset_id": "art_dish_suxiang_xueyu",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 酥香鳕鱼 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_suxiang_xueyu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TANKAO_PIPATUI",
+      "asset_id": "art_dish_tankao_pipatui",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 炭烤琵琶腿 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tankao_pipatui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_XIANGGU_CHANGFEN",
+      "asset_id": "art_dish_xianggu_changfen",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 香菇肠粉 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_xianggu_changfen.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_YEZHI_NAIBAI_XIAOWAN",
+      "asset_id": "art_dish_yezhi_naibai_xiaowan",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 椰汁奶白小丸 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_yezhi_naibai_xiaowan.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_WEISHIJI_SUDA",
+      "asset_id": "art_dish_weishiji_suda",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 威士忌苏打 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_weishiji_suda.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_LIUSHA_NAIHUANGBAO",
+      "asset_id": "art_dish_liusha_naihuangbao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 流沙奶黄包 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_liusha_naihuangbao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_DABEI_MEISHI",
+      "asset_id": "art_item_dabei_meishi",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Item",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated ingredient asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 大杯美式 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_ITEM_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_item_dabei_meishi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_KAO_TUDOUPIAN",
+      "asset_id": "art_dish_kao_tudoupian",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 烤土豆片 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_kao_tudoupian.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_PUTAO_GUOROUYIN",
+      "asset_id": "art_dish_putao_guorouyin",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 葡萄果肉饮 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_putao_guorouyin.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_JIAOTANG_MALAGAO",
+      "asset_id": "art_dish_jiaotang_malagao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 焦糖马拉糕 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_jiaotang_malagao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SHIJIN_HAIXIANTANG",
+      "asset_id": "art_dish_shijin_haixiantang",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 什锦海鲜汤 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_shijin_haixiantang.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TIANDANJIU",
+      "asset_id": "art_dish_tiandanjiu",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 甜蛋酒 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tiandanjiu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_EE_SHOUDA_NINGMENGCHA",
+      "asset_id": "art_dish_ee_shouda_ningmengcha",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 鹅鹅手打柠檬茶 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_ee_shouda_ningmengcha.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_TANSHAO_JINQIANGYUPAI",
+      "asset_id": "art_dish_tanshao_jinqiangyupai",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 炭烧金枪鱼排 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_tanshao_jinqiangyupai.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_XIANSHUIJIAO",
+      "asset_id": "art_dish_xianshuijiao",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 咸水角 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_xianshuijiao.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SUZHA_DAJITUI",
+      "asset_id": "art_dish_suzha_dajitui",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 酥炸大鸡腿 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_suzha_dajitui.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_WEISHIJI_SUANJIU",
+      "asset_id": "art_dish_weishiji_suanjiu",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 威士忌酸酒 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_weishiji_suanjiu.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_CAIJIAO_TUDOUSI",
+      "asset_id": "art_dish_caijiao_tudousi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S4",
+      "priority": "P1",
+      "category": "Dish",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street Merge-2 casual mobile game; isolated dish asset, transparent background, 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected visual design. Create 彩椒土豆丝 as the only requested subject. Keep silhouette unmistakable at 64-72 px runtime size. Follow the locked V4 style-anchor family ANCHOR_DISH_01; until that anchor is CANON_LOCKED this job must remain pre-render only.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design",
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "art_dish_caijiao_tudousi.png",
+        "workspace": "art-source/v4/exports/art-s4/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "anchor/canon consistency",
+        "transparent-background isolation",
+        "mobile readability",
+        "asset id traceability"
       ]
     }
   ]
