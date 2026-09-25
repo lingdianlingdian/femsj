@@ -93,6 +93,7 @@ tools/
 npm run audit:data
 npm run audit:evidence
 npm run audit:content
+npm run audit:runtime
 ```
 
 完整状态：`docs/production/V4/STATUS.md`  
