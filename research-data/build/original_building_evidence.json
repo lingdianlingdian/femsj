@@ -1,0 +1,45 @@
+{
+  "version": "4.0",
+  "sources": [
+    "SRC_XIAOMI_EDITORIAL",
+    "SRC_ZHIHU_STORY"
+  ],
+  "observed": [
+    {
+      "type": "SHOP_TYPE",
+      "name": "烧烤店/烤串摊",
+      "confidence": "B"
+    },
+    {
+      "type": "SHOP_TYPE",
+      "name": "火锅店",
+      "confidence": "B"
+    },
+    {
+      "type": "SHOP_TYPE",
+      "name": "甜品铺",
+      "confidence": "B"
+    },
+    {
+      "type": "STREET_UPGRADE",
+      "name": "路面",
+      "confidence": "B"
+    },
+    {
+      "type": "STREET_UPGRADE",
+      "name": "桌椅",
+      "confidence": "B"
+    },
+    {
+      "type": "STREET_UPGRADE",
+      "name": "灯光",
+      "confidence": "B"
+    },
+    {
+      "type": "STREET_UPGRADE",
+      "name": "喷泉",
+      "confidence": "B"
+    }
+  ],
+  "designImplication": "V4原创4区BuildNode可用这些类别作为结构参考，但具体造型、名字、坐标和剧情必须原创。"
+}
