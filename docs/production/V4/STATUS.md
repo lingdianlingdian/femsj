@@ -13,22 +13,27 @@
 | UI Wireframe | 46 页 | ✅ 可交互HTML原型 |
 | Design Token | 1套 | ✅ V4基线 |
 | 字段级Schema | 1套 | ✅ Item/Producer/Recipe/Order/Day/Build/Event |
-| Item公开种子 | 约50项 | 🟡 持续扩充 |
-| Producer公开种子 | 4类 | 🟡 参数待采 |
-| Transformation公开种子 | 6条 | 🟡 持续扩充 |
+| Item公开种子 | 约90项（本轮+41） | 🟡 持续扩充 |
+| Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
+| Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
 | Asset Manifest | 225条 | 🟡 已从示例表升级为实际生产表 |
 | Character Registry | 24角色位 | 🟡 原创占位，Canon Sheet待画 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story Beats | 110日 | 🟡 Beat结构完整，对白/剧情正文待写 |
 | LiveOps Event | 6套 | ✅ 可配置蓝图 |
 | Economy | 观察值+开发默认值 | 🟡 版本敏感参数持续验证 |
+| Config Validator | Node零依赖 | ✅ 已可执行 |
+| Balance Simulator | Expected-cost v1 | 🟡 已可执行；Monte Carlo/盘面模拟待升级 |
 
 ## 现在仍属于 P0 的真实缺口
 
 ### P0-A 原作公开关卡转录
+- Day1-10：✅ 已公开文字逐单转录。
 - Day11-20：有公开图片，未逐单文字化。
 - Day51-60：有公开视频，未逐帧文字化。
-- Day80/82/83/84/101-110：有公开图片/帖子，未全部逐单文字化。
+- Day80/82/83/84：有公开图片，未全部逐单文字化。
+- Day101-105：✅ 已转录 48 条公开菜谱/食材关系；“订单菜单截图”仍待逐单转录。
+- Day106-110：独立公开帖子已解析为 https://www.taptap.cn/moment/823602182489113413，五张菜单图待转录。
 - 其他天数：继续搜索公开资料；找不到的保留 DEV_BLUEPRINT，不伪造。
 
 ### P0-B Producer / Recipe 精确参数
@@ -67,3 +72,11 @@ V4 只有在以下条件全部满足后才标记为 Production Ready：
 5. Balance Simulator 对110日全部跑通。
 6. Config Validator 0 error。
 7. QA P0/P1 用例全部通过。
+
+
+## 可执行工具
+
+```powershell
+node tools/config-validator/validate.mjs <game_content.json>
+node tools/balance-simulator/simulate.mjs <game_content.json> [day]
+```
