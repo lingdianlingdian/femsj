@@ -37,6 +37,9 @@ jobs:
       - name: Content reference closure audit
         run: npm run audit:content
 
+      - name: Art production contract audit
+        run: npm run audit:art
+
       - name: Runtime readiness report
         run: npm run audit:runtime
 
@@ -84,6 +87,10 @@ jobs:
             'production-data/v4/build/street_layout_4areas.json',
             'production-data/v4/characters/character_canon_v4.json',
             'production-data/v4/audio/audio_manifest_v4.json',
+            'production-data/v4/art/ai_art_jobs_v4.json',
+            'production-data/v4/art/ai_art_batch_s1_s3_v4.json',
+            'production-data/v4/art/art_output_manifest_v4.json',
+            'schemas/v4/art_output_manifest.schema.json',
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
             'production-data/v4/runtime/vertical_slice_balance_targets.json',
