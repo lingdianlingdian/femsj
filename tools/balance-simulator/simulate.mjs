@@ -2,12 +2,17 @@
 import fs from "node:fs";
 
 const file=process.argv[2];
-const dayArg=process.argv[3] ? Number(process.argv[3]) : null;
+const dayToken=process.argv[3];
+const dayArg=!dayToken || String(dayToken).toLowerCase()==="all" ? null : Number(dayToken);
 const runs=process.argv[4] ? Number(process.argv[4]) : 10000;
 const seedArg=process.argv[5] ? Number(process.argv[5]) : 20260925;
 
 if(!file){
-  console.error("Usage: node tools/balance-simulator/simulate.mjs <game_content.json> [day] [runs=10000] [seed=20260925]");
+  console.error("Usage: node tools/balance-simulator/simulate.mjs <game_content.json> [day|all] [runs=10000] [seed=20260925]");
+  process.exit(2);
+}
+if(dayToken && String(dayToken).toLowerCase()!=="all" && !Number.isFinite(dayArg)){
+  console.error("day must be a number or 'all'");
   process.exit(2);
 }
 if(!(runs>=100 && runs<=100000)){
