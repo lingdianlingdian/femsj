@@ -191,6 +191,39 @@ if (runtime && story) {
   }
 }
 
+// Queue/output status coherence.
+const queueByAsset=new Map(queue.map(x=>[x.asset_id,x]));
+const assetsByAsset=new Map(assets.map(x=>[x.asset_id,x]));
+for (const o of outputRows) {
+  const q=queueByAsset.get(o.asset_id);
+  const a=assetsByAsset.get(o.asset_id);
+  if (!q || !a) continue;
+  if (o.status === 'GENERATED' && !['GENERATED','CLEANUP','QA','APPROVED','INTEGRATED'].includes(q.status)) {
+    fail(`Output ${o.asset_id} is GENERATED but queue status is ${q.status}`);
+  }
+  if (o.status === 'APPROVED' && q.status !== 'APPROVED') fail(`Approved output ${o.asset_id} queue status is ${q.status}`);
+  if (o.status === 'APPROVED' && a.status !== 'APPROVED') fail(`Approved output ${o.asset_id} asset manifest status is ${a.status}`);
+  if (o.status === 'INTEGRATED' && (q.status !== 'INTEGRATED' || a.status !== 'INTEGRATED')) {
+    fail(`Integrated output ${o.asset_id} status not synchronized across manifests`);
+  }
+  if (['APPROVED','INTEGRATED'].includes(o.status)) {
+    if (!o.qa_file) fail(`Approved/integrated output ${o.asset_id} has no qa_file`);
+    else {
+      const qaAbs=path.join(ROOT,o.qa_file);
+      if (!fs.existsSync(qaAbs)) fail(`Approved/integrated output ${o.asset_id} QA file missing: ${o.qa_file}`);
+      else {
+        const qa=readJson(qaAbs);
+        if (qa) {
+          const failedGates=Object.entries(qa.gates||{}).filter(([,v])=>v!==true).map(([k])=>k);
+          if (failedGates.length) fail(`QA file for ${o.asset_id} has failed gates: ${failedGates.join(', ')}`);
+          if (qa.decision !== 'APPROVE') fail(`QA file for ${o.asset_id} decision is not APPROVE`);
+          if (!String(qa.reviewer||'').trim()) fail(`QA file for ${o.asset_id} has no reviewer`);
+        }
+      }
+    }
+  }
+}
+
 if (!outputRows.length) warn('No binary art outputs registered yet; contracts and jobs are ready but final rendered assets are still pending.');
 
 const report={
