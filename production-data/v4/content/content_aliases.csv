@@ -1,0 +1,3 @@
+alias_id,canonical_id,name,reason
+"dish_shenhongkafei","item_shenhongkafei","深烘咖啡","PUBLIC_TEXT已有同名直接物品；Day84追加dish重复建模"
+"dish_jiangzhishui","item_jiangzhishui","姜汁水","公开食谱表将姜汁水作为直接物品；Day84追加dish重复建模"
