@@ -13,7 +13,7 @@
 | UI Wireframe | 46 页 | ✅ 可交互HTML原型 |
 | Design Token | 1套 | ✅ V4基线 |
 | 字段级Schema | 1套 | ✅ Item/Producer/Recipe/Order/Day/Build/Event |
-| Item公开种子 | 约90项（本轮+41） | 🟡 持续扩充 |
+| Item公开种子 | 持续扩充（Day101-105 +41；Day80/84 +15） | 🟡 持续扩充 |
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
 | Asset Manifest | 225条 | 🟡 已从示例表升级为实际生产表 |
@@ -31,7 +31,9 @@
 - Day1-10：✅ 已公开文字逐单转录。
 - Day11-20：有公开图片，未逐单文字化。
 - Day51-60：有公开视频，未逐帧文字化。
-- Day80/82/83/84：有公开图片，未全部逐单文字化。
+- Day80：✅ 7个菜单项已视觉转录，并建立Recipe Evidence。
+- Day82/83：有公开图片，原图访问不稳定，继续转录。
+- Day84：✅ 14个菜单项已视觉转录；19条Producer-Output公开分组证据已落库。
 - Day101-105：✅ 已转录 48 条公开菜谱/食材关系；“订单菜单截图”仍待逐单转录。
 - Day106-110：独立公开帖子已解析为 https://www.taptap.cn/moment/823602182489113413，五张菜单图待转录。
 - 其他天数：继续搜索公开资料；找不到的保留 DEV_BLUEPRINT，不伪造。
