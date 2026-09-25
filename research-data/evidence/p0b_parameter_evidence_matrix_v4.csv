@@ -1,36 +1,62 @@
-entity_type,entity_id,field,observed_value,normalized_value,unit,source_id,evidence_kind,confidence,version_sensitive,runtime_usable,status,notes
-PRODUCER,GENERIC,cooldown_exists,"存在生成器冷却",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,false,false,EVIDENCED_MECHANISM,"行业实机拆解确认生成器冷却与体力/烹饪等待共同控制节奏；无精确秒数"
-PRODUCER,prod_shucaileizi,cooldown_or_exhaustion_exists,"玩家明确提到蔬菜篮子会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec"
-PRODUCER,prod_bingxiang,cooldown_or_exhaustion_exists,"玩家明确提到冰箱会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec"
-PRODUCER,prod_shuiguolanzi,cooldown_or_exhaustion_exists,"玩家明确提到水果篮子会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec"
-PRODUCER,prod_yinliaogui,output_item,"能量饮料",item_nengliangyinliao,item_id,SRC_DAY75_ENERGY_POST,PLAYER_REPORT,C,true,true,EVIDENCED_OUTPUT_RELATION,"Day75玩家明确称能量饮料与香槟均来自饮料柜"
-PRODUCER,prod_yinliaogui,output_item,"香槟",item_xiangbin,item_id,SRC_DAY75_ENERGY_POST,PLAYER_REPORT,C,true,true,EVIDENCED_OUTPUT_RELATION,"只确认产出关系，不确认weight"
-PRODUCER,GENERIC,upgrade_improves_output_efficiency,"优先升级发射器可大幅提升食材产出效率",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"官方平台编辑推荐确认方向；不能推出各等级数值"
-PRODUCER,GENERIC,boost_unlimited_supply,"爆炒时刻/爆炒接力期间相关发射器无限量供应",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"需与具体活动版本绑定"
-PRODUCER,GENERIC,boost_unlimited_emissions,"完成订单积累火苗，达到目标后限时相关生成器无限发射",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,true,false,EVIDENCED_MECHANISM,"行业实机拆解；与App Store编辑推荐交叉验证"
-COOKWARE,cook_grill,transformation_relation,"肉肠→烤肠；牛胸肉→烟熏牛胸肉",confirmed,relation,SRC_YOUXICHA,PUBLIC_IMAGE,B,false,true,EVIDENCED_RELATION,"加工关系可用于内容图；duration仍未解析"
-COOKWARE,cook_prep_station,transformation_relation,"蘑菇+洋葱+芝士片→菌香芝士卷",confirmed,relation,SRC_YOUXICHA,PUBLIC_IMAGE,B,false,true,EVIDENCED_RELATION,"加工关系可用于内容图；duration仍未解析"
-COOKWARE,GENERIC,cooking_wait_exists,"菜品放入厨具后需等待一段时间",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,false,false,EVIDENCED_MECHANISM,"确认存在等待，不代表所有菜谱时长一致"
-COOKWARE,GENERIC,boost_speed_increase,"爆炒时刻/爆炒接力期间烹饪速度加快",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"未公开速度倍率"
-COOKWARE,GENERIC,boost_unlimited_supply,"爆炒时刻/爆炒接力期间相关厨具无限量供应",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"无限量供应的具体实现语义需实机复核"
-RECIPE,UNBOUND,duration_observation,"玩家反馈做一道菜需四十多分钟",">40",minute,SRC_TAPTAP_40MIN_COOK,PLAYER_REPORT,C,true,false,OBSERVED_UNBOUND,"没有绑定菜名/厨具/等级，禁止回填任何recipe.durationSec"
-PRODUCER,GENERIC,level,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需清晰实机图/升级面板或可靠逐级记录"
-PRODUCER,GENERIC,energyCost,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"现有证据只确认点击受体力与冷却约束，不足以确认每次消耗"
-PRODUCER,GENERIC,capacity,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需要同等级从满量产出到耗尽的连续实机记录"
-PRODUCER,GENERIC,cooldownSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"存在性已确认；精确秒数未确认"
-PRODUCER,GENERIC,outputWeight,,null,weight,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"单张截图无法推导概率；需足够样本或官方说明"
-PRODUCER,GENERIC,highTierDirectDropRate,,null,probability,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需按等级采样"
-COOKWARE,GENERIC,level,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需升级/解锁实机证据"
-COOKWARE,GENERIC,queueSize,,null,count,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需清晰厨具界面"
-COOKWARE,GENERIC,speedModifier,,null,multiplier,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"正常与活动状态均需版本化记录"
-RECIPE,GENERIC,durationSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"必须绑定具体recipe+版本+界面倒计时"
-RECIPE,GENERIC,speedupGemPerMin,,null,gem_per_minute,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需同时记录剩余时间和加速价格"
-RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,SUPERSEDED_BY_EXACT,"首次裁切图仅确认20s；后续完整公开图已分别闭合为糖拌番茄20s、鲜榨蓝莓汁20s，精确记录见对应recipe行"
-RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,SUPERSEDED_BY_EXACT,"首次裁切图仅确认10s；后续完整公开图已闭合为草莓果露10s，精确记录见 recipe_vs_caomeiguolu"
-RECIPE,recipe_vs_junxiangzhishijuan,durationSec,"Day7公开实机加工面板32s",32,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"蘑菇+洋葱+芝士片与菌香芝士卷订单/加工面板闭合；cook_prep_station关系另有SRC_YOUXICHA交叉支持"
-RECIPE,recipe_vs_shengqiehuluobotiao,durationSec,"Day7公开实机加工面板1m20s",80,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"胡萝卜与生切胡萝卜条订单/加工面板闭合；器具名称尚未确认，不据此填cookwareId"
-RECIPE,recipe_vs_caijiaocuipian,durationSec,"Day6公开实机加工面板40s",40,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"彩椒脆片订单→彩椒加工面板→40s闭合；器具名称未确认，不据此填cookwareId"
-RECIPE,recipe_vs_caomeiguolu,durationSec,"Day8公开实机加工面板10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"冰糖+草莓果露订单→草莓加工面板→10s闭合；冰糖为订单独立需求，不属于该加工输入"
-RECIPE,recipe_vs_shoudaningmengzhi,durationSec,"Day9公开实机加工面板1m20s",80,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"手打柠檬汁订单→柠檬加工面板→1m20s闭合；器具名称未确认，不据此填cookwareId"
-RECIPE,recipe_vs_tangbanfanqie,durationSec,"Day6公开实机加工面板20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"糖拌番茄订单→番茄加工面板→20s闭合；器具名称未确认，不据此填cookwareId"
-RECIPE,recipe_vs_xianzhalanmeizhi,durationSec,"Day8公开实机加工面板20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"鲜榨蓝莓汁订单→蓝莓加工面板→20s闭合；器具名称未确认，不据此填cookwareId"
+entity_type,entity_id,field,observed_value,normalized_value,unit,source_id,evidence_kind,confidence,version_sensitive,runtime_usable,status,notes,observed_at,channel
+PRODUCER,GENERIC,cooldown_exists,"存在生成器冷却",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,false,false,EVIDENCED_MECHANISM,"行业实机拆解确认生成器冷却与体力/烹饪等待共同控制节奏；无精确秒数",2026-09-25,公开行业网页
+PRODUCER,prod_shucaileizi,cooldown_or_exhaustion_exists,"玩家明确提到蔬菜篮子会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec",2026-04-04,TapTap
+PRODUCER,prod_bingxiang,cooldown_or_exhaustion_exists,"玩家明确提到冰箱会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec",2026-04-04,TapTap
+PRODUCER,prod_shuiguolanzi,cooldown_or_exhaustion_exists,"玩家明确提到水果篮子会无能量/需等待",true,boolean,SRC_TAPTAP_COOLDOWN_FEEDBACK,PLAYER_REPORT,C,true,false,EVIDENCED_VERSION_SENSITIVE,"不能推出capacity或cooldownSec",2026-04-04,TapTap
+PRODUCER,prod_yinliaogui,output_item,"能量饮料",item_nengliangyinliao,item_id,SRC_DAY75_ENERGY_POST,PLAYER_REPORT,C,true,true,EVIDENCED_OUTPUT_RELATION,"Day75玩家明确称能量饮料与香槟均来自饮料柜",2026-08-29,TapTap
+PRODUCER,prod_yinliaogui,output_item,"香槟",item_xiangbin,item_id,SRC_DAY75_ENERGY_POST,PLAYER_REPORT,C,true,true,EVIDENCED_OUTPUT_RELATION,"只确认产出关系，不确认weight",2026-08-29,TapTap
+PRODUCER,GENERIC,upgrade_improves_output_efficiency,"优先升级发射器可大幅提升食材产出效率",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"官方平台编辑推荐确认方向；不能推出各等级数值",2026-09-25,Apple App Store TW
+PRODUCER,GENERIC,boost_unlimited_supply,"爆炒时刻/爆炒接力期间相关发射器无限量供应",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"需与具体活动版本绑定",2026-09-25,Apple App Store TW
+PRODUCER,GENERIC,boost_unlimited_emissions,"完成订单积累火苗，达到目标后限时相关生成器无限发射",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,true,false,EVIDENCED_MECHANISM,"行业实机拆解；与App Store编辑推荐交叉验证",2026-09-25,公开行业网页
+COOKWARE,cook_grill,transformation_relation,"肉肠→烤肠；牛胸肉→烟熏牛胸肉",confirmed,relation,SRC_YOUXICHA,PUBLIC_IMAGE,B,false,true,EVIDENCED_RELATION,"加工关系可用于内容图；duration仍未解析",2026-09-25,公开行业网页
+COOKWARE,cook_prep_station,transformation_relation,"蘑菇+洋葱+芝士片→菌香芝士卷",confirmed,relation,SRC_YOUXICHA,PUBLIC_IMAGE,B,false,true,EVIDENCED_RELATION,"加工关系可用于内容图；duration仍未解析",2026-09-25,公开行业网页
+COOKWARE,GENERIC,cooking_wait_exists,"菜品放入厨具后需等待一段时间",true,boolean,SRC_YOUXICHA,PUBLIC_TEXT,B,false,false,EVIDENCED_MECHANISM,"确认存在等待，不代表所有菜谱时长一致",2026-09-25,公开行业网页
+COOKWARE,GENERIC,boost_speed_increase,"爆炒时刻/爆炒接力期间烹饪速度加快",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"未公开速度倍率",2026-09-25,Apple App Store TW
+COOKWARE,GENERIC,boost_unlimited_supply,"爆炒时刻/爆炒接力期间相关厨具无限量供应",true,boolean,SRC_APPSTORE_EDITORIAL_TW,OFFICIAL,A,true,false,EVIDENCED_MECHANISM,"无限量供应的具体实现语义需实机复核",2026-09-25,Apple App Store TW
+RECIPE,UNBOUND,duration_observation,"玩家反馈做一道菜需四十多分钟",">40",minute,SRC_TAPTAP_40MIN_COOK,PLAYER_REPORT,C,true,false,OBSERVED_UNBOUND,"没有绑定菜名/厨具/等级，禁止回填任何recipe.durationSec",2026-09-25,TapTap
+PRODUCER,GENERIC,level,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需清晰实机图/升级面板或可靠逐级记录",,
+PRODUCER,GENERIC,energyCost,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"现有证据只确认点击受体力与冷却约束，不足以确认每次消耗",,
+PRODUCER,GENERIC,capacity,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需要同等级从满量产出到耗尽的连续实机记录",,
+PRODUCER,GENERIC,cooldownSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"存在性已确认；精确秒数未确认",,
+PRODUCER,GENERIC,outputWeight,,null,weight,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"单张截图无法推导概率；需足够样本或官方说明",,
+PRODUCER,GENERIC,highTierDirectDropRate,,null,probability,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需按等级采样",,
+COOKWARE,GENERIC,level,,null,,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需升级/解锁实机证据",,
+COOKWARE,GENERIC,queueSize,,null,count,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需清晰厨具界面",,
+COOKWARE,GENERIC,speedModifier,,null,multiplier,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"正常与活动状态均需版本化记录",,
+RECIPE,GENERIC,durationSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"必须绑定具体recipe+版本+界面倒计时",,
+RECIPE,GENERIC,speedupGemPerMin,,null,gem_per_minute,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需同时记录剩余时间和加速价格",,
+RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,SUPERSEDED_BY_EXACT,"首次裁切图仅确认20s；后续完整公开图已分别闭合为糖拌番茄20s、鲜榨蓝莓汁20s，精确记录见对应recipe行",2026-04-07,TapTap
+RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,SUPERSEDED_BY_EXACT,"首次裁切图仅确认10s；后续完整公开图已闭合为草莓果露10s，精确记录见 recipe_vs_caomeiguolu",2026-04-07,TapTap
+RECIPE,recipe_vs_junxiangzhishijuan,durationSec,"Day7公开实机加工面板32s",32,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"蘑菇+洋葱+芝士片与菌香芝士卷订单/加工面板闭合；cook_prep_station关系另有SRC_YOUXICHA交叉支持",2026-04-07,TapTap
+RECIPE,recipe_vs_shengqiehuluobotiao,durationSec,"Day7公开实机加工面板1m20s",80,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"胡萝卜与生切胡萝卜条订单/加工面板闭合；器具名称尚未确认，不据此填cookwareId",2026-04-07,TapTap
+RECIPE,recipe_vs_caijiaocuipian,durationSec,"Day6公开实机加工面板40s",40,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"彩椒脆片订单→彩椒加工面板→40s闭合；器具名称未确认，不据此填cookwareId",2026-04-07,TapTap
+RECIPE,recipe_vs_caomeiguolu,durationSec,"Day8公开实机加工面板10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"冰糖+草莓果露订单→草莓加工面板→10s闭合；冰糖为订单独立需求，不属于该加工输入",2026-04-07,TapTap
+RECIPE,recipe_vs_shoudaningmengzhi,durationSec,"Day9公开实机加工面板1m20s",80,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"手打柠檬汁订单→柠檬加工面板→1m20s闭合；器具名称未确认，不据此填cookwareId",2026-04-07,TapTap
+RECIPE,recipe_vs_tangbanfanqie,durationSec,"Day6公开实机加工面板20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"糖拌番茄订单→番茄加工面板→20s闭合；器具名称未确认，不据此填cookwareId",2026-04-07,TapTap
+RECIPE,recipe_vs_xianzhalanmeizhi,durationSec,"Day8公开实机加工面板20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"鲜榨蓝莓汁订单→蓝莓加工面板→20s闭合；器具名称未确认，不据此填cookwareId",2026-04-07,TapTap
+PRODUCER,GENERIC,outputPool,,null,item_set,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,已有21条Producer→Output关系边，但尚不能证明任一Producer的完整outputPool；禁止把已观察子集当作完整池。,,
+PRODUCER,GENERIC,upgradePath,,null,level_path,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,官方只确认升级可提升产出效率，未获得逐级升级路径/成本/产能变化。,,
+RECIPE,GENERIC,cookware,,null,cookware_id,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,66条非Merge关系中仅7条有工具绑定；不得按菜名或图标猜测其余cookware。,,
+RECIPE,GENERIC,unlockDay,,null,day,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,菜单出现日只证明available-by，不等于首次解锁日；逐Recipe unlockDay继续保持null。,,
+PRODUCER,prod_shucaileizi,output_item,洋葱,item_yangcong,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_binggui,output_item,深烘咖啡,item_shenhongkafei,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_binggui,output_item,乌龙茶,item_wulongcha,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_binggui,output_item,黄油,item_huangyou,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_xianrouxiaoshou,output_item,肘子,item_zhouzi,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_xianrouxiaoshou,output_item,鸡胸肉,item_jixiongrou,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_xianrouxiaoshou,output_item,带骨全鸡,item_daiguquanji,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_guopen,output_item,蓝莓,item_lanmei,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_guopen,output_item,草莓,item_caomei,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_guopen,output_item,柠檬,item_ningmeng,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_guopen,output_item,芒果,item_mangguo,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_guopen,output_item,蜂蜜,item_fengmi,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_haitiaogongju,output_item,生蚝,item_shenghao,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_jiushuiyinliaotai,output_item,可乐,item_kele,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_jiushuiyinliaotai,output_item,姜汁水,item_jiangzhishui,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_jiushuiyinliaotai,output_item,伏特加,item_futejia,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_jiushuiyinliaotai,output_item,朗姆,item_langmu,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_wugumicang,output_item,大米,item_dami,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+PRODUCER,prod_wugumicang,output_item,燕麦,item_yanmai,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_OUTPUT_RELATION,Day84公开所需食材/分组图已在producer_outputs_public.csv登记；只闭合该Producer→Output关系，不证明完整outputPool或weight。,2026-04-08,TapTap
+RECIPE,recipe_vs_jiaoxiangyangcongfan,inputs,Day84公开图：洋葱+大米,item_yangcong*1+item_dami*1,item_set,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_RELATION,与transform_graph_verified_v4.json中的ev_d084_onion_rice一致；只证明输入关系。,2026-04-08,TapTap
+RECIPE,recipe_vs_jiaoxiangyangcongfan,output,焦香洋葱饭,dish_jiaoxiangyangcongfan,item_id,SRC_TAPTAP_DAY83_84,PUBLIC_IMAGE,C,true,true,EVIDENCED_RELATION,Day84菜单/配方证据闭合输出实体；不等于精确unlockDay。,2026-04-08,TapTap
+RECIPE,recipe_vs_jiaoxiangyangcongfan,durationSec,Day90公开菜谱详情加工面板4m32s,272,second,SRC_TAPTAP_DAY90_RECIPE_DETAIL,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,Day84已闭合焦香洋葱饭inputs/output；Day90第9张详细菜谱图补出4m32s倒计时。厨具名称/等级、speedup、精确unlockDay仍不据此回填。,2026-06-07,TapTap

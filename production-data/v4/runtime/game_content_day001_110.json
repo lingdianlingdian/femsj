@@ -4833,7 +4833,7 @@
         }
       ],
       "outputItemId": "dish_jiaoxiangyangcongfan",
-      "durationSec": 240,
+      "durationSec": 272,
       "unlockDay": 84,
       "speedupGemPerMin": 0.77,
       "evidence": {
@@ -4843,7 +4843,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Executable recipe. Ingredient relation seeded from PUBLIC_IMAGE; remaining runtime parameters are original defaults."
+        "note": "Executable recipe. Ingredient relation seeded from PUBLIC_IMAGE; evidence duration retained; remaining runtime parameters are original defaults."
       }
     },
     {
@@ -28249,7 +28249,7 @@
       "difficulty": {
         "energyP50": 126,
         "energyP90": 164,
-        "cookWaitSec": 240,
+        "cookWaitSec": 272,
         "producerBlockSec": 180,
         "peakCells": 14,
         "manualActions": 178,
@@ -29642,7 +29642,7 @@
       "difficulty": {
         "energyP50": 201,
         "energyP90": 261,
-        "cookWaitSec": 480,
+        "cookWaitSec": 512,
         "producerBlockSec": 180,
         "peakCells": 20,
         "manualActions": 287,
@@ -30102,7 +30102,7 @@
       "difficulty": {
         "energyP50": 318,
         "energyP90": 414,
-        "cookWaitSec": 240,
+        "cookWaitSec": 272,
         "producerBlockSec": 180,
         "peakCells": 20,
         "manualActions": 451,
@@ -33353,7 +33353,7 @@
       "difficulty": {
         "energyP50": 419,
         "energyP90": 545,
-        "cookWaitSec": 345,
+        "cookWaitSec": 377,
         "producerBlockSec": 180,
         "peakCells": 21,
         "manualActions": 593,
@@ -33872,7 +33872,7 @@
       "difficulty": {
         "energyP50": 530,
         "energyP90": 688,
-        "cookWaitSec": 720,
+        "cookWaitSec": 752,
         "producerBlockSec": 240,
         "peakCells": 21,
         "manualActions": 748,
