@@ -1518,10 +1518,38 @@
       "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
       "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
       "note": "公开页面标题为“98天菜单”，共14张动态图片；作者未给完整性声明，图片数量不直接等同完整订单数。"
+    },
+    {
+      "assetId": "ev_day86_menu_01",
+      "days": [
+        86
+      ],
+      "postUrl": "https://www.taptap.cn/moment/811355157534084920?group_id=1191393",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fn54N8WwOhemWyVZ5BRNRA4jRhkC_20260603215542.jpg/_tap_ugc.jpg",
+      "role": "MENU_SCREENSHOT_SEQUENCE",
+      "roleConfidence": "HIGH",
+      "authorCompleteness": "我只有这俩截图了，将就看吧",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day86作者明确仅保留2张截图，证据组不完整；只固定可见图片，不推断完整订单数。"
+    },
+    {
+      "assetId": "ev_day86_menu_02",
+      "days": [
+        86
+      ],
+      "postUrl": "https://www.taptap.cn/moment/811355157534084920?group_id=1191393",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FhdvMKL7-OJ_pPJCq0CAGxY0Ppj2_20260603215543.jpg/_tap_ugc.jpg",
+      "role": "MENU_SCREENSHOT_SEQUENCE",
+      "roleConfidence": "HIGH",
+      "authorCompleteness": "我只有这俩截图了，将就看吧",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day86作者明确仅保留2张截图，证据组不完整；只固定可见图片，不推断完整订单数。"
     }
   ],
   "audit": {
-    "assetCount": 114,
-    "note": "Day87-90 and Day98-99 direct CDN URLs persisted; author completeness semantics preserved; transport timeout retained as status."
+    "assetCount": 116,
+    "note": "Day86, Day87-90 and Day98-99 direct CDN URLs persisted; incomplete/complete author statements preserved; transport timeout retained as status."
   }
 }
