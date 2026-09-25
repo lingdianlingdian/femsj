@@ -17,13 +17,13 @@
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
 | Asset Manifest | 225条 | 🟡 已从示例表升级为实际生产表 |
-| Character Registry | 24角色位 | 🟡 原创占位，Canon Sheet待画 |
+| Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story Beats | 110日 | 🟡 Beat结构完整，对白/剧情正文待写 |
 | LiveOps Event | 6套 | ✅ 可配置蓝图 |
 | Economy | 观察值+开发默认值 | 🟡 版本敏感参数持续验证 |
 | Config Validator | Node零依赖 | ✅ 已可执行 |
-| Balance Simulator | Expected-cost v1 | 🟡 已可执行；Monte Carlo/盘面模拟待升级 |
+| Balance Simulator | Monte Carlo v2 | 🟡 已支持随机掉落/容量/冷却/Merge/Recipe P50/P90/P95；真实盘面模拟待v3 |
 
 ## 现在仍属于 P0 的真实缺口
 
@@ -56,20 +56,28 @@
 - 加速价格
 
 ### P0-C 高保真视觉
-当前完成的是 Wireframe + production spec，不是最终 UI 美术稿。
-还需要：
-- 角色 Canon Sheet
-- 建筑区域布局图
-- 高保真原创 UI Kit
-- Item/Producer/Cookware 最终资产
+已完成：
+- ✅ 46页低保真 Wireframe
+- ✅ 46页原创高保真 UI Kit 原型
+- ✅ 41个共享UI组件/Prefab合同
+- ✅ 4区街区布局/相机/热点规范
+- ✅ 26角色 Canon
+- ✅ 音频/动效生产规格
 
-## P1
-- 完整API Contract
-- QA Test Case库
-- Remote Config发布/回滚流程
-- Balance Simulator可执行代码
-- Config Validator可执行代码
-- 全量剧情对白与本地化Key
+仍缺：
+- 最终正式原创 Item / Producer / Cookware 图标
+- 最终角色立绘/Spine
+- 最终建筑成图与环境资源
+- Cocos 实际 Prefab 接入与截图验收
+
+## P1（主体已补齐）
+- ✅ 完整 API Contract
+- ✅ QA Test Case 库（109条）
+- ✅ Remote Config发布/灰度/回滚流程
+- ✅ Balance Simulator Monte Carlo v2
+- ✅ Config Validator
+- ✅ GitHub Actions质量门禁
+- ⏳ 全量原创剧情对白与本地化Key
 
 ## 完成定义
 
@@ -119,3 +127,31 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - 新增：
   - `npm run audit:evidence`
   - `npm run audit:data`
+
+
+## 当前仓库质量基础设施
+
+- `AGENTS.md`：Agent统一规则
+- `api/openapi-v4.yaml`：服务端API合同
+- `schemas/v4/remote_config.schema.json`
+- `qa/v4/test_cases_v4.json`：109条QA用例
+- `.github/workflows/v4-quality.yml`
+- `npm run audit:data`
+- `npm run audit:evidence`
+- `npm run audit:content`
+- Config Validator
+- Balance Simulator Monte Carlo v2
+
+## 已验证生产规模
+
+- Order Registry：651
+- Verified Order Requirements：113
+- Verified Requirement unresolved：0
+- UI Screens：46
+- Shared UI Components：41
+- Asset Manifest：225
+- Original Character Canon：26
+- Audio Assets：42
+- Build Nodes：48
+- Story Beats：110
+- LiveOps Blueprints：6
