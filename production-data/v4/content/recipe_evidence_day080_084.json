@@ -1,0 +1,202 @@
+{
+  "version": "4.0",
+  "sources": [
+    "https://www.taptap.cn/moment/790629105325312627",
+    "https://www.taptap.cn/moment/790906865650238207"
+  ],
+  "policy": "Visual transcript. Missing cookware/duration remains null; medium-confidence names require second-source review.",
+  "recipes": [
+    {
+      "id": "ev_d080_fresh_orange_juice",
+      "day": 80,
+      "name": "鲜榨橙汁",
+      "inputs": [
+        "item_chengzi"
+      ],
+      "output": "dish_xianzhachengzhi",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d080_tequila_screwdriver",
+      "day": 80,
+      "name": "龙舌兰螺丝刀",
+      "inputs": [
+        "item_longshulan",
+        "dish_xianzhachengzhi"
+      ],
+      "output": "dish_longshulan_luosidao",
+      "confidence": "MEDIUM",
+      "note": "菜名视觉转录，需第二来源复核"
+    },
+    {
+      "id": "ev_d080_grilled_sausage",
+      "day": 80,
+      "name": "炭烤烤肉肠",
+      "inputs": [
+        "item_rouchang"
+      ],
+      "output": "dish_tankao_rouchang",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d080_hotdog_bun",
+      "day": 80,
+      "name": "烤热狗面包",
+      "inputs": [
+        "item_kuangquanshui",
+        "item_xiaomaifen",
+        "item_boliwan"
+      ],
+      "output": "dish_kaoregoumianbao",
+      "confidence": "HIGH",
+      "note": "玻璃碗在截图中列为材料/中间依赖，系统角色待确认"
+    },
+    {
+      "id": "ev_d080_cheese_hotdog",
+      "day": 80,
+      "name": "芝士热狗",
+      "inputs": [
+        "item_zhishipian",
+        "dish_tankao_rouchang",
+        "dish_kaoregoumianbao"
+      ],
+      "output": "dish_zhishiregou",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d080_garlic_bread",
+      "day": 80,
+      "name": "蒜香面包",
+      "inputs": [
+        "item_suan",
+        "item_zhishipian",
+        "item_xiaomaifen"
+      ],
+      "output": "dish_suanxiangmianbao",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d080_berry_oat",
+      "day": 80,
+      "name": "浆果蜂蜜燕麦碗",
+      "inputs": [
+        "item_lanmei",
+        "item_caomei",
+        "item_fengmi",
+        "item_yanmai"
+      ],
+      "output": "dish_jiangguofengmiyanmaiwang",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_golden_pork_knuckle",
+      "day": 84,
+      "name": "黄金烤肘子",
+      "inputs": [
+        "item_zhouzi"
+      ],
+      "output": "dish_huangjinkaozhouzi",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_onion_rice",
+      "day": 84,
+      "name": "焦香洋葱饭",
+      "inputs": [
+        "item_yangcong",
+        "item_dami"
+      ],
+      "output": "dish_jiaoxiangyangcongfan",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_grilled_chicken_breast",
+      "day": 84,
+      "name": "炭烤鸡胸肉",
+      "inputs": [
+        "item_jixiongrou"
+      ],
+      "output": "dish_tankaojixiongrou",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_butter_rice",
+      "day": 84,
+      "name": "黄油拌饭",
+      "inputs": [
+        "item_huangyou",
+        "item_dami"
+      ],
+      "output": "dish_huangyoubanfan",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_honey_chicken",
+      "day": 84,
+      "name": "蜜汁烤鸡",
+      "inputs": [
+        "item_daiguquanji"
+      ],
+      "output": "dish_mizhikaoji",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_fresh_oyster",
+      "day": 84,
+      "name": "新鲜生蚝",
+      "inputs": [
+        "item_shenghao"
+      ],
+      "output": "dish_xinxianshenghao",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_rum_cola",
+      "day": 84,
+      "name": "朗姆可乐",
+      "inputs": [
+        "item_langmu",
+        "item_kele"
+      ],
+      "output": "dish_langmukele",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_berry_oat",
+      "day": 84,
+      "name": "浆果蜂蜜燕麦碗",
+      "inputs": [
+        "item_lanmei",
+        "item_caomei",
+        "item_fengmi",
+        "item_yanmai"
+      ],
+      "output": "dish_jiangguofengmiyanmaiwang",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_garden_salad",
+      "day": 84,
+      "name": "田园沙拉",
+      "inputs": [
+        "item_shengcai",
+        "item_fanqie",
+        "item_xilanhua"
+      ],
+      "output": "dish_tianyuanshala",
+      "confidence": "HIGH"
+    },
+    {
+      "id": "ev_d084_moscow_mule",
+      "day": 84,
+      "name": "莫斯科之骡",
+      "inputs": [
+        "item_ningmeng",
+        "item_futejia",
+        "item_jiangzhishui"
+      ],
+      "output": "dish_moscow_mule",
+      "confidence": "HIGH"
+    }
+  ]
+}
