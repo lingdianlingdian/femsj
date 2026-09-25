@@ -1,0 +1,69 @@
+{
+  "version": "4.0",
+  "characters": [
+    {
+      "characterId": "char_xiaoye_original_evidence",
+      "name": "小叶",
+      "role": "PROTAGONIST",
+      "evidence": "B",
+      "sourceIds": [
+        "SRC_17173_JUNE",
+        "SRC_ZHIHU_STORY"
+      ],
+      "publicFacts": [
+        "找工作被鸽",
+        "早饭落车上",
+        "低血糖险些出事故",
+        "被阿陶帮助",
+        "帮助重建美食街"
+      ]
+    },
+    {
+      "characterId": "char_atao_original_evidence",
+      "name": "阿陶",
+      "role": "MAJOR_NPC",
+      "evidence": "B",
+      "sourceIds": [
+        "SRC_17173_JUNE",
+        "SRC_YOUXICHA",
+        "SRC_ZHIHU_STORY"
+      ],
+      "publicFacts": [
+        "美食街伙计",
+        "帮助小叶",
+        "身世留有悬念",
+        "熟悉美食街过往"
+      ]
+    },
+    {
+      "characterId": "char_yaya_original_evidence",
+      "name": "牙牙",
+      "role": "MAJOR_GUEST",
+      "evidence": "A/B",
+      "sourceIds": [
+        "SRC_YOUXICHA",
+        "SRC_APPSTORE_CN"
+      ],
+      "publicFacts": [
+        "爱吃糖的迷路女孩",
+        "官方活动中与玩家共同收集海滨假日记忆"
+      ]
+    },
+    {
+      "characterId": "char_laofan_original_evidence",
+      "name": "老范",
+      "role": "MAJOR_GUEST",
+      "evidence": "B",
+      "sourceIds": [
+        "SRC_YOUXICHA",
+        "SRC_ZHIHU_STORY"
+      ],
+      "publicFacts": [
+        "生活落魄但仗义",
+        "烧烤店后登场",
+        "曾是厨神弟子",
+        "与坏肉事件有关"
+      ]
+    }
+  ]
+}
