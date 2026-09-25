@@ -7,7 +7,7 @@
 | 模块 | 当前量 | 状态 |
 |---|---:|---|
 | 关卡经营日 | 110 日 | ✅ 节奏蓝图完整 |
-| Order Registry | 633 个订单槽位 | 🟡 Day1-10已公开文字转录；其余带证据/待转录状态 |
+| Order Registry | 651 个订单槽位 | 🟡 Day1-10已公开文字转录；其余带证据/待转录状态 |
 | UI页面 | 46 页 | ✅ 全页生产清单 |
 | UI逐页规格 | 46 页 | ✅ Production Bible |
 | UI Wireframe | 46 页 | ✅ 可交互HTML原型 |
@@ -42,7 +42,7 @@
 - Day90：公开9图，作者称“差不多就这些”，不标完整。
 - Day98：独立帖子14张动态图片，待逐图转录。
 - Day99：独立帖子13张动态图片，待逐图转录。
-- Day101-105：✅ 已转录 48 条公开菜谱/食材关系；“订单菜单截图”仍待逐单转录。
+- Day101-105：✅ 已逐项转录49个公开菜单/食谱条目，并映射稳定ItemId；已写回Order Registry。
 - Day106-110：独立公开帖子已解析为 https://www.taptap.cn/moment/823602182489113413，五张菜单图待转录。
 - 其他天数：继续搜索公开资料；找不到的保留 DEV_BLUEPRINT，不伪造。
 
@@ -90,3 +90,32 @@ V4 只有在以下条件全部满足后才标记为 Production Ready：
 node tools/config-validator/validate.mjs <game_content.json>
 node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 ```
+
+
+## 本轮证据资产化
+
+- 新增 `research-data/levels/public_image_assets_v4.json/csv`
+- 当前已固定 **50 个底层公开图片资产**：
+  - Day11-15：1张长表
+  - Day16-20：5张页面顺序图
+  - Day80：食材+菜单2张
+  - Day82：食材+菜单2张
+  - Day83/84：食材+菜单4张
+  - Day92：9张
+  - Day93：10张
+  - Day94：12张
+  - Day106-110：5张
+- 每个资产保存：帖子URL、底层图床URL、语义角色、转录状态、访问状态。
+- CDN超时只记录为传输状态，不视为证据失效。
+
+## 数据质量审计
+
+- `items_seed_public.csv` 曾发现15行列数错位，已修复。
+- Producer研究采集表已规范化拆成：
+  - `producers_master_public.csv`（10个唯一Producer主记录）
+  - `producer_outputs_public.csv`（21条Producer→Output证据）
+- 当前已抽查的核心CSV全部列宽一致，0个坏行。
+- Day80/84/101-105的持久证据文件已清除会话期 `turn...` 临时引用。
+- 新增：
+  - `npm run audit:evidence`
+  - `npm run audit:data`
