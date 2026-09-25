@@ -314,9 +314,11 @@
       "type": "PLAYER_MENU",
       "url": "https://www.taptap.cn/moment/790611816005766899",
       "claims": [
-        "Day6-10逐单经营菜单需求"
+        "Day6-10逐单经营菜单需求",
+        "Day6-10公开实机截图中可见至少20秒加工倒计时",
+        "Day6-10公开实机截图中可见至少10秒加工倒计时"
       ],
-      "notes": "玩家公开逐日记录；含需求食材与菜单文字。"
+      "notes": "玩家公开逐日记录；含需求食材与菜单文字。；2026-09-25二次核图：可确认截图内存在20s与10s加工倒计时，但当前搜索图裁切不足以可靠绑定到具体Recipe，暂按OBSERVED_UNBOUND处理。"
     },
     {
       "id": "SRC_APPSTORE_EDITORIAL_TW",
@@ -333,7 +335,7 @@
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Added App Store editorial mechanism evidence and P0-B mechanism anchors; exact producer/cookware timings remain unresolved.",
+    "note": "Added image-level Day6-10 observed cooking timers (20s/10s) as unbound evidence; no recipe binding guessed.",
     "sourceCount": 28
   }
 }
