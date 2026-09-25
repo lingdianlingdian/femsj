@@ -13,7 +13,8 @@ const files = {
   outputs: P('production-data/v4/art/art_output_manifest_v4.json'),
   runtime: P('production-data/v4/runtime/game_content_day001_010.json'),
   story: P('production-data/v4/story/story_dialogue_day001_010.json'),
-  coverage: P('production-data/v4/art/day001_010_art_coverage_v4.json')
+  coverage: P('production-data/v4/art/day001_010_art_coverage_v4.json'),
+  bindings: P('production-data/v4/art/runtime_art_bindings_day001_010_v4.json')
 };
 
 function fail(msg) {
@@ -89,6 +90,7 @@ const outputs = fs.existsSync(files.outputs) ? readJson(files.outputs) : null;
 const runtime = fs.existsSync(files.runtime) ? readJson(files.runtime) : null;
 const story = fs.existsSync(files.story) ? readJson(files.story) : null;
 const coverage = fs.existsSync(files.coverage) ? readJson(files.coverage) : null;
+const bindings = fs.existsSync(files.bindings) ? readJson(files.bindings) : null;
 
 const assetIds = assets.map(x=>x.asset_id);
 const anchorIds = anchors.map(x=>x.anchor_id);
@@ -222,6 +224,29 @@ for (const o of outputRows) {
       }
     }
   }
+}
+
+// Runtime art binding closure.
+if (bindings && runtime && story) {
+  const allBoundAssetIds=[];
+  for (const v of Object.values(bindings.uiShell||{})) allBoundAssetIds.push(v);
+  for (const group of Object.values(bindings.content||{})) for (const v of Object.values(group||{})) allBoundAssetIds.push(v);
+  for (const c of Object.values(bindings.characters||{})) for (const v of Object.values(c||{})) allBoundAssetIds.push(v);
+  for (const b of Object.values(bindings.buildNodes||{})) for (const v of Object.values(b||{})) allBoundAssetIds.push(v);
+  for (const v of Object.values(bindings.vfx||{})) allBoundAssetIds.push(v);
+  for (const id of allBoundAssetIds) if (!assetSet.has(id)) fail('Runtime art binding references missing AssetId: ' + id);
+
+  const runtimeItemIds=new Set((runtime.items||[]).map(x=>x.id));
+  const runtimeProducerIds=new Set((runtime.producers||[]).map(x=>x.id));
+  const runtimeCookwareIds=new Set((runtime.cookwares||[]).map(x=>x.id));
+  for (const id of runtimeItemIds) if (!bindings.content?.items?.[id]) fail('Runtime item missing art binding: ' + id);
+  for (const id of runtimeProducerIds) if (!bindings.content?.producers?.[id]) fail('Runtime producer missing art binding: ' + id);
+  for (const id of runtimeCookwareIds) if (!bindings.content?.cookwares?.[id]) fail('Runtime cookware missing art binding: ' + id);
+
+  const storyCharacters=[...collectRefs(story,/speaker|character|actor|npc/i)].filter(x=>/^char_/.test(x));
+  for (const cid of storyCharacters) if (!bindings.characters?.[cid]) fail('Story character missing art binding: ' + cid);
+
+  for (const node of runtime.buildNodes||[]) if (!bindings.buildNodes?.[node.id]) fail('Build node missing art binding: ' + node.id);
 }
 
 if (!outputRows.length) warn('No binary art outputs registered yet; contracts and jobs are ready but final rendered assets are still pending.');
