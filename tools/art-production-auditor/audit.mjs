@@ -10,7 +10,10 @@ const files = {
   anchors: P('production-data/v4/art/style_anchor_manifest_v4.csv'),
   anchorJobs: P('production-data/v4/art/ai_art_jobs_v4.json'),
   batchJobs: P('production-data/v4/art/ai_art_batch_s1_s3_v4.json'),
-  outputs: P('production-data/v4/art/art_output_manifest_v4.json')
+  outputs: P('production-data/v4/art/art_output_manifest_v4.json'),
+  runtime: P('production-data/v4/runtime/game_content_day001_010.json'),
+  story: P('production-data/v4/story/story_dialogue_day001_010.json'),
+  coverage: P('production-data/v4/art/day001_010_art_coverage_v4.json')
 };
 
 function fail(msg) {
@@ -52,6 +55,18 @@ function readCsv(file) {
   try { return parseCsv(fs.readFileSync(file,'utf8')); }
   catch (e) { fail(`Unreadable CSV ${path.relative(ROOT,file)}: ${e.message}`); return []; }
 }
+function collectRefs(obj, keyRe, out = new Set()) {
+  if (Array.isArray(obj)) {
+    for (const x of obj) collectRefs(x, keyRe, out);
+  } else if (obj && typeof obj === 'object') {
+    for (const [k,v] of Object.entries(obj)) {
+      if (keyRe.test(k) && typeof v === 'string') out.add(v);
+      collectRefs(v, keyRe, out);
+    }
+  }
+  return out;
+}
+
 function dupes(values) {
   const seen=new Set(), d=new Set();
   for (const v of values) { if (seen.has(v)) d.add(v); seen.add(v); }
@@ -71,6 +86,9 @@ const anchors = fs.existsSync(files.anchors) ? readCsv(files.anchors) : [];
 const anchorJobs = fs.existsSync(files.anchorJobs) ? readJson(files.anchorJobs) : null;
 const batchJobs = fs.existsSync(files.batchJobs) ? readJson(files.batchJobs) : null;
 const outputs = fs.existsSync(files.outputs) ? readJson(files.outputs) : null;
+const runtime = fs.existsSync(files.runtime) ? readJson(files.runtime) : null;
+const story = fs.existsSync(files.story) ? readJson(files.story) : null;
+const coverage = fs.existsSync(files.coverage) ? readJson(files.coverage) : null;
 
 const assetIds = assets.map(x=>x.asset_id);
 const anchorIds = anchors.map(x=>x.anchor_id);
@@ -133,6 +151,44 @@ for (const o of outputRows) {
   if (['APPROVED','INTEGRATED'].includes(o.status)) {
     for (const g of ['canon','readability','perspective','palette','bundle','performance','originality']) {
       if (gates[g] !== true) fail(`Output ${o.asset_id} is ${o.status} but gate ${g} is not true`);
+    }
+  }
+}
+
+// Day1-10 playable art closure: runtime content + story characters + first six Street01 build nodes.
+if (runtime && story) {
+  const runtimeRequired = [
+    ...(runtime.items || []).map(x => (String(x.id).startsWith('dish_') ? 'art_dish_' : 'art_item_') + String(x.id).replace(/^(dish_|item_)/,'')),
+    ...(runtime.producers || []).map(x => 'art_prod_' + String(x.id).replace(/^prod_/,''))
+    ,...(runtime.cookwares || []).map(x => 'art_cook_' + String(x.id).replace(/^cook_/,''))
+  ];
+  const storyCharacters = [...collectRefs(story, /speaker|character|actor|npc/i)].filter(x => /^char_/.test(x));
+  const storyRequired = [];
+  for (const cid of storyCharacters) {
+    storyRequired.push(cid + '_canon_sheet', cid + '_avatar', cid + '_story', cid + '_spine');
+  }
+  const buildRequired = [];
+  for (let i=1;i<=6;i++) {
+    const n=String(i).padStart(2,'0');
+    buildRequired.push('street_01_build_' + n + '_before', 'street_01_build_' + n + '_after');
+  }
+  const required = [...new Set([...runtimeRequired, ...storyRequired, ...buildRequired])];
+  const batchAssetSet = new Set((batchJobs?.jobs || []).map(x => x.asset_id));
+  for (const id of required) {
+    if (!assetSet.has(id)) fail('Day1-10 art closure missing manifest asset: ' + id);
+    if (!queueAssetIds.includes(id)) fail('Day1-10 art closure missing production queue asset: ' + id);
+    if (!batchAssetSet.has(id)) fail('Day1-10 art closure missing execution job: ' + id);
+  }
+  if (coverage) {
+    const declared = new Set([
+      ...(coverage.required?.runtimeContent || []),
+      ...(coverage.required?.storyCharacterAssets || []),
+      ...(coverage.required?.buildings || [])
+    ]);
+    for (const id of required) if (!declared.has(id)) fail('Coverage report missing required asset: ' + id);
+    if (coverage.counts?.requiredUniqueAssets !== required.length) fail('Coverage requiredUniqueAssets mismatch');
+    if (coverage.closure?.manifestClosed !== true || coverage.closure?.queueClosed !== true || coverage.closure?.jobsClosed !== true) {
+      fail('Coverage report is not fully closed');
     }
   }
 }
