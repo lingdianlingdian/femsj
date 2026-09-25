@@ -1,0 +1,16 @@
+{
+  "name": "femsj-cocos-client",
+  "uuid": "f0a9c7e6-13d3-4fc0-8a74-0d8d33f4e5a1",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Cocos Creator 3.8 LTS client for femsj V4",
+  "creator": {
+    "version": "3.8"
+  },
+  "femsj": {
+    "designResolution": "750x1334",
+    "tallResolution": "750x1624",
+    "screenCount": 46,
+    "sharedComponentCount": 41
+  }
+}

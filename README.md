@@ -86,7 +86,7 @@ tools/
 1. Day11–20、51–60、82/83、87–90、92–99、106–110 等公开菜单继续逐项转录。
 2. Producer 精确 output weight / capacity / cooldown / 高阶直出概率。
 3. Recipe 精确 cookware / duration / speedup。
-4. Cocos Creator 实际客户端：Scene / Prefab / Runtime Loader / Merge-2 Board / Dialogue Player / Asset Bundle 接入。
+4. Cocos Creator 客户端：✅ 工程骨架 / 46 Screen路由合同 / 41组件Prefab合同 / ScreenRouter / SafeArea 已落库；⏳ Cocos Editor正式Scene/Prefab/Runtime Loader/Merge-2 Board/Dialogue Player/Asset Bundle接入仍需完成。
 5. 46页真实客户端截图回归、微信小游戏真机性能/弱网/幂等验收。
 6. Balance Simulator v3.1：跨Day库存继承、Cookware并行与活动Modifier。
 
