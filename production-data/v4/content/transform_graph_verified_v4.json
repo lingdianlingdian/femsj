@@ -530,16 +530,18 @@
         }
       ],
       "toolId": null,
-      "durationSec": null,
+      "durationSec": 272,
       "outputItemId": "dish_jiaoxiangyangcongfan",
       "evidence": {
         "kind": "PUBLIC_IMAGE",
-        "confidence": "C",
+        "confidence": "B",
         "sourceUrls": [
           "https://www.taptap.cn/moment/790629105325312627",
-          "https://www.taptap.cn/moment/790906865650238207"
+          "https://www.taptap.cn/moment/790906865650238207",
+          "https://www.taptap.cn/moment/812261385202305394?group_id=1191393"
         ],
-        "note": null
+        "note": "Day84公开图先闭合焦香洋葱饭=洋葱+大米→成品；Day90第9张详细菜谱图显示加工倒计时4m32s（272s）。厨具名称/等级未可靠闭合，因此toolId保持null。",
+        "sourceVisualId": "DAY90_RECIPE_DETAIL_ONION_RICE_4M32S"
       }
     },
     {
