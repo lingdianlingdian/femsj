@@ -19,19 +19,19 @@ if(!(runs>=100 && runs<=100000)){
 const profiles={
   CASUAL:{
     boardCells:63,storageSlots:8,pressureThreshold:.95,
-    proactiveStorage:false,autoCompact:false,
+    proactiveStorage:false,autoCompact:false,allowPressureClear:false,
     cooldownWaitMultiplier:1,recipeWaitMultiplier:1,
     longWaitSessionSec:600
   },
   OPTIMIZED:{
     boardCells:63,storageSlots:8,pressureThreshold:.82,
-    proactiveStorage:true,autoCompact:true,
+    proactiveStorage:true,autoCompact:true,allowPressureClear:true,
     cooldownWaitMultiplier:1,recipeWaitMultiplier:1,
     longWaitSessionSec:600
   },
   WHALE:{
     boardCells:63,storageSlots:16,pressureThreshold:.88,
-    proactiveStorage:true,autoCompact:true,
+    proactiveStorage:true,autoCompact:true,allowPressureClear:true,
     cooldownWaitMultiplier:.5,recipeWaitMultiplier:.5,
     longWaitSessionSec:600
   }
@@ -164,7 +164,8 @@ function runOneDay(dayRow,runSeed){
     board:new Map(),storage:new Map(),producerState:new Map(),byproductCredit:new Map(),
     energy:0,waitSec:0,manualActions:0,peakBoard:0,peakStorage:0,
     boardFullHit:false,hardBlocked:false,hardBlockReason:null,
-    byproductProduced:0,byproductReused:0,storageMoves:0,mergeCompactions:0,
+    byproductProduced:0,byproductReused:0,byproductCleared:0,
+    storageMoves:0,mergeCompactions:0,pressureClears:0,
     sessionBreaks:0,producerCooldowns:0,cookOps:0
   };
 
@@ -239,15 +240,63 @@ function runOneDay(dayRow,runSeed){
     return candidates[0]?.id||null;
   }
 
+  function junkCandidate(container,protectedIds){
+    const candidates=[];
+    for(const [id,count] of container){
+      if(count<=0||protectedIds.has(id))continue;
+      const demand=remainingDemand.get(id)||0;
+      const byproduct=state.byproductCredit.get(id)||0;
+      if(demand>0||byproduct<=0)continue;
+      candidates.push({id,byproduct});
+    }
+    candidates.sort((a,b)=>(b.byproduct-a.byproduct)||a.id.localeCompare(b.id));
+    return candidates[0]?.id||null;
+  }
+
+  function clearPressureJunk(protectedIds){
+    if(!profile.allowPressureClear)return false;
+    let id=junkCandidate(state.board,protectedIds);
+    if(id){
+      dec(state.board,id,1);
+      if((state.byproductCredit.get(id)||0)>0)dec(state.byproductCredit,id,1);
+      state.byproductCleared++; state.pressureClears++; state.manualActions++;
+      return true;
+    }
+    id=junkCandidate(state.storage,protectedIds);
+    if(id){
+      dec(state.storage,id,1);
+      if((state.byproductCredit.get(id)||0)>0)dec(state.byproductCredit,id,1);
+      state.byproductCleared++; state.pressureClears++; state.manualActions++;
+      return true;
+    }
+    return false;
+  }
+
   function relievePressure(protectedIds=new Set()){
     compactBoard(protectedIds);
-    while(boardCount()>=profile.boardCells*profile.pressureThreshold&&storageCount()<profile.storageSlots){
-      const id=storageCandidate(protectedIds);
-      if(!id)break;
-      dec(state.board,id,1); inc(state.storage,id,1);
-      state.storageMoves++; state.manualActions++;
-      updatePeaks();
-      if(!profile.proactiveStorage)break;
+    let guard=0;
+    while(boardCount()>=profile.boardCells*profile.pressureThreshold&&guard++<500){
+      if(storageCount()<profile.storageSlots){
+        const id=storageCandidate(protectedIds);
+        if(id){
+          dec(state.board,id,1); inc(state.storage,id,1);
+          state.storageMoves++; state.manualActions++;
+          updatePeaks();
+          if(!profile.proactiveStorage)break;
+          continue;
+        }
+      }
+      if(clearPressureJunk(protectedIds))continue;
+      if(storageCount()<profile.storageSlots){
+        const id=storageCandidate(protectedIds);
+        if(id){
+          dec(state.board,id,1); inc(state.storage,id,1);
+          state.storageMoves++; state.manualActions++;
+          updatePeaks();
+          continue;
+        }
+      }
+      break;
     }
     return boardCount()<profile.boardCells;
   }
@@ -389,9 +438,11 @@ function runOneDay(dayRow,runSeed){
     boardFullHit:state.boardFullHit,
     byproductProduced:state.byproductProduced,
     byproductReused:state.byproductReused,
+    byproductCleared:state.byproductCleared,
     byproductUtilization:state.byproductProduced?state.byproductReused/state.byproductProduced:1,
     storageMoves:state.storageMoves,
     mergeCompactions:state.mergeCompactions,
+    pressureClears:state.pressureClears,
     residualBoard,
     residualStorage,
     producerCooldowns:state.producerCooldowns,
@@ -433,8 +484,10 @@ for(const d of targetDays){
     manualActions:stats(samples.map(x=>x.manualActions)),
     sessionCount:stats(samples.map(x=>x.sessionCount)),
     byproductUtilization:stats(samples.map(x=>x.byproductUtilization)),
+    byproductCleared:stats(samples.map(x=>x.byproductCleared)),
     storageMoves:stats(samples.map(x=>x.storageMoves)),
     mergeCompactions:stats(samples.map(x=>x.mergeCompactions)),
+    pressureClears:stats(samples.map(x=>x.pressureClears)),
     residualBoard:stats(samples.map(x=>x.residualBoard)),
     residualStorage:stats(samples.map(x=>x.residualStorage))
   });
@@ -450,6 +503,7 @@ console.log(JSON.stringify({
     "Board uses one cell per item instance; no stackable item exception is assumed.",
     "Producer cooldown and recipe duration are accumulated sequentially; parallel cookware scheduling is not yet modeled.",
     "Storage moves are heuristic and do not model UI travel time.",
+    "OPTIMIZED/WHALE may clear only zero-remaining-demand byproducts under board pressure; cleared items grant no coin, so this is a conservative clutter-management model.",
     "WHALE is a DEV strategy template with extra storage and 0.5 wait multipliers; it is not a claim about competitor monetization.",
     "Only runtime config values supplied to this simulator are treated as executable inputs."
   ],
