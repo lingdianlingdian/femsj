@@ -1,0 +1,18 @@
+{
+  "version": "4.0",
+  "updatedAt": "2026-09-25",
+  "aliases": [
+    {
+      "alias_id": "dish_shenhongkafei",
+      "canonical_id": "item_shenhongkafei",
+      "name": "深烘咖啡",
+      "reason": "PUBLIC_TEXT已有同名直接物品；Day84追加dish重复建模"
+    },
+    {
+      "alias_id": "dish_jiangzhishui",
+      "canonical_id": "item_jiangzhishui",
+      "name": "姜汁水",
+      "reason": "公开食谱表将姜汁水作为直接物品；Day84追加dish重复建模"
+    }
+  ]
+}
