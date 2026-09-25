@@ -223,4 +223,4 @@ asset_id,category,subcategory,name,source_size,runtime_size,format,bundle,states
 "fx_build_reveal","VFX","Common","建设完成","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
 "fx_unlock","VFX","Common","新内容解锁","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
 "fx_card_reveal","VFX","Common","卡牌揭示","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
-"fx_event_boost","VFX","Common","活动增强","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
+"fx_event_boost","VFX","Common","活动增强","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级""art_item_shengcai","Board","Item","生菜","256x256","64~72","PNG","items_01","Normal","0.5,0.5","0.5,0.5","","","PLANNED","关联内容ID item_shengcai；Day1-10垂直切片配方输入"
