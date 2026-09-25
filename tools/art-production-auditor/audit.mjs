@@ -108,7 +108,7 @@ for (const j of allJobs) {
   if (j.anchor_id && !anchorSet.has(j.anchor_id)) fail(`Job ${j.job_id} references missing anchor ${j.anchor_id}`);
   if (!j.prompt_spec || j.prompt_spec.length < 40) fail(`Job ${j.job_id} prompt_spec too short or missing`);
   const forbidden=j.forbidden || [];
-  if (Array.isArray(forbidden) && forbidden.some(x=>/pixel-for-pixel|competitor-specific/i.test(String(x))) {
+  if (Array.isArray(forbidden) && forbidden.some(x=>/pixel-for-pixel|competitor-specific/i.test(String(x)))) {
     // Explicit negative constraints are allowed and expected.
   }
 }
