@@ -40,6 +40,18 @@ jobs:
       - name: Runtime readiness report
         run: npm run audit:runtime
 
+      - name: Validate Day1-10 runtime slice
+        run: npm run validate:config -- production-data/v4/runtime/game_content_day001_010.json
+
+      - name: Balance smoke Day 1
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_010.json 1 500 20260925
+
+      - name: Balance smoke Day 5
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_010.json 5 500 20260925
+
+      - name: Balance smoke Day 10
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_010.json 10 500 20260925
+
       - name: Parse critical JSON files
         shell: bash
         run: |
@@ -55,6 +67,7 @@ jobs:
             'production-data/v4/characters/character_canon_v4.json',
             'production-data/v4/audio/audio_manifest_v4.json',
             'production-data/v4/events/events_v4.json',
+            'production-data/v4/runtime/game_content_day001_010.json',
             'research-data/evidence/source_registry_v4.json',
             'research-data/levels/public_image_assets_v4.json',
             'research-data/economy/observation_ledger_v4.json'
