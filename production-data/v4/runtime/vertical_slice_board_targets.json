@@ -1,0 +1,33 @@
+{
+  "version": "4.0",
+  "simulatorVersion": "3.0-board-state",
+  "scope": "DAY001_010_BOARD_STATE_GATE",
+  "generatedAt": "2026-09-25",
+  "configPath": "production-data/v4/runtime/game_content_day001_010.json",
+  "strategy": "OPTIMIZED",
+  "runs": 500,
+  "seed": 20260925,
+  "policy": "DEV_BLUEPRINT regression thresholds. They are quality gates for the original vertical slice, not competitor backend values.",
+  "targets": [
+    {
+      "day": 1,
+      "maxPFullBoard": 0.02,
+      "maxPHardBlocked": 0,
+      "maxPeakBoardP90": 50,
+      "maxPeakStorageP90": 4,
+      "maxManualActionsP90": 70,
+      "maxPressureClearsP90": 5,
+      "minByproductUtilizationP50": 0.15
+    },
+    {
+      "day": 10,
+      "maxPFullBoard": 0.02,
+      "maxPHardBlocked": 0,
+      "maxPeakBoardP90": 55,
+      "maxPeakStorageP90": 8,
+      "maxManualActionsP90": 190,
+      "maxPressureClearsP90": 35,
+      "minByproductUtilizationP50": 0.05
+    }
+  ]
+}
