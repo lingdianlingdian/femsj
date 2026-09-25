@@ -1,10 +1,10 @@
 {
   "version": "4.0",
-  "generatedAt": "2026-09-25T10:45:25.938Z",
+  "generatedAt": "2026-09-25T10:46:53.466Z",
   "renderer": "tools/art-procedural-generator/generate.mjs",
   "styleAnchors": 14,
-  "productionAssets": 353,
-  "approved": 353,
+  "productionAssets": 389,
+  "approved": 389,
   "categories": {
     "UI": 15,
     "Board": 4,
@@ -13,10 +13,10 @@
     "Producer": 14,
     "Cookware": 6,
     "VFX": 8,
-    "CharacterCanon": 8,
+    "CharacterCanon": 26,
     "Building": 96,
     "CharacterAvatar": 26,
-    "CharacterStory": 8,
+    "CharacterStory": 26,
     "CharacterNPC": 26,
     "Item": 49,
     "Special": 5

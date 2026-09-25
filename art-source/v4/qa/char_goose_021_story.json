@@ -1,0 +1,28 @@
+{
+  "version": "4.0",
+  "asset_id": "char_goose_021_story",
+  "job_id": "JOB_CHAR_GOOSE_021_STORY",
+  "category": "CharacterStory",
+  "file_path": "art-source/v4/exports/art-full/char_goose_021_story.png",
+  "createdAt": "2026-09-25T10:46:53.466Z",
+  "reviewer": "OpenAI procedural-art pipeline",
+  "reviewedAt": "2026-09-25T10:46:53.466Z",
+  "decision": "APPROVE",
+  "gates": {
+    "canon": true,
+    "readability": true,
+    "perspective": true,
+    "palette": true,
+    "bundle": true,
+    "performance": true,
+    "originality": true,
+    "canon_identity": true,
+    "fixed_props": true,
+    "proportion_consistency": true,
+    "expression_consistency": true,
+    "crop_consistency": true
+  },
+  "notes": [
+    "Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text."
+  ]
+}

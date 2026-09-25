@@ -1,6 +1,6 @@
 {
   "version": "4.2-full-manifest",
-  "generatedAt": "2026-09-25T10:45:25.931Z",
+  "generatedAt": "2026-09-25T10:46:53.459Z",
   "scope": "ART-S1/S2/S3 + ART-S4 full 110-day content production jobs",
   "sourceQueue": "production-data/v4/art/art_production_queue_v4.csv",
   "rules": {
@@ -22,7 +22,7 @@
       "Transparent asset jobs are isolated objects, not style-guide posters."
     ]
   },
-  "jobCount": 353,
+  "jobCount": 389,
   "jobs": [
     {
       "job_id": "JOB_UI_BG_GLOBAL",
@@ -13838,6 +13838,1356 @@
         "palette/outline consistency",
         "asset id traceability",
         "mobile readability"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_007_CANON_SHEET",
+      "asset_id": "char_goose_007_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 阿青角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_007_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_007_STORY",
+      "asset_id": "char_goose_007_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 阿青剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_007_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_008_CANON_SHEET",
+      "asset_id": "char_goose_008_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 米糕角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_008_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_008_STORY",
+      "asset_id": "char_goose_008_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 米糕剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_008_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_009_CANON_SHEET",
+      "asset_id": "char_goose_009_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 小柚角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_009_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_009_STORY",
+      "asset_id": "char_goose_009_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 小柚剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_009_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_010_CANON_SHEET",
+      "asset_id": "char_goose_010_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 黑豆角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_010_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_010_STORY",
+      "asset_id": "char_goose_010_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 黑豆剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_010_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_011_CANON_SHEET",
+      "asset_id": "char_goose_011_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 桃桃角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_011_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_011_STORY",
+      "asset_id": "char_goose_011_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 桃桃剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_011_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_012_CANON_SHEET",
+      "asset_id": "char_goose_012_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 老谷角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_012_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_012_STORY",
+      "asset_id": "char_goose_012_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 老谷剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_012_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_013_CANON_SHEET",
+      "asset_id": "char_goose_013_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 柠七角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_013_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_013_STORY",
+      "asset_id": "char_goose_013_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 柠七剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_013_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_014_CANON_SHEET",
+      "asset_id": "char_goose_014_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 阿潮角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_014_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_014_STORY",
+      "asset_id": "char_goose_014_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 阿潮剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_014_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_015_CANON_SHEET",
+      "asset_id": "char_goose_015_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 暖暖角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_015_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_015_STORY",
+      "asset_id": "char_goose_015_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 暖暖剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_015_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_016_CANON_SHEET",
+      "asset_id": "char_goose_016_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 卷卷角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_016_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_016_STORY",
+      "asset_id": "char_goose_016_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 卷卷剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_016_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_017_CANON_SHEET",
+      "asset_id": "char_goose_017_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 啵啵角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_017_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_017_STORY",
+      "asset_id": "char_goose_017_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 啵啵剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_017_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_018_CANON_SHEET",
+      "asset_id": "char_goose_018_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 椰青角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_018_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_018_STORY",
+      "asset_id": "char_goose_018_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 椰青剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_018_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_019_CANON_SHEET",
+      "asset_id": "char_goose_019_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 丸子角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_019_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_019_STORY",
+      "asset_id": "char_goose_019_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 丸子剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_019_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_020_CANON_SHEET",
+      "asset_id": "char_goose_020_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 小盐角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_020_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_020_STORY",
+      "asset_id": "char_goose_020_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 小盐剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_020_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_021_CANON_SHEET",
+      "asset_id": "char_goose_021_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 杏仁角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_021_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_021_STORY",
+      "asset_id": "char_goose_021_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 杏仁剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_021_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_022_CANON_SHEET",
+      "asset_id": "char_goose_022_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 汽水角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_022_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_022_STORY",
+      "asset_id": "char_goose_022_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 汽水剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_022_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_023_CANON_SHEET",
+      "asset_id": "char_goose_023_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 糯米角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_023_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_023_STORY",
+      "asset_id": "char_goose_023_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 糯米剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_023_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_024_CANON_SHEET",
+      "asset_id": "char_goose_024_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original V4 production asset for 胡椒角色设定表; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_024_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_024_STORY",
+      "asset_id": "char_goose_024_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-FULL",
+      "priority": "P1",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original V4 production asset for 胡椒剧情立绘; warm healing neighborhood food-street casual-game style, clean large shapes, warm brown outline, mobile readability, no readable text, no logo, no copied competitor design.",
+      "forbidden": [
+        "photorealistic",
+        "watermark",
+        "brand logo",
+        "baked-in readable text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_024_story.png",
+        "workspace": "art-source/v4/exports/art-full/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "asset id traceability",
+        "mobile readability",
+        "character identity consistency"
       ]
     }
   ]
