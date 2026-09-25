@@ -1,0 +1,64 @@
+name: V4 Generate Art Pack
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4-art-generate.yml'
+      - 'tools/art-procedural-generator/**'
+      - 'production-data/v4/art/ai_art_jobs_v4.json'
+      - 'production-data/v4/art/ai_art_batch_s1_s3_v4.json'
+      - 'production-data/v4/art/style_anchor_manifest_v4.csv'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-art-generate-main
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate and commit V4 art
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Generate full original art pack
+        run: npm run art:generate
+
+      - name: Audit art contracts
+        run: npm run audit:art
+
+      - name: Audit binary files
+        run: npm run audit:art:files
+
+      - name: Summarize generated files
+        shell: bash
+        run: |
+          echo "PNG count:"
+          find art-source/v4 -type f -name '*.png' | wc -l
+          echo "QA count:"
+          find art-source/v4/qa -type f -name '*.json' | wc -l
+          du -sh art-source/v4 || true
+
+      - name: Commit generated art
+        shell: bash
+        run: |
+          git config user.name "femsj-art-bot"
+          git config user.email "femsj-art-bot@users.noreply.github.com"
+          git add art-source/v4 production-data/v4/art
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "art(v4): generate complete Day1-10 original art pack"
+          git push origin HEAD:main
