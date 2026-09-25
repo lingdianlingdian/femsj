@@ -26,3 +26,12 @@
 - TapTap 商店公开截图：https://www.taptap.cn/app/835993/topic
 - TapTap 烹调争霸赛公开截图：https://www.taptap.cn/forum/g1191393?page=2
 - Google Play 官方页：https://play.google.com/store/apps/details?id=com.hortor.femsj.asia
+
+
+## 并行美术生产
+
+- `22_美术素材并行生产与首批任务.md`：正式美术并行流水线与首批垂直切片任务。
+- `production-data/v4/art/style_anchor_manifest_v4.csv`：14 个原创 Style Anchor。
+- `production-data/v4/art/art_production_queue_v4.csv`：ART-S1/S2/S3 首批生产队列。
+- `production-data/v4/art/ai_art_jobs_v4.json`：首批 AI 美术 Job 规格与原创性门禁。
+- `art-source/v4/README.md`：正式二进制源文件/导出物目录合同。
