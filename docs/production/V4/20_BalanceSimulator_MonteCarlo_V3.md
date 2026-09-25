@@ -157,37 +157,37 @@ OPTIMIZED / WHALE 在 Board + Storage 压力过高时，可以清除：
 
 - P(hard blocked)：0
 - P(full board)：0
-- Energy P50：29
-- Energy P90：46
+- Energy P50：25
+- Energy P90：41
 - Wait P90：90s
-- Peak Board P90：41
-- Byproduct Utilization P50：0.25
+- Peak Board P90：36
+- Byproduct Utilization P50：0.29
 - Pressure Clear P90：0
 
 ### Day10
 
 - P(hard blocked)：0
 - P(full board)：0
-- Energy P50：76.5
-- Energy P90：113
-- Wait P50：450s
-- Wait P90：630s
-- Peak Board P90：52
-- Peak Storage P90：8
-- Byproduct Utilization P50：0.08
-- Pressure Clear P90：30
+- Energy P50：42
+- Energy P90：55
+- Wait P50：330s
+- Wait P90：330s
+- Peak Board P90：32
+- Peak Storage P90：0
+- Byproduct Utilization P50：0.13
+- Pressure Clear P90：0
 
 ## 当前结论
 
 V3 证明 Day1-10 已经不是“引用不闭合”问题，而开始进入真正的体验平衡问题。
 
-Day10 虽然已经不发生硬满盘，但仍需要较多压力清杂，说明当前原创 Producer OutputPool 偏宽。后续优化方向应优先是：
+Day10 在拆分咖啡/谷物/备菜耗材 Producer 后，已经不需要压力清杂，说明此前的主要问题确实是 Producer OutputPool 过宽。后续优化方向是：
 
-1. 缩窄 Producer Pool；
-2. 增加合理 Merge Chain；
-3. 提高跨订单/跨日副产物复用；
-4. 再决定是否增加 Storage；
-5. 不应单纯继续降低 Cooldown 来掩盖空间问题。
+1. 继续验证 Producer Pool 与公开机制是否一致；
+2. 增加有证据或明确原创的 Merge Chain；
+3. 做跨 Day 库存继承，验证残余物真实复用率；
+4. 再决定 Storage 扩容与节奏；
+5. 精确 Producer/Cookware/Recipe 数值继续受 P0-B Evidence Gate 约束。
 
 ## CI 门禁
 
