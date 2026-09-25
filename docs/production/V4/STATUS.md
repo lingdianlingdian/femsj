@@ -175,9 +175,16 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 ## Day1-10 可运行垂直切片
 
 - ✅ Runtime Config：`production-data/v4/runtime/game_content_day001_010.json`
-- ✅ 43 Orders / 41 Items / 4 Producers / 2 Cookware / 11 Recipes / 10 Days / 6 Build Nodes / 3 Events。
+- ✅ 43 Orders / 41 Items / 7 Producers / 2 Cookware / 11 Recipes / 10 Days / 6 Build Nodes / 3 Events。
 - ✅ Config Validator 通过，unresolvedItems=0。
 - ✅ V2 数值门禁 + V3 真实盘面门禁均进入 CI。
-- ✅ V3 OPTIMIZED 基线：Day1 P(hard blocked)=0；Day10 P(hard blocked)=0、Peak Board P90=52、Peak Storage P90=8。
-- ⚠️ Day10 Byproduct Utilization P50≈0.08，Pressure Clear P90≈30，说明当前原创 Producer Pool 仍偏杂，是下一轮平衡重点。
+- ✅ V3 OPTIMIZED 基线：Day1 P(hard blocked)=0、Energy P90≈41；Day10 P(hard blocked)=0、Energy P90≈55、Wait P90≈330s、Peak Board P90≈32、Peak Storage P90=0。
+- ✅ Producer Pool 专门化后，Day10 Byproduct Utilization P50≈0.13，Pressure Clear P90=0；空间阻塞问题已从基线中消除。
 - 规格：`docs/production/V4/20_BalanceSimulator_MonteCarlo_V3.md`。
+
+## P0-B 参数证据门禁
+
+- ✅ `research-data/evidence/p0b_parameter_evidence_matrix_v4.csv` 已作为精确参数进入 Runtime 前的证据门禁。
+- ✅ 已确认机制：Producer 冷却/耗尽存在、部分 Producer→Output 关系、烤架/备菜台加工关系、活动加速/无限供应机制。
+- ⚠️ 仍未拿到可审计的精确 level / energyCost / capacity / cooldownSec / outputWeight / Recipe duration / speedup / Cookware queue/speed。
+- 因此：研究主表保持 UNRESOLVED；Day1-10 Runtime 数值继续明确标记 `DEV_BLUEPRINT`，两层不混写。
