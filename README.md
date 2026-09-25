@@ -102,6 +102,6 @@ npm run audit:runtime
 
 ## 可运行垂直切片
 
-Day1-10：`production-data/v4/runtime/game_content_day001_010.json`
+Day1-10：`production-data/v4/runtime/game_content_day001_010.json`（43 Orders / 41 Items / 7 Producers / 2 Cookware / 11 Recipes）
 
 质量门禁：`npm run gate:balance:vertical` + `npm run gate:balance:v3`。
