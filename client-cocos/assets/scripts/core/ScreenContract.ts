@@ -12,6 +12,12 @@ export interface ScreenPrefabContract {
   status: ScreenAssetStatus;
 }
 
+export interface ScreenRouteResolution {
+  requestedRoute: string;
+  contract: ScreenPrefabContract;
+  params: Record<string, string>;
+}
+
 export interface SharedComponentContract {
   componentId: string;
   name: string;
