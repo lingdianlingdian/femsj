@@ -11,6 +11,7 @@
     "audit:runtime": "node tools/runtime-readiness/audit.mjs",
     "audit:runtime:strict": "node tools/runtime-readiness/audit.mjs --strict",
     "gate:balance:vertical": "node tools/balance-simulator/gate.mjs",
-    "simulate:balance:v3": "node tools/balance-simulator-v3/simulate.mjs"
+    "simulate:balance:v3": "node tools/balance-simulator-v3/simulate.mjs",
+    "gate:balance:v3": "node tools/balance-simulator-v3/gate.mjs"
   }
 }
