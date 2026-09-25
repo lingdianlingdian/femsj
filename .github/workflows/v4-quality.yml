@@ -13,7 +13,7 @@ jobs:
   data-quality:
     name: Data / Evidence / Content Audits
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -48,6 +48,45 @@ jobs:
 
       - name: Runtime readiness report
         run: npm run audit:runtime
+
+      - name: Validate full 110-day runtime
+        run: npm run validate:config -- production-data/v4/runtime/game_content_day001_110.json
+
+      - name: Verify full runtime is fresh
+        run: npm run runtime:check:full
+
+      - name: Verify full runtime closure report
+        shell: bash
+        run: |
+          node - <<'NODE'
+          import fs from 'node:fs';
+          const r=JSON.parse(fs.readFileSync('production-data/v4/runtime/game_content_day001_110_report.json','utf8'));
+          const errors=[];
+          if(r.counts.orders!==651) errors.push('orders='+r.counts.orders);
+          if(r.counts.days!==110) errors.push('days='+r.counts.days);
+          if(r.counts.buildNodes!==48) errors.push('buildNodes='+r.counts.buildNodes);
+          if(r.counts.items!==143) errors.push('items='+r.counts.items);
+          if(r.closure.referenceErrors!==0) errors.push('referenceErrors='+r.closure.referenceErrors);
+          if(r.closure.missingItemAssets!==0) errors.push('missingItemAssets='+r.closure.missingItemAssets);
+          if(!r.closure.orderRegistryMatch) errors.push('orderRegistryMatch=false');
+          if(!r.closure.dayCoverage) errors.push('dayCoverage=false');
+          if(!r.closure.storyHookCoverage) errors.push('storyHookCoverage=false');
+          if(!r.closure.buildCoverage) errors.push('buildCoverage=false');
+          console.log(JSON.stringify({counts:r.counts,closure:r.closure,economy:r.economy,errors},null,2));
+          process.exit(errors.length?1:0);
+          NODE
+
+      - name: Full runtime balance smoke Day 30
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_110.json 30 200 20260925
+
+      - name: Full runtime balance smoke Day 60
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_110.json 60 200 20260925
+
+      - name: Full runtime balance smoke Day 90
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_110.json 90 200 20260925
+
+      - name: Full runtime balance smoke Day 110
+        run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_110.json 110 200 20260925
 
       - name: Validate Day1-10 runtime slice
         run: npm run validate:config -- production-data/v4/runtime/game_content_day001_010.json
@@ -112,6 +151,9 @@ jobs:
             'production-data/v4/art/runtime_art_bindings_day001_010_v4.json',
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
+            'production-data/v4/story/story_catalog_v4.json',
+            'production-data/v4/runtime/game_content_day001_110_report.json',
+            'production-data/v4/runtime/game_content_day001_110.json',
             'production-data/v4/runtime/vertical_slice_balance_targets.json',
             'production-data/v4/runtime/vertical_slice_board_targets.json',
             'production-data/v4/runtime/vertical_slice_economy_targets.json',
@@ -177,6 +219,9 @@ jobs:
             schemas/v4/remote_config.schema.json
             qa/v4/test_cases_v4.json
             docs/production/V4/STATUS.md
+            production-data/v4/runtime/game_content_day001_110.json
+            production-data/v4/runtime/game_content_day001_110_report.json
+            production-data/v4/story/story_catalog_v4.json
             prototype/v4-ui-wireframes/index.html
             prototype/v4-ui-kit/index.html
           )
