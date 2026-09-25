@@ -5,3 +5,4 @@ merge_rouwan_niuxiongrou,MERGE2,"item_rouwan*2",,,item_niuxiongrou,PUBLIC_IMAGE,
 cook_rouchang_kaochang,COOK,"item_rouchang",cook_grill,,dish_kaochang,PUBLIC_IMAGE,"烤架分支"
 cook_niuxiongrou_yanxun,COOK,"item_niuxiongrou",cook_grill,,dish_yanxunniuxiongrou,PUBLIC_IMAGE,"烤架分支"
 cook_junxiangzhishijuan,COOK,"item_mogu+item_yangcong+item_zhishipian",cook_prep_station,,dish_junxiangzhishijuan,PUBLIC_IMAGE,"备菜台多输入"
+"merge_li_shuimitao","MERGE2","item_li*2","","","item_shuimitao","PLAYER_REPORT","玩家公开抱怨明确描述两个梨合成水蜜桃；source=SRC_TAPTAP_PEAR"
