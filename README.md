@@ -36,7 +36,7 @@
 - 42条音频资产规格 + Motion Manifest
 - 48个建设节点
 - 110日 Story Beat
-- Day1-10 可运行原创剧情：26 Scenes / 80 条原创 zh-CN 对白
+- 110日原创剧情：268 Scenes / 821 条原创 zh-CN 对白 / 11 个可校验 Slice
 - 6套 LiveOps 活动蓝图
 - OpenAPI 后端合同
 - Remote Config / 灰度 / 回滚合同
@@ -106,3 +106,8 @@ npm run audit:runtime
 Day1-10：`production-data/v4/runtime/game_content_day001_010.json`（43 Orders / 41 Items / 7 Producers / 2 Cookware / 11 Recipes）
 
 质量门禁：`npm run gate:balance:vertical` + `npm run gate:balance:v3` + `npm run validate:story` + `npm run gate:economy:vertical`。
+
+
+## 原创剧情
+
+Day1-110 已全部落库。统一索引：`production-data/v4/story/story_catalog_v4.json`；全量门禁：`npm run validate:story:all`。
