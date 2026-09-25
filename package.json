@@ -30,6 +30,7 @@
     "runtime:build:full": "node tools/runtime-full-builder/build.mjs",
     "runtime:check:full": "node tools/runtime-full-builder/build.mjs --check",
     "gate:balance:full": "node tools/balance-simulator/full-gate.mjs",
-    "audit:art:runtime-full": "node tools/runtime-art-binding-auditor/audit.mjs"
+    "audit:art:runtime-full": "node tools/runtime-art-binding-auditor/audit.mjs",
+    "gate:balance:full-reachability": "node tools/balance-simulator/full-reachability-gate.mjs"
   }
 }
