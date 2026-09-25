@@ -1,0 +1,162 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "scope": "Day1-10 playable slice",
+  "uiShell": {
+    "globalBackground": "ui_bg_global",
+    "modalPanel": "ui_panel_modal",
+    "primaryButton": "ui_btn_primary",
+    "secondaryButton": "ui_btn_secondary",
+    "energyChip": "ui_chip_energy",
+    "coinChip": "ui_chip_coin",
+    "gemChip": "ui_chip_gem",
+    "orderCard": "ui_card_order",
+    "boardFrame": "board_frame_9x7",
+    "boardCellOpen": "board_cell_open",
+    "boardCellLocked": "board_cell_locked",
+    "boardItemShadow": "board_shadow_item"
+  },
+  "content": {
+    "items": {
+      "dish_baomihua": "art_dish_baomihua",
+      "dish_caijiaocuipian": "art_dish_caijiaocuipian",
+      "dish_caomeiguolu": "art_dish_caomeiguolu",
+      "dish_junxiangzhishijuan": "art_dish_junxiangzhishijuan",
+      "dish_pingguoguoyin": "art_dish_pingguoguoyin",
+      "dish_shengcaishala": "art_dish_shengcaishala",
+      "dish_shengqiehuluobotiao": "art_dish_shengqiehuluobotiao",
+      "dish_shoudaningmengzhi": "art_dish_shoudaningmengzhi",
+      "dish_tangbanfanqie": "art_dish_tangbanfanqie",
+      "dish_xianzhalanmeizhi": "art_dish_xianzhalanmeizhi",
+      "dish_zhenzhunaicha": "art_dish_zhenzhunaicha",
+      "item_bianxiekafei": "art_item_bianxiekafei",
+      "item_bingkafei": "art_item_bingkafei",
+      "item_bingtang": "art_item_bingtang",
+      "item_boliwan": "art_item_boliwan",
+      "item_caijiao": "art_item_caijiao",
+      "item_caomei": "art_item_caomei",
+      "item_chunniunai": "art_item_chunniunai",
+      "item_congduan": "art_item_congduan",
+      "item_fanqie": "art_item_fanqie",
+      "item_hongcha": "art_item_hongcha",
+      "item_huangyou": "art_item_huangyou",
+      "item_huluobo": "art_item_huluobo",
+      "item_kafei": "art_item_kafei",
+      "item_kafeidou": "art_item_kafeidou",
+      "item_lajiao": "art_item_lajiao",
+      "item_lanmei": "art_item_lanmei",
+      "item_lvcha": "art_item_lvcha",
+      "item_mogu": "art_item_mogu",
+      "item_ningmeng": "art_item_ningmeng",
+      "item_nongsuokafei": "art_item_nongsuokafei",
+      "item_pingguo": "art_item_pingguo",
+      "item_shengcai": "art_item_shengcai",
+      "item_shenhongkafei": "art_item_shenhongkafei",
+      "item_tangjiang": "art_item_tangjiang",
+      "item_xiangcaojia": "art_item_xiangcaojia",
+      "item_xiangcaozi": "art_item_xiangcaozi",
+      "item_yangcong": "art_item_yangcong",
+      "item_yumi": "art_item_yumi",
+      "item_yumili": "art_item_yumili",
+      "item_zhishipian": "art_item_zhishipian"
+    },
+    "producers": {
+      "prod_shucaileizi": "art_prod_shucaileizi",
+      "prod_yinliaogui": "art_prod_yinliaogui",
+      "prod_kitchen_supply": "art_prod_kitchen_supply",
+      "prod_shuiguolanzi": "art_prod_shuiguolanzi",
+      "prod_coffee_counter": "art_prod_coffee_counter",
+      "prod_grain_crate": "art_prod_grain_crate",
+      "prod_prep_supply": "art_prod_prep_supply"
+    },
+    "cookwares": {
+      "cook_prep_station": "art_cook_prep_station",
+      "cook_drink_station": "art_cook_drink_station"
+    }
+  },
+  "characters": {
+    "char_manager_001": {
+      "canonSheet": "char_manager_001_canon_sheet",
+      "avatar": "char_manager_001_avatar",
+      "storyPortrait": "char_manager_001_story",
+      "sceneSpine": "char_manager_001_spine"
+    },
+    "char_guide_001": {
+      "canonSheet": "char_guide_001_canon_sheet",
+      "avatar": "char_guide_001_avatar",
+      "storyPortrait": "char_guide_001_story",
+      "sceneSpine": "char_guide_001_spine"
+    },
+    "char_goose_001": {
+      "canonSheet": "char_goose_001_canon_sheet",
+      "avatar": "char_goose_001_avatar",
+      "storyPortrait": "char_goose_001_story",
+      "sceneSpine": "char_goose_001_spine"
+    },
+    "char_goose_002": {
+      "canonSheet": "char_goose_002_canon_sheet",
+      "avatar": "char_goose_002_avatar",
+      "storyPortrait": "char_goose_002_story",
+      "sceneSpine": "char_goose_002_spine"
+    },
+    "char_goose_003": {
+      "canonSheet": "char_goose_003_canon_sheet",
+      "avatar": "char_goose_003_avatar",
+      "storyPortrait": "char_goose_003_story",
+      "sceneSpine": "char_goose_003_spine"
+    },
+    "char_goose_004": {
+      "canonSheet": "char_goose_004_canon_sheet",
+      "avatar": "char_goose_004_avatar",
+      "storyPortrait": "char_goose_004_story",
+      "sceneSpine": "char_goose_004_spine"
+    },
+    "char_goose_005": {
+      "canonSheet": "char_goose_005_canon_sheet",
+      "avatar": "char_goose_005_avatar",
+      "storyPortrait": "char_goose_005_story",
+      "sceneSpine": "char_goose_005_spine"
+    },
+    "char_goose_006": {
+      "canonSheet": "char_goose_006_canon_sheet",
+      "avatar": "char_goose_006_avatar",
+      "storyPortrait": "char_goose_006_story",
+      "sceneSpine": "char_goose_006_spine"
+    }
+  },
+  "buildNodes": {
+    "build_a01_01": {
+      "before": "street_01_build_01_before",
+      "after": "street_01_build_01_after"
+    },
+    "build_a01_02": {
+      "before": "street_01_build_02_before",
+      "after": "street_01_build_02_after"
+    },
+    "build_a01_03": {
+      "before": "street_01_build_03_before",
+      "after": "street_01_build_03_after"
+    },
+    "build_a01_04": {
+      "before": "street_01_build_04_before",
+      "after": "street_01_build_04_after"
+    },
+    "build_a01_05": {
+      "before": "street_01_build_05_before",
+      "after": "street_01_build_05_after"
+    },
+    "build_a01_06": {
+      "before": "street_01_build_06_before",
+      "after": "street_01_build_06_after"
+    }
+  },
+  "vfx": {
+    "merge": "fx_merge_common",
+    "producerSpawn": "fx_producer_spawn",
+    "cookReady": "fx_cook_ready",
+    "rewardFly": "fx_reward_fly",
+    "buildReveal": "fx_build_reveal",
+    "unlock": "fx_unlock"
+  },
+  "rule": "Runtime refers to content IDs. Rendering/UI layers resolve them through this binding to formal AssetIds. No runtime system may invent file names."
+}
