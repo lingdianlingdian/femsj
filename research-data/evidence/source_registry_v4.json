@@ -231,10 +231,75 @@
         "玩家反馈存在四十多分钟烹饪等待"
       ],
       "notes": "论坛聚合页，需继续找原始评论固定锚点"
+    },
+    {
+      "id": "SRC_APPSTORE_REVIEWS_2026_06",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://apps.apple.com/cn/app/%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97/id6758614459?platform=ipad&see-all=reviews",
+      "claims": [
+        "6月10日玩家称2分钟恢复1体力",
+        "6月11日玩家称体力上限100",
+        "6月1日玩家称约Day25单菜100+体力",
+        "6月1日玩家称6元40钻",
+        "6月24日玩家称装修高价只返15体力",
+        "6月17日玩家称部分产出恢复需一个多小时",
+        "跨小程序/App进度不互通"
+      ],
+      "notes": "多条玩家评论；按observedAt逐条存档，不视为永久配置"
+    },
+    {
+      "id": "SRC_ALBUM_108_EXACT_POST",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/841518609091003989",
+      "claims": [
+        "一轮卡册108张",
+        "107/108缺最后一张金色四星",
+        "四个金色卡包均重复的个人经历",
+        "98元五星卡包玩家观察"
+      ],
+      "notes": "单玩家案例，用于风险分析"
+    },
+    {
+      "id": "SRC_MEMBER_45_POST",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/812120501525677963?group_id=1191393",
+      "claims": [
+        "玩家称高级会员45元",
+        "另有6元消费"
+      ],
+      "notes": "权益未核验"
+    },
+    {
+      "id": "SRC_FORUM_JUN5",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/topic?page=4",
+      "claims": [
+        "Day30附近玩家反馈体力/设备冷却双卡",
+        "新建地图成本越来越高，奖励体力越来越少",
+        "89/90菜单帖子索引",
+        "梨→水蜜桃玩家观察"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_REVIEW_2026_09",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/review",
+      "claims": [
+        "9月玩家称约每3小时回来清体力",
+        "需要月卡/活动拉满才更顺畅",
+        "二十多天已经明显受体力/背包/加速券影响"
+      ],
+      "notes": "近期玩家体验"
     }
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Added specific player-report sources for economy/cooldown/Day75/card evidence."
+    "note": "Added specific player-report sources for economy/cooldown/Day75/card evidence.",
+    "sourceCount": 25
   }
 }
