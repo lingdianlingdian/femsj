@@ -1,0 +1,591 @@
+openapi: 3.1.0
+info:
+  title: femsj Game Backend API
+  version: 4.0.0
+  description: >
+    Merge/Cooking game backend contract. Critical economy actions are server-authoritative.
+servers:
+  - url: https://api.example.invalid/v1
+    description: Placeholder; environment-specific base URL is supplied by deployment config.
+tags:
+  - name: Auth
+  - name: Profile
+  - name: Save
+  - name: Command
+  - name: LiveOps
+  - name: Ads
+  - name: Payment
+  - name: Ranking
+  - name: Mail
+security:
+  - bearerAuth: []
+
+paths:
+  /auth/login:
+    post:
+      tags: [Auth]
+      security: []
+      operationId: login
+      summary: Exchange a platform credential or guest token for a game session.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/LoginRequest'}
+      responses:
+        '200':
+          description: Session created.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/LoginResponse'}
+        '409':
+          $ref: '#/components/responses/AccountConflict'
+  /auth/bind:
+    post:
+      tags: [Auth]
+      operationId: bindIdentity
+      summary: Bind another platform identity to the current PlayerId.
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/BindIdentityRequest'}
+      responses:
+        '200':
+          description: Binding updated.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/PlayerProfile'}
+        '409':
+          $ref: '#/components/responses/AccountConflict'
+
+  /profile:
+    get:
+      tags: [Profile]
+      operationId: getProfile
+      responses:
+        '200':
+          description: Current player profile.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/PlayerProfile'}
+
+  /save:
+    get:
+      tags: [Save]
+      operationId: getSave
+      parameters:
+        - in: query
+          name: afterRevision
+          schema: {type: integer, minimum: 0}
+          required: false
+      responses:
+        '200':
+          description: Latest snapshot, optionally with journal after requested revision.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/SaveResponse'}
+    put:
+      tags: [Save]
+      operationId: putSnapshot
+      summary: Persist a validated snapshot for non-critical local-first state.
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+        - $ref: '#/components/parameters/ClientRevision'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/SaveSnapshotRequest'}
+      responses:
+        '200':
+          description: Snapshot accepted.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RevisionResponse'}
+        '409':
+          $ref: '#/components/responses/RevisionConflict'
+
+  /commands:
+    post:
+      tags: [Command]
+      operationId: submitCommands
+      summary: Submit one or more atomic gameplay commands.
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+        - $ref: '#/components/parameters/ClientRevision'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/CommandBatchRequest'}
+      responses:
+        '200':
+          description: Commands applied atomically in order.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/CommandBatchResponse'}
+        '409':
+          $ref: '#/components/responses/RevisionConflict'
+        '422':
+          description: Domain validation failure.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/ErrorResponse'}
+
+  /liveops/bootstrap:
+    get:
+      tags: [LiveOps]
+      operationId: getLiveOpsBootstrap
+      parameters:
+        - in: query
+          name: configVersion
+          schema: {type: string}
+      responses:
+        '200':
+          description: Active remote config, events, offers and asset manifest pointers.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/LiveOpsBootstrap'}
+        '304':
+          description: Client config is current.
+
+  /ads/reward/claim:
+    post:
+      tags: [Ads]
+      operationId: claimRewardAd
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/AdRewardClaimRequest'}
+      responses:
+        '200':
+          description: Verified reward delivered once.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RewardClaimResponse'}
+        '409':
+          description: Duplicate claim; returns the original result.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RewardClaimResponse'}
+        '422':
+          description: Provider verification failed.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/ErrorResponse'}
+
+  /payments/verify:
+    post:
+      tags: [Payment]
+      operationId: verifyPayment
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: {$ref: '#/components/schemas/PaymentVerifyRequest'}
+      responses:
+        '200':
+          description: Purchase verified and entitlement delivered.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/PurchaseResult'}
+        '409':
+          description: Receipt already processed; returns original result.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/PurchaseResult'}
+        '422':
+          description: Receipt invalid or provider verification failed.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/ErrorResponse'}
+
+  /payments/reconcile:
+    post:
+      tags: [Payment]
+      operationId: reconcilePayments
+      summary: Reconcile provider purchase history after interrupted delivery.
+      parameters:
+        - $ref: '#/components/parameters/IdempotencyKey'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [platform]
+              properties:
+                platform: {$ref: '#/components/schemas/Platform'}
+      responses:
+        '200':
+          description: Reconciliation result.
+          content:
+            application/json:
+              schema:
+                type: object
+                required: [restored]
+                properties:
+                  restored:
+                    type: array
+                    items: {$ref: '#/components/schemas/PurchaseResult'}
+
+  /rankings/{eventId}:
+    get:
+      tags: [Ranking]
+      operationId: getRanking
+      parameters:
+        - in: path
+          name: eventId
+          required: true
+          schema: {type: string}
+        - in: query
+          name: cursor
+          schema: {type: string}
+      responses:
+        '200':
+          description: Ranking page and current player's rank.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RankingResponse'}
+
+  /mail:
+    get:
+      tags: [Mail]
+      operationId: listMail
+      parameters:
+        - in: query
+          name: cursor
+          schema: {type: string}
+      responses:
+        '200':
+          description: Mail page.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/MailListResponse'}
+  /mail/{mailId}/claim:
+    post:
+      tags: [Mail]
+      operationId: claimMail
+      parameters:
+        - in: path
+          name: mailId
+          required: true
+          schema: {type: string}
+        - $ref: '#/components/parameters/IdempotencyKey'
+      responses:
+        '200':
+          description: Attachments delivered.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RewardClaimResponse'}
+        '409':
+          description: Already claimed; original result returned.
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/RewardClaimResponse'}
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    IdempotencyKey:
+      in: header
+      name: Idempotency-Key
+      required: true
+      schema:
+        type: string
+        minLength: 16
+        maxLength: 128
+      description: Stable operation key generated once by the client and reused on retry.
+    ClientRevision:
+      in: header
+      name: X-Client-Revision
+      required: true
+      schema:
+        type: integer
+        minimum: 0
+
+  responses:
+    RevisionConflict:
+      description: Client state is behind or diverged from server.
+      content:
+        application/json:
+          schema: {$ref: '#/components/schemas/RevisionConflictResponse'}
+    AccountConflict:
+      description: Identity already belongs to another PlayerId.
+      content:
+        application/json:
+          schema:
+            allOf:
+              - $ref: '#/components/schemas/ErrorResponse'
+              - type: object
+                properties:
+                  conflictToken: {type: string}
+                  localSummary: {$ref: '#/components/schemas/SaveSummary'}
+                  cloudSummary: {$ref: '#/components/schemas/SaveSummary'}
+
+  schemas:
+    Platform:
+      type: string
+      enum: [GUEST, WECHAT, DOUYIN, APPLE, PHONE]
+    LoginRequest:
+      type: object
+      additionalProperties: false
+      required: [platform, credential, deviceId, appVersion]
+      properties:
+        platform: {$ref: '#/components/schemas/Platform'}
+        credential: {type: string, minLength: 1}
+        deviceId: {type: string, minLength: 8}
+        appVersion: {type: string}
+        configVersion: {type: [string, 'null']}
+    LoginResponse:
+      type: object
+      required: [accessToken, player, serverTime, revision]
+      properties:
+        accessToken: {type: string}
+        player: {$ref: '#/components/schemas/PlayerProfile'}
+        serverTime: {type: integer, description: Unix milliseconds}
+        revision: {type: integer, minimum: 0}
+    BindIdentityRequest:
+      type: object
+      additionalProperties: false
+      required: [platform, credential]
+      properties:
+        platform: {$ref: '#/components/schemas/Platform'}
+        credential: {type: string}
+    PlayerProfile:
+      type: object
+      required: [playerId, day, bindings]
+      properties:
+        playerId: {type: string}
+        displayName: {type: string}
+        day: {type: integer, minimum: 1}
+        bindings:
+          type: array
+          items:
+            type: object
+            required: [platform, bound]
+            properties:
+              platform: {$ref: '#/components/schemas/Platform'}
+              bound: {type: boolean}
+    SaveSummary:
+      type: object
+      properties:
+        revision: {type: integer}
+        day: {type: integer}
+        lastActiveAt: {type: integer}
+        gem: {type: integer}
+    SaveResponse:
+      type: object
+      required: [revision, serverTime, snapshot]
+      properties:
+        revision: {type: integer}
+        serverTime: {type: integer}
+        snapshot: {type: object}
+        journal:
+          type: array
+          items: {$ref: '#/components/schemas/DomainEvent'}
+    SaveSnapshotRequest:
+      type: object
+      required: [schemaVersion, snapshot]
+      properties:
+        schemaVersion: {type: integer, minimum: 1}
+        snapshot: {type: object}
+    RevisionResponse:
+      type: object
+      required: [revision, serverTime]
+      properties:
+        revision: {type: integer}
+        serverTime: {type: integer}
+    RevisionConflictResponse:
+      type: object
+      required: [code, message, serverRevision]
+      properties:
+        code: {const: REVISION_CONFLICT}
+        message: {type: string}
+        serverRevision: {type: integer}
+        delta:
+          type: array
+          items: {$ref: '#/components/schemas/DomainEvent'}
+    CommandType:
+      type: string
+      enum:
+        - MOVE_ITEM
+        - MERGE_ITEMS
+        - PRODUCER_TAP
+        - START_COOKING
+        - COLLECT_COOKING
+        - SUBMIT_ORDER
+        - MOVE_TO_STORAGE
+        - MOVE_FROM_STORAGE
+        - OPEN_CONTAINER
+        - CLAIM_REWARD
+        - BUILD_NODE
+        - BUY_SHOP_ITEM
+    GameCommand:
+      type: object
+      additionalProperties: false
+      required: [commandId, type, payload, clientTime]
+      properties:
+        commandId: {type: string}
+        type: {$ref: '#/components/schemas/CommandType'}
+        payload: {type: object}
+        clientTime: {type: integer}
+    CommandBatchRequest:
+      type: object
+      required: [commands]
+      properties:
+        commands:
+          type: array
+          minItems: 1
+          maxItems: 50
+          items: {$ref: '#/components/schemas/GameCommand'}
+    CommandBatchResponse:
+      type: object
+      required: [revision, serverTime, appliedCommandIds, events, projection]
+      properties:
+        revision: {type: integer}
+        serverTime: {type: integer}
+        appliedCommandIds:
+          type: array
+          items: {type: string}
+        events:
+          type: array
+          items: {$ref: '#/components/schemas/DomainEvent'}
+        projection: {type: object}
+    DomainEvent:
+      type: object
+      required: [eventId, type, serverTime, payload]
+      properties:
+        eventId: {type: string}
+        type: {type: string}
+        serverTime: {type: integer}
+        payload: {type: object}
+    LiveOpsBootstrap:
+      type: object
+      required: [configVersion, contentRevision, serverTime, events, offers]
+      properties:
+        configVersion: {type: string}
+        contentRevision: {type: string}
+        serverTime: {type: integer}
+        config: {type: object}
+        events:
+          type: array
+          items: {type: object}
+        offers:
+          type: array
+          items: {type: object}
+        assetBundles:
+          type: array
+          items:
+            type: object
+            properties:
+              name: {type: string}
+              version: {type: string}
+              url: {type: string, format: uri}
+              sha256: {type: string}
+    AdRewardClaimRequest:
+      type: object
+      required: [placementId, provider, verificationToken]
+      properties:
+        placementId: {type: string}
+        provider: {type: string}
+        verificationToken: {type: string}
+    Reward:
+      type: object
+      required: [type, amount]
+      properties:
+        type: {type: string}
+        id: {type: [string, 'null']}
+        amount: {type: integer, minimum: 1}
+    RewardClaimResponse:
+      type: object
+      required: [claimId, rewards, revision]
+      properties:
+        claimId: {type: string}
+        rewards:
+          type: array
+          items: {$ref: '#/components/schemas/Reward'}
+        revision: {type: integer}
+    PaymentVerifyRequest:
+      type: object
+      required: [platform, sku, receipt, transactionId]
+      properties:
+        platform: {$ref: '#/components/schemas/Platform'}
+        sku: {type: string}
+        receipt: {type: string}
+        transactionId: {type: string}
+    PurchaseResult:
+      type: object
+      required: [purchaseId, transactionId, sku, rewards, status]
+      properties:
+        purchaseId: {type: string}
+        transactionId: {type: string}
+        sku: {type: string}
+        rewards:
+          type: array
+          items: {$ref: '#/components/schemas/Reward'}
+        status:
+          type: string
+          enum: [DELIVERED, ALREADY_DELIVERED, PENDING_REVIEW]
+    RankingResponse:
+      type: object
+      required: [eventId, self, rows]
+      properties:
+        eventId: {type: string}
+        self: {$ref: '#/components/schemas/RankingRow'}
+        rows:
+          type: array
+          items: {$ref: '#/components/schemas/RankingRow'}
+        nextCursor: {type: [string, 'null']}
+    RankingRow:
+      type: object
+      required: [playerId, rank, score]
+      properties:
+        playerId: {type: string}
+        displayName: {type: string}
+        avatar: {type: [string, 'null']}
+        rank: {type: integer, minimum: 1}
+        score: {type: number}
+    MailListResponse:
+      type: object
+      required: [rows]
+      properties:
+        rows:
+          type: array
+          items: {$ref: '#/components/schemas/Mail'}
+        nextCursor: {type: [string, 'null']}
+    Mail:
+      type: object
+      required: [mailId, title, createdAt, claimed, attachments]
+      properties:
+        mailId: {type: string}
+        title: {type: string}
+        body: {type: string}
+        createdAt: {type: integer}
+        expiresAt: {type: [integer, 'null']}
+        claimed: {type: boolean}
+        source: {type: string}
+        attachments:
+          type: array
+          items: {$ref: '#/components/schemas/Reward'}
+    ErrorResponse:
+      type: object
+      required: [code, message, requestId]
+      properties:
+        code: {type: string}
+        message: {type: string}
+        requestId: {type: string}
+        details: {type: object}
