@@ -25,3 +25,5 @@ COOKWARE,GENERIC,queueSize,,null,count,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRES
 COOKWARE,GENERIC,speedModifier,,null,multiplier,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"正常与活动状态均需版本化记录"
 RECIPE,GENERIC,durationSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"必须绑定具体recipe+版本+界面倒计时"
 RECIPE,GENERIC,speedupGemPerMin,,null,gem_per_minute,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需同时记录剩余时间和加速价格"
+RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,OBSERVED_UNBOUND,"截图能确认20s数值，但当前公开搜索图裁切不足以可靠绑定到具体Recipe/厨具；禁止回填具体durationSec"
+RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,OBSERVED_UNBOUND,"截图能确认10s数值，但当前公开搜索图裁切不足以可靠绑定到具体Recipe/厨具；优先用小红书高清同图或完整原图闭合映射"
