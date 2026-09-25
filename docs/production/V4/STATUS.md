@@ -23,7 +23,7 @@
 | LiveOps Event | 6套 | ✅ 可配置蓝图 |
 | Economy | 观察值+开发默认值 | 🟡 版本敏感参数持续验证 |
 | Config Validator | Node零依赖 | ✅ 已可执行 |
-| Balance Simulator | Monte Carlo v2 | 🟡 已支持随机掉落/容量/冷却/Merge/Recipe P50/P90/P95；真实盘面模拟待v3 |
+| Balance Simulator | Monte Carlo v3 | 🟢 已支持63格Board State、副产物跨订单复用、Storage、P(full board)、P(hard blocked)、压力清杂；跨Day库存/并行Cookware待v3.1 |
 
 ## 现在仍属于 P0 的真实缺口
 
@@ -74,7 +74,7 @@
 - ✅ 完整 API Contract
 - ✅ QA Test Case 库（117条）
 - ✅ Remote Config发布/灰度/回滚流程
-- ✅ Balance Simulator Monte Carlo v2
+- ✅ Balance Simulator Monte Carlo v3 + Board-State Regression Gate
 - ✅ Config Validator
 - ✅ GitHub Actions质量门禁
 - ⏳ 全量原创剧情对白与本地化Key
@@ -140,7 +140,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - `npm run audit:evidence`
 - `npm run audit:content`
 - Config Validator
-- Balance Simulator Monte Carlo v2
+- Balance Simulator Monte Carlo v3
 
 ## 已验证生产规模
 
@@ -171,3 +171,13 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ CI 已加入 Runtime readiness 报告，不会用伪造值让当前研究阶段强行通过 strict。
 - 当前关键缺口：651 单仅 113 单有 evidence-backed normalized requirements；Producer/Cookware/Recipe 精确参数仍是 P0-B；Customer/Reward/Dependency 仍未生产化。
 - 说明文档：`docs/production/V4/19_Runtime生产就绪门禁.md`。
+
+## Day1-10 可运行垂直切片
+
+- ✅ Runtime Config：`production-data/v4/runtime/game_content_day001_010.json`
+- ✅ 43 Orders / 41 Items / 4 Producers / 2 Cookware / 11 Recipes / 10 Days / 6 Build Nodes / 3 Events。
+- ✅ Config Validator 通过，unresolvedItems=0。
+- ✅ V2 数值门禁 + V3 真实盘面门禁均进入 CI。
+- ✅ V3 OPTIMIZED 基线：Day1 P(hard blocked)=0；Day10 P(hard blocked)=0、Peak Board P90=52、Peak Storage P90=8。
+- ⚠️ Day10 Byproduct Utilization P50≈0.08，Pressure Clear P90≈30，说明当前原创 Producer Pool 仍偏杂，是下一轮平衡重点。
+- 规格：`docs/production/V4/20_BalanceSimulator_MonteCarlo_V3.md`。
