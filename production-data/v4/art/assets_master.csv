@@ -227,3 +227,6 @@ asset_id,category,subcategory,name,source_size,runtime_size,format,bundle,states
 "art_item_shengcai","Board","Item","生菜","256x256","64~72","PNG","items_01","Normal","0.5,0.5","0.5,0.5","","","PLANNED","关联内容ID item_shengcai；Day1-10垂直切片配方输入"
 "art_prod_kitchen_supply","Board","Producer","厨房补给箱","384x384","68~74","PNG/Spine","items_01","Ready|Tap|Cooldown|Boosted|Locked","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Producer；关联 prod_kitchen_supply"
 "art_cook_drink_station","Board","Cookware","饮品调制台","384x384","68~74","PNG/Spine","items_01","Idle|Cooking|Ready|Collect","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Cookware；关联 cook_drink_station"
+"art_prod_coffee_counter","Board","Producer","咖啡补给台","384x384","68~74","PNG/Spine","items_01","Ready|Tap|Cooldown|Boosted|Locked","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Producer；关联 prod_coffee_counter"
+"art_prod_grain_crate","Board","Producer","谷物补给箱","384x384","68~74","PNG/Spine","items_01","Ready|Tap|Cooldown|Boosted|Locked","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Producer；关联 prod_grain_crate"
+"art_prod_prep_supply","Board","Producer","备菜耗材箱","384x384","68~74","PNG/Spine","items_01","Ready|Tap|Cooldown|Boosted|Locked","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Producer；关联 prod_prep_supply"
