@@ -1,6 +1,6 @@
 {
   "version": "4.0",
-  "updatedAt": "2026-09-25T08:52:16.276Z",
+  "updatedAt": "2026-09-25T10:45:25.938Z",
   "outputs": [
     {
       "anchor_id": "ANCHOR_ITEM_01",
@@ -13,7 +13,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_ITEM_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_DRINK_01",
@@ -26,7 +26,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_DRINK_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_DISH_01",
@@ -39,7 +39,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_DISH_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_PROD_01",
@@ -52,7 +52,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_PROD_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_COOK_01",
@@ -65,7 +65,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_COOK_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_CHAR_01",
@@ -78,7 +78,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_CHAR_02",
@@ -91,7 +91,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_02.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_BUILD_01",
@@ -104,7 +104,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_BUILD_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_UI_01",
@@ -117,7 +117,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_UI_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_BOARD_01",
@@ -130,7 +130,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_BOARD_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_PROD_02",
@@ -143,7 +143,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_PROD_02.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_CHAR_03",
@@ -156,7 +156,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_03.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_BUILD_02",
@@ -169,7 +169,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_BUILD_02.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     },
     {
       "anchor_id": "ANCHOR_FX_01",
@@ -182,7 +182,7 @@
       "status": "CANON_LOCKED",
       "qa_file": "art-source/v4/qa/anchors/ANCHOR_FX_01.json",
       "reviewer": "OpenAI procedural-art pipeline",
-      "reviewedAt": "2026-09-25T08:52:16.276Z"
+      "reviewedAt": "2026-09-25T10:45:25.938Z"
     }
   ]
 }
