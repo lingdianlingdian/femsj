@@ -1,0 +1,1438 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "disclaimer": "All characters below are original production blueprints. They are not reconstructions of the competitor's named character art.",
+  "globalCanon": {
+    "gooseSilhouette": "round body, short neck, compact legs; readable at 64px",
+    "outline": "warm dark-brown, 4-6px at 512px avatar source",
+    "lightDirection": "upper-left",
+    "shadow": "soft warm-gray ellipse",
+    "eyeRule": "two simple dark pupils + small highlight; no human eyelashes on background guests",
+    "beakRule": "orange family; silhouette changes <12% across cast",
+    "footRule": "simplified 3-toe orange feet; no shoes unless character-specific canon explicitly says so",
+    "forbidden": [
+      "copy competitor costume silhouettes",
+      "copy competitor character names",
+      "use copyrighted logo/mascot details"
+    ]
+  },
+  "characters": [
+    {
+      "id": "char_manager_001",
+      "name": "店长-柚宁",
+      "role": "PROTAGONIST",
+      "species": "human",
+      "tier": "S",
+      "palette": [
+        "#F3B05A",
+        "#FFF3DF",
+        "#5C4638"
+      ],
+      "ratio": 0.32,
+      "height": 4.8,
+      "props": [
+        "米白围裙",
+        "橙色发夹",
+        "小记事本"
+      ],
+      "traits": [
+        "短棕发",
+        "圆润眼型",
+        "橙色发夹固定在右侧",
+        "米白围裙胸前有单色圆形徽记"
+      ],
+      "forbid": [
+        "不得变成长发",
+        "不得改变发夹位置",
+        "不得增加动物耳朵/尾巴"
+      ],
+      "dialogue": [
+        "务实",
+        "温和",
+        "遇到突发状况会先解决问题再吐槽"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Talk",
+        "Cheer",
+        "Think"
+      ],
+      "avatarCrop": {
+        "headTop": 0.06,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_guide_001",
+      "name": "引导鹅-团团",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "S",
+      "palette": [
+        "#FFF4D8",
+        "#F6B84B",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "橙黄小围巾",
+        "木质钥匙牌"
+      ],
+      "traits": [
+        "奶油白羽毛",
+        "橙黄色喙",
+        "小圆眼",
+        "围巾左侧打结"
+      ],
+      "forbid": [
+        "不加帽子",
+        "不改围巾颜色",
+        "不做细长鹅颈"
+      ],
+      "dialogue": [
+        "热心",
+        "有点碎嘴",
+        "熟悉街区"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Talk",
+        "Cheer",
+        "Think"
+      ],
+      "avatarCrop": {
+        "headTop": 0.06,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_001",
+      "name": "小满",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#FFF1D0",
+        "#D96F4A",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "邮差包"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：邮差包"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "退休邮差",
+      "dialogue": [
+        "爽朗",
+        "爱讲旧街往事",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_002",
+      "name": "栗子",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#F7E4C5",
+        "#7BB36A",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "绿色头巾"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：绿色头巾"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "园艺爱好者",
+      "dialogue": [
+        "慢热",
+        "细心",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_003",
+      "name": "果冻",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#FFF5E8",
+        "#E65B70",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "圆框眼镜"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：圆框眼镜"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "备考学生",
+      "dialogue": [
+        "紧张",
+        "认真",
+        "嘴馋",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_004",
+      "name": "阿麦",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#F2DDC0",
+        "#5EA5C9",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "蓝色运动腕带"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：蓝色运动腕带"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "晨跑达人",
+      "dialogue": [
+        "直爽",
+        "精力旺盛",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_005",
+      "name": "豆花",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#FFF0D9",
+        "#B982C6",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "紫色丝带"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：紫色丝带"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "手作摊主",
+      "dialogue": [
+        "温柔",
+        "审美敏感",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_006",
+      "name": "山竹",
+      "role": "MAJOR_GUEST",
+      "species": "goose",
+      "tier": "A",
+      "palette": [
+        "#E9E0CF",
+        "#D08B45",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "棕色小马甲"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：棕色小马甲"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "夜班保安",
+      "dialogue": [
+        "稳重",
+        "幽默",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_007",
+      "name": "阿青",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#EAF2D6",
+        "#6FA777",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "薄荷色领结"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：薄荷色领结"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "社区志愿者",
+      "dialogue": [
+        "热心",
+        "讲效率",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_008",
+      "name": "米糕",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#FFF2D9",
+        "#C18A5B",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "格纹围巾"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：格纹围巾"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "面点学徒",
+      "dialogue": [
+        "憨厚",
+        "好学",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_009",
+      "name": "小柚",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#FFF4E4",
+        "#E58B56",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "柚子挂件"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：柚子挂件"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "旅行爱好者",
+      "dialogue": [
+        "好奇",
+        "话多",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_010",
+      "name": "黑豆",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#DDD5C9",
+        "#54829A",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "深蓝鸭舌帽"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：深蓝鸭舌帽"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "摄影爱好者",
+      "dialogue": [
+        "观察细",
+        "寡言",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_011",
+      "name": "桃桃",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#FFE7DE",
+        "#E56A8A",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "粉色发卡"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：粉色发卡"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "幼儿园老师",
+      "dialogue": [
+        "耐心",
+        "爱操心",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_012",
+      "name": "老谷",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#EFE3C8",
+        "#8D6B47",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "旧藤帽"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：旧藤帽"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "粮店老板",
+      "dialogue": [
+        "节俭",
+        "念旧",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_013",
+      "name": "柠七",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#FFF5C9",
+        "#9BAF42",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "柠檬胸针"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：柠檬胸针"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "饮品店兼职",
+      "dialogue": [
+        "机灵",
+        "嘴快",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_014",
+      "name": "阿潮",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#E7E6D7",
+        "#5B9DB1",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "海蓝小包"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：海蓝小包"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "钓鱼爱好者",
+      "dialogue": [
+        "随性",
+        "爱吹牛",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_015",
+      "name": "暖暖",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#FCE7CF",
+        "#D56D51",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "红色耳罩"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：红色耳罩"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "外卖骑手",
+      "dialogue": [
+        "讲义气",
+        "行动派",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_016",
+      "name": "卷卷",
+      "role": "MINOR_GUEST",
+      "species": "goose",
+      "tier": "B",
+      "palette": [
+        "#F4E8D7",
+        "#9E7CC0",
+        "#76543A"
+      ],
+      "ratio": 0.62,
+      "height": 2.2,
+      "props": [
+        "卷边帽"
+      ],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "固定配饰：卷边帽"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "烘焙社成员",
+      "dialogue": [
+        "讲究",
+        "轻微完美主义",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad",
+        "Talk"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 1,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_017",
+      "name": "啵啵",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#FFF0D8",
+        "#E6A653",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "开心",
+        "爱吃甜",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_018",
+      "name": "椰青",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#E9F0D5",
+        "#6CA58A",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "安静",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_019",
+      "name": "丸子",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#F7E1CF",
+        "#C77D5D",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "活泼",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_020",
+      "name": "小盐",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#EFECE4",
+        "#7892A0",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "冷静",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_021",
+      "name": "杏仁",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#F2DFBF",
+        "#AB7E55",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "随和",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_022",
+      "name": "汽水",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#E6F1EA",
+        "#57A9B9",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "兴奋",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_023",
+      "name": "糯米",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#FFF4E8",
+        "#CB8E72",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "腼腆",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    },
+    {
+      "id": "char_goose_024",
+      "name": "胡椒",
+      "role": "BACKGROUND",
+      "species": "goose",
+      "tier": "C",
+      "palette": [
+        "#E6DDD2",
+        "#806B60",
+        "#76543A"
+      ],
+      "ratio": 0.66,
+      "height": 2,
+      "props": [],
+      "traits": [
+        "圆润短颈轮廓",
+        "橙色喙",
+        "三趾简化鹅脚",
+        "无固定配饰"
+      ],
+      "forbid": [
+        "不得改成长细鹅颈",
+        "不得增加人类手掌",
+        "不得出现与其他主角色相同固定配饰"
+      ],
+      "job": "普通食客",
+      "dialogue": [
+        "有点挑剔",
+        "对白保持生活化"
+      ],
+      "expressions": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "animations": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer"
+      ],
+      "avatarCrop": {
+        "headTop": 0.08,
+        "bodyBottom": 0.9
+      },
+      "sceneScale": 0.88,
+      "evidenceKind": "DEV_BLUEPRINT"
+    }
+  ]
+}
