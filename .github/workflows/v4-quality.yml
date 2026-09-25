@@ -52,6 +52,9 @@ jobs:
       - name: Balance smoke Day 10
         run: npm run simulate:balance -- production-data/v4/runtime/game_content_day001_010.json 10 500 20260925
 
+      - name: Vertical slice balance gate
+        run: npm run gate:balance:vertical
+
       - name: Parse critical JSON files
         shell: bash
         run: |
@@ -68,6 +71,7 @@ jobs:
             'production-data/v4/audio/audio_manifest_v4.json',
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
+            'production-data/v4/runtime/vertical_slice_balance_targets.json',
             'research-data/evidence/source_registry_v4.json',
             'research-data/levels/public_image_assets_v4.json',
             'research-data/economy/observation_ledger_v4.json'
