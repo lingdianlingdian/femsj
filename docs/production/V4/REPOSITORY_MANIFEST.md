@@ -87,6 +87,7 @@
 | Evidence Auditor | `tools/evidence-auditor/audit.mjs` |
 | CSV Data Auditor | `tools/data-auditor/audit.mjs` |
 | Content Reference Auditor | `tools/content-reference-auditor/audit.mjs` |
+| Runtime Readiness Auditor | `tools/runtime-readiness/audit.mjs` |
 
 ## 历史文件使用规则
 
