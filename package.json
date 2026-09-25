@@ -32,6 +32,8 @@
     "gate:balance:full": "node tools/balance-simulator/full-gate.mjs",
     "audit:art:runtime-full": "node tools/runtime-art-binding-auditor/audit.mjs",
     "gate:balance:full-reachability": "node tools/balance-simulator/full-reachability-gate.mjs",
-    "validate:character-canon": "node tools/character-canon-validator/validate.mjs"
+    "validate:character-canon": "node tools/character-canon-validator/validate.mjs",
+    "cocos:contracts:build": "node tools/cocos-contract-builder/build.mjs",
+    "cocos:contracts:check": "node tools/cocos-contract-builder/build.mjs --check"
   }
 }
