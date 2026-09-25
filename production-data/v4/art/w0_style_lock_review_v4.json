@@ -1,0 +1,72 @@
+{
+  "version": "4.0",
+  "reviewedAt": "2026-09-25",
+  "phase": "W0_STYLE_LOCK",
+  "decision": "REJECT_AND_REFINE",
+  "purpose": "Review generated broad visual concepts before allowing 109 production jobs to render at scale.",
+  "retainedDirections": [
+    "Warm cream/orange neighborhood food-street atmosphere",
+    "Soft large-shape 2D hand-painted rendering with light volume",
+    "Warm dark-brown outlines instead of pure black",
+    "Before/After building upgrade reads clearly at a glance",
+    "Rounded mobile UI hierarchy with strong foreground/background separation"
+  ],
+  "rejectionReasons": [
+    {
+      "code": "GAMEPLAY_DRIFT",
+      "severity": "BLOCKER",
+      "finding": "Concept boards introduced Match-3 style grids instead of the required 9x7 Merge-2 board."
+    },
+    {
+      "code": "CHARACTER_CANON_DRIFT",
+      "severity": "BLOCKER",
+      "finding": "Goose guide/guest canon was replaced or diluted by extra human characters, cats or dogs."
+    },
+    {
+      "code": "BAKED_TEXT",
+      "severity": "BLOCKER",
+      "finding": "Generated signs, labels, slogans, UI copy and pseudo asset IDs were baked into imagery."
+    },
+    {
+      "code": "SCOPE_POLLUTION",
+      "severity": "MAJOR",
+      "finding": "Non-target foods, cookware, pets and storefronts appeared without corresponding AssetId/Job."
+    },
+    {
+      "code": "STYLE_TOO_ILLUSTRATIVE",
+      "severity": "MAJOR",
+      "finding": "Some panels became anime/key-art heavy rather than compact casual-game production assets readable at small size."
+    },
+    {
+      "code": "TRANSPARENCY_NOT_PROVEN",
+      "severity": "MAJOR",
+      "finding": "Broad concept boards are opaque composites and do not validate transparent production exports."
+    },
+    {
+      "code": "STATE_CONTRACT_NOT_PROVEN",
+      "severity": "MAJOR",
+      "finding": "Producer/Cookware/UI state families were not demonstrated consistently."
+    }
+  ],
+  "hardRulesForNextIteration": [
+    "Board visuals must explicitly be 9 columns x 7 rows and Merge-2; never Match-3, never swap/cascade language.",
+    "Character sheets may only contain the requested CharacterId; do not add unrelated people, cats, dogs or mascots.",
+    "Goose characters must remain geese and follow character_canon_v4 fixed props/colors/proportions.",
+    "Do not render readable Chinese/English text, logos, slogans, store names, fake labels or fake AssetIds inside production imagery.",
+    "Do not introduce foods/props/buildings absent from the specific Job target.",
+    "Runtime icon jobs must output isolated transparent-background assets, not posters or collages.",
+    "UI jobs may use blank glyph placeholders only; actual copy is rendered by Cocos text components.",
+    "Building jobs must preserve identical camera, footprint and pivot across Before/After.",
+    "Style anchor review is not equivalent to APPROVED runtime art."
+  ],
+  "nextGate": {
+    "requiredPasses": [
+      "ANCHOR_BOARD_01 shows unmistakable 9x7 Merge-2 board",
+      "ANCHOR_ITEM_01 is isolated transparent food icon family and remains readable at 64px",
+      "ANCHOR_CHAR_02 shows only guide goose Tuantuan with fixed scarf/key tag",
+      "ANCHOR_BUILD_01/02 share camera/footprint/pivot",
+      "ANCHOR_UI_01 contains no baked readable copy or branding"
+    ],
+    "statusAfterPass": "CANON_LOCKED"
+  }
+}
