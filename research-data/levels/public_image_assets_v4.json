@@ -1,0 +1,260 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "policy": [
+    "Store stable public post URL and the discovered underlying image URL.",
+    "Do not depend on ChatGPT turn refs.",
+    "CDN timeout is a transport status, not evidence invalidation.",
+    "MENU_BY_PAGE_SEQUENCE mappings must be visually re-confirmed before transcription."
+  ],
+  "assets": [
+    {
+      "assetId": "ev_day11_15_composite",
+      "days": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793899686799870679",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FjTA5GPYN9u-i1XUfNH0DQyoiqwl_20260416175340.jpg/_tap_ugc.jpg",
+      "role": "COMPOSITE_MENU_TABLE",
+      "roleConfidence": "HIGH",
+      "authorCompleteness": "估计是没漏的",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "单张长表覆盖Day11-15；公开图片搜索可见缩略图。"
+    },
+    {
+      "assetId": "ev_day16_menu",
+      "days": [
+        16
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793897976891182314",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FhyM1Rfo1yiBl0MeQdAIB9zk7AoP_20260416174629.jpg/_tap_ugc.jpg",
+      "role": "MENU_BY_PAGE_SEQUENCE",
+      "roleConfidence": "MEDIUM",
+      "authorCompleteness": "应该没漏吧哈哈哈",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day映射按页面5图顺序推定，转录时需视觉确认。"
+    },
+    {
+      "assetId": "ev_day17_menu",
+      "days": [
+        17
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793897976891182314",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fhz-lhqw1d2DXegLy89jSIYUXkuB_20260416174629.jpg/_tap_ugc.jpg",
+      "role": "MENU_BY_PAGE_SEQUENCE",
+      "roleConfidence": "MEDIUM",
+      "authorCompleteness": "应该没漏吧哈哈哈",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day映射按页面5图顺序推定，转录时需视觉确认。"
+    },
+    {
+      "assetId": "ev_day18_menu",
+      "days": [
+        18
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793897976891182314",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fp4GPkQNK54FQh6H6ZzV8IxUfLLs_20260416174629.jpg/_tap_ugc.jpg",
+      "role": "MENU_BY_PAGE_SEQUENCE",
+      "roleConfidence": "MEDIUM",
+      "authorCompleteness": "应该没漏吧哈哈哈",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day映射按页面5图顺序推定，转录时需视觉确认。"
+    },
+    {
+      "assetId": "ev_day19_menu",
+      "days": [
+        19
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793897976891182314",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fvi-vigQkKjDS8mheULV8gJMnvxs_20260416174629.jpg/_tap_ugc.jpg",
+      "role": "MENU_BY_PAGE_SEQUENCE",
+      "roleConfidence": "MEDIUM",
+      "authorCompleteness": "应该没漏吧哈哈哈",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day映射按页面5图顺序推定，转录时需视觉确认。"
+    },
+    {
+      "assetId": "ev_day20_menu",
+      "days": [
+        20
+      ],
+      "postUrl": "https://www.taptap.cn/moment/793897976891182314",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FkgWX3ZgJ-gKCDiqc7VIAwtlrmkx_20260416174630.jpg/_tap_ugc.jpg",
+      "role": "MENU_BY_PAGE_SEQUENCE",
+      "roleConfidence": "MEDIUM",
+      "authorCompleteness": "应该没漏吧哈哈哈",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "Day映射按页面5图顺序推定，转录时需视觉确认。"
+    },
+    {
+      "assetId": "ev_day80_ingredients",
+      "days": [
+        80
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790629105325312627",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FniP10wxWo01-Dqv9kFJz4LLJeCM_20260407171012.png/_tap_ugc.jpg",
+      "role": "INGREDIENT_REQUIREMENTS",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "TRANSCRIBED_PARTIAL",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "帖子顺序：先食材需求，再菜单。"
+    },
+    {
+      "assetId": "ev_day80_menu",
+      "days": [
+        80
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790629105325312627",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fl8KQL2h1DKL5JtfNgpCMEsjuart_20260407171639.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "TRANSCRIBED_7_ITEMS",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "已写入day080_public_transcript.json。"
+    },
+    {
+      "assetId": "ev_day82_ingredients",
+      "days": [
+        82
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790641292114657994",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FrPQhMOtLEBY3UKIazBvnPJgRPJ1_20260407180515.png/_tap_ugc.jpg",
+      "role": "INGREDIENT_REQUIREMENTS",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "作者明确本日没有二次加工。"
+    },
+    {
+      "assetId": "ev_day82_menu",
+      "days": [
+        82
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790641292114657994",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FpwpLfJd5tWmLp96_Odx5Ws0tSyh_20260407180547.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL",
+      "note": "作者明确本日没有二次加工。"
+    },
+    {
+      "assetId": "ev_day83_ingredients",
+      "days": [
+        83
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790906865650238207",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fgh4rkN0DXntcqG7KmFh8T85JdUV_20260408113907.png/_tap_ugc.jpg",
+      "role": "INGREDIENT_REQUIREMENTS",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day83_menu",
+      "days": [
+        83
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790906865650238207",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FjL6ox94znoG2a0n7yk21fXPscuv_20260408113940.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day84_ingredients",
+      "days": [
+        84
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790906865650238207",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FlOcYT6DUMPP7GPk77RwHRkZtl39_20260408114025.png/_tap_ugc.jpg",
+      "role": "INGREDIENT_REQUIREMENTS",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "TRANSCRIBED_PRODUCER_GROUPS",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day84_menu",
+      "days": [
+        84
+      ],
+      "postUrl": "https://www.taptap.cn/moment/790906865650238207",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fv8TvmPQ7r91Ug-kd7fyni6t-g4N_20260408114107.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "TRANSCRIBED_14_ITEMS",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day106_menu",
+      "days": [
+        106
+      ],
+      "postUrl": "https://www.taptap.cn/moment/823602182489113413",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FhJcwiuka20aOYnFIY_BX5rjorC7_20260707165751.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day107_menu",
+      "days": [
+        107
+      ],
+      "postUrl": "https://www.taptap.cn/moment/823602182489113413",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FiUgEFmo4JCwISA9qCsMDv4izkKK_20260707165847.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day108_menu",
+      "days": [
+        108
+      ],
+      "postUrl": "https://www.taptap.cn/moment/823602182489113413",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FgLtqMrPyeWwli49oBKPj7v4STNF_20260707165909.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day109_menu",
+      "days": [
+        109
+      ],
+      "postUrl": "https://www.taptap.cn/moment/823602182489113413",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/FrG_AMqfjEhd36UcV9bFkB5DI1_K_20260707165956.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    },
+    {
+      "assetId": "ev_day110_menu",
+      "days": [
+        110
+      ],
+      "postUrl": "https://www.taptap.cn/moment/823602182489113413",
+      "imageUrl": "https://img2-tc.tapimg.com/moment/etag/Fqkz8wDONAbtIe52crMqOtMMkrtl_20260707170018.png/_tap_ugc.jpg",
+      "role": "MENU",
+      "roleConfidence": "HIGH",
+      "transcriptionStatus": "PENDING_VISUAL_TRANSCRIPTION",
+      "fetchStatus": "CDN_TIMEOUT_IN_WEB_TOOL"
+    }
+  ]
+}
