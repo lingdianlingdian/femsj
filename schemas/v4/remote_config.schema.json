@@ -1,0 +1,168 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://femsj.local/schemas/v4/remote_config.schema.json",
+  "title": "femsj Remote Config Envelope",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "configVersion",
+    "contentRevision",
+    "environment",
+    "publishedAt",
+    "validFrom",
+    "minAppVersion",
+    "payload",
+    "signature"
+  ],
+  "properties": {
+    "configVersion": {
+      "type": "string",
+      "pattern": "^4\\.[0-9]+\\.[0-9]+$"
+    },
+    "contentRevision": {
+      "type": "string",
+      "minLength": 8
+    },
+    "environment": {
+      "enum": [
+        "DEV",
+        "STAGING",
+        "PROD"
+      ]
+    },
+    "publishedAt": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validFrom": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "validTo": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    },
+    "minAppVersion": {
+      "type": "string"
+    },
+    "maxAppVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "rollout": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "percentage",
+        "seedKey"
+      ],
+      "properties": {
+        "percentage": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100
+        },
+        "seedKey": {
+          "enum": [
+            "PLAYER_ID",
+            "DEVICE_ID"
+          ]
+        },
+        "allowPlayerIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        },
+        "denyPlayerIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "payload": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "economy",
+        "events",
+        "offers",
+        "shop",
+        "featureFlags"
+      ],
+      "properties": {
+        "economy": {
+          "type": "object"
+        },
+        "events": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "offers": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "shop": {
+          "type": "object"
+        },
+        "featureFlags": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "boolean"
+          }
+        },
+        "channelOverrides": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "object"
+          }
+        }
+      }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "algorithm",
+        "keyId",
+        "sha256",
+        "signature"
+      ],
+      "properties": {
+        "algorithm": {
+          "const": "ED25519"
+        },
+        "keyId": {
+          "type": "string"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "signature": {
+          "type": "string",
+          "minLength": 40
+        }
+      }
+    },
+    "rollbackOf": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  }
+}
