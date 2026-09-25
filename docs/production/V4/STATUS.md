@@ -16,7 +16,7 @@
 | Item公开种子 | 持续扩充（Day101-105 +41；Day80/84 +15） | 🟡 持续扩充 |
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
-| Asset Manifest | 225条 | 🟡 已从示例表升级为实际生产表 |
+| Asset Manifest | 228条 | 🟡 已从示例表升级为实际生产表 |
 | Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story Beats | 110日 | 🟡 Beat结构完整，对白/剧情正文待写 |
@@ -149,7 +149,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - Verified Requirement unresolved：0
 - UI Screens：46
 - Shared UI Components：41
-- Asset Manifest：225
+- Asset Manifest：228
 - Original Character Canon：26
 - Audio Assets：42
 - Build Nodes：48
