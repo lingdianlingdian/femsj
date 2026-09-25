@@ -80,6 +80,28 @@ for(const id of buildGraph.keys()) dfs(id);
 for(const e of arr("events")){
   if(!e.settlement) errors.push(`event ${e.id}: settlement missing`);
   if(!(e.progressSources||[]).length) errors.push(`event ${e.id}: progressSources empty`);
+
+  const durationKeys=["durationMinutes","durationHours","durationDays"].filter(k=>e[k]!=null);
+  if(durationKeys.length>1) errors.push(`event ${e.id}: multiple duration units configured (${durationKeys.join(",")})`);
+  for(const k of durationKeys){
+    if(!(Number(e[k])>0)) errors.push(`event ${e.id}: ${k} must be >0`);
+  }
+
+  let prev=-Infinity;
+  for(const m of e.milestones||[]){
+    if(!(m.threshold>0)) errors.push(`event ${e.id}: milestone threshold must be >0`);
+    if(m.threshold<=prev) errors.push(`event ${e.id}: milestone thresholds must be strictly ascending`);
+    prev=m.threshold;
+    if(!Array.isArray(m.rewards) || !m.rewards.length) errors.push(`event ${e.id}: milestone ${m.threshold} has no rewards`);
+    for(const r of m.rewards||[]){
+      if(!(r.amount>0)) errors.push(`event ${e.id}: milestone ${m.threshold} has non-positive reward amount`);
+    }
+  }
+
+  if(e.type==="RACE" && !e.matchmaking) errors.push(`event ${e.id}: RACE requires matchmaking`);
+  if(e.type==="PASS" && !(e.levels>0)) errors.push(`event ${e.id}: PASS requires positive levels`);
+  if(e.type==="ALBUM" && !(e.cardCountDev>0)) errors.push(`event ${e.id}: ALBUM requires cardCountDev`);
+  if(e.type==="ALBUM" && e.guarantee?.enabled && !(e.guarantee.pityPoints>0)) errors.push(`event ${e.id}: enabled guarantee requires pityPoints >0`);
 }
 
 console.log(JSON.stringify({
