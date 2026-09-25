@@ -57,6 +57,7 @@ function devEvidence(note){
 }
 function stableJSON(v){return JSON.stringify(v,null,2)+"\n";}
 
+function build(){
 const itemRows=table(paths.items);
 const assetRows=table(paths.assets);
 const graph=readJSON(paths.graph);
