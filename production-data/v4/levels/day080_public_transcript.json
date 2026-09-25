@@ -1,0 +1,50 @@
+{
+  "version": "4.0",
+  "day": 80,
+  "sourceUrl": "https://www.taptap.cn/moment/790629105325312627",
+  "sourceImageRef": "turn282625image0",
+  "orders": [
+    {
+      "slot": 1,
+      "menu": "新鲜生蚝",
+      "raw": "生蚝",
+      "visualConfidence": "HIGH"
+    },
+    {
+      "slot": 2,
+      "menu": "龙舌兰螺丝刀",
+      "raw": "龙舌兰｜鲜榨橙汁；鲜榨橙汁→橙子",
+      "visualConfidence": "MEDIUM"
+    },
+    {
+      "slot": 3,
+      "menu": "芝士热狗",
+      "raw": "芝士片｜炭烤烤肉肠｜烤热狗面包；炭烤烤肉肠→肉肠；烤热狗面包→矿泉水｜小麦粉｜玻璃碗",
+      "visualConfidence": "HIGH"
+    },
+    {
+      "slot": 4,
+      "menu": "蒜香面包",
+      "raw": "蒜｜芝士片｜小麦粉",
+      "visualConfidence": "HIGH"
+    },
+    {
+      "slot": 5,
+      "menu": "花茶",
+      "raw": "花茶",
+      "visualConfidence": "HIGH"
+    },
+    {
+      "slot": 6,
+      "menu": "浆果蜂蜜燕麦碗",
+      "raw": "蓝莓｜草莓｜蜂蜜｜燕麦",
+      "visualConfidence": "HIGH"
+    },
+    {
+      "slot": 7,
+      "menu": "糖豆",
+      "raw": "糖豆",
+      "visualConfidence": "HIGH"
+    }
+  ]
+}
