@@ -20,7 +20,7 @@
       "milestones": [
         {
           "threshold": 100,
-          "reward": [
+          "rewards": [
             {
               "type": "ENERGY",
               "amount": 20
@@ -29,7 +29,7 @@
         },
         {
           "threshold": 250,
-          "reward": [
+          "rewards": [
             {
               "type": "ENERGY",
               "amount": 30
@@ -38,7 +38,7 @@
         },
         {
           "threshold": 450,
-          "reward": [
+          "rewards": [
             {
               "type": "ENERGY",
               "amount": 40
@@ -47,7 +47,7 @@
         },
         {
           "threshold": 700,
-          "reward": [
+          "rewards": [
             {
               "type": "ENERGY",
               "amount": 50
@@ -56,7 +56,7 @@
         },
         {
           "threshold": 1000,
-          "reward": [
+          "rewards": [
             {
               "type": "CARD_PACK",
               "amount": 1
@@ -64,7 +64,16 @@
           ]
         }
       ],
-      "settlement": "AUTO_MAIL"
+      "settlement": "AUTO_MAIL",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     },
     {
       "id": "event_cheese_drift",
@@ -80,7 +89,7 @@
       "milestones": [
         {
           "threshold": 50,
-          "reward": [
+          "rewards": [
             {
               "type": "COIN",
               "amount": 200
@@ -89,7 +98,7 @@
         },
         {
           "threshold": 120,
-          "reward": [
+          "rewards": [
             {
               "type": "COIN",
               "amount": 350
@@ -98,7 +107,7 @@
         },
         {
           "threshold": 220,
-          "reward": [
+          "rewards": [
             {
               "type": "COIN",
               "amount": 500
@@ -107,7 +116,7 @@
         },
         {
           "threshold": 360,
-          "reward": [
+          "rewards": [
             {
               "type": "COIN",
               "amount": 650
@@ -116,7 +125,7 @@
         },
         {
           "threshold": 550,
-          "reward": [
+          "rewards": [
             {
               "type": "COIN",
               "amount": 800
@@ -125,7 +134,7 @@
         },
         {
           "threshold": 800,
-          "reward": [
+          "rewards": [
             {
               "type": "CARD_PACK",
               "amount": 1
@@ -133,7 +142,16 @@
           ]
         }
       ],
-      "settlement": "AUTO_MAIL"
+      "settlement": "AUTO_MAIL",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     },
     {
       "id": "event_stirfry_boost",
@@ -156,7 +174,16 @@
         "ORDER_COMPLETE"
       ],
       "milestones": [],
-      "settlement": "AUTO_CLAIM"
+      "settlement": "AUTO_CLAIM",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     },
     {
       "id": "event_cook_contest",
@@ -177,7 +204,7 @@
       "milestones": [
         {
           "threshold": 100,
-          "reward": [
+          "rewards": [
             {
               "type": "GEM",
               "amount": 3
@@ -186,7 +213,7 @@
         },
         {
           "threshold": 250,
-          "reward": [
+          "rewards": [
             {
               "type": "GEM",
               "amount": 5
@@ -195,7 +222,7 @@
         },
         {
           "threshold": 500,
-          "reward": [
+          "rewards": [
             {
               "type": "GEM",
               "amount": 7
@@ -204,7 +231,7 @@
         },
         {
           "threshold": 800,
-          "reward": [
+          "rewards": [
             {
               "type": "GEM",
               "amount": 9
@@ -212,7 +239,16 @@
           ]
         }
       ],
-      "settlement": "AUTO_MAIL"
+      "settlement": "AUTO_MAIL",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     },
     {
       "id": "event_album_season",
@@ -242,7 +278,16 @@
         "PURCHASE"
       ],
       "milestones": [],
-      "settlement": "AUTO_MAIL"
+      "settlement": "AUTO_MAIL",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     },
     {
       "id": "event_season_pass",
@@ -258,7 +303,18 @@
         "BUILD_COMPLETE"
       ],
       "premiumTrack": true,
-      "settlement": "AUTO_MAIL"
+      "settlement": "AUTO_MAIL",
+      "milestones": [],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
     }
-  ]
+  ],
+  "generatedAt": "2026-09-25"
 }
