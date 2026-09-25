@@ -1031,43 +1031,43 @@
       "outputPool": [
         {
           "itemId": "item_fanqie",
-          "weight": 14,
+          "weight": 18,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_caijiao",
-          "weight": 10,
+          "weight": 14,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_mogu",
-          "weight": 9,
+          "weight": 12,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_lajiao",
-          "weight": 7,
+          "weight": 8,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_congduan",
-          "weight": 7,
+          "weight": 8,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_huluobo",
-          "weight": 9,
+          "weight": 12,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_yangcong",
-          "weight": 10,
+          "weight": 12,
           "minCount": 1,
           "maxCount": 1
         },
@@ -1084,32 +1084,8 @@
           "maxCount": 1
         },
         {
-          "itemId": "item_lanmei",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_caomei",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_ningmeng",
-          "weight": 5,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_pingguo",
-          "weight": 4,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
           "itemId": "item_shengcai",
-          "weight": 4,
+          "weight": 5,
           "minCount": 1,
           "maxCount": 1
         }
@@ -1126,7 +1102,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=40, cooldownSec=90；仅为原创运行默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=40, cooldownSec=90；仅为原创运行默认值。 第三轮：移除水果掉落，避免早期池被后期水果稀释。"
       }
     },
     {
@@ -1141,31 +1117,31 @@
       "outputPool": [
         {
           "itemId": "item_kafeidou",
-          "weight": 32,
+          "weight": 40,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_lvcha",
-          "weight": 24,
+          "weight": 25,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_chunniunai",
-          "weight": 18,
+          "weight": 20,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_hongcha",
-          "weight": 14,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_shenhongkafei",
-          "weight": 12,
+          "weight": 5,
           "minCount": 1,
           "maxCount": 1
         }
@@ -1182,7 +1158,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=32, cooldownSec=120；仅为原创运行默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=32, cooldownSec=120；仅为原创运行默认值。 第三轮：提高咖啡豆/绿茶/牛奶基础掉落权重以平滑Day1-10。"
       }
     },
     {
@@ -1203,7 +1179,7 @@
         },
         {
           "itemId": "item_xiangcaojia",
-          "weight": 8,
+          "weight": 12,
           "minCount": 1,
           "maxCount": 1
         },
@@ -1215,25 +1191,25 @@
         },
         {
           "itemId": "item_huangyou",
-          "weight": 14,
+          "weight": 18,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_boliwan",
-          "weight": 16,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_zhishipian",
           "weight": 12,
           "minCount": 1,
           "maxCount": 1
         },
         {
+          "itemId": "item_zhishipian",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
           "itemId": "item_tangjiang",
-          "weight": 14,
+          "weight": 12,
           "minCount": 1,
           "maxCount": 1
         }
@@ -1250,7 +1226,57 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=24, cooldownSec=180；仅为原创运行默认值。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=24, cooldownSec=180；仅为原创运行默认值。 第三轮：提高黄油/香草荚权重以降低Day9-10尾部阻塞。"
+      }
+    },
+    {
+      "id": "prod_shuiguolanzi",
+      "name": "水果篮子",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 24,
+      "cooldownSec": 180,
+      "outputPool": [
+        {
+          "itemId": "item_lanmei",
+          "weight": 30,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_caomei",
+          "weight": 25,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_ningmeng",
+          "weight": 25,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_pingguo",
+          "weight": 20,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "unlockDay": 8,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "assetId": "art_prod_shuiguolanzi",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "水果篮子名称来自公开玩家资料；level/energy/capacity/cooldown/weight为Day1-10原创垂直切片默认值。"
       }
     }
   ],
@@ -3081,7 +3107,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_shuiguolanzi"
       ],
       "recipeIds": [
         "recipe_vs_xianzhalanmeizhi"
@@ -3183,7 +3209,7 @@
       ],
       "producerIds": [
         "prod_kitchen_supply",
-        "prod_shucaileizi"
+        "prod_shuiguolanzi"
       ],
       "recipeIds": [
         "recipe_vs_caomeiguolu"
@@ -3275,7 +3301,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi",
+        "prod_shuiguolanzi",
         "prod_kitchen_supply"
       ],
       "recipeIds": [
@@ -3576,7 +3602,8 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_shucaileizi",
+        "prod_shuiguolanzi"
       ],
       "recipeIds": [
         "recipe_vs_baomihua",
@@ -3880,7 +3907,8 @@
         "d008_o04"
       ],
       "unlockIds": [
-        "cook_drink_station"
+        "cook_drink_station",
+        "prod_shuiguolanzi"
       ],
       "buildNodeIds": [
         "build_a01_05"
