@@ -163,3 +163,11 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ Schema 已覆盖竞速匹配、活动时长、Boost触发、卡册保底、Pass等级等生产字段。
 - ✅ Config Validator 新增活动持续时间互斥、里程碑递增、奖励有效性、RACE/PASS/ALBUM必填项校验。
 - ✅ QA 从 109 条扩充到 117 条，并同步 JSON/CSV。
+
+## Runtime Production Readiness
+
+- ✅ 新增 `tools/runtime-readiness/audit.mjs`，把 Runtime 缺口机器化统计。
+- ✅ 新增 `npm run audit:runtime`（报告模式）与 `npm run audit:runtime:strict`（发版阻断模式）。
+- ✅ CI 已加入 Runtime readiness 报告，不会用伪造值让当前研究阶段强行通过 strict。
+- 当前关键缺口：651 单仅 113 单有 evidence-backed normalized requirements；Producer/Cookware/Recipe 精确参数仍是 P0-B；Customer/Reward/Dependency 仍未生产化。
+- 说明文档：`docs/production/V4/19_Runtime生产就绪门禁.md`。
