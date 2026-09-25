@@ -14,7 +14,8 @@ const files = {
   runtime: P('production-data/v4/runtime/game_content_day001_010.json'),
   story: P('production-data/v4/story/story_dialogue_day001_010.json'),
   coverage: P('production-data/v4/art/day001_010_art_coverage_v4.json'),
-  bindings: P('production-data/v4/art/runtime_art_bindings_day001_010_v4.json')
+  bindings: P('production-data/v4/art/runtime_art_bindings_day001_010_v4.json'),
+  anchorOutputs: P('production-data/v4/art/style_anchor_outputs_v4.json')
 };
 
 function fail(msg) {
@@ -91,6 +92,7 @@ const runtime = fs.existsSync(files.runtime) ? readJson(files.runtime) : null;
 const story = fs.existsSync(files.story) ? readJson(files.story) : null;
 const coverage = fs.existsSync(files.coverage) ? readJson(files.coverage) : null;
 const bindings = fs.existsSync(files.bindings) ? readJson(files.bindings) : null;
+const anchorOutputs = fs.existsSync(files.anchorOutputs) ? readJson(files.anchorOutputs) : null;
 
 const assetIds = assets.map(x=>x.asset_id);
 const anchorIds = anchors.map(x=>x.anchor_id);
@@ -114,6 +116,21 @@ for (const a of anchors) {
   if (!allowedQueueStatuses.has(a.status)) fail(`Anchor ${a.anchor_id} has invalid status ${a.status}`);
 }
 
+// Anchor job closure and production dependency gate.
+const anchorJobTargets=(anchorJobs?.jobs||[]).map(j=>j.target);
+for (const d of dupes(anchorJobTargets)) fail(`Duplicate anchor job target: ${d}`);
+for (const id of anchorIds) if (!anchorJobTargets.includes(id)) fail(`Style anchor has no generation job: ${id}`);
+for (const id of anchorJobTargets) if (!anchorSet.has(id)) fail(`Anchor job targets unknown anchor: ${id}`);
+if ((anchorJobs?.jobCount ?? anchorJobTargets.length) !== anchorJobTargets.length) {
+  fail(`anchorJobs.jobCount mismatch: declared ${anchorJobs?.jobCount}, actual ${anchorJobTargets.length}`);
+}
+const anchorStatusById=new Map(anchors.map(a=>[a.anchor_id,a.status]));
+for (const row of queue) {
+  if (['GENERATED','CLEANUP','QA','APPROVED','INTEGRATED'].includes(row.status) && row.depends_on && anchorStatusById.get(row.depends_on)!=='CANON_LOCKED') {
+    fail(`Production asset ${row.asset_id} advanced to ${row.status} before anchor ${row.depends_on} was CANON_LOCKED`);
+  }
+}
+
 const allJobs=[
   ...((anchorJobs && Array.isArray(anchorJobs.jobs)) ? anchorJobs.jobs : []),
   ...((batchJobs && Array.isArray(batchJobs.jobs)) ? batchJobs.jobs : [])
@@ -135,6 +152,45 @@ if (batchJobs) {
   if (batchJobs.jobCount !== batchJobs.jobs?.length) fail(`batchJobs.jobCount mismatch: declared ${batchJobs.jobCount}, actual ${batchJobs.jobs?.length ?? 0}`);
   const batchAssetSet=new Set((batchJobs.jobs||[]).map(x=>x.asset_id));
   for (const q of queue) if (!batchAssetSet.has(q.asset_id)) fail(`Production queue asset has no generated execution job: ${q.asset_id}`);
+}
+
+const anchorOutputRows=anchorOutputs?.outputs||[];
+const anchorOutputIds=anchorOutputRows.map(x=>x.anchor_id);
+for (const d of dupes(anchorOutputIds)) fail(`Duplicate style anchor output: ${d}`);
+const anchorJobIdSet=new Set((anchorJobs?.jobs||[]).map(j=>j.job_id));
+for (const o of anchorOutputRows) {
+  if (!anchorSet.has(o.anchor_id)) fail(`Anchor output references missing anchor: ${o.anchor_id}`);
+  if (!anchorJobIdSet.has(o.job_id)) fail(`Anchor output ${o.anchor_id} references unknown job_id ${o.job_id}`);
+  if (!/^art-source\/v4\/anchors\//.test(o.file_path||'')) fail(`Anchor output ${o.anchor_id} file_path outside art-source/v4/anchors`);
+  if (!Number.isInteger(o.width)||o.width<1||!Number.isInteger(o.height)||o.height<1) fail(`Anchor output ${o.anchor_id} invalid dimensions`);
+  if (!/^[a-f0-9]{64}$/.test(o.sha256||'')) fail(`Anchor output ${o.anchor_id} invalid sha256`);
+  const manifestStatus=anchorStatusById.get(o.anchor_id);
+  if (o.status==='CONCEPT_REVIEW' && manifestStatus!=='CONCEPT_REVIEW') fail(`Anchor ${o.anchor_id} output is CONCEPT_REVIEW but manifest status is ${manifestStatus}`);
+  if (o.status==='CANON_LOCKED') {
+    if (manifestStatus!=='CANON_LOCKED') fail(`Anchor ${o.anchor_id} output locked but manifest status is ${manifestStatus}`);
+    if (!o.qa_file) fail(`Locked anchor ${o.anchor_id} has no qa_file`);
+    else {
+      const qaAbs=path.join(ROOT,o.qa_file);
+      if (!fs.existsSync(qaAbs)) fail(`Locked anchor ${o.anchor_id} QA file missing: ${o.qa_file}`);
+      else {
+        const qa=readJson(qaAbs);
+        if (qa) {
+          const failedHard=Object.entries(qa.hardGates||{}).filter(([,v])=>v!==true).map(([k])=>k);
+          const failedAcceptance=(qa.acceptance||[]).filter(x=>x.pass!==true).map(x=>x.criterion);
+          if (failedHard.length) fail(`Locked anchor ${o.anchor_id} failed hard gates: ${failedHard.join(', ')}`);
+          if (failedAcceptance.length) fail(`Locked anchor ${o.anchor_id} failed acceptance: ${failedAcceptance.join(' | ')}`);
+          if (qa.decision!=='APPROVE') fail(`Locked anchor ${o.anchor_id} QA decision is not APPROVE`);
+          if (!String(qa.reviewer||'').trim()) fail(`Locked anchor ${o.anchor_id} has no reviewer`);
+        }
+      }
+    }
+  }
+}
+// Any manifest anchor marked CONCEPT_REVIEW/CANON_LOCKED must have a registered output.
+for (const a of anchors) {
+  if (['CONCEPT_REVIEW','CANON_LOCKED'].includes(a.status) && !anchorOutputIds.includes(a.anchor_id)) {
+    fail(`Anchor ${a.anchor_id} status is ${a.status} but no anchor output is registered`);
+  }
 }
 
 const outputRows = outputs?.outputs || [];
@@ -256,6 +312,8 @@ const report={
   anchors:anchorIds.length,
   queue:queue.length,
   anchorJobs:anchorJobs?.jobs?.length||0,
+  anchorOutputs:anchorOutputRows.length,
+  anchorsLocked:anchors.filter(x=>x.status==='CANON_LOCKED').length,
   productionJobs:batchJobs?.jobs?.length||0,
   outputs:outputRows.length,
   approved:outputRows.filter(x=>x.status==='APPROVED').length,
