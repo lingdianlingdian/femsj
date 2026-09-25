@@ -19,3 +19,12 @@ npm run audit:art
 - APPROVED / INTEGRATED 资产必须通过 Canon、Readability、Perspective、Palette、Bundle、Performance、Originality 七项门禁。
 
 当前允许“0 个二进制正式产物”作为 warning，使生产合同可先进入 CI；一旦资源开始入库，产物错误会直接失败。
+
+
+## 下一批出图
+
+```powershell
+node tools/art-production-auditor/next.mjs 10
+```
+
+按 W1→W4 顺序返回下一批尚未 APPROVED/INTEGRATED 的正式美术 Job，直接提供 AssetId、Anchor、尺寸、prompt 与验收条件。
