@@ -1,0 +1,685 @@
+{
+  "version": "4.1.0",
+  "scope": "DAY021_030_STORY_SLICE",
+  "evidenceKind": "DEV_BLUEPRINT",
+  "scenes": [
+    {
+      "id": "story_day_021_entry",
+      "day": 21,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.021.entry.001",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.021.entry.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_007",
+          "textKey": "story.story.day.021.entry.003",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_build_02_01",
+      "day": 21,
+      "trigger": "BUILD",
+      "buildNodeId": "build_a02_01",
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.build.02.01.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_015",
+          "textKey": "story.story.build.02.01.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.build.02.01.003",
+          "emotion": "Happy",
+          "animation": "Cheer"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_021_exit",
+      "day": 21,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_009",
+          "textKey": "story.story.day.021.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.021.exit.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_009",
+          "textKey": "story.story.day.021.exit.003",
+          "emotion": "Expect",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_022_entry",
+      "day": 22,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_009",
+          "textKey": "story.story.day.022.entry.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.022.entry.002",
+          "emotion": "Think",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.022.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_022_exit",
+      "day": 22,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_009",
+          "textKey": "story.story.day.022.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.022.exit.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.022.exit.003",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_023_entry",
+      "day": 23,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_011",
+          "textKey": "story.story.day.023.entry.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.023.entry.002",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_011",
+          "textKey": "story.story.day.023.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_023_exit",
+      "day": 23,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.023.exit.001",
+          "emotion": "Surprised",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_011",
+          "textKey": "story.story.day.023.exit.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.023.exit.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_024_entry",
+      "day": 24,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_005",
+          "textKey": "story.story.day.024.entry.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.024.entry.002",
+          "emotion": "Think",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_005",
+          "textKey": "story.story.day.024.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_build_02_02",
+      "day": 24,
+      "trigger": "BUILD",
+      "buildNodeId": "build_a02_02",
+      "lines": [
+        {
+          "speakerId": "char_goose_005",
+          "textKey": "story.story.build.02.02.001",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.build.02.02.002",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.build.02.02.003",
+          "emotion": "Happy",
+          "animation": "Cheer"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_024_exit",
+      "day": 24,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_005",
+          "textKey": "story.story.day.024.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.024.exit.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.024.exit.003",
+          "emotion": "Expect",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_025_entry",
+      "day": 25,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_012",
+          "textKey": "story.story.day.025.entry.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.025.entry.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_012",
+          "textKey": "story.story.day.025.entry.003",
+          "emotion": "Think",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_025_exit",
+      "day": 25,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_012",
+          "textKey": "story.story.day.025.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.025.exit.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.025.exit.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_026_entry",
+      "day": 26,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_013",
+          "textKey": "story.story.day.026.entry.001",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.026.entry.002",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_013",
+          "textKey": "story.story.day.026.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_build_02_03",
+      "day": 26,
+      "trigger": "BUILD",
+      "buildNodeId": "build_a02_03",
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.build.02.03.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_013",
+          "textKey": "story.story.build.02.03.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.build.02.03.003",
+          "emotion": "Happy",
+          "animation": "Cheer"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_026_exit",
+      "day": 26,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_013",
+          "textKey": "story.story.day.026.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.026.exit.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.026.exit.003",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_027_entry",
+      "day": 27,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_015",
+          "textKey": "story.story.day.027.entry.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.027.entry.002",
+          "emotion": "Think",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_015",
+          "textKey": "story.story.day.027.entry.003",
+          "emotion": "Expect",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_027_exit",
+      "day": 27,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_015",
+          "textKey": "story.story.day.027.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.027.exit.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.027.exit.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_028_entry",
+      "day": 28,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_014",
+          "textKey": "story.story.day.028.entry.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.028.entry.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_014",
+          "textKey": "story.story.day.028.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_028_exit",
+      "day": 28,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_014",
+          "textKey": "story.story.day.028.exit.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.028.exit.002",
+          "emotion": "Think",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.028.exit.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_029_entry",
+      "day": 29,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_010",
+          "textKey": "story.story.day.029.entry.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.029.entry.002",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_006",
+          "textKey": "story.story.day.029.entry.003",
+          "emotion": "Expect",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_build_02_04",
+      "day": 29,
+      "trigger": "BUILD",
+      "buildNodeId": "build_a02_04",
+      "lines": [
+        {
+          "speakerId": "char_goose_006",
+          "textKey": "story.story.build.02.04.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_010",
+          "textKey": "story.story.build.02.04.002",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.build.02.04.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_029_exit",
+      "day": 29,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_goose_006",
+          "textKey": "story.story.day.029.exit.001",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.029.exit.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.029.exit.003",
+          "emotion": "Think",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_030_entry",
+      "day": 30,
+      "trigger": "DAY_ENTRY",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.030.entry.001",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_007",
+          "textKey": "story.story.day.030.entry.002",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_005",
+          "textKey": "story.story.day.030.entry.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    },
+    {
+      "id": "story_day_030_exit",
+      "day": 30,
+      "trigger": "DAY_EXIT",
+      "buildNodeId": null,
+      "lines": [
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.030.exit.001",
+          "emotion": "Expect",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_goose_012",
+          "textKey": "story.story.day.030.exit.002",
+          "emotion": "Neutral",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_manager_001",
+          "textKey": "story.story.day.030.exit.003",
+          "emotion": "Happy",
+          "animation": "Talk"
+        },
+        {
+          "speakerId": "char_guide_001",
+          "textKey": "story.story.day.030.exit.004",
+          "emotion": "Happy",
+          "animation": "Cheer"
+        }
+      ],
+      "evidenceKind": "DEV_BLUEPRINT",
+      "notes": "原创Day21-30剧情；不复刻竞品人物、剧情或文案。"
+    }
+  ]
+}
