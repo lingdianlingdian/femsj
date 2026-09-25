@@ -84,6 +84,8 @@
 |---|---|
 | Config Validator | `tools/config-validator/validate.mjs` |
 | Balance Simulator Monte Carlo v2 | `tools/balance-simulator/simulate.mjs` |
+| Balance Simulator v3 Board State | `tools/balance-simulator-v3/simulate.mjs` |
+| Balance Simulator v3 Gate | `tools/balance-simulator-v3/gate.mjs` |
 | Evidence Auditor | `tools/evidence-auditor/audit.mjs` |
 | CSV Data Auditor | `tools/data-auditor/audit.mjs` |
 | Content Reference Auditor | `tools/content-reference-auditor/audit.mjs` |
@@ -95,3 +97,11 @@
 - 新开发决策优先看 V4。
 - seed 文件若已有对应 master 文件，以 master 为准。
 - 竞品 Evidence 与原创 Runtime Config 不混表。
+
+## Runtime Vertical Slice
+
+| 用途 | 主文件 |
+|---|---|
+| Day1-10 可运行配置 | `production-data/v4/runtime/game_content_day001_010.json` |
+| V2数值阈值 | `production-data/v4/runtime/vertical_slice_balance_targets.json` |
+| V3盘面阈值 | `production-data/v4/runtime/vertical_slice_board_targets.json` |
