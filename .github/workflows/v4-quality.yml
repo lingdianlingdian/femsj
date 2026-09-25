@@ -43,6 +43,9 @@ jobs:
       - name: Binary art file audit
         run: npm run audit:art:files
 
+      - name: Full runtime art binding audit
+        run: npm run audit:art:runtime-full
+
       - name: Art next-job gate smoke
         run: npm run art:next -- 20
 
@@ -152,6 +155,7 @@ jobs:
             'schemas/v4/runtime_art_bindings.schema.json',
             'production-data/v4/art/w0_style_lock_review_v4.json',
             'production-data/v4/art/runtime_art_bindings_day001_010_v4.json',
+            'production-data/v4/art/runtime_art_bindings_day001_110_v4.json',
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
             'production-data/v4/story/story_catalog_v4.json',
@@ -226,6 +230,7 @@ jobs:
             production-data/v4/runtime/game_content_day001_110.json
             production-data/v4/runtime/game_content_day001_110_report.json
             production-data/v4/story/story_catalog_v4.json
+            production-data/v4/art/runtime_art_bindings_day001_110_v4.json
             prototype/v4-ui-wireframes/index.html
             prototype/v4-ui-kit/index.html
           )
