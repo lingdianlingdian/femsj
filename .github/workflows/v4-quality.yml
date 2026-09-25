@@ -1,0 +1,113 @@
+name: V4 Quality Gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  data-quality:
+    name: Data / Evidence / Content Audits
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Show environment
+        run: |
+          node --version
+          npm --version
+
+      - name: CSV structural audit
+        run: npm run audit:data
+
+      - name: Evidence persistence audit
+        run: npm run audit:evidence
+
+      - name: Content reference closure audit
+        run: npm run audit:content
+
+      - name: Parse critical JSON files
+        shell: bash
+        run: |
+          node - <<'NODE'
+          import fs from 'node:fs';
+          const files = [
+            'production-data/v4/levels/order_registry_110.json',
+            'production-data/v4/levels/order_requirements_verified.json',
+            'production-data/v4/content/transform_graph_verified_v4.json',
+            'production-data/v4/ui/screens_v4.json',
+            'production-data/v4/ui/components_v4.json',
+            'production-data/v4/build/street_layout_4areas.json',
+            'production-data/v4/characters/character_canon_v4.json',
+            'production-data/v4/audio/audio_manifest_v4.json',
+            'research-data/evidence/source_registry_v4.json',
+            'research-data/levels/public_image_assets_v4.json',
+            'research-data/economy/observation_ledger_v4.json'
+          ];
+          let failed = false;
+          for (const file of files) {
+            try {
+              JSON.parse(fs.readFileSync(file, 'utf8'));
+              console.log('PASS', file);
+            } catch (e) {
+              failed = true;
+              console.error('FAIL', file, e.message);
+            }
+          }
+          process.exit(failed ? 1 : 0);
+          NODE
+
+      - name: Verify verified-level slice invariants
+        run: |
+          node - <<'NODE'
+          import fs from 'node:fs';
+          const req = JSON.parse(fs.readFileSync('production-data/v4/levels/order_requirements_verified.json','utf8'));
+          const slice = JSON.parse(fs.readFileSync('production-data/v4/levels/verified_level_slice_v4.json','utf8'));
+          const errors = [];
+          if (req.unresolvedCount !== 0) errors.push('Verified requirements contain unresolved item IDs');
+          if (req.rows.length !== slice.orderCount) errors.push(`Order count mismatch: requirements=${req.rows.length}, slice=${slice.orderCount}`);
+          const ids = req.rows.map(x => x.orderId);
+          if (new Set(ids).size !== ids.length) errors.push('Duplicate verified orderId');
+          const days = new Set(req.rows.map(x => x.day));
+          if (days.size !== slice.dayCount) errors.push(`Day count mismatch: requirements=${days.size}, slice=${slice.dayCount}`);
+          console.log(JSON.stringify({orders:req.rows.length, days:days.size, errors}, null, 2));
+          process.exit(errors.length ? 1 : 0);
+          NODE
+
+  contract-smoke:
+    name: Contract Smoke Checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check required production files
+        shell: bash
+        run: |
+          required=(
+            AGENTS.md
+            api/openapi-v4.yaml
+            schemas/v4/game_content.schema.json
+            schemas/v4/remote_config.schema.json
+            qa/v4/test_cases_v4.json
+            docs/production/V4/STATUS.md
+            prototype/v4-ui-wireframes/index.html
+            prototype/v4-ui-kit/index.html
+          )
+          for f in "${required[@]}"; do
+            test -s "$f" || { echo "Missing or empty: $f"; exit 1; }
+            echo "PASS $f"
+          done
