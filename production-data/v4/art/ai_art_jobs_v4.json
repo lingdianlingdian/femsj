@@ -1,0 +1,161 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "rules": {
+    "originality": "All outputs must be original. Public references may inform information hierarchy, readability, generic camera angle and category conventions only; never copy competitor-specific characters, icons, buildings, UI skins, logos or text.",
+    "globalStyle": [
+      "warm healing neighborhood food-street casual game",
+      "2D hand-painted with light volume",
+      "deep warm-brown outline, never pure black",
+      "soft top-left key light",
+      "clean shapes, low texture noise",
+      "mobile readability first"
+    ],
+    "negative": [
+      "photorealistic",
+      "3D render look",
+      "thin noisy linework",
+      "watermark",
+      "brand logo",
+      "Chinese/English text baked into image",
+      "competitor-specific goose face or costume",
+      "pixel-for-pixel UI reproduction"
+    ]
+  },
+  "jobs": [
+    {
+      "job_id": "JOB_ANCHOR_ITEM_01",
+      "target": "ANCHOR_ITEM_01",
+      "kind": "style_anchor",
+      "size": "1024x1024",
+      "transparent": true,
+      "prompt_spec": "Original casual-game asset sheet with four separate food icons: tomato, bell pepper, mushroom and carrot. 20-degree top-down view, warm brown soft outline, simplified rounded volumes, saturated but natural food colors, soft shadow under each object, strong silhouette, consistent scale and light from upper-left. No labels, no text.",
+      "acceptance": [
+        "four clearly separated icons",
+        "readable at 64px",
+        "consistent perspective",
+        "no copied game-specific styling"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_DRINK_01",
+      "target": "ANCHOR_DRINK_01",
+      "kind": "style_anchor",
+      "size": "1024x1024",
+      "transparent": true,
+      "prompt_spec": "Original casual-game asset sheet showing a progression of coffee beans, espresso cup, warm coffee and iced coffee. 20-degree top-down view, same family language, increasing visual richness without tiny-only differences, soft warm outline, clean highlights on liquid and glass, transparent background.",
+      "acceptance": [
+        "chain progression obvious",
+        "readable at 64px",
+        "consistent light and container language"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_DISH_01",
+      "target": "ANCHOR_DISH_01",
+      "kind": "style_anchor",
+      "size": "1280x1280",
+      "transparent": true,
+      "prompt_spec": "Original casual-game finished-dish asset sheet: lettuce salad, sugared tomato plate, mushroom-cheese roll and blueberry drink. Food occupies the visual focus, dishware secondary, 20-degree top-down, soft warm outline, appetizing saturated colors, transparent background.",
+      "acceptance": [
+        "dishware under 50% visual area",
+        "food focus strong",
+        "readable at 64px"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_PROD_01",
+      "target": "ANCHOR_PROD_01",
+      "kind": "style_anchor",
+      "size": "768x768",
+      "transparent": true,
+      "prompt_spec": "Original kitchen supply producer for a merge-and-cooking game: compact wooden-and-cream supply crate with visible organized vegetable prep supplies, friendly rounded silhouette, 3/4 view, orange/cream/green palette, large readable shapes, designed to support Ready, Cooldown and Boosted state overlays.",
+      "acceptance": [
+        "producer silhouette distinct from items",
+        "clear interaction face",
+        "space reserved for state FX"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_COOK_01",
+      "target": "ANCHOR_COOK_01",
+      "kind": "style_anchor",
+      "size": "768x768",
+      "transparent": true,
+      "prompt_spec": "Original drink-mixing workstation for a cozy food-street game, cream and mint body with orange accents, small blender/shaker zone, 3/4 view, friendly rounded proportions, readable controls without text, visually distinct from supply producers.",
+      "acceptance": [
+        "cookware reads as processing station",
+        "not confused with storage producer",
+        "supports cooking/ready states"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_CHAR_01",
+      "target": "ANCHOR_CHAR_01",
+      "kind": "canon_sheet",
+      "size": "2048x2048",
+      "transparent": false,
+      "prompt_spec": "Original young adult female neighborhood food-street manager named Youning. Warm practical personality. Fixed canon: cream apron, orange hair clip, small notebook; palette #F3B05A #FFF3DF outline #5C4638. Character design sheet with front, 3/4, side and back plus six facial expressions. Soft rounded 2D hand-painted casual-game style. Do not imitate any existing game character.",
+      "acceptance": [
+        "fixed props present in every view",
+        "same facial proportions",
+        "six expressions distinct",
+        "64px avatar readable"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_CHAR_02",
+      "target": "ANCHOR_CHAR_02",
+      "kind": "canon_sheet",
+      "size": "2048x2048",
+      "transparent": false,
+      "prompt_spec": "Original anthropomorphic goose guide named Tuantuan for a neighborhood food-street game. Fixed canon: warm cream feathers, orange-yellow small scarf and wooden key tag; palette #FFF4D8 #F6B84B outline #76543A. Design sheet with front, 3/4, side and back plus six expressions. Friendly, talkative, compact rounded body but clearly original and not based on any existing goose character.",
+      "acceptance": [
+        "scarf and wooden key tag fixed",
+        "beak/eye spacing consistent",
+        "distinct original silhouette",
+        "64px avatar readable"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_BUILD_01",
+      "target": "ANCHOR_BUILD_01",
+      "kind": "building_pair",
+      "size": "1536x1536",
+      "transparent": true,
+      "prompt_spec": "Original small Chinese neighborhood food-street storefront shown as a before/after pair on the same canvas, identical camera and footprint. Before: tired but safe facade, faded awning, sparse props. After: clean warm lively storefront, new awning, plants, hanging lights, steam detail. 3/4 game-world view, warm hand-painted 2D, no readable text, no logo.",
+      "acceptance": [
+        "before/after same pivot and geometry",
+        "upgrade feels meaningful",
+        "modular sign/awning/props/lights layers implied"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_UI_01",
+      "target": "ANCHOR_UI_01",
+      "kind": "ui_style_anchor",
+      "size": "1500x2668",
+      "transparent": false,
+      "prompt_spec": "Original mobile casual game UI style board: cream modal panel, orange primary button, pale secondary button, energy/coin/gem chips, order card. Use palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F outlines. Large rounded corners, soft shadows, no text and no game logo.",
+      "acceptance": [
+        "components visually coherent",
+        "states separable",
+        "no competitor-specific ornament",
+        "9-slice friendly"
+      ]
+    },
+    {
+      "job_id": "JOB_ANCHOR_BOARD_01",
+      "target": "ANCHOR_BOARD_01",
+      "kind": "board_style_anchor",
+      "size": "1400x1160",
+      "transparent": true,
+      "prompt_spec": "Original 9x7 merge-board frame style anchor, cream-and-warm-orange border with subtle green accent, clean open cells and clearly different locked cells, large simple shapes, 76px logical cell design, no items, no text.",
+      "acceptance": [
+        "grid alignment exact conceptually",
+        "locked/open distinction clear",
+        "background does not overpower items"
+      ]
+    }
+  ]
+}
