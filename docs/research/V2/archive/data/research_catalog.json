@@ -1,0 +1,243 @@
+{
+  "title": "肥鹅美食街公开资料研究目录",
+  "research_date": "2026-09-24",
+  "confidence_scale": {
+    "A": "官方/平台直接信息",
+    "B": "高可信行业实机拆解，含明确画面或操作描述",
+    "C": "玩家实机/攻略/论坛证据，证明某版本或某账号条件下存在",
+    "D": "研究者推导，仅用于开发建模，不声称为原作源码事实"
+  },
+  "sources": [
+    {
+      "id": "S01",
+      "grade": "A",
+      "title": "App Store 中国区《肥鹅美食街》",
+      "url": "https://apps.apple.com/cn/app/%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97/id6758614459",
+      "use": "官方产品定位、开发者、广告/IAP、iOS版本历史、充值档位"
+    },
+    {
+      "id": "S02",
+      "grade": "B",
+      "title": "17173 / 游戏价值论实机拆解",
+      "url": "https://news.17173.com/content/06052026/170613989.shtml",
+      "use": "4×7教学盘、9×7主盘、经营天数、锁区、发射器、厨具、建造/剧情、时空追逐、芝士漂流/甜蜜季节"
+    },
+    {
+      "id": "S03",
+      "grade": "B",
+      "title": "游茶科技：前作狂赚4个亿，他们用新套路又做了一款",
+      "url": "https://youxichaguan.com/archives/200561",
+      "use": "合成/烹饪转换链、订单嵌套、爆炒时刻、限时礼盒、活动周期、20分钟能量礼包、低价礼包"
+    },
+    {
+      "id": "S04",
+      "grade": "C",
+      "title": "TapTap：经营菜单 第1-5天",
+      "url": "https://www.taptap.cn/moment/790520777484013452",
+      "use": "前5天订单/食材"
+    },
+    {
+      "id": "S05",
+      "grade": "C",
+      "title": "TapTap：经营菜单 第6-10天",
+      "url": "https://www.taptap.cn/moment/790611816005766899",
+      "use": "第6-10天订单/食材"
+    },
+    {
+      "id": "S06",
+      "grade": "C",
+      "title": "TapTap：第11-15天菜单",
+      "url": "https://www.taptap.cn/moment/793899686799870679",
+      "use": "第11-15天公开截图，待逐图结构化"
+    },
+    {
+      "id": "S07",
+      "grade": "C",
+      "title": "TapTap：第16-20天经营菜单",
+      "url": "https://www.taptap.cn/moment/793897976891182314",
+      "use": "第16-20天公开截图，待逐图结构化"
+    },
+    {
+      "id": "S08",
+      "grade": "C",
+      "title": "TapTap：第101-105天经营菜单",
+      "url": "https://www.taptap.cn/moment/797858476368857347",
+      "use": "101-105天菜单/食材截图，证明百日级内容与后期菜品复杂度"
+    },
+    {
+      "id": "S09",
+      "grade": "C",
+      "title": "TapTap《肥鹅美食街》论坛/评价",
+      "url": "https://www.taptap.cn/app/835993/topic",
+      "use": "75天体力估算、108张卡、发射器/体力/烹饪/活动/跨端等玩家反馈"
+    },
+    {
+      "id": "S10",
+      "grade": "C",
+      "title": "TapTap《肥鹅美食街》游戏评价",
+      "url": "https://www.taptap.cn/app/835993/review",
+      "use": "2026年9月玩家体验：约3小时回游戏清体力、月卡、烹饪等待、资源压力"
+    },
+    {
+      "id": "S11",
+      "grade": "C",
+      "title": "抖音：第51-60天菜谱视频",
+      "url": "https://www.douyin.com/video/7676889031837423225",
+      "use": "证明51-60天菜谱存在完整公开视频，可继续逐帧结构化"
+    },
+    {
+      "id": "S12",
+      "grade": "C",
+      "title": "游戏研究所pro：2026-09-06微信小游戏畅销榜",
+      "url": "https://ai.xianjianwendao.com/kb/rank?date=2026-09-06&period=day&platform=wx_minigame&rank_type=bestseller",
+      "use": "该日《肥鹅美食街》微信畅销榜第24；第三方榜单快照"
+    },
+    {
+      "id": "S13",
+      "grade": "C",
+      "title": "MomoRank：抖音小游戏畅销榜",
+      "url": "https://www.momorank.com/douyin/rankings/bestseller",
+      "use": "2026-09-23附近抓取显示《肥鹅美食街》第11；第三方榜单快照"
+    }
+  ],
+  "facts": [
+    {
+      "id": "F001",
+      "claim": "正式主棋盘为9×7；开局先用4×7小盘教学发射、合成、解锁地块、交付订单。",
+      "source": [
+        "S02"
+      ],
+      "confidence": "B",
+      "version_sensitive": false
+    },
+    {
+      "id": "F002",
+      "claim": "主线以经营天数推进，未解锁棋盘区域以整块形式划分并标明解锁进度/奖励。",
+      "source": [
+        "S02"
+      ],
+      "confidence": "B",
+      "version_sensitive": false
+    },
+    {
+      "id": "F003",
+      "claim": "发射器点击消耗体力并存在冷却；厨具把合成食材加工为菜品并消耗时间。",
+      "source": [
+        "S02",
+        "S03"
+      ],
+      "confidence": "B",
+      "version_sensitive": false
+    },
+    {
+      "id": "F004",
+      "claim": "主线、建造、剧情形成联动：订单奖励推动修复/扩建，建造进度触发剧情与更多订单。",
+      "source": [
+        "S02",
+        "S03"
+      ],
+      "confidence": "B",
+      "version_sensitive": false
+    },
+    {
+      "id": "F005",
+      "claim": "iOS官方页面明确标注含广告和App内购买，并列出3/6/8/12/18/25/30/40/60/128元充值档。",
+      "source": [
+        "S01"
+      ],
+      "confidence": "A",
+      "version_sensitive": true
+    },
+    {
+      "id": "F006",
+      "claim": "公开玩家资料已覆盖至少101-105天，论坛还出现106-110天菜单条目，说明内容已进入百日级。",
+      "source": [
+        "S08",
+        "S09"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F007",
+      "claim": "玩家75天记录：能量饮料和香槟都来自饮料柜，并以2^9+2^7估算，称约700-800体力可完成。",
+      "source": [
+        "S09"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F008",
+      "claim": "玩家社区记录一轮卡册共108张，并出现107/108缺最后一张高星卡、重复卡、完成后立即进入第二轮等反馈。",
+      "source": [
+        "S09"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F009",
+      "claim": "2026年9月玩家反馈集中在体力不足、生成器冷却、烹饪等待、活动时间短、缺少长按连续产出等摩擦点。",
+      "source": [
+        "S09",
+        "S10"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F010",
+      "claim": "2026-09-06第三方榜单快照中，微信小游戏畅销榜为第24；2026-09-23附近MomoRank抓取的抖音小游戏畅销榜为第11。",
+      "source": [
+        "S12",
+        "S13"
+      ],
+      "confidence": "C",
+      "version_sensitive": true,
+      "note": "第三方榜单、不同平台/日期，不用于跨平台直接比较。"
+    },
+    {
+      "id": "F011",
+      "claim": "App Store 2026-06-10玩家评论明确写到体力自然恢复为“两分钟一个体力”。这是玩家实机证据，不是官方固定参数，需按版本/渠道保存。",
+      "source": [
+        "S01"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F012",
+      "claim": "TapTap早期玩家明确提到“蔬菜篮子、冰箱、水果篮子”会出现无能量/冷却；Day75玩家明确称能量饮料和香槟都由“饮料柜”产出。",
+      "source": [
+        "S09"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F013",
+      "claim": "公开玩家时间线显示广告经济可能经历过版本调整：2026-04有玩家称当时没有广告，后续高天数玩家记录到奖励广告换体力。",
+      "source": [
+        "S09",
+        "S10"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    },
+    {
+      "id": "F014",
+      "claim": "2026-06 App Store玩家评论记录：小游戏渠道与下载App之间进度当时不能直接互通；有玩家称下载App仅见手机号/Apple登录，无法直接继承微信小游戏进度。",
+      "source": [
+        "S01"
+      ],
+      "confidence": "C",
+      "version_sensitive": true
+    }
+  ],
+  "day_menus_01_10": "see archive/data/day_menu_01_10.json",
+  "transform_graph": "see archive/data/known_transform_graph.json",
+  "liveops": "see archive/data/liveops_and_economy.json",
+  "gaps": "see archive/data/research_gaps.json",
+  "archive_note": "This catalog preserves the original V2 source/fact registry. Nested datasets are archived as separate files to avoid duplication; V4 is authoritative for current work."
+}
