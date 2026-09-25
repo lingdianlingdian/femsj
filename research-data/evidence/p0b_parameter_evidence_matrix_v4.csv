@@ -27,3 +27,5 @@ RECIPE,GENERIC,durationSec,,null,second,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRE
 RECIPE,GENERIC,speedupGemPerMin,,null,gem_per_minute,P0_B_GAP,DEV_BLUEPRINT,D,true,false,UNRESOLVED_EXACT,"需同时记录剩余时间和加速价格"
 RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时20s",20,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,OBSERVED_UNBOUND,"截图能确认20s数值，但当前公开搜索图裁切不足以可靠绑定到具体Recipe/厨具；禁止回填具体durationSec"
 RECIPE,UNBOUND,duration_observation,"Day6-10公开实机图可见加工倒计时10s",10,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,false,OBSERVED_UNBOUND,"截图能确认10s数值，但当前公开搜索图裁切不足以可靠绑定到具体Recipe/厨具；优先用小红书高清同图或完整原图闭合映射"
+RECIPE,recipe_vs_junxiangzhishijuan,durationSec,"Day7公开实机加工面板32s",32,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"蘑菇+洋葱+芝士片与菌香芝士卷订单/加工面板闭合；cook_prep_station关系另有SRC_YOUXICHA交叉支持"
+RECIPE,recipe_vs_shengqiehuluobotiao,durationSec,"Day7公开实机加工面板1m20s",80,second,SRC_TAPTAP_DAY6_10,PUBLIC_IMAGE,B,true,true,EVIDENCED_EXACT,"胡萝卜与生切胡萝卜条订单/加工面板闭合；器具名称尚未确认，不据此填cookwareId"
