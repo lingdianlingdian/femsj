@@ -65,7 +65,9 @@
         "限时礼包",
         "3元/8元破冰",
         "20分钟能量礼包",
-        "活动分层"
+        "活动分层",
+        "烹饪等待与生成器冷却共同控制推进节奏",
+        "爆炒时刻通过订单积累火苗触发限时无限发射"
       ]
     },
     {
@@ -315,11 +317,23 @@
         "Day6-10逐单经营菜单需求"
       ],
       "notes": "玩家公开逐日记录；含需求食材与菜单文字。"
+    },
+    {
+      "id": "SRC_APPSTORE_EDITORIAL_TW",
+      "grade": "A",
+      "type": "OFFICIAL_PLATFORM_EDITORIAL",
+      "url": "https://apps.apple.com/tw/iphone/story/id6786120004",
+      "claims": [
+        "优先升级发射器可提升食材产出效率",
+        "爆炒时刻/爆炒接力期间烹饪速度加快",
+        "爆炒期间相关发射器与厨具无限量供应"
+      ],
+      "notes": "Apple App Store 编辑推荐；确认机制，不提供具体等级、倍率、容量、冷却秒数或持续时间"
     }
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Added stable Day1-10 menu source IDs for runtime evidence traceability.",
-    "sourceCount": 27
+    "note": "Added App Store editorial mechanism evidence and P0-B mechanism anchors; exact producer/cookware timings remain unresolved.",
+    "sourceCount": 28
   }
 }
