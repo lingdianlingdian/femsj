@@ -188,3 +188,12 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 已确认机制：Producer 冷却/耗尽存在、部分 Producer→Output 关系、烤架/备菜台加工关系、活动加速/无限供应机制。
 - ⚠️ 仍未拿到可审计的精确 level / energyCost / capacity / cooldownSec / outputWeight / Recipe duration / speedup / Cookware queue/speed。
 - 因此：研究主表保持 UNRESOLVED；Day1-10 Runtime 数值继续明确标记 `DEV_BLUEPRINT`，两层不混写。
+
+
+## 2026-09-25 美术并行生产启动
+
+- ✅ 新增 14 个原创 Style Anchor 生产清单。
+- ✅ 新增 ART-S1/S2/S3 美术生产队列，优先服务 Day1-10 可运行垂直切片。
+- ✅ 新增 AI 美术 Job 合同，锁定原创性、透明背景、尺寸、Canon 与 64px 可读性门禁。
+- ✅ 新增 `art-source/v4/` 源文件目录合同；公开竞品截图继续只留在 research-data 链接/证据层，不进入正式资源目录。
+- 🟡 下一门禁：Anchor 概念稿 -> Canon Review -> 批量正式原图 -> Cocos Prefab 截图验收。
