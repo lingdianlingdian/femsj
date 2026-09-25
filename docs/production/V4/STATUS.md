@@ -16,7 +16,7 @@
 | Item公开种子 | 持续扩充（Day101-105 +41；Day80/84 +15） | 🟡 持续扩充 |
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
-| Asset Manifest | 234条 | 🟡 已从示例表升级为实际生产表 |
+| Asset Manifest | 251条 | 🟡 已从示例表升级为实际生产表 |
 | Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story Beats | 110日 | 🟡 Beat结构完整，对白/剧情正文待写 |
@@ -149,7 +149,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - Verified Requirement unresolved：0
 - UI Screens：46
 - Shared UI Components：41
-- Asset Manifest：234
+- Asset Manifest：251
 - Original Character Canon：26
 - Audio Assets：42
 - Build Nodes：48
@@ -219,3 +219,18 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ Max Daily Build/Source=1.2162；无不可支付 Build Node。
 - 说明：`docs/production/V4/22_Day1-10经济平衡门禁.md`。
 - 所有数值均为原创 `DEV_BLUEPRINT`，不作为竞品原作参数。
+
+
+## Day1-10 美术合同闭合
+
+- ✅ Asset Manifest：251 条。
+- ✅ Style Anchor：14 个。
+- ✅ 首批正式生产队列：109 项。
+- ✅ S1-S3 可执行 AI Art Job：109 项，和队列 1:1 闭合。
+- ✅ Day1-10 运行时内容美术：50 项（41 Item/Dish + 7 Producer + 2 Cookware）全部有 AssetId / Queue / Job。
+- ✅ Day1-10 剧情角色：8 名；32 项 Canon/Avatar/Story/Spine 资产合同闭合。
+- ✅ Street01 前 6 个 BuildNode：12 张 Before/After 正式资产合同闭合。
+- ✅ `day001_010_art_coverage_v4.json`：94 项垂直切片必需资产 0 缺口。
+- ✅ `render_waves_day001_010_v4.json`：W1 Core Shell 15、W2 Runtime Content 50、W3 Story Characters 32、W4 Street01 Buildings 12。
+- ✅ CI 已接入 `npm run audit:art`；AssetId、Anchor、Queue、Job、产物状态与 Day1-10 覆盖缺口会阻断提交。
+- 🟡 二进制正式成图仍以 `art_output_manifest_v4.json` 为准；只有实际图片经过 QA 后才能从 0 递增，禁止把 Job/Prompt 当成“成图完成”。
