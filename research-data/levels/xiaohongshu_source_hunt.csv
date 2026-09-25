@@ -10,3 +10,8 @@ DAY106_110,P0-A,"肥鹅美食街 106天 菜单|肥鹅美食街 107天 菜单|肥
 PRODUCER_PARAMS,P0-B,"肥鹅美食街 发射器 等级|发射器 冷却|发射器 次数|发射器 掉落|生成器 掉落","level/energyCost/capacity/cooldown/outputPool/高阶直出概率","公开实机/玩家记录",APP_SEARCH_REQUIRED,2026-09-25,"任何数值必须能回到清晰实机图或明确玩家记录；否则保持null"
 COOKWARE_RECIPE_PARAMS,P0-B,"肥鹅美食街 厨具 时间|烹饪 时间|菜谱 烹饪|加速 钻石","inputs/cookware/durationSec/speedup/queueSize/speedModifier","公开实机/玩家记录",APP_SEARCH_REQUIRED,2026-09-25,"秒/分钟级时间截图优先；版本敏感字段记录observedAt"
 UI_STATES,P0-C,"肥鹅美食街 主界面|合成盘|订单界面|发射器详情|厨具界面|爆炒时刻|活动界面","界面信息架构/状态/入口/弹窗关系","App Store/TapTap/公开视频",APP_SEARCH_REQUIRED,2026-09-25,"只研究结构与状态，不复制原作具体皮肤、图标、角色或文案"
+ART_ITEM_READABILITY,P0-C,"肥鹅美食街 食材 图标|肥鹅美食街 菜品 图鉴|肥鹅美食街 合成物 图标","食材/菜品在64px附近的轮廓、视角、同链区分度","TapTap公开棋盘/菜单截图",APP_SEARCH_REQUIRED,2026-09-25,"只提取可读性和类别语言，不复制具体图标造型"
+ART_PRODUCER_STATES,P0-C,"肥鹅美食街 发射器 图鉴|肥鹅美食街 生成器 等级|肥鹅美食街 冷却 盘面","Producer Ready/Cooldown/Locked/升级状态的通用表达","TapTap公开棋盘截图",APP_SEARCH_REQUIRED,2026-09-25,"重点记录状态层级和轮廓区分，不复制具体Producer皮肤"
+ART_CHARACTER_VARIATION,P0-C,"肥鹅美食街 肥鹅 顾客|肥鹅美食街 客人 图鉴|肥鹅美食街 剧情 角色","同物种角色的体型、配饰、头像裁切和表情区分策略","App Store/Google Play/TapTap",APP_SEARCH_REQUIRED,2026-09-25,"用于原创角色差异化研究；禁止复刻角色脸型和服装"
+ART_STREET_UPGRADES,P0-C,"肥鹅美食街 店铺|肥鹅美食街 美食街 装修|肥鹅美食街 建筑 升级","街区相机角度、店铺升级前后可读性、环境密度","App Store/Google Play/TapTap",APP_SEARCH_REQUIRED,2026-09-25,"只记录相机/密度/升级层级；正式建筑完全原创"
+ART_UI_HIERARCHY,P0-C,"肥鹅美食街 商店 界面|肥鹅美食街 订单卡|肥鹅美食街 资源栏","资源层级、订单卡信息密度、按钮状态和弹窗关系","App Store/TapTap",APP_SEARCH_REQUIRED,2026-09-25,"只研究信息架构；V4 UI皮肤和图标原创"
