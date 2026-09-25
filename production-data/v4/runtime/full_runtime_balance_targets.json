@@ -1,0 +1,39 @@
+{
+  "version": "4.2",
+  "generatedAt": "2026-09-25",
+  "scope": "DAY001_110_FULL_RUNTIME_TREND_GATE",
+  "configPath": "production-data/v4/runtime/game_content_day001_110.json",
+  "runs": 500,
+  "seed": 20260925,
+  "policy": "DEV_BLUEPRINT trend thresholds. They are regression gates for this original runtime and are not competitor backend values.",
+  "targets": [
+    {
+      "day": 30,
+      "maxEnergyP90": 230,
+      "maxWaitSecP90": 600,
+      "maxPeakCellsP90": 10,
+      "maxManualActionsP90": 240
+    },
+    {
+      "day": 60,
+      "maxEnergyP90": 220,
+      "maxWaitSecP90": 900,
+      "maxPeakCellsP90": 15,
+      "maxManualActionsP90": 235
+    },
+    {
+      "day": 90,
+      "maxEnergyP90": 270,
+      "maxWaitSecP90": 1500,
+      "maxPeakCellsP90": 20,
+      "maxManualActionsP90": 285
+    },
+    {
+      "day": 110,
+      "maxEnergyP90": 270,
+      "maxWaitSecP90": 2200,
+      "maxPeakCellsP90": 25,
+      "maxManualActionsP90": 310
+    }
+  ]
+}
