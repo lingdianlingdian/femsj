@@ -1,0 +1,15 @@
+{
+  "confirmed_or_high_confidence_edges":[
+    {"type":"merge2","inputs":["肉肠","肉肠"],"output":"培根","source":"S03","confidence":"B"},
+    {"type":"merge2","inputs":["培根","培根"],"output":"肉丸","source":"S03","confidence":"B"},
+    {"type":"merge2","inputs":["肉丸","肉丸"],"output":"牛胸肉","source":"S03","confidence":"B"},
+    {"type":"cook","inputs":["肉肠"],"tool":"烤架","output":"烤肠","source":"S03","confidence":"B"},
+    {"type":"cook","inputs":["牛胸肉"],"tool":"烤架","output":"烟熏牛胸肉","source":"S03","confidence":"B"},
+    {"type":"cook","inputs":["蘑菇","洋葱","芝士片"],"tool":"备菜台","output":"菌香芝士卷","source":"S03","confidence":"B"}
+  ],
+  "producer_relationships":[
+    {"statement":"行业实机拆解称同一天订单中的芝士片、咖啡、茶，其基础元素来自同一生成器。","source":"S03","confidence":"B","unknown":"该生成器的正式名称、掉率和等级未公开文字化。"},
+    {"statement":"行业实机拆解称肘子、鸡腿所需基础元素来自同一另一个生成器。","source":"S03","confidence":"B","unknown":"该生成器的正式名称、掉率和等级未公开文字化。"},
+    {"statement":"玩家75天记录称能量饮料与香槟均由饮料柜产出。","source":"S09","confidence":"C","unknown":"饮料柜完整掉落池及各等级概率。"}
+  ]
+}
