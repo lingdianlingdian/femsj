@@ -35,7 +35,7 @@ day,recipe_name,raw_ingredients_text,source_url,source_visual_id,confidence,note
 "104","巧克力","巧克力","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
 "104","什锦海鲜汤","番茄｜混合香叶｜鱿鱼｜扇贝","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
 "104","手撕紫甘蓝","紫甘蓝","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
-"104","炭烧金枪鱼串","金枪鱼","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C","菜名依据截图视觉转录，后续用第二来源复核"
+"104","炭烧金枪鱼排","金枪鱼","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C","二次视觉复核：公开图清楚显示为“炭烧金枪鱼排”，修正此前低置信转录。"
 "104","甜蛋酒","鸡蛋｜茶楼秘制配方5","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
 "104","新鲜生蚝","生蚝","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
 "104","烟熏牛胸肉","牛胸肉","https://www.taptap.cn/moment/797858476368857347","POST_IMAGE_DAY104_RECIPE","C",""
