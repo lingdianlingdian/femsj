@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://femsj.local/schemas/v4/runtime_art_bindings.schema.json",
+  "title": "femsj V4 Runtime Art Bindings",
+  "type": "object",
+  "required": ["version", "scope", "uiShell", "content", "characters", "buildNodes", "vfx"],
+  "properties": {
+    "version": { "type": "string" },
+    "scope": { "type": "string" },
+    "generatedAt": { "type": "string" },
+    "uiShell": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "content": {
+      "type": "object",
+      "required": ["items", "producers", "cookwares"],
+      "properties": {
+        "items": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+        "producers": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } },
+        "cookwares": { "type": "object", "additionalProperties": { "type": "string", "minLength": 1 } }
+      },
+      "additionalProperties": false
+    },
+    "characters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["canonSheet", "avatar", "storyPortrait", "sceneSpine"],
+        "properties": {
+          "canonSheet": { "type": "string" },
+          "avatar": { "type": "string" },
+          "storyPortrait": { "type": "string" },
+          "sceneSpine": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "buildNodes": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["before", "after"],
+        "properties": {
+          "before": { "type": "string" },
+          "after": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "vfx": {
+      "type": "object",
+      "additionalProperties": { "type": "string", "minLength": 1 }
+    },
+    "rule": { "type": "string" }
+  },
+  "additionalProperties": true
+}
