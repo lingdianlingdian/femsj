@@ -7,8 +7,6 @@ on:
       - '.github/workflows/v4-art-generate.yml'
       - 'tools/art-procedural-generator/**'
       - 'production-data/v4/art/ai_art_jobs_v4.json'
-      - 'production-data/v4/art/ai_art_batch_s1_s3_v4.json'
-      - 'production-data/v4/art/style_anchor_manifest_v4.csv'
   workflow_dispatch:
 
 permissions:
