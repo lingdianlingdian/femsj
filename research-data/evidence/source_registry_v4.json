@@ -428,11 +428,24 @@
         "Day98菜单14张公开动态图片"
       ],
       "notes": "作者未声明完整性；14张底层图已全部资产化，逐图文字仍待视觉转录。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY86_MENU",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/811355157534084920?group_id=1191393",
+      "observedAt": "2026-06-03",
+      "channel": "TapTap",
+      "claims": [
+        "Day86菜单2张公开图片",
+        "作者明确称只有这两张截图"
+      ],
+      "notes": "明确不完整，禁止按2张图推断完整订单数。"
     }
   ],
   "audit": {
     "updatedAt": "2026-09-26",
     "note": "Eight exact recipe durations are visually bound: 糖拌番茄20s, 彩椒脆片40s, 菌香芝士卷32s, 生切胡萝卜条80s, 鲜榨蓝莓汁20s, 草莓果露10s, 手打柠檬汁80s, 焦香洋葱饭272s.",
-    "sourceCount": 35
+    "sourceCount": 36
   }
 }
