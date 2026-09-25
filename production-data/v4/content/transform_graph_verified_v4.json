@@ -8,7 +8,7 @@
     "DIRECT_ITEM": "Menu/table row is directly the item itself; do not create a fake transformation."
   },
   "counts": {
-    "baseRelations": 24,
+    "baseRelations": 25,
     "day101_105Visual": 40,
     "day101_105Direct": 9
   },
@@ -121,12 +121,37 @@
         }
       ],
       "toolId": "cook_prep_station",
-      "durationSec": null,
+      "durationSec": 32,
       "outputItemId": "dish_junxiangzhishijuan",
       "evidence": {
         "kind": "PUBLIC_IMAGE",
         "confidence": "B",
-        "note": "备菜台多输入"
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY7_RECIPE_PANEL_JUNXIANG_32S",
+        "note": "Day7公开实机图将蘑菇+洋葱+芝士片加工面板与菌香芝士卷订单关联，面板倒计时32s；备菜台关系同时有行业实机拆解支持。"
+      },
+      "day": 7
+    },
+    {
+      "id": "cook_shengqiehuluobotiao",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 7,
+      "name": "生切胡萝卜条",
+      "inputs": [
+        {
+          "itemId": "item_huluobo",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 80,
+      "outputItemId": "dish_shengqiehuluobotiao",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY7_RECIPE_PANEL_CARROT_80S",
+        "note": "Day7公开实机图将胡萝卜加工面板与生切胡萝卜条订单关联，倒计时1m20s；器具图标可见但名称未可靠确认，因此toolId保持null。"
       }
     },
     {
