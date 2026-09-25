@@ -28,3 +28,25 @@ node tools/art-production-auditor/next.mjs 10
 ```
 
 按 W1→W4 顺序返回下一批尚未 APPROVED/INTEGRATED 的正式美术 Job，直接提供 AssetId、Anchor、尺寸、prompt 与验收条件。
+
+
+## W0 Style Anchor 门禁
+
+正式 109 项生产资源现在被 W0 硬阻断。执行：
+
+```powershell
+npm run art:next -- 10
+```
+
+只要 14 个 Style Anchor 还有任一未 `CANON_LOCKED`，命令只返回 Anchor Job，不返回正式生产 Job。
+
+Anchor 流程：
+
+```powershell
+npm run art:anchor:ingest -- ANCHOR_ITEM_01 art-source/v4/anchors/ANCHOR_ITEM_01.png
+npm run art:anchor:qa:init -- ANCHOR_ITEM_01
+# 填完 QA 文件后
+npm run art:anchor:lock -- ANCHOR_ITEM_01
+```
+
+只有 14/14 Anchor 全部锁定，`art:next` 才进入 W1–W4。
