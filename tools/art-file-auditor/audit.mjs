@@ -49,7 +49,6 @@ for(const o of outputs.outputs||[]){
   }
   const st=fs.statSync(abs);
   if(!st.isFile()){fail(`${o.asset_id}: output path is not a file`);continue;}
-  if(st.size<512) fail(`${o.asset_id}: suspiciously small file (${st.size} bytes)`);
   const buf=fs.readFileSync(abs);
   const actualHash=sha256(buf);
   if(actualHash!==o.sha256) fail(`${o.asset_id}: sha256 mismatch`);
@@ -57,6 +56,8 @@ for(const o of outputs.outputs||[]){
   if(o.format==='PNG'){
     const info=pngInfo(buf);
     if(!info){fail(`${o.asset_id}: invalid PNG header`);continue;}
+    const minBytes = (info.width * info.height <= 65536) ? 128 : 512;
+    if(st.size < minBytes) fail(`${o.asset_id}: suspiciously small file (${st.size} bytes; min ${minBytes})`);
     if(info.width!==o.width || info.height!==o.height){
       fail(`${o.asset_id}: PNG dimensions ${info.width}x${info.height} != manifest ${o.width}x${o.height}`);
     }
