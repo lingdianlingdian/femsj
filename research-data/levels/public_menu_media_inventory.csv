@@ -1,0 +1,12 @@
+day,source_url,image_count,author_completeness_statement,interpretation,status
+82,https://www.taptap.cn/moment/790641292114657994,2,"没有要二次加工的，也不错","2张分别为需求食材和具体菜单；不可把图片数当订单数",PENDING_TRANSCRIPTION
+83,https://www.taptap.cn/moment/790906865650238207,2,"","食材图+菜单图",PENDING_TRANSCRIPTION
+84,https://www.taptap.cn/moment/790906865650238207,2,"","食材图+菜单图；菜单已转录14项",TRANSCRIBED
+86,https://www.taptap.cn/moment/811355157534084920,2,"我只有这俩截图了，将就看吧","明确不完整",PARTIAL
+87,https://www.taptap.cn/moment/811355926735882115,10,"这次是全的，后面有详细的","10张菜单图构成作者声明的完整集合",COMPLETE_SET_PENDING_TRANSCRIPTION
+88,https://www.taptap.cn/moment/811614696531559002,9,"88菜单","未明确完整性；不以图片数直接断言订单数",PENDING_TRANSCRIPTION
+89,https://www.taptap.cn/moment/811935337432481938,9,"还有个咖啡没截图","9张可见+1个未截图咖啡，至少10项",PARTIAL_PLUS_TEXT
+90,https://www.taptap.cn/moment/812261385202305394,9,"差不多就这些","接近完整但作者未保证完整",PARTIAL_OR_NEAR_COMPLETE
+98,https://www.taptap.cn/moment/841801833067315716,14,"98天菜单","14张动态图片；不直接等同订单数",PENDING_TRANSCRIPTION
+99,https://www.taptap.cn/moment/841863369525825239,13,"99天菜单","13张动态图片；不直接等同订单数",PENDING_TRANSCRIPTION
+106-110,https://www.taptap.cn/moment/823602182489113413,5,"偷懒了，不搞材料清单了","每一天1张菜单图；只有菜单无材料清单",PENDING_TRANSCRIPTION
