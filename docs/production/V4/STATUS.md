@@ -197,3 +197,16 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 新增 AI 美术 Job 合同，锁定原创性、透明背景、尺寸、Canon 与 64px 可读性门禁。
 - ✅ 新增 `art-source/v4/` 源文件目录合同；公开竞品截图继续只留在 research-data 链接/证据层，不进入正式资源目录。
 - 🟡 下一门禁：Anchor 概念稿 -> Canon Review -> 批量正式原图 -> Cocos Prefab 截图验收。
+
+## Day1-10 原创剧情与本地化
+
+- ✅ 26 个 Scene：20 个 Day Entry/Exit + 6 个 Build Scene。
+- ✅ 80 条原创 zh-CN 对白 Key。
+- ✅ Runtime `storyBefore/storyAfter` 全量闭合。
+- ✅ BuildNode `story_trigger` 全量闭合。
+- ✅ Speaker 全部引用 Character Canon 稳定 ID。
+- ✅ `npm run validate:story` 已进入 CI。
+- 主文件：`production-data/v4/story/story_dialogue_day001_010.json`
+- 本地化：`production-data/v4/story/locale_zh-CN_day001_010.json`
+- Schema：`schemas/v4/story_script.schema.json`
+- 所有内容均为 `DEV_BLUEPRINT` 原创剧情，不复刻竞品剧情/角色/文案。
