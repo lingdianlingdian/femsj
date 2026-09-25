@@ -1,0 +1,36 @@
+{
+  "version": "4.0",
+  "constraints": [
+    {
+      "day": 82,
+      "kind": "NO_SECONDARY_PROCESSING",
+      "value": true,
+      "evidence": {
+        "source": "https://www.taptap.cn/moment/790641292114657994",
+        "quoteParaphrase": "作者明确写没有要二次加工的",
+        "confidence": "C"
+      },
+      "designUse": "可作为后期节奏中的低加工日样本；不要把每个高天数日都做成多段加工。"
+    },
+    {
+      "day": 87,
+      "kind": "PUBLIC_MENU_SET_COMPLETENESS",
+      "value": "AUTHOR_CLAIMS_COMPLETE",
+      "evidence": {
+        "source": "https://www.taptap.cn/moment/811355926735882115",
+        "imageCount": 10,
+        "confidence": "C"
+      }
+    },
+    {
+      "day": 89,
+      "kind": "MISSING_SCREENSHOT_ITEM",
+      "value": "咖啡（具体名称/等级未确认）",
+      "evidence": {
+        "source": "https://www.taptap.cn/moment/811935337432481938",
+        "visibleImageCount": 9,
+        "confidence": "C"
+      }
+    }
+  ]
+}
