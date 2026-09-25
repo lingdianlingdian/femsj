@@ -90,6 +90,10 @@
 | CSV Data Auditor | `tools/data-auditor/audit.mjs` |
 | Content Reference Auditor | `tools/content-reference-auditor/audit.mjs` |
 | Runtime Readiness Auditor | `tools/runtime-readiness/audit.mjs` |
+| Full Runtime Builder | `tools/runtime-full-builder/build.mjs` |
+| Full Runtime Balance Gate | `tools/balance-simulator/full-gate.mjs` |
+| 110-Day Reachability Gate | `tools/balance-simulator/full-reachability-gate.mjs` |
+| Full Runtime Art Binding Auditor | `tools/runtime-art-binding-auditor/audit.mjs` |
 | Story Validator | `tools/story-validator/validate.mjs` |
 | Vertical Economy Auditor | `tools/economy-slice-auditor/audit.mjs` |
 
@@ -105,6 +109,9 @@
 | 用途 | 主文件 |
 |---|---|
 | Day1-10 可运行配置 | `production-data/v4/runtime/game_content_day001_010.json` |
+| Day1-110 全量可执行配置 | `production-data/v4/runtime/game_content_day001_110.json` |
+| Day1-110 闭合报告 | `production-data/v4/runtime/game_content_day001_110_report.json` |
+| 全周期 Balance 阈值 | `production-data/v4/runtime/full_runtime_balance_targets.json` |
 | V2数值阈值 | `production-data/v4/runtime/vertical_slice_balance_targets.json` |
 | V3盘面阈值 | `production-data/v4/runtime/vertical_slice_board_targets.json` |
 
@@ -126,3 +133,13 @@
 |---|---|
 | Day1-10 经济阈值 | `production-data/v4/runtime/vertical_slice_economy_targets.json` |
 | 经济门禁说明 | `docs/production/V4/22_Day1-10经济平衡门禁.md` |
+
+## Full Runtime Art Binding
+
+| 用途 | 主文件 |
+|---|---|
+| Day1-110 Runtime Art Binding | `production-data/v4/art/runtime_art_bindings_day001_110_v4.json` |
+| Binding Schema | `schemas/v4/runtime_art_bindings.schema.json` |
+| Full Binding Audit | `tools/runtime-art-binding-auditor/audit.mjs` |
+| Formal Asset Manifest | `production-data/v4/art/assets_master.csv`（389） |
+| Formal Binary Output Manifest | `production-data/v4/art/art_output_manifest_v4.json`（389 APPROVED） |
