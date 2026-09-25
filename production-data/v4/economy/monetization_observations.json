@@ -5,14 +5,14 @@
     {
       "field": "energy_regen_sec_per_point",
       "value": 120,
-      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
       "confidence": "C",
       "versionSensitive": true
     },
     {
       "field": "energy_cap",
       "value": 100,
-      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
       "confidence": "C",
       "versionSensitive": true
     },
@@ -20,14 +20,14 @@
       "field": "late_game_single_dish_energy",
       "value": ">100",
       "dayContext": "~Day25",
-      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
       "confidence": "C",
       "versionSensitive": true
     },
     {
       "field": "iap_ratio_observation",
       "value": "6 CNY -> 40 gems",
-      "sourceId": "SRC_APPSTORE_REVIEWS",
+      "sourceId": "SRC_APPSTORE_REVIEWS_2026_06",
       "confidence": "C",
       "versionSensitive": true,
       "note": "玩家评论，不等于所有渠道长期固定"
@@ -52,7 +52,7 @@
     {
       "field": "premium_membership_price_cny",
       "value": 45,
-      "sourceId": "SRC_TAPTAP_MEMBER",
+      "sourceId": "SRC_MEMBER_45_POST",
       "confidence": "C",
       "versionSensitive": true,
       "note": "玩家表述'高级会员'，权益待核验"
@@ -60,21 +60,21 @@
     {
       "field": "storage_expand_pattern",
       "value": "reported roughly +5 gems per expansion",
-      "sourceId": "SRC_TAPTAP_STORAGE",
+      "sourceId": "SRC_TAPTAP_STORAGE_RULE",
       "confidence": "C",
       "versionSensitive": true
     },
     {
       "field": "album_card_count",
       "value": 108,
-      "sourceId": "SRC_TAPTAP_FORUM",
+      "sourceId": "SRC_ALBUM_108_EXACT_POST",
       "confidence": "C",
       "versionSensitive": true
     },
     {
       "field": "day75_energy_anchor",
       "value": "700-800 energy",
-      "sourceId": "SRC_TAPTAP_FORUM",
+      "sourceId": "SRC_DAY75_ENERGY_POST",
       "confidence": "C",
       "versionSensitive": true,
       "note": "能量饮料+香槟，同源饮料柜"
@@ -92,5 +92,10 @@
     60,
     128
   ],
-  "officialPriceSource": "SRC_APPSTORE_CN"
+  "officialPriceSource": "SRC_APPSTORE_CN",
+  "linkedObservationLedger": "research-data/economy/observation_ledger_v4.json",
+  "audit": {
+    "updatedAt": "2026-09-25",
+    "note": "Source IDs upgraded from forum aggregates to specific evidence anchors where available."
+  }
 }
