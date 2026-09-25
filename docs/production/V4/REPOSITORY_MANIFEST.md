@@ -113,10 +113,12 @@
 | 用途 | 主文件 |
 |---|---|
 | 110日 Story Beat | `production-data/v4/story/story_beats_110.csv` |
-| Day1-10 可运行原创剧情 | `production-data/v4/story/story_dialogue_day001_010.json` |
-| Day1-10 zh-CN 本地化 | `production-data/v4/story/locale_zh-CN_day001_010.json` |
+| 110日 Story Catalog | `production-data/v4/story/story_catalog_v4.json` |
+| 11个原创 Story Slice | `production-data/v4/story/story_dialogue_dayXXX_YYY.json` |
+| 11个 zh-CN Locale Slice | `production-data/v4/story/locale_zh-CN_dayXXX_YYY.json` |
 | Story Schema | `schemas/v4/story_script.schema.json` |
-| Story Validator | `tools/story-validator/validate.mjs` |
+| 单 Slice Validator | `tools/story-validator/validate.mjs` |
+| 全量 Story Gate | `tools/story-validator/validate-all.mjs` |
 
 ## Vertical Economy
 
