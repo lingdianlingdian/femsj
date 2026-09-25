@@ -1,0 +1,170 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "sources": [
+    {
+      "id": "SRC_APPSTORE_CN",
+      "grade": "A",
+      "type": "OFFICIAL_STORE",
+      "url": "https://apps.apple.com/cn/app/%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97/id6758614459",
+      "claims": [
+        "官方产品定位",
+        "含广告",
+        "IAP档位",
+        "活动页"
+      ],
+      "notes": "渠道版本敏感"
+    },
+    {
+      "id": "SRC_GOOGLE_PLAY",
+      "grade": "A",
+      "type": "OFFICIAL_STORE",
+      "url": "https://play.google.com/store/apps/details?id=com.hortor.femsj.asia",
+      "claims": [
+        "二合",
+        "烹饪",
+        "经营",
+        "肥鹅顾客",
+        "广告/IAP"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_INFO",
+      "grade": "A",
+      "type": "OFFICIAL_PLATFORM",
+      "url": "https://www.taptap.cn/app/835993/all-info",
+      "claims": [
+        "官方玩法简介",
+        "厂商",
+        "更新时间"
+      ]
+    },
+    {
+      "id": "SRC_17173_JUNE",
+      "grade": "B",
+      "type": "INDUSTRY_HANDSON",
+      "url": "https://news.17173.com/content/06052026/170613989.shtml",
+      "claims": [
+        "4×7教学盘",
+        "9×7主盘",
+        "经营天数",
+        "锁区",
+        "建设/剧情",
+        "体力/冷却渐进"
+      ]
+    },
+    {
+      "id": "SRC_YOUXICHA",
+      "grade": "B",
+      "type": "INDUSTRY_HANDSON",
+      "url": "https://youxichaguan.com/archives/200561",
+      "claims": [
+        "肉类合成链",
+        "烤架分支",
+        "菌香芝士卷",
+        "限时礼包",
+        "3元/8元破冰",
+        "20分钟能量礼包",
+        "活动分层"
+      ]
+    },
+    {
+      "id": "SRC_XIAOMI_EDITORIAL",
+      "grade": "B",
+      "type": "EDITORIAL",
+      "url": "https://game.xiaomi.com/viewpoint/1674478871_1787725960792_100",
+      "claims": [
+        "玉米穗/蔬菜/冰块等初级产出",
+        "烤架/汤锅/烤箱",
+        "烤串摊/火锅店/甜品铺",
+        "路面/桌椅/灯光/喷泉"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_FORUM",
+      "grade": "C",
+      "type": "PLAYER_COMMUNITY",
+      "url": "https://www.taptap.cn/app/835993/topic",
+      "claims": [
+        "体力/冷却/活动压力",
+        "108张卡",
+        "长按诉求",
+        "Day75体力锚点"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_PEAR",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/811727926209808316",
+      "claims": [
+        "两个梨合成水蜜桃"
+      ],
+      "notes": "玩家抱怨语境，但表达了具体合成关系"
+    },
+    {
+      "id": "SRC_APPSTORE_REVIEWS",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://apps.apple.com/cn/app/%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97/id6758614459?platform=ipad&see-all=reviews",
+      "claims": [
+        "2分钟/体力",
+        "体力上限100",
+        "后期100+体力菜",
+        "小程序/App进度不互通",
+        "6元40钻玩家观察"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_STORAGE",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/app/835993/topic?group_label_id=3038150&page=2",
+      "claims": [
+        "储物柜扩容越来越贵，玩家称像是每次+5钻"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_MEMBER",
+      "grade": "C",
+      "type": "PLAYER_REPORT",
+      "url": "https://www.taptap.cn/moment/812120501525677963",
+      "claims": [
+        "高级会员45元玩家观察"
+      ],
+      "notes": "具体权益未核验"
+    },
+    {
+      "id": "SRC_ZHIHU_STORY",
+      "grade": "B",
+      "type": "INDUSTRY_ANALYSIS",
+      "url": "https://zhuanlan.zhihu.com/p/2085906967432787476",
+      "claims": [
+        "女主小叶",
+        "阿陶",
+        "烧烤店后老范剧情",
+        "网状叙事"
+      ]
+    },
+    {
+      "id": "SRC_TAPTAP_DAY11_15",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/793899686799870679",
+      "claims": [
+        "Day11-15菜单图"
+      ],
+      "notes": "作者称估计没漏"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY16_20",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/793897976891182314",
+      "claims": [
+        "Day16-20五张菜单图"
+      ],
+      "notes": "作者称应该没漏"
+    }
+  ]
+}
