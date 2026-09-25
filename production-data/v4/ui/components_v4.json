@@ -1,0 +1,946 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "componentCount": 41,
+  "rules": [
+    "All screens must compose shared prefabs; no page-local duplicate button/card implementation without ADR.",
+    "minimum touch area 88×88 unless display-only component",
+    "resource-changing controls must support loading/disabled/idempotent behavior"
+  ],
+  "components": [
+    {
+      "id": "cmp_resource_bar",
+      "name": "顶部资源栏",
+      "prefab": "ui/common/ResourceBar.prefab",
+      "category": "HUD",
+      "states": [
+        "NORMAL",
+        "ENERGY_REGEN",
+        "VALUE_CHANGE"
+      ],
+      "props": [
+        "day",
+        "energy",
+        "energyCap",
+        "energyRegenEndAt",
+        "coin",
+        "gem"
+      ],
+      "tokens": [
+        "colors.energy",
+        "colors.coin",
+        "colors.gem"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_resource_chip",
+      "name": "资源Chip",
+      "prefab": "ui/common/ResourceChip.prefab",
+      "category": "HUD",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "ATTENTION"
+      ],
+      "props": [
+        "type",
+        "value",
+        "timer",
+        "showPlus"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_primary_button",
+      "name": "主按钮",
+      "prefab": "ui/common/PrimaryButton.prefab",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "DISABLED",
+        "LOADING",
+        "ATTENTION"
+      ],
+      "props": [
+        "label",
+        "icon",
+        "loading",
+        "disabled"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_secondary_button",
+      "name": "次按钮",
+      "prefab": "ui/common/SecondaryButton.prefab",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "DISABLED"
+      ],
+      "props": [
+        "label",
+        "icon"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_close_button",
+      "name": "关闭按钮",
+      "prefab": "ui/common/CloseButton.prefab",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED"
+      ],
+      "props": [],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_back_button",
+      "name": "返回按钮",
+      "prefab": "ui/common/BackButton.prefab",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED"
+      ],
+      "props": [],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_countdown",
+      "name": "倒计时",
+      "prefab": "ui/common/Countdown.prefab",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "WARNING",
+        "EXPIRED"
+      ],
+      "props": [
+        "endAt",
+        "format",
+        "warningThresholdSec"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_reward_item",
+      "name": "奖励项",
+      "prefab": "ui/common/RewardItem.prefab",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "NEW",
+        "CLAIMED"
+      ],
+      "props": [
+        "rewardType",
+        "itemId",
+        "amount"
+      ],
+      "minTouch": 64
+    },
+    {
+      "id": "cmp_reward_grid",
+      "name": "奖励网格",
+      "prefab": "ui/common/RewardGrid.prefab",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "SCROLL"
+      ],
+      "props": [
+        "rewards",
+        "columns"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_common_modal",
+      "name": "通用Modal",
+      "prefab": "ui/common/CommonModal.prefab",
+      "category": "MODAL",
+      "states": [
+        "OPENING",
+        "READY",
+        "CLOSING",
+        "BLOCKED"
+      ],
+      "props": [
+        "title",
+        "closeable",
+        "dismissOnMask"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_toast",
+      "name": "Toast",
+      "prefab": "ui/common/Toast.prefab",
+      "category": "FEEDBACK",
+      "states": [
+        "INFO",
+        "SUCCESS",
+        "WARNING",
+        "ERROR"
+      ],
+      "props": [
+        "text",
+        "durationMs"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_red_dot",
+      "name": "红点",
+      "prefab": "ui/common/RedDot.prefab",
+      "category": "FEEDBACK",
+      "states": [
+        "DOT",
+        "NUMBER"
+      ],
+      "props": [
+        "count"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_loading",
+      "name": "加载态",
+      "prefab": "ui/common/Loading.prefab",
+      "category": "STATE",
+      "states": [
+        "SPINNER",
+        "SKELETON"
+      ],
+      "props": [
+        "message"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_empty_state",
+      "name": "空态",
+      "prefab": "ui/common/EmptyState.prefab",
+      "category": "STATE",
+      "states": [
+        "DEFAULT",
+        "ACTIONABLE"
+      ],
+      "props": [
+        "icon",
+        "title",
+        "description",
+        "action"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_error_state",
+      "name": "错误态",
+      "prefab": "ui/common/ErrorState.prefab",
+      "category": "STATE",
+      "states": [
+        "NETWORK",
+        "SERVER",
+        "CONTENT"
+      ],
+      "props": [
+        "code",
+        "message",
+        "retry"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_order_carousel",
+      "name": "订单横条",
+      "prefab": "ui/board/OrderCarousel.prefab",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "SCROLLING"
+      ],
+      "props": [
+        "orderIds",
+        "focusOrderId"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_order_card",
+      "name": "订单卡",
+      "prefab": "ui/board/OrderCard.prefab",
+      "category": "BOARD",
+      "states": [
+        "UNMET",
+        "PARTIAL",
+        "READY",
+        "SUBMITTING",
+        "COMPLETE"
+      ],
+      "props": [
+        "customerId",
+        "requirements",
+        "rewards",
+        "eventBonus"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_requirement_item",
+      "name": "订单需求物",
+      "prefab": "ui/board/RequirementItem.prefab",
+      "category": "BOARD",
+      "states": [
+        "MISSING",
+        "OWNED",
+        "SATISFIED"
+      ],
+      "props": [
+        "itemId",
+        "owned",
+        "required"
+      ],
+      "minTouch": 64
+    },
+    {
+      "id": "cmp_board_grid",
+      "name": "棋盘网格",
+      "prefab": "ui/board/BoardGrid.prefab",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "DRAGGING",
+        "LOCKED_GROUP_HIGHLIGHT"
+      ],
+      "props": [
+        "rows",
+        "columns",
+        "cells"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_board_cell",
+      "name": "棋盘格",
+      "prefab": "ui/board/BoardCell.prefab",
+      "category": "BOARD",
+      "states": [
+        "EMPTY",
+        "OCCUPIED",
+        "LOCKED",
+        "BLOCKED",
+        "MERGE_TARGET",
+        "COOK_TARGET",
+        "ORDER_REQUIRED"
+      ],
+      "props": [
+        "index",
+        "state",
+        "itemInstanceId"
+      ],
+      "minTouch": 76
+    },
+    {
+      "id": "cmp_board_item",
+      "name": "棋盘物",
+      "prefab": "ui/board/BoardItem.prefab",
+      "category": "BOARD",
+      "states": [
+        "IDLE",
+        "DRAG",
+        "MERGE",
+        "SPAWN",
+        "SELECTED"
+      ],
+      "props": [
+        "instanceId",
+        "itemId",
+        "level"
+      ],
+      "minTouch": 76
+    },
+    {
+      "id": "cmp_producer_node",
+      "name": "生产器节点",
+      "prefab": "ui/board/ProducerNode.prefab",
+      "category": "BOARD",
+      "states": [
+        "READY",
+        "TAP",
+        "COOLDOWN",
+        "EMPTY",
+        "BOOSTED",
+        "LOCKED"
+      ],
+      "props": [
+        "producerId",
+        "capacity",
+        "cooldownEndAt",
+        "modifiers"
+      ],
+      "minTouch": 76
+    },
+    {
+      "id": "cmp_cookware_node",
+      "name": "厨具节点",
+      "prefab": "ui/board/CookwareNode.prefab",
+      "category": "BOARD",
+      "states": [
+        "IDLE",
+        "COOKING",
+        "READY",
+        "COLLECT"
+      ],
+      "props": [
+        "cookwareId",
+        "recipeId",
+        "finishAt"
+      ],
+      "minTouch": 76
+    },
+    {
+      "id": "cmp_storage_grid",
+      "name": "仓库网格",
+      "prefab": "ui/board/StorageGrid.prefab",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "FULL",
+        "EXPANDABLE"
+      ],
+      "props": [
+        "slots",
+        "capacity"
+      ],
+      "minTouch": 76
+    },
+    {
+      "id": "cmp_recipe_card",
+      "name": "菜谱卡",
+      "prefab": "ui/recipe/RecipeCard.prefab",
+      "category": "RECIPE",
+      "states": [
+        "LOCKED",
+        "UNLOCKED",
+        "AVAILABLE",
+        "MISSING_INPUT"
+      ],
+      "props": [
+        "recipeId",
+        "inputs",
+        "cookwareId",
+        "durationSec"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_chain_node",
+      "name": "合成链节点",
+      "prefab": "ui/album/ChainNode.prefab",
+      "category": "CATALOG",
+      "states": [
+        "LOCKED",
+        "KNOWN",
+        "SELECTED"
+      ],
+      "props": [
+        "itemId",
+        "level",
+        "source"
+      ],
+      "minTouch": 72
+    },
+    {
+      "id": "cmp_build_hotspot",
+      "name": "建设热点",
+      "prefab": "ui/street/BuildHotspot.prefab",
+      "category": "STREET",
+      "states": [
+        "LOCKED",
+        "AVAILABLE",
+        "AFFORDABLE",
+        "COMPLETE"
+      ],
+      "props": [
+        "buildId",
+        "cost",
+        "prerequisites"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_npc_hotspot",
+      "name": "NPC热点",
+      "prefab": "ui/street/NPCHotspot.prefab",
+      "category": "STREET",
+      "states": [
+        "IDLE",
+        "STORY_AVAILABLE",
+        "QUEST_AVAILABLE"
+      ],
+      "props": [
+        "characterId",
+        "storyId"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_product_card",
+      "name": "商店商品卡",
+      "prefab": "ui/shop/ProductCard.prefab",
+      "category": "SHOP",
+      "states": [
+        "AVAILABLE",
+        "SOLD_OUT",
+        "LOCKED",
+        "PURCHASING"
+      ],
+      "props": [
+        "sku",
+        "item",
+        "price",
+        "limit",
+        "remaining"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_offer_card",
+      "name": "礼包卡",
+      "prefab": "ui/shop/OfferCard.prefab",
+      "category": "SHOP",
+      "states": [
+        "AVAILABLE",
+        "EXPIRING",
+        "EXPIRED",
+        "PURCHASING"
+      ],
+      "props": [
+        "offerId",
+        "rewards",
+        "price",
+        "endAt"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_event_card",
+      "name": "活动入口卡",
+      "prefab": "ui/event/EventCard.prefab",
+      "category": "EVENT",
+      "states": [
+        "LOCKED",
+        "ACTIVE",
+        "ENDING",
+        "ENDED",
+        "SETTLEMENT"
+      ],
+      "props": [
+        "eventId",
+        "endAt",
+        "progress",
+        "redDot"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_milestone_track",
+      "name": "里程碑轨道",
+      "prefab": "ui/event/MilestoneTrack.prefab",
+      "category": "EVENT",
+      "states": [
+        "NORMAL",
+        "CLAIMABLE",
+        "COMPLETE"
+      ],
+      "props": [
+        "progress",
+        "milestones"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_ranking_row",
+      "name": "排行行",
+      "prefab": "ui/event/RankingRow.prefab",
+      "category": "EVENT",
+      "states": [
+        "NORMAL",
+        "SELF",
+        "PROMOTED"
+      ],
+      "props": [
+        "rank",
+        "avatar",
+        "name",
+        "score"
+      ],
+      "minTouch": 64
+    },
+    {
+      "id": "cmp_multiplier_selector",
+      "name": "倍率选择器",
+      "prefab": "ui/event/MultiplierSelector.prefab",
+      "category": "EVENT",
+      "states": [
+        "X1",
+        "X3",
+        "X10",
+        "DISABLED"
+      ],
+      "props": [
+        "value",
+        "costPreview",
+        "rewardPreview"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_album_set",
+      "name": "卡册套组",
+      "prefab": "ui/album/AlbumSet.prefab",
+      "category": "ALBUM",
+      "states": [
+        "INCOMPLETE",
+        "COMPLETE",
+        "CLAIMED"
+      ],
+      "props": [
+        "setId",
+        "owned",
+        "total",
+        "reward"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_card_slot",
+      "name": "卡位",
+      "prefab": "ui/album/CardSlot.prefab",
+      "category": "ALBUM",
+      "states": [
+        "LOCKED",
+        "MISSING",
+        "OWNED",
+        "NEW",
+        "DUPLICATE"
+      ],
+      "props": [
+        "cardId",
+        "rarity",
+        "count"
+      ],
+      "minTouch": 72
+    },
+    {
+      "id": "cmp_pass_track",
+      "name": "通行证轨道",
+      "prefab": "ui/pass/PassTrack.prefab",
+      "category": "PASS",
+      "states": [
+        "LOCKED",
+        "CLAIMABLE",
+        "CLAIMED"
+      ],
+      "props": [
+        "level",
+        "freeReward",
+        "premiumReward"
+      ],
+      "minTouch": 0
+    },
+    {
+      "id": "cmp_mail_row",
+      "name": "邮件行",
+      "prefab": "ui/mail/MailRow.prefab",
+      "category": "MAIL",
+      "states": [
+        "UNREAD",
+        "READ",
+        "CLAIMABLE",
+        "CLAIMED",
+        "EXPIRED"
+      ],
+      "props": [
+        "mailId",
+        "title",
+        "expiry",
+        "attachments"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_task_row",
+      "name": "任务行",
+      "prefab": "ui/task/TaskRow.prefab",
+      "category": "TASK",
+      "states": [
+        "ACTIVE",
+        "CLAIMABLE",
+        "CLAIMED",
+        "EXPIRED"
+      ],
+      "props": [
+        "taskId",
+        "progress",
+        "target",
+        "reward"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_dialogue_box",
+      "name": "对白框",
+      "prefab": "ui/story/DialogueBox.prefab",
+      "category": "STORY",
+      "states": [
+        "TYPING",
+        "READY",
+        "CHOICE"
+      ],
+      "props": [
+        "speaker",
+        "text",
+        "portrait",
+        "choices"
+      ],
+      "minTouch": 88
+    },
+    {
+      "id": "cmp_character_portrait",
+      "name": "剧情立绘",
+      "prefab": "ui/story/CharacterPortrait.prefab",
+      "category": "STORY",
+      "states": [
+        "ENTER",
+        "IDLE",
+        "EXPRESSION",
+        "EXIT"
+      ],
+      "props": [
+        "characterId",
+        "expression",
+        "side"
+      ],
+      "minTouch": 0
+    }
+  ],
+  "screenComponentMap": {
+    "UI00": [
+      "cmp_loading"
+    ],
+    "UI01": [
+      "cmp_primary_button",
+      "cmp_secondary_button"
+    ],
+    "UI02": [
+      "cmp_loading",
+      "cmp_primary_button",
+      "cmp_error_state"
+    ],
+    "UI03": [
+      "cmp_character_portrait",
+      "cmp_dialogue_box",
+      "cmp_secondary_button"
+    ],
+    "UI04": [
+      "cmp_resource_bar",
+      "cmp_order_card",
+      "cmp_board_grid",
+      "cmp_board_cell",
+      "cmp_producer_node"
+    ],
+    "UI05": [
+      "cmp_resource_bar",
+      "cmp_order_carousel",
+      "cmp_order_card",
+      "cmp_board_grid",
+      "cmp_board_cell",
+      "cmp_board_item",
+      "cmp_producer_node",
+      "cmp_cookware_node"
+    ],
+    "UI06": [
+      "cmp_common_modal",
+      "cmp_requirement_item",
+      "cmp_reward_grid"
+    ],
+    "UI07": [
+      "cmp_common_modal",
+      "cmp_primary_button",
+      "cmp_secondary_button"
+    ],
+    "UI08": [
+      "cmp_chain_node"
+    ],
+    "UI09": [
+      "cmp_common_modal",
+      "cmp_countdown"
+    ],
+    "UI10": [
+      "cmp_common_modal",
+      "cmp_recipe_card",
+      "cmp_countdown",
+      "cmp_primary_button"
+    ],
+    "UI11": [
+      "cmp_recipe_card"
+    ],
+    "UI12": [
+      "cmp_storage_grid",
+      "cmp_primary_button"
+    ],
+    "UI13": [
+      "cmp_common_modal",
+      "cmp_countdown",
+      "cmp_product_card",
+      "cmp_offer_card"
+    ],
+    "UI14": [
+      "cmp_resource_bar",
+      "cmp_build_hotspot",
+      "cmp_npc_hotspot",
+      "cmp_event_card"
+    ],
+    "UI15": [
+      "cmp_common_modal",
+      "cmp_build_hotspot",
+      "cmp_reward_grid",
+      "cmp_primary_button"
+    ],
+    "UI16": [
+      "cmp_common_modal",
+      "cmp_reward_grid",
+      "cmp_primary_button"
+    ],
+    "UI17": [
+      "cmp_character_portrait",
+      "cmp_dialogue_box"
+    ],
+    "UI18": [
+      "cmp_common_modal",
+      "cmp_reward_grid",
+      "cmp_primary_button"
+    ],
+    "UI19": [
+      "cmp_common_modal",
+      "cmp_primary_button"
+    ],
+    "UI20": [
+      "cmp_resource_bar",
+      "cmp_product_card",
+      "cmp_countdown"
+    ],
+    "UI21": [
+      "cmp_product_card"
+    ],
+    "UI22": [
+      "cmp_offer_card",
+      "cmp_countdown"
+    ],
+    "UI23": [
+      "cmp_offer_card",
+      "cmp_countdown"
+    ],
+    "UI24": [
+      "cmp_common_modal",
+      "cmp_reward_grid",
+      "cmp_primary_button"
+    ],
+    "UI25": [
+      "cmp_event_card"
+    ],
+    "UI26": [
+      "cmp_milestone_track",
+      "cmp_ranking_row",
+      "cmp_countdown"
+    ],
+    "UI27": [
+      "cmp_milestone_track",
+      "cmp_reward_grid",
+      "cmp_countdown"
+    ],
+    "UI28": [
+      "cmp_countdown",
+      "cmp_event_card",
+      "cmp_producer_node"
+    ],
+    "UI29": [
+      "cmp_multiplier_selector",
+      "cmp_milestone_track",
+      "cmp_reward_grid",
+      "cmp_countdown"
+    ],
+    "UI30": [
+      "cmp_album_set",
+      "cmp_card_slot"
+    ],
+    "UI31": [
+      "cmp_card_slot",
+      "cmp_reward_grid"
+    ],
+    "UI32": [
+      "cmp_card_slot",
+      "cmp_reward_grid"
+    ],
+    "UI33": [
+      "cmp_product_card",
+      "cmp_reward_grid"
+    ],
+    "UI34": [
+      "cmp_pass_track",
+      "cmp_task_row"
+    ],
+    "UI35": [
+      "cmp_mail_row",
+      "cmp_primary_button"
+    ],
+    "UI36": [
+      "cmp_task_row"
+    ],
+    "UI37": [
+      "cmp_primary_button",
+      "cmp_secondary_button"
+    ],
+    "UI38": [
+      "cmp_primary_button",
+      "cmp_secondary_button"
+    ],
+    "UI39": [
+      "cmp_task_row"
+    ],
+    "UI40": [
+      "cmp_common_modal",
+      "cmp_error_state",
+      "cmp_primary_button"
+    ],
+    "UI41": [
+      "cmp_common_modal",
+      "cmp_resource_chip",
+      "cmp_primary_button"
+    ],
+    "UI42": [
+      "cmp_common_modal",
+      "cmp_reward_grid",
+      "cmp_primary_button"
+    ],
+    "UI43": [
+      "cmp_ranking_row",
+      "cmp_countdown"
+    ],
+    "UI44": [
+      "cmp_event_card"
+    ],
+    "UI45": [
+      "cmp_primary_button",
+      "cmp_secondary_button"
+    ]
+  }
+}
