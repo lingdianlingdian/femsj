@@ -72,7 +72,7 @@
 
 ## P1（主体已补齐）
 - ✅ 完整 API Contract
-- ✅ QA Test Case 库（109条）
+- ✅ QA Test Case 库（117条）
 - ✅ Remote Config发布/灰度/回滚流程
 - ✅ Balance Simulator Monte Carlo v2
 - ✅ Config Validator
@@ -134,7 +134,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - `AGENTS.md`：Agent统一规则
 - `api/openapi-v4.yaml`：服务端API合同
 - `schemas/v4/remote_config.schema.json`
-- `qa/v4/test_cases_v4.json`：109条QA用例
+- `qa/v4/test_cases_v4.json`：117条QA用例
 - `.github/workflows/v4-quality.yml`
 - `npm run audit:data`
 - `npm run audit:evidence`
@@ -155,3 +155,11 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - Build Nodes：48
 - Story Beats：110
 - LiveOps Blueprints：6
+
+## 2026-09-25 LiveOps 合同修复
+
+- ✅ LiveOps Event Schema 与 `events_v4.json` 已完成合同对齐。
+- ✅ milestone 统一使用 `rewards`；活动数据补齐 `evidence`。
+- ✅ Schema 已覆盖竞速匹配、活动时长、Boost触发、卡册保底、Pass等级等生产字段。
+- ✅ Config Validator 新增活动持续时间互斥、里程碑递增、奖励有效性、RACE/PASS/ALBUM必填项校验。
+- ✅ QA 从 109 条扩充到 117 条，并同步 JSON/CSV。
