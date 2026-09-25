@@ -1,0 +1,4296 @@
+{
+  "configVersion": "4.1.0",
+  "items": [
+    {
+      "id": "dish_baomihua",
+      "name": "爆米花",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 10,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_baomihua",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_caijiaocuipian",
+      "name": "彩椒脆片",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 6,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_caijiaocuipian",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_caomeiguolu",
+      "name": "草莓果露",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 8,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_caomeiguolu",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_junxiangzhishijuan",
+      "name": "菌香芝士卷",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 7,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_junxiangzhishijuan",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_pingguoguoyin",
+      "name": "苹果果饮",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 10,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_pingguoguoyin",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_shengcaishala",
+      "name": "生菜沙拉",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 5,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_shengcaishala",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_shengqiehuluobotiao",
+      "name": "生切胡萝卜条",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 7,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_shengqiehuluobotiao",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_shoudaningmengzhi",
+      "name": "手打柠檬汁",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 9,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_shoudaningmengzhi",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_tangbanfanqie",
+      "name": "糖拌番茄",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 6,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_tangbanfanqie",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_xianzhalanmeizhi",
+      "name": "鲜榨蓝莓汁",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 8,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_xianzhalanmeizhi",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "dish_zhenzhunaicha",
+      "name": "珍珠奶茶",
+      "type": "DISH",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 10,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_dish_zhenzhunaicha",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_bianxiekafei",
+      "name": "便携咖啡",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 3,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_bianxiekafei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_bingkafei",
+      "name": "冰咖啡",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_bingkafei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_bingtang",
+      "name": "冰糖",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_bingtang",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_boliwan",
+      "name": "玻璃碗",
+      "type": "SPECIAL",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_boliwan",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_caijiao",
+      "name": "彩椒",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_caijiao",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_caomei",
+      "name": "草莓",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_caomei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_chunniunai",
+      "name": "纯牛奶",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_chunniunai",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_congduan",
+      "name": "葱段",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_congduan",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_fanqie",
+      "name": "番茄",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_fanqie",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_hongcha",
+      "name": "红茶",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_hongcha",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_huangyou",
+      "name": "黄油",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_huangyou",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_huluobo",
+      "name": "胡萝卜",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_huluobo",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_kafei",
+      "name": "咖啡",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_kafei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_kafeidou",
+      "name": "咖啡豆",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_kafeidou",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_lajiao",
+      "name": "辣椒",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_lajiao",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_lanmei",
+      "name": "蓝莓",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_lanmei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_lvcha",
+      "name": "绿茶",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_lvcha",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_mogu",
+      "name": "蘑菇",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_mogu",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_ningmeng",
+      "name": "柠檬",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_ningmeng",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_nongsuokafei",
+      "name": "浓缩咖啡",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_nongsuokafei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_pingguo",
+      "name": "苹果",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_pingguo",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_shengcai",
+      "name": "生菜",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_shengcai",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_IMAGE；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_shenhongkafei",
+      "name": "深烘咖啡",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 2,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_shenhongkafei",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_tangjiang",
+      "name": "糖浆",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_tangjiang",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_xiangcaojia",
+      "name": "香草荚",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_xiangcaojia",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_xiangcaozi",
+      "name": "香草籽",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_xiangcaozi",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_yangcong",
+      "name": "洋葱",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_yangcong",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_yumi",
+      "name": "玉米",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_yumi",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_yumili",
+      "name": "玉米粒",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 1,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_yumili",
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_TEXT；运行参数为垂直切片开发值。"
+      }
+    },
+    {
+      "id": "item_zhishipian",
+      "name": "芝士片",
+      "type": "INGREDIENT",
+      "chainId": null,
+      "level": null,
+      "unlockDay": 4,
+      "sellValue": 0,
+      "tags": [
+        "VERTICAL_SLICE"
+      ],
+      "assetId": "art_item_zhishipian",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": false,
+        "note": "研究种子状态=PUBLIC_IMAGE；运行参数为垂直切片开发值。"
+      }
+    }
+  ],
+  "transformations": [
+    {
+      "id": "tr_vs_coffee_espresso",
+      "type": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_kafeidou",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": 0,
+      "outputs": [
+        {
+          "type": "ITEM",
+          "id": "item_nongsuokafei",
+          "amount": 1
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Day1-10可玩垂直切片原创运行关系；不代表竞品精确后台配置。"
+      }
+    },
+    {
+      "id": "tr_vs_coffee_cup",
+      "type": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_nongsuokafei",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": 0,
+      "outputs": [
+        {
+          "type": "ITEM",
+          "id": "item_kafei",
+          "amount": 1
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Day1-10可玩垂直切片原创运行关系；不代表竞品精确后台配置。"
+      }
+    },
+    {
+      "id": "tr_vs_coffee_portable",
+      "type": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_kafei",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": 0,
+      "outputs": [
+        {
+          "type": "ITEM",
+          "id": "item_bianxiekafei",
+          "amount": 1
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Day1-10可玩垂直切片原创运行关系；不代表竞品精确后台配置。"
+      }
+    },
+    {
+      "id": "tr_vs_coffee_iced",
+      "type": "MERGE2",
+      "inputs": [
+        {
+          "itemId": "item_bianxiekafei",
+          "count": 2
+        }
+      ],
+      "toolId": null,
+      "durationSec": 0,
+      "outputs": [
+        {
+          "type": "ITEM",
+          "id": "item_bingkafei",
+          "amount": 1
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Day1-10可玩垂直切片原创运行关系；不代表竞品精确后台配置。"
+      }
+    }
+  ],
+  "producers": [
+    {
+      "id": "prod_shucaileizi",
+      "name": "蔬菜篮子",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 20,
+      "cooldownSec": 240,
+      "unlockDay": 1,
+      "assetId": "art_prod_shucaileizi",
+      "outputPool": [
+        {
+          "itemId": "item_fanqie",
+          "weight": 14,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_caijiao",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_mogu",
+          "weight": 9,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_lajiao",
+          "weight": 7,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_congduan",
+          "weight": 7,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_huluobo",
+          "weight": 9,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_yangcong",
+          "weight": 10,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_yumili",
+          "weight": 6,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_yumi",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_lanmei",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_caomei",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_ningmeng",
+          "weight": 5,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_pingguo",
+          "weight": 4,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_shengcai",
+          "weight": 4,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+      }
+    },
+    {
+      "id": "prod_yinliaogui",
+      "name": "饮料柜",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 16,
+      "cooldownSec": 360,
+      "unlockDay": 2,
+      "assetId": "art_prod_yinliaogui",
+      "outputPool": [
+        {
+          "itemId": "item_kafeidou",
+          "weight": 32,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_lvcha",
+          "weight": 24,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_chunniunai",
+          "weight": 18,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_hongcha",
+          "weight": 14,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_shenhongkafei",
+          "weight": 12,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+      }
+    },
+    {
+      "id": "prod_kitchen_supply",
+      "name": "厨房补给箱",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 12,
+      "cooldownSec": 480,
+      "unlockDay": 4,
+      "assetId": "art_prod_kitchen_supply",
+      "outputPool": [
+        {
+          "itemId": "item_xiangcaozi",
+          "weight": 18,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_xiangcaojia",
+          "weight": 8,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_bingtang",
+          "weight": 18,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_huangyou",
+          "weight": 14,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_boliwan",
+          "weight": 16,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_zhishipian",
+          "weight": 12,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_tangjiang",
+          "weight": 14,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。"
+      }
+    }
+  ],
+  "cookwares": [
+    {
+      "id": "cook_prep_station",
+      "name": "备菜台",
+      "level": 1,
+      "queueSize": 1,
+      "unlockDay": 5,
+      "speedModifier": 1,
+      "assetId": "art_cook_prep_station",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "用于Day1-10原创可玩垂直切片；队列/速度/解锁为开发默认值。"
+      }
+    },
+    {
+      "id": "cook_drink_station",
+      "name": "饮品调制台",
+      "level": 1,
+      "queueSize": 1,
+      "unlockDay": 8,
+      "speedModifier": 1,
+      "assetId": "art_cook_drink_station",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "用于Day1-10原创可玩垂直切片；队列/速度/解锁为开发默认值。"
+      }
+    }
+  ],
+  "recipes": [
+    {
+      "id": "recipe_vs_shengcaishala",
+      "name": "生菜沙拉",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_shengcai",
+          "count": 1
+        },
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_shengcaishala",
+      "durationSec": 45,
+      "unlockDay": 5,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_tangbanfanqie",
+      "name": "糖拌番茄",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingtang",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_tangbanfanqie",
+      "durationSec": 30,
+      "unlockDay": 6,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_caijiaocuipian",
+      "name": "彩椒脆片",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_caijiaocuipian",
+      "durationSec": 60,
+      "unlockDay": 6,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_junxiangzhishijuan",
+      "name": "菌香芝士卷",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        },
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        },
+        {
+          "itemId": "item_zhishipian",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_junxiangzhishijuan",
+      "durationSec": 120,
+      "unlockDay": 7,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_YOUXICHA"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "输入/备菜台关系有公开实机依据；duration为原创开发值。"
+      }
+    },
+    {
+      "id": "recipe_vs_shengqiehuluobotiao",
+      "name": "生切胡萝卜条",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_huluobo",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_shengqiehuluobotiao",
+      "durationSec": 20,
+      "unlockDay": 7,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_xianzhalanmeizhi",
+      "name": "鲜榨蓝莓汁",
+      "cookwareId": "cook_drink_station",
+      "inputs": [
+        {
+          "itemId": "item_lanmei",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_xianzhalanmeizhi",
+      "durationSec": 60,
+      "unlockDay": 8,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_caomeiguolu",
+      "name": "草莓果露",
+      "cookwareId": "cook_drink_station",
+      "inputs": [
+        {
+          "itemId": "item_caomei",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingtang",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_caomeiguolu",
+      "durationSec": 90,
+      "unlockDay": 8,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_shoudaningmengzhi",
+      "name": "手打柠檬汁",
+      "cookwareId": "cook_drink_station",
+      "inputs": [
+        {
+          "itemId": "item_ningmeng",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingtang",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_shoudaningmengzhi",
+      "durationSec": 90,
+      "unlockDay": 9,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_zhenzhunaicha",
+      "name": "珍珠奶茶",
+      "cookwareId": "cook_drink_station",
+      "inputs": [
+        {
+          "itemId": "item_lvcha",
+          "count": 1
+        },
+        {
+          "itemId": "item_chunniunai",
+          "count": 1
+        },
+        {
+          "itemId": "item_tangjiang",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_zhenzhunaicha",
+      "durationSec": 180,
+      "unlockDay": 10,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY101_105"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "绿茶+纯牛奶+糖浆来自公开Day105食谱；cookware/duration为原创开发值。"
+      }
+    },
+    {
+      "id": "recipe_vs_baomihua",
+      "name": "爆米花",
+      "cookwareId": "cook_prep_station",
+      "inputs": [
+        {
+          "itemId": "item_yumi",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_baomihua",
+      "durationSec": 60,
+      "unlockDay": 10,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    },
+    {
+      "id": "recipe_vs_pingguoguoyin",
+      "name": "苹果果饮",
+      "cookwareId": "cook_drink_station",
+      "inputs": [
+        {
+          "itemId": "item_pingguo",
+          "count": 1
+        }
+      ],
+      "outputItemId": "dish_pingguoguoyin",
+      "durationSec": 90,
+      "unlockDay": 10,
+      "speedupGemPerMin": 0.5,
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创垂直切片配方，用于可玩性与数值联调。"
+      }
+    }
+  ],
+  "orders": [
+    {
+      "id": "d001_o01",
+      "day": 1,
+      "slot": 1,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o02",
+      "day": 1,
+      "slot": 2,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o03",
+      "day": 1,
+      "slot": 3,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o04",
+      "day": 1,
+      "slot": 4,
+      "customerId": "char_goose_003",
+      "requirements": [
+        {
+          "itemId": "item_lajiao",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o05",
+      "day": 1,
+      "slot": 5,
+      "customerId": "char_goose_004",
+      "requirements": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o06",
+      "day": 1,
+      "slot": 6,
+      "customerId": "char_goose_005",
+      "requirements": [
+        {
+          "itemId": "item_caijiao",
+          "count": 1
+        },
+        {
+          "itemId": "item_congduan",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 22
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o07",
+      "day": 1,
+      "slot": 7,
+      "customerId": "char_goose_006",
+      "requirements": [
+        {
+          "itemId": "item_huluobo",
+          "count": 1
+        },
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 22
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d001_o08",
+      "day": 1,
+      "slot": 8,
+      "customerId": "char_goose_007",
+      "requirements": [
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 18
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d002_o01",
+      "day": 2,
+      "slot": 1,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "item_kafeidou",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 20
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d002_o02",
+      "day": 2,
+      "slot": 2,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "item_nongsuokafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 20
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d002_o03",
+      "day": 2,
+      "slot": 3,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "item_kafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 20
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d003_o01",
+      "day": 3,
+      "slot": 1,
+      "customerId": "char_goose_003",
+      "requirements": [
+        {
+          "itemId": "item_nongsuokafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 22
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d003_o02",
+      "day": 3,
+      "slot": 2,
+      "customerId": "char_goose_004",
+      "requirements": [
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        },
+        {
+          "itemId": "item_kafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 26
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d003_o03",
+      "day": 3,
+      "slot": 3,
+      "customerId": "char_goose_005",
+      "requirements": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        },
+        {
+          "itemId": "item_bianxiekafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 26
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o01",
+      "day": 4,
+      "slot": 1,
+      "customerId": "char_goose_006",
+      "requirements": [
+        {
+          "itemId": "item_bingkafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o02",
+      "day": 4,
+      "slot": 2,
+      "customerId": "char_goose_007",
+      "requirements": [
+        {
+          "itemId": "item_lvcha",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o03",
+      "day": 4,
+      "slot": 3,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "item_yumili",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o04",
+      "day": 4,
+      "slot": 4,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaojia",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o05",
+      "day": 4,
+      "slot": 5,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "item_yumi",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d004_o06",
+      "day": 4,
+      "slot": 6,
+      "customerId": "char_goose_003",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaozi",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 24
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d005_o01",
+      "day": 5,
+      "slot": 1,
+      "customerId": "char_goose_004",
+      "requirements": [
+        {
+          "itemId": "dish_shengcaishala",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 36
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_shengcaishala"
+      ],
+      "cookwareIds": [
+        "cook_prep_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 45,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d005_o02",
+      "day": 5,
+      "slot": 2,
+      "customerId": "char_goose_005",
+      "requirements": [
+        {
+          "itemId": "item_chunniunai",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 26
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d005_o03",
+      "day": 5,
+      "slot": 3,
+      "customerId": "char_goose_006",
+      "requirements": [
+        {
+          "itemId": "item_boliwan",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 26
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d006_o01",
+      "day": 6,
+      "slot": 1,
+      "customerId": "char_goose_007",
+      "requirements": [
+        {
+          "itemId": "dish_tangbanfanqie",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 38
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [
+        "recipe_vs_tangbanfanqie"
+      ],
+      "cookwareIds": [
+        "cook_prep_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 30,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d006_o02",
+      "day": 6,
+      "slot": 2,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "item_yangcong",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingkafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 32
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d006_o03",
+      "day": 6,
+      "slot": 3,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "dish_caijiaocuipian",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 38
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_caijiaocuipian"
+      ],
+      "cookwareIds": [
+        "cook_prep_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 60,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d006_o04",
+      "day": 6,
+      "slot": 4,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        },
+        {
+          "itemId": "item_lvcha",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 32
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d007_o01",
+      "day": 7,
+      "slot": 1,
+      "customerId": "char_goose_003",
+      "requirements": [
+        {
+          "itemId": "item_bianxiekafei",
+          "count": 1
+        },
+        {
+          "itemId": "item_chunniunai",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 34
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d007_o02",
+      "day": 7,
+      "slot": 2,
+      "customerId": "char_goose_004",
+      "requirements": [
+        {
+          "itemId": "dish_junxiangzhishijuan",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 40
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [
+        "recipe_vs_junxiangzhishijuan"
+      ],
+      "cookwareIds": [
+        "cook_prep_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 120,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d007_o03",
+      "day": 7,
+      "slot": 3,
+      "customerId": "char_goose_005",
+      "requirements": [
+        {
+          "itemId": "dish_shengqiehuluobotiao",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 40
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_shengqiehuluobotiao"
+      ],
+      "cookwareIds": [
+        "cook_prep_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 20,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d007_o04",
+      "day": 7,
+      "slot": 4,
+      "customerId": "char_goose_006",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaozi",
+          "count": 1
+        },
+        {
+          "itemId": "item_lvcha",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 34
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d007_o05",
+      "day": 7,
+      "slot": 5,
+      "customerId": "char_goose_007",
+      "requirements": [
+        {
+          "itemId": "item_yumili",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 30
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d008_o01",
+      "day": 8,
+      "slot": 1,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "dish_xianzhalanmeizhi",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 42
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_xianzhalanmeizhi"
+      ],
+      "cookwareIds": [
+        "cook_drink_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 60,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d008_o02",
+      "day": 8,
+      "slot": 2,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaozi",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingkafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 36
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d008_o03",
+      "day": 8,
+      "slot": 3,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "item_bingtang",
+          "count": 1
+        },
+        {
+          "itemId": "dish_caomeiguolu",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 46
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply",
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_caomeiguolu"
+      ],
+      "cookwareIds": [
+        "cook_drink_station"
+      ],
+      "difficulty": {
+        "energyP50": 11,
+        "energyP90": 22,
+        "cookWaitSec": 90,
+        "producerBlockSec": 0,
+        "peakCells": 8,
+        "manualActions": 12,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d008_o04",
+      "day": 8,
+      "slot": 4,
+      "customerId": "char_goose_003",
+      "requirements": [
+        {
+          "itemId": "item_yumi",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 32
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 4,
+        "energyP90": 9,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 4,
+        "manualActions": 7,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d009_o01",
+      "day": 9,
+      "slot": 1,
+      "customerId": "char_goose_004",
+      "requirements": [
+        {
+          "itemId": "dish_shoudaningmengzhi",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 44
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [
+        "recipe_vs_shoudaningmengzhi"
+      ],
+      "cookwareIds": [
+        "cook_drink_station"
+      ],
+      "difficulty": {
+        "energyP50": 8,
+        "energyP90": 16,
+        "cookWaitSec": 90,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 9,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d009_o02",
+      "day": 9,
+      "slot": 2,
+      "customerId": "char_goose_005",
+      "requirements": [
+        {
+          "itemId": "item_shenhongkafei",
+          "count": 1
+        },
+        {
+          "itemId": "item_hongcha",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 38
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d009_o03",
+      "day": 9,
+      "slot": 3,
+      "customerId": "char_goose_006",
+      "requirements": [
+        {
+          "itemId": "item_mogu",
+          "count": 1
+        },
+        {
+          "itemId": "item_huangyou",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 38
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi",
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d010_o01",
+      "day": 10,
+      "slot": 1,
+      "customerId": "char_goose_007",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaozi",
+          "count": 1
+        },
+        {
+          "itemId": "item_bingkafei",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 40
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d010_o02",
+      "day": 10,
+      "slot": 2,
+      "customerId": "char_guide_001",
+      "requirements": [
+        {
+          "itemId": "item_lvcha",
+          "count": 1
+        },
+        {
+          "itemId": "item_huangyou",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 40
+        }
+      ],
+      "producerIds": [
+        "prod_yinliaogui",
+        "prod_kitchen_supply"
+      ],
+      "recipeIds": [],
+      "cookwareIds": [],
+      "difficulty": {
+        "energyP50": 7,
+        "energyP90": 15,
+        "cookWaitSec": 0,
+        "producerBlockSec": 0,
+        "peakCells": 6,
+        "manualActions": 10,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d010_o03",
+      "day": 10,
+      "slot": 3,
+      "customerId": "char_goose_001",
+      "requirements": [
+        {
+          "itemId": "item_xiangcaojia",
+          "count": 1
+        },
+        {
+          "itemId": "dish_zhenzhunaicha",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 50
+        }
+      ],
+      "producerIds": [
+        "prod_kitchen_supply",
+        "prod_yinliaogui"
+      ],
+      "recipeIds": [
+        "recipe_vs_zhenzhunaicha"
+      ],
+      "cookwareIds": [
+        "cook_drink_station"
+      ],
+      "difficulty": {
+        "energyP50": 11,
+        "energyP90": 22,
+        "cookWaitSec": 180,
+        "producerBlockSec": 0,
+        "peakCells": 8,
+        "manualActions": 12,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    },
+    {
+      "id": "d010_o04",
+      "day": 10,
+      "slot": 4,
+      "customerId": "char_goose_002",
+      "requirements": [
+        {
+          "itemId": "dish_baomihua",
+          "count": 1
+        },
+        {
+          "itemId": "dish_pingguoguoyin",
+          "count": 1
+        }
+      ],
+      "rewards": [
+        {
+          "type": "COIN",
+          "id": null,
+          "amount": 50
+        }
+      ],
+      "producerIds": [
+        "prod_shucaileizi"
+      ],
+      "recipeIds": [
+        "recipe_vs_baomihua",
+        "recipe_vs_pingguoguoyin"
+      ],
+      "cookwareIds": [
+        "cook_prep_station",
+        "cook_drink_station"
+      ],
+      "difficulty": {
+        "energyP50": 11,
+        "energyP90": 22,
+        "cookWaitSec": 150,
+        "producerBlockSec": 0,
+        "peakCells": 8,
+        "manualActions": 12,
+        "byproductUtilization": 0.6
+      },
+      "evidence": {
+        "kind": "PUBLIC_TEXT",
+        "confidence": "C",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": "2026-04-07",
+        "channel": "TAPTAP",
+        "versionSensitive": true,
+        "note": "requirements/day/slot来自公开玩家逐日菜单；customer/reward/dependency/difficulty为DEV_BLUEPRINT运行补全。"
+      }
+    }
+  ],
+  "days": [
+    {
+      "id": "day_001",
+      "day": 1,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d001_o01",
+        "d001_o02",
+        "d001_o03",
+        "d001_o04",
+        "d001_o05",
+        "d001_o06",
+        "d001_o07",
+        "d001_o08"
+      ],
+      "unlockIds": [
+        "prod_shucaileizi"
+      ],
+      "buildNodeIds": [
+        "build_a01_01"
+      ],
+      "storyBefore": "story_day_001_entry",
+      "storyAfter": "story_day_001_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_002",
+      "day": 2,
+      "parallelSlots": 3,
+      "orderIds": [
+        "d002_o01",
+        "d002_o02",
+        "d002_o03"
+      ],
+      "unlockIds": [
+        "prod_yinliaogui"
+      ],
+      "buildNodeIds": [],
+      "storyBefore": "story_day_002_entry",
+      "storyAfter": "story_day_002_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_003",
+      "day": 3,
+      "parallelSlots": 3,
+      "orderIds": [
+        "d003_o01",
+        "d003_o02",
+        "d003_o03"
+      ],
+      "unlockIds": [],
+      "buildNodeIds": [
+        "build_a01_02"
+      ],
+      "storyBefore": "story_day_003_entry",
+      "storyAfter": "story_day_003_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_004",
+      "day": 4,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d004_o01",
+        "d004_o02",
+        "d004_o03",
+        "d004_o04",
+        "d004_o05",
+        "d004_o06"
+      ],
+      "unlockIds": [
+        "prod_kitchen_supply"
+      ],
+      "buildNodeIds": [
+        "build_a01_03"
+      ],
+      "storyBefore": "story_day_004_entry",
+      "storyAfter": "story_day_004_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_005",
+      "day": 5,
+      "parallelSlots": 3,
+      "orderIds": [
+        "d005_o01",
+        "d005_o02",
+        "d005_o03"
+      ],
+      "unlockIds": [
+        "cook_prep_station"
+      ],
+      "buildNodeIds": [],
+      "storyBefore": "story_day_005_entry",
+      "storyAfter": "story_day_005_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY1_5"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_006",
+      "day": 6,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d006_o01",
+        "d006_o02",
+        "d006_o03",
+        "d006_o04"
+      ],
+      "unlockIds": [],
+      "buildNodeIds": [
+        "build_a01_04"
+      ],
+      "storyBefore": "story_day_006_entry",
+      "storyAfter": "story_day_006_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_007",
+      "day": 7,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d007_o01",
+        "d007_o02",
+        "d007_o03",
+        "d007_o04",
+        "d007_o05"
+      ],
+      "unlockIds": [],
+      "buildNodeIds": [],
+      "storyBefore": "story_day_007_entry",
+      "storyAfter": "story_day_007_exit",
+      "eventHooks": [
+        "event_season_pass"
+      ],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_008",
+      "day": 8,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d008_o01",
+        "d008_o02",
+        "d008_o03",
+        "d008_o04"
+      ],
+      "unlockIds": [
+        "cook_drink_station"
+      ],
+      "buildNodeIds": [
+        "build_a01_05"
+      ],
+      "storyBefore": "story_day_008_entry",
+      "storyAfter": "story_day_008_exit",
+      "eventHooks": [
+        "event_stirfry_boost"
+      ],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_009",
+      "day": 9,
+      "parallelSlots": 3,
+      "orderIds": [
+        "d009_o01",
+        "d009_o02",
+        "d009_o03"
+      ],
+      "unlockIds": [],
+      "buildNodeIds": [],
+      "storyBefore": "story_day_009_entry",
+      "storyAfter": "story_day_009_exit",
+      "eventHooks": [],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    },
+    {
+      "id": "day_010",
+      "day": 10,
+      "parallelSlots": 4,
+      "orderIds": [
+        "d010_o01",
+        "d010_o02",
+        "d010_o03",
+        "d010_o04"
+      ],
+      "unlockIds": [],
+      "buildNodeIds": [
+        "build_a01_06"
+      ],
+      "storyBefore": "story_day_010_entry",
+      "storyAfter": "story_day_010_exit",
+      "eventHooks": [
+        "event_cheese_drift"
+      ],
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 10
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [
+          "SRC_TAPTAP_DAY6_10"
+        ],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "订单日归属来自公开菜单；并行槽位/奖励/建设钩子/剧情钩子为原创运行配置。"
+      }
+    }
+  ],
+  "buildNodes": [
+    {
+      "id": "build_a01_01",
+      "areaId": "area_01",
+      "stage": 1,
+      "prerequisites": [],
+      "coinCost": 80,
+      "unlockDay": 1,
+      "assetBefore": "street_01_build_01_before",
+      "assetAfter": "street_01_build_01_after",
+      "storyId": "story_build_01_01",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    },
+    {
+      "id": "build_a01_02",
+      "areaId": "area_01",
+      "stage": 2,
+      "prerequisites": [
+        "build_a01_01"
+      ],
+      "coinCost": 90,
+      "unlockDay": 3,
+      "assetBefore": "street_01_build_02_before",
+      "assetAfter": "street_01_build_02_after",
+      "storyId": "story_build_01_02",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    },
+    {
+      "id": "build_a01_03",
+      "areaId": "area_01",
+      "stage": 3,
+      "prerequisites": [
+        "build_a01_02"
+      ],
+      "coinCost": 100,
+      "unlockDay": 4,
+      "assetBefore": "street_01_build_03_before",
+      "assetAfter": "street_01_build_03_after",
+      "storyId": "story_build_01_03",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    },
+    {
+      "id": "build_a01_04",
+      "areaId": "area_01",
+      "stage": 4,
+      "prerequisites": [
+        "build_a01_03"
+      ],
+      "coinCost": 120,
+      "unlockDay": 6,
+      "assetBefore": "street_01_build_04_before",
+      "assetAfter": "street_01_build_04_after",
+      "storyId": "story_build_01_04",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    },
+    {
+      "id": "build_a01_05",
+      "areaId": "area_01",
+      "stage": 5,
+      "prerequisites": [
+        "build_a01_04"
+      ],
+      "coinCost": 140,
+      "unlockDay": 8,
+      "assetBefore": "street_01_build_05_before",
+      "assetAfter": "street_01_build_05_after",
+      "storyId": "story_build_01_05",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    },
+    {
+      "id": "build_a01_06",
+      "areaId": "area_01",
+      "stage": 6,
+      "prerequisites": [
+        "build_a01_05"
+      ],
+      "coinCost": 160,
+      "unlockDay": 10,
+      "assetBefore": "street_01_build_06_before",
+      "assetAfter": "street_01_build_06_after",
+      "storyId": "story_build_01_06",
+      "rewards": [
+        {
+          "type": "ENERGY",
+          "id": null,
+          "amount": 5
+        }
+      ],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创街区建设垂直切片默认值。"
+      }
+    }
+  ],
+  "events": [
+    {
+      "id": "event_cheese_drift",
+      "name": "芝士漂流型里程碑",
+      "type": "PROGRESS",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 10,
+      "durationHours": 96,
+      "progressSources": [
+        "ITEM_MERGE",
+        "ORDER_COMPLETE"
+      ],
+      "milestones": [
+        {
+          "threshold": 50,
+          "rewards": [
+            {
+              "type": "COIN",
+              "amount": 200
+            }
+          ]
+        },
+        {
+          "threshold": 120,
+          "rewards": [
+            {
+              "type": "COIN",
+              "amount": 350
+            }
+          ]
+        },
+        {
+          "threshold": 220,
+          "rewards": [
+            {
+              "type": "COIN",
+              "amount": 500
+            }
+          ]
+        },
+        {
+          "threshold": 360,
+          "rewards": [
+            {
+              "type": "COIN",
+              "amount": 650
+            }
+          ]
+        },
+        {
+          "threshold": 550,
+          "rewards": [
+            {
+              "type": "COIN",
+              "amount": 800
+            }
+          ]
+        },
+        {
+          "threshold": 800,
+          "rewards": [
+            {
+              "type": "CARD_PACK",
+              "amount": 1
+            }
+          ]
+        }
+      ],
+      "settlement": "AUTO_MAIL",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
+    },
+    {
+      "id": "event_stirfry_boost",
+      "name": "爆炒时刻型增强",
+      "type": "BOOST",
+      "status": "DEV_BLUEPRINT_BASED_ON_PUBLIC_MECHANIC",
+      "unlockDay": 8,
+      "durationMinutes": 20,
+      "trigger": {
+        "source": "ORDER_COMPLETE",
+        "meterTarget": 100
+      },
+      "modifiers": [
+        {
+          "type": "PRODUCER_UNLIMITED",
+          "targetTag": "event_related"
+        }
+      ],
+      "progressSources": [
+        "ORDER_COMPLETE"
+      ],
+      "milestones": [],
+      "settlement": "AUTO_CLAIM",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
+    },
+    {
+      "id": "event_season_pass",
+      "name": "赛季通行证",
+      "type": "PASS",
+      "status": "DEV_BLUEPRINT",
+      "unlockDay": 7,
+      "durationDays": 28,
+      "levels": 30,
+      "progressSources": [
+        "ORDER_COMPLETE",
+        "DAY_COMPLETE",
+        "BUILD_COMPLETE"
+      ],
+      "premiumTrack": true,
+      "settlement": "AUTO_MAIL",
+      "milestones": [],
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创活动生产配置；如标注 BASED_ON_PUBLIC_*，仅表示机制层参考公开信息，不代表原作精确后台参数。"
+      }
+    }
+  ]
+}
