@@ -1,5 +1,5 @@
 {
-  "configVersion": "4.1.0",
+  "configVersion": "4.1.1",
   "items": [
     {
       "id": "dish_baomihua",
@@ -1031,55 +1031,43 @@
       "outputPool": [
         {
           "itemId": "item_fanqie",
-          "weight": 18,
+          "weight": 20,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_caijiao",
-          "weight": 14,
+          "weight": 16,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_mogu",
-          "weight": 12,
+          "weight": 14,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_lajiao",
-          "weight": 8,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_congduan",
-          "weight": 8,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_huluobo",
-          "weight": 12,
+          "weight": 15,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_yangcong",
-          "weight": 12,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_yumili",
-          "weight": 6,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_yumi",
-          "weight": 5,
+          "weight": 10,
           "minCount": 1,
           "maxCount": 1
         },
@@ -1102,7 +1090,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=40, cooldownSec=90；仅为原创运行默认值。 第三轮：移除水果掉落，避免早期池被后期水果稀释。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=40, cooldownSec=90；仅为原创运行默认值。 第三轮：移除水果掉落，避免早期池被后期水果稀释。 第四轮：移除玉米/玉米粒，进一步缩窄为蔬菜池。"
       }
     },
     {
@@ -1112,36 +1100,24 @@
       "energyCost": 1,
       "capacity": 32,
       "cooldownSec": 120,
-      "unlockDay": 2,
+      "unlockDay": 4,
       "assetId": "art_prod_yinliaogui",
       "outputPool": [
         {
-          "itemId": "item_kafeidou",
+          "itemId": "item_lvcha",
           "weight": 40,
           "minCount": 1,
           "maxCount": 1
         },
         {
-          "itemId": "item_lvcha",
-          "weight": 25,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
           "itemId": "item_chunniunai",
-          "weight": 20,
+          "weight": 35,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_hongcha",
-          "weight": 10,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_shenhongkafei",
-          "weight": 5,
+          "weight": 25,
           "minCount": 1,
           "maxCount": 1
         }
@@ -1158,7 +1134,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=32, cooldownSec=120；仅为原创运行默认值。 第三轮：提高咖啡豆/绿茶/牛奶基础掉落权重以平滑Day1-10。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=32, cooldownSec=120；仅为原创运行默认值。 第三轮：提高咖啡豆/绿茶/牛奶基础掉落权重以平滑Day1-10。 第四轮：咖啡链拆至独立咖啡补给台，饮料柜仅保留茶/奶。"
       }
     },
     {
@@ -1173,43 +1149,31 @@
       "outputPool": [
         {
           "itemId": "item_xiangcaozi",
-          "weight": 18,
+          "weight": 30,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_xiangcaojia",
-          "weight": 12,
+          "weight": 20,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_bingtang",
-          "weight": 18,
+          "weight": 15,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_huangyou",
-          "weight": 18,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_boliwan",
-          "weight": 12,
-          "minCount": 1,
-          "maxCount": 1
-        },
-        {
-          "itemId": "item_zhishipian",
-          "weight": 10,
+          "weight": 20,
           "minCount": 1,
           "maxCount": 1
         },
         {
           "itemId": "item_tangjiang",
-          "weight": 12,
+          "weight": 15,
           "minCount": 1,
           "maxCount": 1
         }
@@ -1226,7 +1190,7 @@
         "observedAt": null,
         "channel": null,
         "versionSensitive": true,
-        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=24, cooldownSec=180；仅为原创运行默认值。 第三轮：提高黄油/香草荚权重以降低Day9-10尾部阻塞。"
+        "note": "Producer名称/机制参考已公开研究；level/energy/capacity/cooldown/weight均为原创垂直切片默认值。 Day1-10垂直切片第二轮调优：capacity=24, cooldownSec=180；仅为原创运行默认值。 第三轮：提高黄油/香草荚权重以降低Day9-10尾部阻塞。 第四轮：玻璃碗/芝士片拆至备菜耗材箱。"
       }
     },
     {
@@ -1277,6 +1241,120 @@
         "channel": null,
         "versionSensitive": true,
         "note": "水果篮子名称来自公开玩家资料；level/energy/capacity/cooldown/weight为Day1-10原创垂直切片默认值。"
+      }
+    },
+    {
+      "id": "prod_coffee_counter",
+      "name": "咖啡补给台",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 28,
+      "cooldownSec": 120,
+      "outputPool": [
+        {
+          "itemId": "item_kafeidou",
+          "weight": 85,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_shenhongkafei",
+          "weight": 15,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "unlockDay": 2,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "assetId": "art_prod_coffee_counter",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创Day1-10垂直切片Producer；咖啡豆/深烘咖啡池用于降低跨品类副产物。"
+      }
+    },
+    {
+      "id": "prod_grain_crate",
+      "name": "谷物补给箱",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 24,
+      "cooldownSec": 150,
+      "outputPool": [
+        {
+          "itemId": "item_yumili",
+          "weight": 55,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_yumi",
+          "weight": 45,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "unlockDay": 4,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "assetId": "art_prod_grain_crate",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创Day1-10垂直切片Producer；玉米粒/玉米从蔬菜池拆分。"
+      }
+    },
+    {
+      "id": "prod_prep_supply",
+      "name": "备菜耗材箱",
+      "level": 1,
+      "energyCost": 1,
+      "capacity": 12,
+      "cooldownSec": 180,
+      "outputPool": [
+        {
+          "itemId": "item_boliwan",
+          "weight": 55,
+          "minCount": 1,
+          "maxCount": 1
+        },
+        {
+          "itemId": "item_zhishipian",
+          "weight": 45,
+          "minCount": 1,
+          "maxCount": 1
+        }
+      ],
+      "upgradeTo": null,
+      "unlockDay": 5,
+      "tags": [
+        "VERTICAL_SLICE",
+        "DEV_DEFAULT"
+      ],
+      "assetId": "art_prod_prep_supply",
+      "evidence": {
+        "kind": "DEV_BLUEPRINT",
+        "confidence": "D",
+        "sourceIds": [],
+        "observedAt": null,
+        "channel": null,
+        "versionSensitive": true,
+        "note": "原创Day1-10垂直切片Producer；玻璃碗/芝士片从厨房补给箱拆分。"
       }
     }
   ],
@@ -2000,7 +2078,7 @@
         }
       ],
       "producerIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2044,7 +2122,7 @@
         }
       ],
       "producerIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2088,7 +2166,7 @@
         }
       ],
       "producerIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2132,7 +2210,7 @@
         }
       ],
       "producerIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2181,7 +2259,7 @@
       ],
       "producerIds": [
         "prod_shucaileizi",
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2230,7 +2308,7 @@
       ],
       "producerIds": [
         "prod_shucaileizi",
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2274,7 +2352,7 @@
         }
       ],
       "producerIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2362,7 +2440,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_grain_crate"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2450,7 +2528,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_grain_crate"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2630,7 +2708,7 @@
         }
       ],
       "producerIds": [
-        "prod_kitchen_supply"
+        "prod_prep_supply"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2728,7 +2806,7 @@
       ],
       "producerIds": [
         "prod_shucaileizi",
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -2873,6 +2951,7 @@
         }
       ],
       "producerIds": [
+        "prod_coffee_counter",
         "prod_yinliaogui"
       ],
       "recipeIds": [],
@@ -2918,7 +2997,7 @@
       ],
       "producerIds": [
         "prod_shucaileizi",
-        "prod_kitchen_supply"
+        "prod_prep_supply"
       ],
       "recipeIds": [
         "recipe_vs_junxiangzhishijuan"
@@ -3063,7 +3142,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_grain_crate"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -3160,7 +3239,7 @@
       ],
       "producerIds": [
         "prod_kitchen_supply",
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -3257,7 +3336,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi"
+        "prod_grain_crate"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -3354,6 +3433,7 @@
         }
       ],
       "producerIds": [
+        "prod_coffee_counter",
         "prod_yinliaogui"
       ],
       "recipeIds": [],
@@ -3452,7 +3532,7 @@
       ],
       "producerIds": [
         "prod_kitchen_supply",
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "recipeIds": [],
       "cookwareIds": [],
@@ -3602,7 +3682,7 @@
         }
       ],
       "producerIds": [
-        "prod_shucaileizi",
+        "prod_grain_crate",
         "prod_shuiguolanzi"
       ],
       "recipeIds": [
@@ -3688,7 +3768,7 @@
         "d002_o03"
       ],
       "unlockIds": [
-        "prod_yinliaogui"
+        "prod_coffee_counter"
       ],
       "buildNodeIds": [],
       "storyBefore": "story_day_002_entry",
@@ -3761,7 +3841,9 @@
         "d004_o06"
       ],
       "unlockIds": [
-        "prod_kitchen_supply"
+        "prod_kitchen_supply",
+        "prod_yinliaogui",
+        "prod_grain_crate"
       ],
       "buildNodeIds": [
         "build_a01_03"
@@ -3798,7 +3880,8 @@
         "d005_o03"
       ],
       "unlockIds": [
-        "cook_prep_station"
+        "cook_prep_station",
+        "prod_prep_supply"
       ],
       "buildNodeIds": [],
       "storyBefore": "story_day_005_entry",
