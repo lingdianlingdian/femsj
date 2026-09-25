@@ -43,7 +43,7 @@
 - GitHub Actions 自动质量门禁
 - Config Validator
 - Evidence / CSV / Content Reference Auditor
-- Balance Simulator Monte Carlo v2
+- Balance Simulator Monte Carlo v3（63格Board State / Storage / 副产物复用 / 满盘概率）
 
 ## 目录
 
@@ -85,7 +85,7 @@ tools/
 3. Recipe 精确 cookware / duration / speedup。
 4. 110日所有 Order 的 reward / dependency 生产配置。
 5. 最终正式原创 Item / Producer / Cookware / Character / Building 美术资产。
-6. Balance Simulator v3：真实63格盘面、副产物复用、仓库策略与 P(full board)。
+6. Balance Simulator v3 已完成；下一步 v3.1 补跨Day库存继承、Cookware并行与活动Modifier。
 
 ## 快速检查
 
@@ -98,3 +98,10 @@ npm run audit:runtime
 
 完整状态：`docs/production/V4/STATUS.md`  
 仓库清单：`docs/production/V4/REPOSITORY_MANIFEST.md`
+
+
+## 可运行垂直切片
+
+Day1-10：`production-data/v4/runtime/game_content_day001_010.json`
+
+质量门禁：`npm run gate:balance:vertical` + `npm run gate:balance:v3`。
