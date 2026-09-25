@@ -22,7 +22,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_naiyou",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_02",
@@ -45,7 +47,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_sukao_feixie",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_03",
@@ -68,7 +72,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_wulongcha",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_04",
@@ -127,7 +133,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": "截图中配方为多段中间食谱，先保存原始可见材料文字，后续拆DAG"
+      "note": "截图中配方为多段中间食谱，先保存原始可见材料文字，后续拆DAG",
+      "outputItemId": "dish_zaocan_sanmingzhi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_05",
@@ -150,7 +158,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_tanglishui",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_06",
@@ -191,7 +201,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_jingying_xianxiajiao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_07",
@@ -214,7 +226,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_tangdou",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_08",
@@ -243,7 +257,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_langmukele",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_09",
@@ -266,7 +282,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_shousi_ziganlan",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r101_10",
@@ -289,7 +307,9 @@
         "sourceVisualId": "POST_IMAGE_DAY101"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_suxiang_xueyu",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_11",
@@ -312,7 +332,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_tankao_pipatui",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_12",
@@ -347,7 +369,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_xianggu_changfen",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_13",
@@ -370,7 +394,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_wulongcha",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_14",
@@ -405,7 +431,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_yezhi_naibai_xiaowan",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_15",
@@ -428,7 +456,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_xinxianshenghao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_16",
@@ -457,7 +487,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_weishiji_suda",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_17",
@@ -480,7 +512,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_jiangzhishui",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_18",
@@ -545,7 +579,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_liusha_naihuangbao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_19",
@@ -568,7 +604,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "NEEDS_TOKEN_REVIEW",
-      "note": null
+      "note": null,
+      "outputItemId": "item_dabei_meishi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r102_20",
@@ -591,7 +629,9 @@
         "sourceVisualId": "POST_IMAGE_DAY102_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_shousi_ziganlan",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_21",
@@ -614,7 +654,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_kao_tudoupian",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_22",
@@ -637,7 +679,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_xinxianshenghao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_23",
@@ -660,7 +704,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_putao_guorouyin",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_24",
@@ -707,7 +753,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_jiaotang_malagao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_25",
@@ -730,7 +778,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_huangjinkaozhouzi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_26",
@@ -759,7 +809,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_weishiji_suda",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_27",
@@ -782,7 +834,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "NEEDS_TOKEN_REVIEW",
-      "note": null
+      "note": null,
+      "outputItemId": "item_yanmai",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_28",
@@ -805,7 +859,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_shousi_ziganlan",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_29",
@@ -828,7 +884,9 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "NEEDS_TOKEN_REVIEW",
-      "note": null
+      "note": null,
+      "outputItemId": "item_dabei_meishi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_30",
@@ -869,7 +927,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_shijin_haixiantang",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_31",
@@ -898,7 +958,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_tiandanjiu",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_32",
@@ -921,7 +983,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_yanxunniuxiongrou",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_33",
@@ -944,7 +1008,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_xinxianshenghao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_34",
@@ -973,7 +1039,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_ee_shouda_ningmengcha",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_35",
@@ -996,7 +1064,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_huangjinkaozhouzi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_36",
@@ -1019,12 +1089,14 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_shousi_ziganlan",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_37",
       "day": 104,
-      "name": "炭烧金枪鱼串",
+      "name": "炭烧金枪鱼排",
       "rawIngredients": [
         "金枪鱼"
       ],
@@ -1042,7 +1114,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": "菜名依据截图视觉转录，后续用第二来源复核"
+      "note": "菜名依据截图视觉转录，后续用第二来源复核",
+      "outputItemId": "dish_tanshao_jinqiangyupai",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_38",
@@ -1065,7 +1139,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_qiaokeli",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r104_39",
@@ -1088,7 +1164,9 @@
         "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_mizhikaoji",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_40",
@@ -1123,7 +1201,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_zhenzhunaicha",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_41",
@@ -1164,7 +1244,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_xianshuijiao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_42",
@@ -1193,7 +1275,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_ee_shouda_ningmengcha",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_43",
@@ -1222,7 +1306,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_suzha_dajitui",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_44",
@@ -1257,7 +1343,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_weishiji_suanjiu",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_45",
@@ -1322,7 +1410,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_liusha_naihuangbao",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_46",
@@ -1345,7 +1435,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "item_naiyou",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_47",
@@ -1374,7 +1466,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_caijiao_tudousi",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r105_48",
@@ -1397,7 +1491,9 @@
         "sourceVisualId": "POST_IMAGE_DAY105_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": null
+      "note": null,
+      "outputItemId": "dish_sukao_feixie",
+      "outputResolution": "MAPPED"
     },
     {
       "recipeEvidenceId": "r103_syrup",
@@ -1420,11 +1516,14 @@
         "sourceVisualId": "POST_IMAGE_DAY103_RECIPE"
       },
       "graphStatus": "TOKEN_MAPPED",
-      "note": "该行是成品/基础项，不代表存在额外烹饪转换；保留为菜单/食谱证据节点"
+      "note": "该行是成品/基础项，不代表存在额外烹饪转换；保留为菜单/食谱证据节点",
+      "outputItemId": "item_tangjiang",
+      "outputResolution": "MAPPED"
     }
   ],
   "audit": {
     "auditedAt": "2026-09-25",
-    "recipeEvidenceCount": 49
+    "recipeEvidenceCount": 49,
+    "outputItemMapping": "added stable outputItemId for menu/recipe nodes"
   }
 }
