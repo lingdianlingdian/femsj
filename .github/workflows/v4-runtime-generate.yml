@@ -1,0 +1,80 @@
+name: V4 Generate Full Runtime
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/v4-runtime-generate.yml'
+      - 'tools/runtime-full-builder/**'
+      - 'production-data/v4/content/items_seed_public.csv'
+      - 'production-data/v4/content/transform_graph_verified_v4.json'
+      - 'production-data/v4/content/producer_outputs_public.csv'
+      - 'production-data/v4/levels/order_registry_110.json'
+      - 'production-data/v4/levels/order_requirements_verified.json'
+      - 'research-data/levels/level_blueprint_110.json'
+      - 'production-data/v4/characters/character_canon_v4.json'
+      - 'production-data/v4/build/build_nodes_4areas.json'
+      - 'production-data/v4/events/events_v4.json'
+      - 'production-data/v4/story/story_beats_110.csv'
+      - 'production-data/v4/art/assets_master.csv'
+      - 'schemas/v4/game_content.schema.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: v4-runtime-generate-main
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    name: Generate and commit 110-day runtime
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Build full runtime
+        run: npm run runtime:build:full
+
+      - name: Validate full runtime schema
+        run: npm run validate:config -- production-data/v4/runtime/game_content_day001_110.json
+
+      - name: Verify closure report
+        shell: bash
+        run: |
+          node - <<'NODE'
+          import fs from 'node:fs';
+          const r=JSON.parse(fs.readFileSync('production-data/v4/runtime/game_content_day001_110_report.json','utf8'));
+          const errors=[];
+          if(r.counts.orders!==651) errors.push(`orders=${r.counts.orders}`);
+          if(r.counts.days!==110) errors.push(`days=${r.counts.days}`);
+          if(r.counts.buildNodes!==48) errors.push(`buildNodes=${r.counts.buildNodes}`);
+          if(r.closure.referenceErrors!==0) errors.push(`referenceErrors=${r.closure.referenceErrors}`);
+          if(r.closure.missingItemAssets!==0) errors.push(`missingItemAssets=${r.closure.missingItemAssets}`);
+          if(!r.closure.storyHookCoverage) errors.push('storyHookCoverage=false');
+          if(!r.closure.orderRegistryMatch) errors.push('orderRegistryMatch=false');
+          console.log(JSON.stringify({counts:r.counts,closure:r.closure,economy:r.economy,errors},null,2));
+          process.exit(errors.length?1:0);
+          NODE
+
+      - name: Commit generated runtime
+        shell: bash
+        run: |
+          git config user.name "femsj-runtime-bot"
+          git config user.email "femsj-runtime-bot@users.noreply.github.com"
+          git add production-data/v4/runtime/game_content_day001_110.json production-data/v4/runtime/game_content_day001_110_report.json
+          if git diff --cached --quiet; then
+            echo "No generated runtime changes to commit."
+            exit 0
+          fi
+          git commit -m "runtime(v4): generate executable 110-day config"
+          git pull --rebase origin main
+          git push origin HEAD:main
