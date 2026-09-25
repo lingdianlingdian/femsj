@@ -1,0 +1,12 @@
+target_scope,priority,search_terms,expected_evidence,fallback_source,status,last_checked,notes
+DAY11_15,P0-A,"肥鹅美食街 11天 菜单|肥鹅美食街 第11-15天|经营菜单 11-15","逐单菜单截图/需求食材/作者完整性说明","https://www.taptap.cn/moment/793899686799870679",APP_SEARCH_REQUIRED,2026-09-25,"TapTap已有单张长表；优先找小红书更清晰分图或同日补图"
+DAY16_20,P0-A,"肥鹅美食街 16天 菜单|肥鹅美食街 第16-20天|经营菜单 16-20","逐日菜单截图/需求食材/作者完整性说明","https://www.taptap.cn/moment/793897976891182314",APP_SEARCH_REQUIRED,2026-09-25,"TapTap已有5张图；优先找更高清版本或交叉验证"
+DAY51_60,P0-A,"肥鹅美食街 51天 菜单|肥鹅美食街 51-60 菜谱|经营菜单 51-60","逐日菜单截图或视频帧","https://www.douyin.com/video/7676889031837423225",APP_SEARCH_REQUIRED,2026-09-25,"抖音已有公开视频；小红书可能存在静态图版，更利于逐单转录"
+DAY82_84,P0-A,"肥鹅美食街 82天 菜单|肥鹅美食街 83天 菜单|肥鹅美食街 84天 菜单","菜单/食材/二次加工约束","TapTap Day82-84 posts",APP_SEARCH_REQUIRED,2026-09-25,"Day84已部分转录；重点补Day82/83清晰菜单"
+DAY87_90,P0-A,"肥鹅美食街 87天 菜单|肥鹅美食街 88天 菜单|肥鹅美食街 89天 菜单|肥鹅美食街 90天 菜单","完整菜单组/作者完整性说明","TapTap Day87-90 posts",APP_SEARCH_REQUIRED,2026-09-25,"Day87作者声明完整；小红书用于高清交叉验证和缺图补齐"
+DAY92_94,P0-A,"肥鹅美食街 92天 菜单|肥鹅美食街 93天 菜单|肥鹅美食街 94天 菜单","逐单菜单截图","TapTap Day92-94 posts",APP_SEARCH_REQUIRED,2026-09-25,"TapTap分别9/10/12张；优先确认是否有遗漏"
+DAY98_99,P0-A,"肥鹅美食街 98天 菜单|肥鹅美食街 99天 菜单","逐单菜单截图","TapTap Day98-99 posts",APP_SEARCH_REQUIRED,2026-09-25,"TapTap动态图片较多；优先找小红书静态整理帖"
+DAY106_110,P0-A,"肥鹅美食街 106天 菜单|肥鹅美食街 107天 菜单|肥鹅美食街 108天 菜单|肥鹅美食街 109天 菜单|肥鹅美食街 110天 菜单","逐日菜单截图","https://www.taptap.cn/moment/823602182489113413",APP_SEARCH_REQUIRED,2026-09-25,"TapTap每日至少1张菜单图；重点确认图内细项"
+PRODUCER_PARAMS,P0-B,"肥鹅美食街 发射器 等级|发射器 冷却|发射器 次数|发射器 掉落|生成器 掉落","level/energyCost/capacity/cooldown/outputPool/高阶直出概率","公开实机/玩家记录",APP_SEARCH_REQUIRED,2026-09-25,"任何数值必须能回到清晰实机图或明确玩家记录；否则保持null"
+COOKWARE_RECIPE_PARAMS,P0-B,"肥鹅美食街 厨具 时间|烹饪 时间|菜谱 烹饪|加速 钻石","inputs/cookware/durationSec/speedup/queueSize/speedModifier","公开实机/玩家记录",APP_SEARCH_REQUIRED,2026-09-25,"秒/分钟级时间截图优先；版本敏感字段记录observedAt"
+UI_STATES,P0-C,"肥鹅美食街 主界面|合成盘|订单界面|发射器详情|厨具界面|爆炒时刻|活动界面","界面信息架构/状态/入口/弹窗关系","App Store/TapTap/公开视频",APP_SEARCH_REQUIRED,2026-09-25,"只研究结构与状态，不复制原作具体皮肤、图标、角色或文案"
