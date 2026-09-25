@@ -90,6 +90,8 @@
 | CSV Data Auditor | `tools/data-auditor/audit.mjs` |
 | Content Reference Auditor | `tools/content-reference-auditor/audit.mjs` |
 | Runtime Readiness Auditor | `tools/runtime-readiness/audit.mjs` |
+| Story Validator | `tools/story-validator/validate.mjs` |
+| Vertical Economy Auditor | `tools/economy-slice-auditor/audit.mjs` |
 
 ## 历史文件使用规则
 
@@ -115,3 +117,10 @@
 | Day1-10 zh-CN 本地化 | `production-data/v4/story/locale_zh-CN_day001_010.json` |
 | Story Schema | `schemas/v4/story_script.schema.json` |
 | Story Validator | `tools/story-validator/validate.mjs` |
+
+## Vertical Economy
+
+| 用途 | 主文件 |
+|---|---|
+| Day1-10 经济阈值 | `production-data/v4/runtime/vertical_slice_economy_targets.json` |
+| 经济门禁说明 | `docs/production/V4/22_Day1-10经济平衡门禁.md` |
