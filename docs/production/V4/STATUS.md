@@ -210,3 +210,12 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - 本地化：`production-data/v4/story/locale_zh-CN_day001_010.json`
 - Schema：`schemas/v4/story_script.schema.json`
 - 所有内容均为 `DEV_BLUEPRINT` 原创剧情，不复刻竞品剧情/角色/文案。
+
+## Day1-10 经济门禁
+
+- ✅ `npm run gate:economy:vertical` 已进入 CI。
+- ✅ Total Coin Source=1,292；Build Sink=690；Source/Sink=1.8725。
+- ✅ Ending Coin=602；Minimum Cumulative Coin=0。
+- ✅ Max Daily Build/Source=1.2162；无不可支付 Build Node。
+- 说明：`docs/production/V4/22_Day1-10经济平衡门禁.md`。
+- 所有数值均为原创 `DEV_BLUEPRINT`，不作为竞品原作参数。
