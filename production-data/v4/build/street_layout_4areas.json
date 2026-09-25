@@ -1,0 +1,2786 @@
+{
+  "version": "4.0",
+  "coordinateSystem": "Cocos 2D world units; origin bottom-left",
+  "referenceViewport": {
+    "width": 750,
+    "height": 1334
+  },
+  "evidenceKind": "DEV_BLUEPRINT",
+  "disclaimer": "Original production layout. Not extracted from competitor coordinates.",
+  "globalRules": {
+    "cameraDragThresholdPx": 10,
+    "cameraInertia": true,
+    "maxZoom": 1.08,
+    "minZoom": 0.92,
+    "sortPolicy": "larger world Y renders behind smaller world Y after projection; explicit foreground occluders override",
+    "hotspotMinLogicalPx": 88,
+    "npcMaxVisibleHighSpec": 8,
+    "seasonalDecoration": "attach only through seasonalSocket; never bake into base building art"
+  },
+  "areas": [
+    {
+      "areaId": "area_01",
+      "name": "起始街口",
+      "world": {
+        "width": 2400,
+        "height": 1800
+      },
+      "camera": {
+        "minX": 0,
+        "maxX": 1650,
+        "minY": 0,
+        "maxY": 466,
+        "initialX": 825,
+        "initialY": 233
+      },
+      "theme": "白天暖街 / 新手区域",
+      "nodes": [
+        {
+          "buildId": "build_a01_01",
+          "nodeIndex": 1,
+          "position": {
+            "x": 288,
+            "y": 504
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 98,
+            "y": 437,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 504,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_01_npc_a",
+              "x": 213,
+              "y": 539,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_01_npc_b",
+              "x": 368,
+              "y": 529,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 288,
+              "y": 644
+            },
+            {
+              "id": "attention",
+              "x": 408,
+              "y": 684
+            }
+          ],
+          "seasonalSocket": {
+            "x": 288,
+            "y": 694
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_02",
+          "nodeIndex": 2,
+          "position": {
+            "x": 696,
+            "y": 360
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 526,
+            "y": 300,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 360,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_02_npc_a",
+              "x": 621,
+              "y": 395,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_02_npc_b",
+              "x": 776,
+              "y": 385,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 696,
+              "y": 500
+            },
+            {
+              "id": "attention",
+              "x": 816,
+              "y": 540
+            }
+          ],
+          "seasonalSocket": {
+            "x": 696,
+            "y": 550
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_03",
+          "nodeIndex": 3,
+          "position": {
+            "x": 1128,
+            "y": 558
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 958,
+            "y": 498,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 558,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a01_03_npc_a",
+              "x": 1053,
+              "y": 593,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_03_npc_b",
+              "x": 1208,
+              "y": 583,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1128,
+              "y": 698
+            },
+            {
+              "id": "attention",
+              "x": 1248,
+              "y": 738
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1128,
+            "y": 748
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_04",
+          "nodeIndex": 4,
+          "position": {
+            "x": 1584,
+            "y": 342
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1414,
+            "y": 282,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 342,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_04_npc_a",
+              "x": 1509,
+              "y": 377,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_04_npc_b",
+              "x": 1664,
+              "y": 367,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1584,
+              "y": 482
+            },
+            {
+              "id": "attention",
+              "x": 1704,
+              "y": 522
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1584,
+            "y": 532
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_05",
+          "nodeIndex": 5,
+          "position": {
+            "x": 1968,
+            "y": 612
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1798,
+            "y": 552,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 612,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_05_npc_a",
+              "x": 1893,
+              "y": 647,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_05_npc_b",
+              "x": 2048,
+              "y": 637,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1968,
+              "y": 752
+            },
+            {
+              "id": "attention",
+              "x": 2088,
+              "y": 792
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1968,
+            "y": 802
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_06",
+          "nodeIndex": 6,
+          "position": {
+            "x": 480,
+            "y": 936
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 290,
+            "y": 869,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 936,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_06_npc_a",
+              "x": 405,
+              "y": 971,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_06_npc_b",
+              "x": 560,
+              "y": 961,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 480,
+              "y": 1076
+            },
+            {
+              "id": "attention",
+              "x": 600,
+              "y": 1116
+            }
+          ],
+          "seasonalSocket": {
+            "x": 480,
+            "y": 1126
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_07",
+          "nodeIndex": 7,
+          "position": {
+            "x": 960,
+            "y": 900
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 790,
+            "y": 840,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 900,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a01_07_npc_a",
+              "x": 885,
+              "y": 935,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_07_npc_b",
+              "x": 1040,
+              "y": 925,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 960,
+              "y": 1040
+            },
+            {
+              "id": "attention",
+              "x": 1080,
+              "y": 1080
+            }
+          ],
+          "seasonalSocket": {
+            "x": 960,
+            "y": 1090
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_08",
+          "nodeIndex": 8,
+          "position": {
+            "x": 1416,
+            "y": 972
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1246,
+            "y": 912,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 972,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_08_npc_a",
+              "x": 1341,
+              "y": 1007,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_08_npc_b",
+              "x": 1496,
+              "y": 997,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1416,
+              "y": 1112
+            },
+            {
+              "id": "attention",
+              "x": 1536,
+              "y": 1152
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1416,
+            "y": 1162
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_09",
+          "nodeIndex": 9,
+          "position": {
+            "x": 1872,
+            "y": 990
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1702,
+            "y": 930,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 990,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_09_npc_a",
+              "x": 1797,
+              "y": 1025,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_09_npc_b",
+              "x": 1952,
+              "y": 1015,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1872,
+              "y": 1130
+            },
+            {
+              "id": "attention",
+              "x": 1992,
+              "y": 1170
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1872,
+            "y": 1180
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_10",
+          "nodeIndex": 10,
+          "position": {
+            "x": 672,
+            "y": 1314
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 502,
+            "y": 1254,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1314,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_10_npc_a",
+              "x": 597,
+              "y": 1349,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_10_npc_b",
+              "x": 752,
+              "y": 1339,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 672,
+              "y": 1454
+            },
+            {
+              "id": "attention",
+              "x": 792,
+              "y": 1494
+            }
+          ],
+          "seasonalSocket": {
+            "x": 672,
+            "y": 1504
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_11",
+          "nodeIndex": 11,
+          "position": {
+            "x": 1272,
+            "y": 1350
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 1082,
+            "y": 1283,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 1350,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a01_11_npc_a",
+              "x": 1197,
+              "y": 1385,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_11_npc_b",
+              "x": 1352,
+              "y": 1375,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1272,
+              "y": 1490
+            },
+            {
+              "id": "attention",
+              "x": 1392,
+              "y": 1530
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1272,
+            "y": 1540
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a01_12",
+          "nodeIndex": 12,
+          "position": {
+            "x": 1824,
+            "y": 1368
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 375,
+            "height": 275
+          },
+          "hitArea": {
+            "x": 1611,
+            "y": 1293,
+            "width": 425,
+            "height": 325
+          },
+          "sortKey": 1368,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a01_12_npc_a",
+              "x": 1749,
+              "y": 1403,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a01_12_npc_b",
+              "x": 1904,
+              "y": 1393,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1824,
+              "y": 1508
+            },
+            {
+              "id": "attention",
+              "x": 1944,
+              "y": 1548
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1824,
+            "y": 1558
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        }
+      ]
+    },
+    {
+      "areaId": "area_02",
+      "name": "核心食肆区",
+      "world": {
+        "width": 2800,
+        "height": 1900
+      },
+      "camera": {
+        "minX": 0,
+        "maxX": 2050,
+        "minY": 0,
+        "maxY": 566,
+        "initialX": 1025,
+        "initialY": 283
+      },
+      "theme": "热闹食肆 / 中期经营",
+      "nodes": [
+        {
+          "buildId": "build_a02_01",
+          "nodeIndex": 1,
+          "position": {
+            "x": 280,
+            "y": 475
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 90,
+            "y": 408,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 475,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_01_npc_a",
+              "x": 205,
+              "y": 510,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_01_npc_b",
+              "x": 360,
+              "y": 500,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 280,
+              "y": 615
+            },
+            {
+              "id": "attention",
+              "x": 400,
+              "y": 655
+            }
+          ],
+          "seasonalSocket": {
+            "x": 280,
+            "y": 665
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_02",
+          "nodeIndex": 2,
+          "position": {
+            "x": 756,
+            "y": 342
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 586,
+            "y": 282,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 342,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_02_npc_a",
+              "x": 681,
+              "y": 377,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_02_npc_b",
+              "x": 836,
+              "y": 367,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 756,
+              "y": 482
+            },
+            {
+              "id": "attention",
+              "x": 876,
+              "y": 522
+            }
+          ],
+          "seasonalSocket": {
+            "x": 756,
+            "y": 532
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_03",
+          "nodeIndex": 3,
+          "position": {
+            "x": 1260,
+            "y": 513
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1090,
+            "y": 453,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 513,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a02_03_npc_a",
+              "x": 1185,
+              "y": 548,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_03_npc_b",
+              "x": 1340,
+              "y": 538,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1260,
+              "y": 653
+            },
+            {
+              "id": "attention",
+              "x": 1380,
+              "y": 693
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1260,
+            "y": 703
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_04",
+          "nodeIndex": 4,
+          "position": {
+            "x": 1792,
+            "y": 342
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1622,
+            "y": 282,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 342,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_04_npc_a",
+              "x": 1717,
+              "y": 377,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_04_npc_b",
+              "x": 1872,
+              "y": 367,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1792,
+              "y": 482
+            },
+            {
+              "id": "attention",
+              "x": 1912,
+              "y": 522
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1792,
+            "y": 532
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_05",
+          "nodeIndex": 5,
+          "position": {
+            "x": 2296,
+            "y": 551
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2126,
+            "y": 491,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 551,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_05_npc_a",
+              "x": 2221,
+              "y": 586,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_05_npc_b",
+              "x": 2376,
+              "y": 576,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2296,
+              "y": 691
+            },
+            {
+              "id": "attention",
+              "x": 2416,
+              "y": 731
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2296,
+            "y": 741
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_06",
+          "nodeIndex": 6,
+          "position": {
+            "x": 420,
+            "y": 950
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 230,
+            "y": 883,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 950,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_06_npc_a",
+              "x": 345,
+              "y": 985,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_06_npc_b",
+              "x": 500,
+              "y": 975,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 420,
+              "y": 1090
+            },
+            {
+              "id": "attention",
+              "x": 540,
+              "y": 1130
+            }
+          ],
+          "seasonalSocket": {
+            "x": 420,
+            "y": 1140
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_07",
+          "nodeIndex": 7,
+          "position": {
+            "x": 1008,
+            "y": 893
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 838,
+            "y": 833,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 893,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a02_07_npc_a",
+              "x": 933,
+              "y": 928,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_07_npc_b",
+              "x": 1088,
+              "y": 918,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1008,
+              "y": 1033
+            },
+            {
+              "id": "attention",
+              "x": 1128,
+              "y": 1073
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1008,
+            "y": 1083
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_08",
+          "nodeIndex": 8,
+          "position": {
+            "x": 1624,
+            "y": 969
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1454,
+            "y": 909,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 969,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_08_npc_a",
+              "x": 1549,
+              "y": 1004,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_08_npc_b",
+              "x": 1704,
+              "y": 994,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1624,
+              "y": 1109
+            },
+            {
+              "id": "attention",
+              "x": 1744,
+              "y": 1149
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1624,
+            "y": 1159
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_09",
+          "nodeIndex": 9,
+          "position": {
+            "x": 2240,
+            "y": 931
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2070,
+            "y": 871,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 931,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_09_npc_a",
+              "x": 2165,
+              "y": 966,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_09_npc_b",
+              "x": 2320,
+              "y": 956,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2240,
+              "y": 1071
+            },
+            {
+              "id": "attention",
+              "x": 2360,
+              "y": 1111
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2240,
+            "y": 1121
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_10",
+          "nodeIndex": 10,
+          "position": {
+            "x": 672,
+            "y": 1368
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 502,
+            "y": 1308,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1368,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_10_npc_a",
+              "x": 597,
+              "y": 1403,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_10_npc_b",
+              "x": 752,
+              "y": 1393,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 672,
+              "y": 1508
+            },
+            {
+              "id": "attention",
+              "x": 792,
+              "y": 1548
+            }
+          ],
+          "seasonalSocket": {
+            "x": 672,
+            "y": 1558
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_11",
+          "nodeIndex": 11,
+          "position": {
+            "x": 1400,
+            "y": 1406
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 1210,
+            "y": 1339,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 1406,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a02_11_npc_a",
+              "x": 1325,
+              "y": 1441,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_11_npc_b",
+              "x": 1480,
+              "y": 1431,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1400,
+              "y": 1546
+            },
+            {
+              "id": "attention",
+              "x": 1520,
+              "y": 1586
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1400,
+            "y": 1596
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a02_12",
+          "nodeIndex": 12,
+          "position": {
+            "x": 2100,
+            "y": 1330
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 375,
+            "height": 275
+          },
+          "hitArea": {
+            "x": 1887,
+            "y": 1255,
+            "width": 425,
+            "height": 325
+          },
+          "sortKey": 1330,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a02_12_npc_a",
+              "x": 2025,
+              "y": 1365,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a02_12_npc_b",
+              "x": 2180,
+              "y": 1355,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2100,
+              "y": 1470
+            },
+            {
+              "id": "attention",
+              "x": 2220,
+              "y": 1510
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2100,
+            "y": 1520
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        }
+      ]
+    },
+    {
+      "areaId": "area_03",
+      "name": "夜市饮品区",
+      "world": {
+        "width": 3000,
+        "height": 2000
+      },
+      "camera": {
+        "minX": 0,
+        "maxX": 2250,
+        "minY": 0,
+        "maxY": 666,
+        "initialX": 1125,
+        "initialY": 333
+      },
+      "theme": "傍晚灯光 / 饮品与活动",
+      "nodes": [
+        {
+          "buildId": "build_a03_01",
+          "nodeIndex": 1,
+          "position": {
+            "x": 360,
+            "y": 440
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 170,
+            "y": 373,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 440,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_01_npc_a",
+              "x": 285,
+              "y": 475,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_01_npc_b",
+              "x": 440,
+              "y": 465,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 360,
+              "y": 580
+            },
+            {
+              "id": "attention",
+              "x": 480,
+              "y": 620
+            }
+          ],
+          "seasonalSocket": {
+            "x": 360,
+            "y": 630
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_02",
+          "nodeIndex": 2,
+          "position": {
+            "x": 930,
+            "y": 340
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 760,
+            "y": 280,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 340,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_02_npc_a",
+              "x": 855,
+              "y": 375,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_02_npc_b",
+              "x": 1010,
+              "y": 365,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 930,
+              "y": 480
+            },
+            {
+              "id": "attention",
+              "x": 1050,
+              "y": 520
+            }
+          ],
+          "seasonalSocket": {
+            "x": 930,
+            "y": 530
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_03",
+          "nodeIndex": 3,
+          "position": {
+            "x": 1560,
+            "y": 500
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1390,
+            "y": 440,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 500,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a03_03_npc_a",
+              "x": 1485,
+              "y": 535,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_03_npc_b",
+              "x": 1640,
+              "y": 525,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1560,
+              "y": 640
+            },
+            {
+              "id": "attention",
+              "x": 1680,
+              "y": 680
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1560,
+            "y": 690
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_04",
+          "nodeIndex": 4,
+          "position": {
+            "x": 2160,
+            "y": 360
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1990,
+            "y": 300,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 360,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_04_npc_a",
+              "x": 2085,
+              "y": 395,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_04_npc_b",
+              "x": 2240,
+              "y": 385,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2160,
+              "y": 500
+            },
+            {
+              "id": "attention",
+              "x": 2280,
+              "y": 540
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2160,
+            "y": 550
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_05",
+          "nodeIndex": 5,
+          "position": {
+            "x": 2580,
+            "y": 680
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2410,
+            "y": 620,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 680,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_05_npc_a",
+              "x": 2505,
+              "y": 715,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_05_npc_b",
+              "x": 2660,
+              "y": 705,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2580,
+              "y": 820
+            },
+            {
+              "id": "attention",
+              "x": 2700,
+              "y": 860
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2580,
+            "y": 870
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_06",
+          "nodeIndex": 6,
+          "position": {
+            "x": 510,
+            "y": 980
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 320,
+            "y": 913,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 980,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_06_npc_a",
+              "x": 435,
+              "y": 1015,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_06_npc_b",
+              "x": 590,
+              "y": 1005,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 510,
+              "y": 1120
+            },
+            {
+              "id": "attention",
+              "x": 630,
+              "y": 1160
+            }
+          ],
+          "seasonalSocket": {
+            "x": 510,
+            "y": 1170
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_07",
+          "nodeIndex": 7,
+          "position": {
+            "x": 1140,
+            "y": 880
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 970,
+            "y": 820,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 880,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a03_07_npc_a",
+              "x": 1065,
+              "y": 915,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_07_npc_b",
+              "x": 1220,
+              "y": 905,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1140,
+              "y": 1020
+            },
+            {
+              "id": "attention",
+              "x": 1260,
+              "y": 1060
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1140,
+            "y": 1070
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_08",
+          "nodeIndex": 8,
+          "position": {
+            "x": 1800,
+            "y": 1000
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1630,
+            "y": 940,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1000,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_08_npc_a",
+              "x": 1725,
+              "y": 1035,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_08_npc_b",
+              "x": 1880,
+              "y": 1025,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1800,
+              "y": 1140
+            },
+            {
+              "id": "attention",
+              "x": 1920,
+              "y": 1180
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1800,
+            "y": 1190
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_09",
+          "nodeIndex": 9,
+          "position": {
+            "x": 2400,
+            "y": 1020
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2230,
+            "y": 960,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1020,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_09_npc_a",
+              "x": 2325,
+              "y": 1055,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_09_npc_b",
+              "x": 2480,
+              "y": 1045,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2400,
+              "y": 1160
+            },
+            {
+              "id": "attention",
+              "x": 2520,
+              "y": 1200
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2400,
+            "y": 1210
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_10",
+          "nodeIndex": 10,
+          "position": {
+            "x": 870,
+            "y": 1400
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 700,
+            "y": 1340,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1400,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_10_npc_a",
+              "x": 795,
+              "y": 1435,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_10_npc_b",
+              "x": 950,
+              "y": 1425,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 870,
+              "y": 1540
+            },
+            {
+              "id": "attention",
+              "x": 990,
+              "y": 1580
+            }
+          ],
+          "seasonalSocket": {
+            "x": 870,
+            "y": 1590
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_11",
+          "nodeIndex": 11,
+          "position": {
+            "x": 1560,
+            "y": 1500
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 1370,
+            "y": 1433,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 1500,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a03_11_npc_a",
+              "x": 1485,
+              "y": 1535,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_11_npc_b",
+              "x": 1640,
+              "y": 1525,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1560,
+              "y": 1640
+            },
+            {
+              "id": "attention",
+              "x": 1680,
+              "y": 1680
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1560,
+            "y": 1690
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a03_12",
+          "nodeIndex": 12,
+          "position": {
+            "x": 2250,
+            "y": 1400
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 375,
+            "height": 275
+          },
+          "hitArea": {
+            "x": 2037,
+            "y": 1325,
+            "width": 425,
+            "height": 325
+          },
+          "sortKey": 1400,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a03_12_npc_a",
+              "x": 2175,
+              "y": 1435,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a03_12_npc_b",
+              "x": 2330,
+              "y": 1425,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2250,
+              "y": 1540
+            },
+            {
+              "id": "attention",
+              "x": 2370,
+              "y": 1580
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2250,
+            "y": 1590
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        }
+      ]
+    },
+    {
+      "areaId": "area_04",
+      "name": "特色终局区",
+      "world": {
+        "width": 3200,
+        "height": 2100
+      },
+      "camera": {
+        "minX": 0,
+        "maxX": 2450,
+        "minY": 0,
+        "maxY": 766,
+        "initialX": 1225,
+        "initialY": 383
+      },
+      "theme": "高阶特色店 / 长线终局",
+      "nodes": [
+        {
+          "buildId": "build_a04_01",
+          "nodeIndex": 1,
+          "position": {
+            "x": 288,
+            "y": 567
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 98,
+            "y": 500,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 567,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_01_npc_a",
+              "x": 213,
+              "y": 602,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_01_npc_b",
+              "x": 368,
+              "y": 592,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 288,
+              "y": 707
+            },
+            {
+              "id": "attention",
+              "x": 408,
+              "y": 747
+            }
+          ],
+          "seasonalSocket": {
+            "x": 288,
+            "y": 757
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_02",
+          "nodeIndex": 2,
+          "position": {
+            "x": 864,
+            "y": 378
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 694,
+            "y": 318,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 378,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_02_npc_a",
+              "x": 789,
+              "y": 413,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_02_npc_b",
+              "x": 944,
+              "y": 403,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 864,
+              "y": 518
+            },
+            {
+              "id": "attention",
+              "x": 984,
+              "y": 558
+            }
+          ],
+          "seasonalSocket": {
+            "x": 864,
+            "y": 568
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_03",
+          "nodeIndex": 3,
+          "position": {
+            "x": 1440,
+            "y": 588
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1270,
+            "y": 528,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 588,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a04_03_npc_a",
+              "x": 1365,
+              "y": 623,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_03_npc_b",
+              "x": 1520,
+              "y": 613,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1440,
+              "y": 728
+            },
+            {
+              "id": "attention",
+              "x": 1560,
+              "y": 768
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1440,
+            "y": 778
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_04",
+          "nodeIndex": 4,
+          "position": {
+            "x": 2080,
+            "y": 357
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1910,
+            "y": 297,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 357,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_04_npc_a",
+              "x": 2005,
+              "y": 392,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_04_npc_b",
+              "x": 2160,
+              "y": 382,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2080,
+              "y": 497
+            },
+            {
+              "id": "attention",
+              "x": 2200,
+              "y": 537
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2080,
+            "y": 547
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_05",
+          "nodeIndex": 5,
+          "position": {
+            "x": 2656,
+            "y": 651
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2486,
+            "y": 591,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 651,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_05_npc_a",
+              "x": 2581,
+              "y": 686,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_05_npc_b",
+              "x": 2736,
+              "y": 676,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2656,
+              "y": 791
+            },
+            {
+              "id": "attention",
+              "x": 2776,
+              "y": 831
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2656,
+            "y": 841
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_06",
+          "nodeIndex": 6,
+          "position": {
+            "x": 544,
+            "y": 1071
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 354,
+            "y": 1004,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 1071,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_06_npc_a",
+              "x": 469,
+              "y": 1106,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_06_npc_b",
+              "x": 624,
+              "y": 1096,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 544,
+              "y": 1211
+            },
+            {
+              "id": "attention",
+              "x": 664,
+              "y": 1251
+            }
+          ],
+          "seasonalSocket": {
+            "x": 544,
+            "y": 1261
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_07",
+          "nodeIndex": 7,
+          "position": {
+            "x": 1216,
+            "y": 966
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1046,
+            "y": 906,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 966,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a04_07_npc_a",
+              "x": 1141,
+              "y": 1001,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_07_npc_b",
+              "x": 1296,
+              "y": 991,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1216,
+              "y": 1106
+            },
+            {
+              "id": "attention",
+              "x": 1336,
+              "y": 1146
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1216,
+            "y": 1156
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_08",
+          "nodeIndex": 8,
+          "position": {
+            "x": 1888,
+            "y": 1113
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 1718,
+            "y": 1053,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1113,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_08_npc_a",
+              "x": 1813,
+              "y": 1148,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_08_npc_b",
+              "x": 1968,
+              "y": 1138,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1888,
+              "y": 1253
+            },
+            {
+              "id": "attention",
+              "x": 2008,
+              "y": 1293
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1888,
+            "y": 1303
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_09",
+          "nodeIndex": 9,
+          "position": {
+            "x": 2528,
+            "y": 1008
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 2358,
+            "y": 948,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1008,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_09_npc_a",
+              "x": 2453,
+              "y": 1043,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_09_npc_b",
+              "x": 2608,
+              "y": 1033,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2528,
+              "y": 1148
+            },
+            {
+              "id": "attention",
+              "x": 2648,
+              "y": 1188
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2528,
+            "y": 1198
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_10",
+          "nodeIndex": 10,
+          "position": {
+            "x": 800,
+            "y": 1533
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 300,
+            "height": 220
+          },
+          "hitArea": {
+            "x": 630,
+            "y": 1473,
+            "width": 340,
+            "height": 260
+          },
+          "sortKey": 1533,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_10_npc_a",
+              "x": 725,
+              "y": 1568,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_10_npc_b",
+              "x": 880,
+              "y": 1558,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 800,
+              "y": 1673
+            },
+            {
+              "id": "attention",
+              "x": 920,
+              "y": 1713
+            }
+          ],
+          "seasonalSocket": {
+            "x": 800,
+            "y": 1723
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_11",
+          "nodeIndex": 11,
+          "position": {
+            "x": 1632,
+            "y": 1512
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 336,
+            "height": 246
+          },
+          "hitArea": {
+            "x": 1442,
+            "y": 1445,
+            "width": 381,
+            "height": 291
+          },
+          "sortKey": 1512,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": true,
+          "npcSockets": [
+            {
+              "id": "build_a04_11_npc_a",
+              "x": 1557,
+              "y": 1547,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_11_npc_b",
+              "x": 1712,
+              "y": 1537,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 1632,
+              "y": 1652
+            },
+            {
+              "id": "attention",
+              "x": 1752,
+              "y": 1692
+            }
+          ],
+          "seasonalSocket": {
+            "x": 1632,
+            "y": 1702
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        },
+        {
+          "buildId": "build_a04_12",
+          "nodeIndex": 12,
+          "position": {
+            "x": 2432,
+            "y": 1554
+          },
+          "anchor": {
+            "x": 0.5,
+            "y": 0
+          },
+          "footprint": {
+            "width": 375,
+            "height": 275
+          },
+          "hitArea": {
+            "x": 2219,
+            "y": 1479,
+            "width": 425,
+            "height": 325
+          },
+          "sortKey": 1554,
+          "parallaxLayer": "MID",
+          "foregroundOccluder": false,
+          "npcSockets": [
+            {
+              "id": "build_a04_12_npc_a",
+              "x": 2357,
+              "y": 1589,
+              "facing": "RIGHT"
+            },
+            {
+              "id": "build_a04_12_npc_b",
+              "x": 2512,
+              "y": 1579,
+              "facing": "LEFT"
+            }
+          ],
+          "fxSockets": [
+            {
+              "id": "build_smoke",
+              "x": 2432,
+              "y": 1694
+            },
+            {
+              "id": "attention",
+              "x": 2552,
+              "y": 1734
+            }
+          ],
+          "seasonalSocket": {
+            "x": 2432,
+            "y": 1744
+          },
+          "evidenceKind": "DEV_BLUEPRINT"
+        }
+      ]
+    }
+  ]
+}
