@@ -184,7 +184,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 
 - ✅ `research-data/evidence/p0b_parameter_evidence_matrix_v4.csv` 已作为精确参数进入 Runtime 前的证据门禁。
 - ✅ 已确认机制：Producer 冷却/耗尽存在、部分 Producer→Output 关系、烤架/备菜台加工关系、活动加速/无限供应机制。
-- ⚠️ 仍未拿到可审计的精确 level / energyCost / capacity / cooldownSec / outputWeight / Recipe duration / speedup / Cookware queue/speed。
+- ⚠️ Producer level / energyCost / capacity / cooldownSec / outputWeight、Recipe speedup / 精确 unlockDay、Cookware level / queueSize / speedModifier 仍未拿到可审计精确值；Recipe duration 已闭合 8 条（新增焦香洋葱饭 272s），其余继续 UNRESOLVED。
 - 因此：研究主表保持 UNRESOLVED；Day1-10 Runtime 数值继续明确标记 `DEV_BLUEPRINT`，两层不混写。
 
 
