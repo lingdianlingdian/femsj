@@ -1,0 +1,16 @@
+{
+  "version": "4.0",
+  "updatedAt": "2026-09-25",
+  "statusFlow": [
+    "PLANNED",
+    "READY_FOR_CONCEPT",
+    "CONCEPT_REVIEW",
+    "CANON_LOCKED",
+    "GENERATED",
+    "CLEANUP",
+    "QA",
+    "APPROVED",
+    "INTEGRATED"
+  ],
+  "outputs": []
+}
