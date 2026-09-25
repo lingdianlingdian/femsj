@@ -18,6 +18,9 @@
     "audit:art": "node tools/art-production-auditor/audit.mjs",
     "validate:story:day11-20": "node tools/story-validator/validate.mjs production-data/v4/story/story_dialogue_day011_020.json production-data/v4/story/locale_zh-CN_day011_020.json - 11 20",
     "art:next": "node tools/art-production-auditor/next.mjs",
-    "audit:art:files": "node tools/art-file-auditor/audit.mjs"
+    "audit:art:files": "node tools/art-file-auditor/audit.mjs",
+    "art:ingest": "node tools/art-production-auditor/ingest.mjs",
+    "art:qa:init": "node tools/art-production-auditor/qa-init.mjs",
+    "art:approve": "node tools/art-production-auditor/approve.mjs"
   }
 }
