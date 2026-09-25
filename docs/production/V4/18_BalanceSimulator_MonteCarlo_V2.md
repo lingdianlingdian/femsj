@@ -3,8 +3,8 @@
 运行：
 
 ```powershell
-node tools/balance-simulator/simulate.mjs production-data/v4/runtime/game_content.json
-node tools/balance-simulator/simulate.mjs production-data/v4/runtime/game_content.json 80 10000 20260925
+node tools/balance-simulator/simulate.mjs production-data/v4/runtime/game_content_day001_110.json
+node tools/balance-simulator/simulate.mjs production-data/v4/runtime/game_content_day001_110.json 80 10000 20260925
 ```
 
 参数：
