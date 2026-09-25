@@ -1,0 +1,32 @@
+{
+  "version": "4.0",
+  "scope": "DAY001_010_VERTICAL_SLICE",
+  "generatedAt": "2026-09-25",
+  "policy": "DEV_BLUEPRINT quality thresholds; not competitor backend values.",
+  "configPath": "production-data/v4/runtime/game_content_day001_010.json",
+  "runs": 500,
+  "seed": 20260925,
+  "targets": [
+    {
+      "day": 1,
+      "maxEnergyP90": 130,
+      "maxWaitSecP90": 180,
+      "maxPeakCellsP90": 8,
+      "maxManualActionsP90": 140
+    },
+    {
+      "day": 5,
+      "maxEnergyP90": 90,
+      "maxWaitSecP90": 240,
+      "maxPeakCellsP90": 8,
+      "maxManualActionsP90": 100
+    },
+    {
+      "day": 10,
+      "maxEnergyP90": 160,
+      "maxWaitSecP90": 720,
+      "maxPeakCellsP90": 28,
+      "maxManualActionsP90": 190
+    }
+  ]
+}
