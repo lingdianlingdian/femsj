@@ -1,0 +1,3470 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-25",
+  "purpose": "Evidence-backed level slice. Safe for UI/content integration tests; NOT sufficient for balance simulation until rewards/dependency parameters are resolved.",
+  "evidencePolicy": "Only fully transcribed public order requirements are included.",
+  "dayCount": 17,
+  "orderCount": 113,
+  "unresolvedRequirementCount": 0,
+  "days": [
+    {
+      "day": 1,
+      "orderCount": 8,
+      "orders": [
+        {
+          "orderId": "d001_o01",
+          "slot": 1,
+          "displayText": "番茄",
+          "requirements": [
+            {
+              "itemId": "item_fanqie",
+              "count": 1,
+              "name": "番茄"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o02",
+          "slot": 2,
+          "displayText": "彩椒",
+          "requirements": [
+            {
+              "itemId": "item_caijiao",
+              "count": 1,
+              "name": "彩椒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o03",
+          "slot": 3,
+          "displayText": "蘑菇",
+          "requirements": [
+            {
+              "itemId": "item_mogu",
+              "count": 1,
+              "name": "蘑菇"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o04",
+          "slot": 4,
+          "displayText": "辣椒",
+          "requirements": [
+            {
+              "itemId": "item_lajiao",
+              "count": 1,
+              "name": "辣椒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o05",
+          "slot": 5,
+          "displayText": "彩椒",
+          "requirements": [
+            {
+              "itemId": "item_caijiao",
+              "count": 1,
+              "name": "彩椒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o06",
+          "slot": 6,
+          "displayText": "彩椒+葱段",
+          "requirements": [
+            {
+              "itemId": "item_caijiao",
+              "count": 1,
+              "name": "彩椒"
+            },
+            {
+              "itemId": "item_congduan",
+              "count": 1,
+              "name": "葱段"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o07",
+          "slot": 7,
+          "displayText": "胡萝卜+洋葱",
+          "requirements": [
+            {
+              "itemId": "item_huluobo",
+              "count": 1,
+              "name": "胡萝卜"
+            },
+            {
+              "itemId": "item_yangcong",
+              "count": 1,
+              "name": "洋葱"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d001_o08",
+          "slot": 8,
+          "displayText": "番茄",
+          "requirements": [
+            {
+              "itemId": "item_fanqie",
+              "count": 1,
+              "name": "番茄"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "orderCount": 3,
+      "orders": [
+        {
+          "orderId": "d002_o01",
+          "slot": 1,
+          "displayText": "咖啡豆",
+          "requirements": [
+            {
+              "itemId": "item_kafeidou",
+              "count": 1,
+              "name": "咖啡豆"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d002_o02",
+          "slot": 2,
+          "displayText": "浓缩咖啡",
+          "requirements": [
+            {
+              "itemId": "item_nongsuokafei",
+              "count": 1,
+              "name": "浓缩咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d002_o03",
+          "slot": 3,
+          "displayText": "咖啡",
+          "requirements": [
+            {
+              "itemId": "item_kafei",
+              "count": 1,
+              "name": "咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "orderCount": 3,
+      "orders": [
+        {
+          "orderId": "d003_o01",
+          "slot": 1,
+          "displayText": "浓缩咖啡",
+          "requirements": [
+            {
+              "itemId": "item_nongsuokafei",
+              "count": 1,
+              "name": "浓缩咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d003_o02",
+          "slot": 2,
+          "displayText": "洋葱+咖啡",
+          "requirements": [
+            {
+              "itemId": "item_yangcong",
+              "count": 1,
+              "name": "洋葱"
+            },
+            {
+              "itemId": "item_kafei",
+              "count": 1,
+              "name": "咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d003_o03",
+          "slot": 3,
+          "displayText": "蘑菇+便携咖啡",
+          "requirements": [
+            {
+              "itemId": "item_mogu",
+              "count": 1,
+              "name": "蘑菇"
+            },
+            {
+              "itemId": "item_bianxiekafei",
+              "count": 1,
+              "name": "便携咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 4,
+      "orderCount": 6,
+      "orders": [
+        {
+          "orderId": "d004_o01",
+          "slot": 1,
+          "displayText": "冰咖啡",
+          "requirements": [
+            {
+              "itemId": "item_bingkafei",
+              "count": 1,
+              "name": "冰咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d004_o02",
+          "slot": 2,
+          "displayText": "绿茶",
+          "requirements": [
+            {
+              "itemId": "item_lvcha",
+              "count": 1,
+              "name": "绿茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d004_o03",
+          "slot": 3,
+          "displayText": "玉米粒",
+          "requirements": [
+            {
+              "itemId": "item_yumili",
+              "count": 1,
+              "name": "玉米粒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d004_o04",
+          "slot": 4,
+          "displayText": "香草荚",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaojia",
+              "count": 1,
+              "name": "香草荚"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d004_o05",
+          "slot": 5,
+          "displayText": "玉米",
+          "requirements": [
+            {
+              "itemId": "item_yumi",
+              "count": 1,
+              "name": "玉米"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d004_o06",
+          "slot": 6,
+          "displayText": "香草籽",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaozi",
+              "count": 1,
+              "name": "香草籽"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 5,
+      "orderCount": 3,
+      "orders": [
+        {
+          "orderId": "d005_o01",
+          "slot": 1,
+          "displayText": "生菜沙拉",
+          "requirements": [
+            {
+              "itemId": "dish_shengcaishala",
+              "count": 1,
+              "name": "生菜沙拉"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d005_o02",
+          "slot": 2,
+          "displayText": "纯牛奶",
+          "requirements": [
+            {
+              "itemId": "item_chunniunai",
+              "count": 1,
+              "name": "纯牛奶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d005_o03",
+          "slot": 3,
+          "displayText": "玻璃碗",
+          "requirements": [
+            {
+              "itemId": "item_boliwan",
+              "count": 1,
+              "name": "玻璃碗"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790520777484013452"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 6,
+      "orderCount": 4,
+      "orders": [
+        {
+          "orderId": "d006_o01",
+          "slot": 1,
+          "displayText": "糖拌番茄",
+          "requirements": [
+            {
+              "itemId": "dish_tangbanfanqie",
+              "count": 1,
+              "name": "糖拌番茄"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d006_o02",
+          "slot": 2,
+          "displayText": "洋葱+冰咖啡",
+          "requirements": [
+            {
+              "itemId": "item_yangcong",
+              "count": 1,
+              "name": "洋葱"
+            },
+            {
+              "itemId": "item_bingkafei",
+              "count": 1,
+              "name": "冰咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d006_o03",
+          "slot": 3,
+          "displayText": "彩椒脆片",
+          "requirements": [
+            {
+              "itemId": "dish_caijiaocuipian",
+              "count": 1,
+              "name": "彩椒脆片"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d006_o04",
+          "slot": 4,
+          "displayText": "蘑菇+绿茶",
+          "requirements": [
+            {
+              "itemId": "item_mogu",
+              "count": 1,
+              "name": "蘑菇"
+            },
+            {
+              "itemId": "item_lvcha",
+              "count": 1,
+              "name": "绿茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 7,
+      "orderCount": 5,
+      "orders": [
+        {
+          "orderId": "d007_o01",
+          "slot": 1,
+          "displayText": "便携咖啡+纯牛奶",
+          "requirements": [
+            {
+              "itemId": "item_bianxiekafei",
+              "count": 1,
+              "name": "便携咖啡"
+            },
+            {
+              "itemId": "item_chunniunai",
+              "count": 1,
+              "name": "纯牛奶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d007_o02",
+          "slot": 2,
+          "displayText": "菌香芝士卷",
+          "requirements": [
+            {
+              "itemId": "dish_junxiangzhishijuan",
+              "count": 1,
+              "name": "菌香芝士卷"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d007_o03",
+          "slot": 3,
+          "displayText": "生切胡萝卜条",
+          "requirements": [
+            {
+              "itemId": "dish_shengqiehuluobotiao",
+              "count": 1,
+              "name": "生切胡萝卜条"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d007_o04",
+          "slot": 4,
+          "displayText": "香草籽+绿茶",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaozi",
+              "count": 1,
+              "name": "香草籽"
+            },
+            {
+              "itemId": "item_lvcha",
+              "count": 1,
+              "name": "绿茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d007_o05",
+          "slot": 5,
+          "displayText": "玉米粒",
+          "requirements": [
+            {
+              "itemId": "item_yumili",
+              "count": 1,
+              "name": "玉米粒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 8,
+      "orderCount": 4,
+      "orders": [
+        {
+          "orderId": "d008_o01",
+          "slot": 1,
+          "displayText": "鲜榨蓝莓汁",
+          "requirements": [
+            {
+              "itemId": "dish_xianzhalanmeizhi",
+              "count": 1,
+              "name": "鲜榨蓝莓汁"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d008_o02",
+          "slot": 2,
+          "displayText": "香草籽+冰咖啡",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaozi",
+              "count": 1,
+              "name": "香草籽"
+            },
+            {
+              "itemId": "item_bingkafei",
+              "count": 1,
+              "name": "冰咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d008_o03",
+          "slot": 3,
+          "displayText": "冰糖+草莓果露",
+          "requirements": [
+            {
+              "itemId": "item_bingtang",
+              "count": 1,
+              "name": "冰糖"
+            },
+            {
+              "itemId": "dish_caomeiguolu",
+              "count": 1,
+              "name": "草莓果露"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d008_o04",
+          "slot": 4,
+          "displayText": "玉米",
+          "requirements": [
+            {
+              "itemId": "item_yumi",
+              "count": 1,
+              "name": "玉米"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 9,
+      "orderCount": 3,
+      "orders": [
+        {
+          "orderId": "d009_o01",
+          "slot": 1,
+          "displayText": "手打柠檬汁",
+          "requirements": [
+            {
+              "itemId": "dish_shoudaningmengzhi",
+              "count": 1,
+              "name": "手打柠檬汁"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d009_o02",
+          "slot": 2,
+          "displayText": "深烘咖啡+红茶",
+          "requirements": [
+            {
+              "itemId": "item_shenhongkafei",
+              "count": 1,
+              "name": "深烘咖啡"
+            },
+            {
+              "itemId": "item_hongcha",
+              "count": 1,
+              "name": "红茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d009_o03",
+          "slot": 3,
+          "displayText": "蘑菇+黄油",
+          "requirements": [
+            {
+              "itemId": "item_mogu",
+              "count": 1,
+              "name": "蘑菇"
+            },
+            {
+              "itemId": "item_huangyou",
+              "count": 1,
+              "name": "黄油"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 10,
+      "orderCount": 4,
+      "orders": [
+        {
+          "orderId": "d010_o01",
+          "slot": 1,
+          "displayText": "香草籽+冰咖啡",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaozi",
+              "count": 1,
+              "name": "香草籽"
+            },
+            {
+              "itemId": "item_bingkafei",
+              "count": 1,
+              "name": "冰咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d010_o02",
+          "slot": 2,
+          "displayText": "绿茶+黄油",
+          "requirements": [
+            {
+              "itemId": "item_lvcha",
+              "count": 1,
+              "name": "绿茶"
+            },
+            {
+              "itemId": "item_huangyou",
+              "count": 1,
+              "name": "黄油"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d010_o03",
+          "slot": 3,
+          "displayText": "香草荚+珍珠奶茶",
+          "requirements": [
+            {
+              "itemId": "item_xiangcaojia",
+              "count": 1,
+              "name": "香草荚"
+            },
+            {
+              "itemId": "dish_zhenzhunaicha",
+              "count": 1,
+              "name": "珍珠奶茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d010_o04",
+          "slot": 4,
+          "displayText": "爆米花+苹果果饮",
+          "requirements": [
+            {
+              "itemId": "dish_baomihua",
+              "count": 1,
+              "name": "爆米花"
+            },
+            {
+              "itemId": "dish_pingguoguoyin",
+              "count": 1,
+              "name": "苹果果饮"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_TEXT",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790611816005766899"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 80,
+      "orderCount": 7,
+      "orders": [
+        {
+          "orderId": "d080_o01",
+          "slot": 1,
+          "displayText": "新鲜生蚝",
+          "requirements": [
+            {
+              "itemId": "dish_xinxianshenghao",
+              "count": 1,
+              "name": "新鲜生蚝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o02",
+          "slot": 2,
+          "displayText": "龙舌兰螺丝刀",
+          "requirements": [
+            {
+              "itemId": "dish_longshulan_luosidao",
+              "count": 1,
+              "name": "龙舌兰螺丝刀"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C-",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o03",
+          "slot": 3,
+          "displayText": "芝士热狗",
+          "requirements": [
+            {
+              "itemId": "dish_zhishiregou",
+              "count": 1,
+              "name": "芝士热狗"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o04",
+          "slot": 4,
+          "displayText": "蒜香面包",
+          "requirements": [
+            {
+              "itemId": "dish_suanxiangmianbao",
+              "count": 1,
+              "name": "蒜香面包"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o05",
+          "slot": 5,
+          "displayText": "花茶",
+          "requirements": [
+            {
+              "itemId": "item_huacha",
+              "count": 1,
+              "name": "花茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o06",
+          "slot": 6,
+          "displayText": "浆果蜂蜜燕麦碗",
+          "requirements": [
+            {
+              "itemId": "dish_jiangguofengmiyanmaiwang",
+              "count": 1,
+              "name": "浆果蜂蜜燕麦碗"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d080_o07",
+          "slot": 7,
+          "displayText": "糖豆",
+          "requirements": [
+            {
+              "itemId": "item_tangdou",
+              "count": 1,
+              "name": "糖豆"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790629105325312627"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 84,
+      "orderCount": 14,
+      "orders": [
+        {
+          "orderId": "d084_o01",
+          "slot": 1,
+          "displayText": "芒果",
+          "requirements": [
+            {
+              "itemId": "item_mangguo",
+              "count": 1,
+              "name": "芒果"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o02",
+          "slot": 2,
+          "displayText": "黄金烤肘子",
+          "requirements": [
+            {
+              "itemId": "dish_huangjinkaozhouzi",
+              "count": 1,
+              "name": "黄金烤肘子"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o03",
+          "slot": 3,
+          "displayText": "乌龙茶",
+          "requirements": [
+            {
+              "itemId": "item_wulongcha",
+              "count": 1,
+              "name": "乌龙茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o04",
+          "slot": 4,
+          "displayText": "焦香洋葱饭",
+          "requirements": [
+            {
+              "itemId": "dish_jiaoxiangyangcongfan",
+              "count": 1,
+              "name": "焦香洋葱饭"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o05",
+          "slot": 5,
+          "displayText": "深烘咖啡",
+          "requirements": [
+            {
+              "itemId": "item_shenhongkafei",
+              "count": 1,
+              "name": "深烘咖啡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o06",
+          "slot": 6,
+          "displayText": "炭烤鸡胸肉",
+          "requirements": [
+            {
+              "itemId": "dish_tankaojixiongrou",
+              "count": 1,
+              "name": "炭烤鸡胸肉"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o07",
+          "slot": 7,
+          "displayText": "姜汁水",
+          "requirements": [
+            {
+              "itemId": "item_jiangzhishui",
+              "count": 1,
+              "name": "姜汁水"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o08",
+          "slot": 8,
+          "displayText": "黄油拌饭",
+          "requirements": [
+            {
+              "itemId": "dish_huangyoubanfan",
+              "count": 1,
+              "name": "黄油拌饭"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o09",
+          "slot": 9,
+          "displayText": "蜜汁烤鸡",
+          "requirements": [
+            {
+              "itemId": "dish_mizhikaoji",
+              "count": 1,
+              "name": "蜜汁烤鸡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o10",
+          "slot": 10,
+          "displayText": "新鲜生蚝",
+          "requirements": [
+            {
+              "itemId": "dish_xinxianshenghao",
+              "count": 1,
+              "name": "新鲜生蚝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o11",
+          "slot": 11,
+          "displayText": "朗姆可乐",
+          "requirements": [
+            {
+              "itemId": "dish_langmukele",
+              "count": 1,
+              "name": "朗姆可乐"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o12",
+          "slot": 12,
+          "displayText": "浆果蜂蜜燕麦碗",
+          "requirements": [
+            {
+              "itemId": "dish_jiangguofengmiyanmaiwang",
+              "count": 1,
+              "name": "浆果蜂蜜燕麦碗"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o13",
+          "slot": 13,
+          "displayText": "田园沙拉",
+          "requirements": [
+            {
+              "itemId": "dish_tianyuanshala",
+              "count": 1,
+              "name": "田园沙拉"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d084_o14",
+          "slot": 14,
+          "displayText": "莫斯科之骡",
+          "requirements": [
+            {
+              "itemId": "dish_moscow_mule",
+              "count": 1,
+              "name": "莫斯科之骡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/790906865650238207"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 101,
+      "orderCount": 10,
+      "orders": [
+        {
+          "orderId": "d101_o01",
+          "slot": 1,
+          "displayText": "奶油",
+          "requirements": [
+            {
+              "itemId": "item_naiyou",
+              "count": 1,
+              "name": "奶油"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o02",
+          "slot": 2,
+          "displayText": "酥烤肥蟹",
+          "requirements": [
+            {
+              "itemId": "dish_sukao_feixie",
+              "count": 1,
+              "name": "酥烤肥蟹"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o03",
+          "slot": 3,
+          "displayText": "乌龙茶",
+          "requirements": [
+            {
+              "itemId": "item_wulongcha",
+              "count": 1,
+              "name": "乌龙茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o04",
+          "slot": 4,
+          "displayText": "早餐三明治",
+          "requirements": [
+            {
+              "itemId": "dish_zaocan_sanmingzhi",
+              "count": 1,
+              "name": "早餐三明治"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o05",
+          "slot": 5,
+          "displayText": "汤力水",
+          "requirements": [
+            {
+              "itemId": "item_tanglishui",
+              "count": 1,
+              "name": "汤力水"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o06",
+          "slot": 6,
+          "displayText": "晶莹鲜虾饺",
+          "requirements": [
+            {
+              "itemId": "dish_jingying_xianxiajiao",
+              "count": 1,
+              "name": "晶莹鲜虾饺"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o07",
+          "slot": 7,
+          "displayText": "糖豆",
+          "requirements": [
+            {
+              "itemId": "item_tangdou",
+              "count": 1,
+              "name": "糖豆"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o08",
+          "slot": 8,
+          "displayText": "朗姆可乐",
+          "requirements": [
+            {
+              "itemId": "dish_langmukele",
+              "count": 1,
+              "name": "朗姆可乐"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o09",
+          "slot": 9,
+          "displayText": "手撕紫甘蓝",
+          "requirements": [
+            {
+              "itemId": "dish_shousi_ziganlan",
+              "count": 1,
+              "name": "手撕紫甘蓝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d101_o10",
+          "slot": 10,
+          "displayText": "酥香鳕鱼",
+          "requirements": [
+            {
+              "itemId": "dish_suxiang_xueyu",
+              "count": 1,
+              "name": "酥香鳕鱼"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 102,
+      "orderCount": 10,
+      "orders": [
+        {
+          "orderId": "d102_o01",
+          "slot": 1,
+          "displayText": "炭烤琵琶腿",
+          "requirements": [
+            {
+              "itemId": "dish_tankao_pipatui",
+              "count": 1,
+              "name": "炭烤琵琶腿"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o02",
+          "slot": 2,
+          "displayText": "香菇肠粉",
+          "requirements": [
+            {
+              "itemId": "dish_xianggu_changfen",
+              "count": 1,
+              "name": "香菇肠粉"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o03",
+          "slot": 3,
+          "displayText": "乌龙茶",
+          "requirements": [
+            {
+              "itemId": "item_wulongcha",
+              "count": 1,
+              "name": "乌龙茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o04",
+          "slot": 4,
+          "displayText": "椰汁奶白小丸",
+          "requirements": [
+            {
+              "itemId": "dish_yezhi_naibai_xiaowan",
+              "count": 1,
+              "name": "椰汁奶白小丸"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o05",
+          "slot": 5,
+          "displayText": "新鲜生蚝",
+          "requirements": [
+            {
+              "itemId": "dish_xinxianshenghao",
+              "count": 1,
+              "name": "新鲜生蚝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o06",
+          "slot": 6,
+          "displayText": "威士忌苏打",
+          "requirements": [
+            {
+              "itemId": "dish_weishiji_suda",
+              "count": 1,
+              "name": "威士忌苏打"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o07",
+          "slot": 7,
+          "displayText": "姜汁水",
+          "requirements": [
+            {
+              "itemId": "item_jiangzhishui",
+              "count": 1,
+              "name": "姜汁水"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o08",
+          "slot": 8,
+          "displayText": "流沙奶黄包",
+          "requirements": [
+            {
+              "itemId": "dish_liusha_naihuangbao",
+              "count": 1,
+              "name": "流沙奶黄包"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o09",
+          "slot": 9,
+          "displayText": "大杯美式",
+          "requirements": [
+            {
+              "itemId": "item_dabei_meishi",
+              "count": 1,
+              "name": "大杯美式"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d102_o10",
+          "slot": 10,
+          "displayText": "手撕紫甘蓝",
+          "requirements": [
+            {
+              "itemId": "dish_shousi_ziganlan",
+              "count": 1,
+              "name": "手撕紫甘蓝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 103,
+      "orderCount": 10,
+      "orders": [
+        {
+          "orderId": "d103_o01",
+          "slot": 1,
+          "displayText": "烤土豆片",
+          "requirements": [
+            {
+              "itemId": "dish_kao_tudoupian",
+              "count": 1,
+              "name": "烤土豆片"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o02",
+          "slot": 2,
+          "displayText": "新鲜生蚝",
+          "requirements": [
+            {
+              "itemId": "dish_xinxianshenghao",
+              "count": 1,
+              "name": "新鲜生蚝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o03",
+          "slot": 3,
+          "displayText": "葡萄果肉饮",
+          "requirements": [
+            {
+              "itemId": "dish_putao_guorouyin",
+              "count": 1,
+              "name": "葡萄果肉饮"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o04",
+          "slot": 4,
+          "displayText": "焦糖马拉糕",
+          "requirements": [
+            {
+              "itemId": "dish_jiaotang_malagao",
+              "count": 1,
+              "name": "焦糖马拉糕"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o05",
+          "slot": 5,
+          "displayText": "黄金烤肘子",
+          "requirements": [
+            {
+              "itemId": "dish_huangjinkaozhouzi",
+              "count": 1,
+              "name": "黄金烤肘子"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o06",
+          "slot": 6,
+          "displayText": "威士忌苏打",
+          "requirements": [
+            {
+              "itemId": "dish_weishiji_suda",
+              "count": 1,
+              "name": "威士忌苏打"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o07",
+          "slot": 7,
+          "displayText": "燕麦",
+          "requirements": [
+            {
+              "itemId": "item_yanmai",
+              "count": 1,
+              "name": "燕麦"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o08",
+          "slot": 8,
+          "displayText": "手撕紫甘蓝",
+          "requirements": [
+            {
+              "itemId": "dish_shousi_ziganlan",
+              "count": 1,
+              "name": "手撕紫甘蓝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o09",
+          "slot": 9,
+          "displayText": "大杯美式",
+          "requirements": [
+            {
+              "itemId": "item_dabei_meishi",
+              "count": 1,
+              "name": "大杯美式"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d103_o10",
+          "slot": 10,
+          "displayText": "糖浆",
+          "requirements": [
+            {
+              "itemId": "item_tangjiang",
+              "count": 1,
+              "name": "糖浆"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 104,
+      "orderCount": 10,
+      "orders": [
+        {
+          "orderId": "d104_o01",
+          "slot": 1,
+          "displayText": "什锦海鲜汤",
+          "requirements": [
+            {
+              "itemId": "dish_shijin_haixiantang",
+              "count": 1,
+              "name": "什锦海鲜汤"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o02",
+          "slot": 2,
+          "displayText": "甜蛋酒",
+          "requirements": [
+            {
+              "itemId": "dish_tiandanjiu",
+              "count": 1,
+              "name": "甜蛋酒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o03",
+          "slot": 3,
+          "displayText": "烟熏牛胸肉",
+          "requirements": [
+            {
+              "itemId": "dish_yanxunniuxiongrou",
+              "count": 1,
+              "name": "烟熏牛胸肉"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o04",
+          "slot": 4,
+          "displayText": "新鲜生蚝",
+          "requirements": [
+            {
+              "itemId": "dish_xinxianshenghao",
+              "count": 1,
+              "name": "新鲜生蚝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o05",
+          "slot": 5,
+          "displayText": "鹅鹅手打柠檬茶",
+          "requirements": [
+            {
+              "itemId": "dish_ee_shouda_ningmengcha",
+              "count": 1,
+              "name": "鹅鹅手打柠檬茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o06",
+          "slot": 6,
+          "displayText": "黄金烤肘子",
+          "requirements": [
+            {
+              "itemId": "dish_huangjinkaozhouzi",
+              "count": 1,
+              "name": "黄金烤肘子"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o07",
+          "slot": 7,
+          "displayText": "手撕紫甘蓝",
+          "requirements": [
+            {
+              "itemId": "dish_shousi_ziganlan",
+              "count": 1,
+              "name": "手撕紫甘蓝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o08",
+          "slot": 8,
+          "displayText": "炭烧金枪鱼排",
+          "requirements": [
+            {
+              "itemId": "dish_tanshao_jinqiangyupai",
+              "count": 1,
+              "name": "炭烧金枪鱼排"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o09",
+          "slot": 9,
+          "displayText": "巧克力",
+          "requirements": [
+            {
+              "itemId": "item_qiaokeli",
+              "count": 1,
+              "name": "巧克力"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d104_o10",
+          "slot": 10,
+          "displayText": "蜜汁烤鸡",
+          "requirements": [
+            {
+              "itemId": "dish_mizhikaoji",
+              "count": 1,
+              "name": "蜜汁烤鸡"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    },
+    {
+      "day": 105,
+      "orderCount": 9,
+      "orders": [
+        {
+          "orderId": "d105_o01",
+          "slot": 1,
+          "displayText": "珍珠奶茶",
+          "requirements": [
+            {
+              "itemId": "dish_zhenzhunaicha",
+              "count": 1,
+              "name": "珍珠奶茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o02",
+          "slot": 2,
+          "displayText": "咸水角",
+          "requirements": [
+            {
+              "itemId": "dish_xianshuijiao",
+              "count": 1,
+              "name": "咸水角"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o03",
+          "slot": 3,
+          "displayText": "鹅鹅手打柠檬茶",
+          "requirements": [
+            {
+              "itemId": "dish_ee_shouda_ningmengcha",
+              "count": 1,
+              "name": "鹅鹅手打柠檬茶"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o04",
+          "slot": 4,
+          "displayText": "酥炸大鸡腿",
+          "requirements": [
+            {
+              "itemId": "dish_suzha_dajitui",
+              "count": 1,
+              "name": "酥炸大鸡腿"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o05",
+          "slot": 5,
+          "displayText": "威士忌酸酒",
+          "requirements": [
+            {
+              "itemId": "dish_weishiji_suanjiu",
+              "count": 1,
+              "name": "威士忌酸酒"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o06",
+          "slot": 6,
+          "displayText": "流沙奶黄包",
+          "requirements": [
+            {
+              "itemId": "dish_liusha_naihuangbao",
+              "count": 1,
+              "name": "流沙奶黄包"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o07",
+          "slot": 7,
+          "displayText": "奶油",
+          "requirements": [
+            {
+              "itemId": "item_naiyou",
+              "count": 1,
+              "name": "奶油"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o08",
+          "slot": 8,
+          "displayText": "彩椒土豆丝",
+          "requirements": [
+            {
+              "itemId": "dish_caijiao_tudousi",
+              "count": 1,
+              "name": "彩椒土豆丝"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        },
+        {
+          "orderId": "d105_o09",
+          "slot": 9,
+          "displayText": "酥烤肥蟹",
+          "requirements": [
+            {
+              "itemId": "dish_sukao_feixie",
+              "count": 1,
+              "name": "酥烤肥蟹"
+            }
+          ],
+          "customerId": null,
+          "rewards": null,
+          "producerIds": [],
+          "recipeIds": [],
+          "cookwareIds": [],
+          "evidence": {
+            "kind": "PUBLIC_IMAGE",
+            "confidence": "C",
+            "sourceUrl": "https://www.taptap.cn/moment/797858476368857347"
+          },
+          "unresolvedRuntimeFields": [
+            "customerId",
+            "rewards",
+            "producerIds",
+            "recipeIds",
+            "cookwareIds"
+          ]
+        }
+      ]
+    }
+  ]
+}
