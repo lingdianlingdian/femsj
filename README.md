@@ -39,7 +39,7 @@
 - 6套 LiveOps 活动蓝图
 - OpenAPI 后端合同
 - Remote Config / 灰度 / 回滚合同
-- 109条 QA Test Case
+- 117条 QA Test Case
 - GitHub Actions 自动质量门禁
 - Config Validator
 - Evidence / CSV / Content Reference Auditor
