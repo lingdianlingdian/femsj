@@ -30,7 +30,7 @@
 - 46页低保真交互 Wireframe
 - 46页原创高保真 UI Kit 原型
 - 41 个共享 UI Component / Prefab 合同
-- 225 条 Asset Manifest
+- 228 条 Asset Manifest
 - 4个原创街区布局 + 相机/热点/NPC挂点规范
 - 26个原创角色 Canon
 - 42条音频资产规格 + Motion Manifest
