@@ -223,6 +223,7 @@ asset_id,category,subcategory,name,source_size,runtime_size,format,bundle,states
 "fx_build_reveal","VFX","Common","建设完成","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
 "fx_unlock","VFX","Common","新内容解锁","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
 "fx_card_reveal","VFX","Common","卡牌揭示","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
-"fx_event_boost","VFX","Common","活动增强","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级""art_item_shengcai","Board","Item","生菜","256x256","64~72","PNG","items_01","Normal","0.5,0.5","0.5,0.5","","","PLANNED","关联内容ID item_shengcai；Day1-10垂直切片配方输入"
+"fx_event_boost","VFX","Common","活动增强","n/a","n/a","Prefab/Particle","core","Play","0.5,0.5","0.5,0.5","","","PLANNED","需低端机降级"
+"art_item_shengcai","Board","Item","生菜","256x256","64~72","PNG","items_01","Normal","0.5,0.5","0.5,0.5","","","PLANNED","关联内容ID item_shengcai；Day1-10垂直切片配方输入"
 "art_prod_kitchen_supply","Board","Producer","厨房补给箱","384x384","68~74","PNG/Spine","items_01","Ready|Tap|Cooldown|Boosted|Locked","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Producer；关联 prod_kitchen_supply"
 "art_cook_drink_station","Board","Cookware","饮品调制台","384x384","68~74","PNG/Spine","items_01","Idle|Cooking|Ready|Collect","0.5,0.5","0.5,0.5","","","PLANNED","原创Day1-10垂直切片Cookware；关联 cook_drink_station"
