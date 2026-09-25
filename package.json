@@ -6,6 +6,7 @@
     "validate:config": "node tools/config-validator/validate.mjs",
     "simulate:balance": "node tools/balance-simulator/simulate.mjs",
     "audit:evidence": "node tools/evidence-auditor/audit.mjs",
-    "audit:data": "node tools/data-auditor/audit.mjs"
+    "audit:data": "node tools/data-auditor/audit.mjs",
+    "audit:content": "node tools/content-reference-auditor/audit.mjs"
   }
 }
