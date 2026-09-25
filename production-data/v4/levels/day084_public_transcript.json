@@ -2,7 +2,6 @@
   "version": "4.0",
   "day": 84,
   "sourceUrl": "https://www.taptap.cn/moment/790906865650238207",
-  "sourceImageRef": "turn294395view7",
   "transcriptionConfidence": "C",
   "orders": [
     {
@@ -113,5 +112,11 @@
         "姜汁水"
       ]
     }
-  ]
+  ],
+  "sourceVisualId": "POST_IMAGE_DAY084_MENU",
+  "audit": {
+    "auditedAt": "2026-09-25",
+    "stableEvidenceRef": true,
+    "note": "Removed ephemeral ChatGPT turn ref; retained stable public post URL."
+  }
 }
