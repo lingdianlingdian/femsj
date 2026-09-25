@@ -1,0 +1,53 @@
+{
+  "version": "4.2.0",
+  "generatedAt": "2026-09-25",
+  "counts": {
+    "items": 143,
+    "transformations": 8,
+    "producers": 14,
+    "cookwares": 5,
+    "recipes": 52,
+    "orders": 651,
+    "days": 110,
+    "buildNodes": 48,
+    "events": 6,
+    "verifiedRequirementOrders": 113,
+    "devBlueprintOrders": 538
+  },
+  "closure": {
+    "missingItemAssets": 0,
+    "referenceErrors": 0,
+    "orderRegistryMatch": true,
+    "dayCoverage": true,
+    "storyHookCoverage": true,
+    "buildCoverage": true
+  },
+  "producerPools": {
+    "prod_shucaileizi": 13,
+    "prod_bingxiang": 1,
+    "prod_shuiguolanzi": 1,
+    "prod_yinliaogui": 6,
+    "prod_coffee_counter": 1,
+    "prod_grain_crate": 4,
+    "prod_prep_supply": 2,
+    "prod_kitchen_supply": 17,
+    "prod_binggui": 6,
+    "prod_xianrouxiaoshou": 7,
+    "prod_guopen": 8,
+    "prod_haitiaogongju": 7,
+    "prod_jiushuiyinliaotai": 8,
+    "prod_wugumicang": 2
+  },
+  "economy": {
+    "totalOrderCoin": 1049845,
+    "totalBuildCoin": 366210,
+    "endingNominalCoin": 683635
+  },
+  "errors": [],
+  "caveats": [
+    "Exact Producer weights/capacity/cooldown are DEV_BLUEPRINT unless separately evidenced.",
+    "Untranscribed Order requirements are original DEV_BLUEPRINT and are not claims about competitor menus.",
+    "Recipes without complete public execution parameters use original cookware/duration/speedup defaults.",
+    "This executable runtime is separate from research evidence tables; evidence-backed and original fields must not be conflated."
+  ]
+}
