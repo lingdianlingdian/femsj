@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MergeCookingConfig",
+  "type": "object",
+  "required": ["items","transformations","producers","recipes","orders","days"],
+  "properties": {
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id","name","type"],
+        "properties": {
+          "id":{"type":"string"},
+          "name":{"type":"string"},
+          "type":{"enum":["ingredient","dish","producer","cookware","reward","container","special","blocker"]},
+          "chainId":{"type":["string","null"]},
+          "level":{"type":["integer","null"],"minimum":1},
+          "sourceConfidence":{"enum":["A","B","C","D"]}
+        }
+      }
+    },
+    "transformations":{
+      "type":"array",
+      "items":{
+        "type":"object",
+        "required":["id","type","inputs","output"],
+        "properties":{
+          "id":{"type":"string"},
+          "type":{"enum":["merge2","cook","open","exchange"]},
+          "inputs":{"type":"array","items":{"type":"string"}},
+          "tool":{"type":["string","null"]},
+          "durationSec":{"type":["integer","null"],"minimum":0},
+          "output":{"type":"string"}
+        }
+      }
+    },
+    "producers":{"type":"array"},
+    "recipes":{"type":"array"},
+    "orders":{"type":"array"},
+    "days":{"type":"array"}
+  }
+}
