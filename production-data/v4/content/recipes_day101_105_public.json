@@ -295,10 +295,10 @@
     },
     {
       "day": 104,
-      "name": "炭烧金枪鱼串",
+      "name": "炭烧金枪鱼排",
       "ingredients": "金枪鱼",
       "confidence": "C",
-      "note": "菜名依据截图视觉转录，后续用第二来源复核",
+      "note": "二次视觉复核：公开图清楚显示为“炭烧金枪鱼排”，修正此前低置信转录。",
       "sourceUrl": "https://www.taptap.cn/moment/797858476368857347",
       "sourceVisualId": "POST_IMAGE_DAY104_RECIPE"
     },
@@ -411,6 +411,7 @@
     "notes": [
       "Day103 second visual audit found one previously omitted row: 糖浆.",
       "Transient web turn refs were replaced by stable post URL + sourceVisualId."
-    ]
+    ],
+    "day104NameCorrection": "炭烧金枪鱼串 -> 炭烧金枪鱼排"
   }
 }
