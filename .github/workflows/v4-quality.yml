@@ -133,6 +133,9 @@ jobs:
       - name: Validate character canon and street layout
         run: npm run validate:character-canon
 
+      - name: Verify Cocos UI contracts
+        run: npm run cocos:contracts:check
+
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
 
