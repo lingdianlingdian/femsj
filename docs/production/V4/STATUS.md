@@ -19,7 +19,7 @@
 | Asset Manifest | 251条 | 🟡 已从示例表升级为实际生产表 |
 | Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
-| Story Beats | 110日 | 🟡 Beat结构完整，对白/剧情正文待写 |
+| Story | 110日 / 268 Scenes / 821条对白 | ✅ 全量原创剧情与 zh-CN 本地化已落库并通过 Story Gate |
 | LiveOps Event | 6套 | ✅ 可配置蓝图 |
 | Economy | 观察值+开发默认值 | 🟡 版本敏感参数持续验证 |
 | Config Validator | Node零依赖 | ✅ 已可执行 |
@@ -77,7 +77,7 @@
 - ✅ Balance Simulator Monte Carlo v3 + Board-State Regression Gate
 - ✅ Config Validator
 - ✅ GitHub Actions质量门禁
-- ⏳ 全量原创剧情对白与本地化Key
+- ✅ 全量原创剧情对白与本地化Key（110日 / 268 Scenes / 821条）
 
 ## 完成定义
 
@@ -234,3 +234,14 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ `render_waves_day001_010_v4.json`：W1 Core Shell 15、W2 Runtime Content 50、W3 Story Characters 32、W4 Street01 Buildings 12。
 - ✅ CI 已接入 `npm run audit:art`；AssetId、Anchor、Queue、Job、产物状态与 Day1-10 覆盖缺口会阻断提交。
 - 🟡 二进制正式成图仍以 `art_output_manifest_v4.json` 为准；只有实际图片经过 QA 后才能从 0 递增，禁止把 Job/Prompt 当成“成图完成”。
+
+## 110日原创剧情完成
+
+- ✅ Day1-110 全覆盖：11 个 Story Slice。
+- ✅ 268 个 Scene / 821 条原创 zh-CN 对白。
+- ✅ 220 个 Day Entry/Exit + 48 个 Build Scene。
+- ✅ 48/48 BuildNode Story Trigger 闭合。
+- ✅ Character Canon / Locale Key / Beat Registry 引用全部通过 `npm run validate:story:all`。
+- ✅ 统一目录：`production-data/v4/story/story_catalog_v4.json`。
+- 说明：`docs/production/V4/23_110日原创剧情交付说明.md`。
+- 剧情文本本身不再属于 P1 缺口；后续仅剩 Cocos Dialogue Player、正式角色资源绑定与截图回归。
