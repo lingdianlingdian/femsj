@@ -16,7 +16,7 @@
 | Item公开种子 | 持续扩充（Day101-105 +41；Day80/84 +15） | 🟡 持续扩充 |
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
-| Asset Manifest | 251条 | 🟡 已从示例表升级为实际生产表 |
+| Asset Manifest | 353条 | 🟡 已从示例表升级为实际生产表 |
 | Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story | 110日 / 268 Scenes / 821条对白 | ✅ 全量原创剧情与 zh-CN 本地化已落库并通过 Story Gate |
@@ -149,7 +149,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - Verified Requirement unresolved：0
 - UI Screens：46
 - Shared UI Components：41
-- Asset Manifest：251
+- Asset Manifest：353
 - Original Character Canon：26
 - Audio Assets：42
 - Build Nodes：48
@@ -223,7 +223,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 
 ## Day1-10 美术合同闭合
 
-- ✅ Asset Manifest：251 条。
+- ✅ Asset Manifest：353 条。
 - ✅ Style Anchor：14 个。
 - ✅ 首批正式生产队列：109 项。
 - ✅ S1-S3 可执行 AI Art Job：109 项，和队列 1:1 闭合。
@@ -245,3 +245,19 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 统一目录：`production-data/v4/story/story_catalog_v4.json`。
 - 说明：`docs/production/V4/23_110日原创剧情交付说明.md`。
 - 剧情文本本身不再属于 P1 缺口；后续仅剩 Cocos Dialogue Player、正式角色资源绑定与截图回归。
+
+
+## 2026-09-25 全量美术资源入库完成
+
+- ✅ Asset Manifest：353 / 353 已有正式原创 PNG。
+- ✅ Style Anchor：14 / 14 已生成并 CANON_LOCKED。
+- ✅ Production Queue：353 / 353 已闭合到执行 Job。
+- ✅ 正式美术输出：353 / 353 APPROVED。
+- ✅ Anchor + 正式资源实际 PNG：367 张已提交至 `art-source/v4/`。
+- ✅ QA 文件：367 份；每张资源有独立 QA / SHA-256 / 尺寸记录。
+- ✅ 4 区 × 12 BuildNode × Before/After：96 张建筑资产全部入库。
+- ✅ 26 位角色 Avatar / NPC 及已定义 Canon/Story 资源全部入库。
+- ✅ UI / Board / Item / Dish / Producer / Cookware / VFX 全类别均有正式文件。
+- ✅ `npm run audit:art` 与 `npm run audit:art:files` 在生成工作流中通过。
+- ✅ 全量生成提交：`8ca610945ab2854320fca6dfe2b396e28c3c0685`。
+- ℹ️ Cocos Prefab/Atlas 的实际挂载属于引擎接入阶段；美术源资产、运行时 PNG、映射合同和 QA 已全部在仓库。
