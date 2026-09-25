@@ -105,4 +105,4 @@ npm run audit:runtime
 
 Day1-10：`production-data/v4/runtime/game_content_day001_010.json`（43 Orders / 41 Items / 7 Producers / 2 Cookware / 11 Recipes）
 
-质量门禁：`npm run gate:balance:vertical` + `npm run gate:balance:v3`。
+质量门禁：`npm run gate:balance:vertical` + `npm run gate:balance:v3` + `npm run validate:story` + `npm run gate:economy:vertical`。
