@@ -8,7 +8,7 @@
     "DIRECT_ITEM": "Menu/table row is directly the item itself; do not create a fake transformation."
   },
   "counts": {
-    "baseRelations": 28,
+    "baseRelations": 30,
     "day101_105Visual": 40,
     "day101_105Direct": 9
   },
@@ -218,6 +218,50 @@
         "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
         "sourceVisualId": "DAY9_RECIPE_PANEL_LEMON_80S",
         "note": "Day9公开实机图将柠檬加工面板与手打柠檬汁订单闭合，倒计时1m20s；器具名称未可靠确认，因此toolId保持null。"
+      }
+    },
+    {
+      "id": "cook_tangbanfanqie",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 6,
+      "name": "糖拌番茄",
+      "inputs": [
+        {
+          "itemId": "item_fanqie",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 20,
+      "outputItemId": "dish_tangbanfanqie",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY6_RECIPE_PANEL_TOMATO_20S",
+        "note": "Day6公开实机图中糖拌番茄订单箭头指向番茄加工面板，倒计时20s；器具名称未可靠确认。"
+      }
+    },
+    {
+      "id": "cook_xianzhalanmeizhi",
+      "relationType": "PROCESS_RECIPE_VISUAL",
+      "day": 8,
+      "name": "鲜榨蓝莓汁",
+      "inputs": [
+        {
+          "itemId": "item_lanmei",
+          "count": 1
+        }
+      ],
+      "toolId": null,
+      "durationSec": 20,
+      "outputItemId": "dish_xianzhalanmeizhi",
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "B",
+        "sourceUrl": "https://www.taptap.cn/moment/790611816005766899",
+        "sourceVisualId": "DAY8_RECIPE_PANEL_BLUEBERRY_20S",
+        "note": "Day8公开实机图中鲜榨蓝莓汁订单箭头指向蓝莓加工面板，倒计时20s；器具名称未可靠确认。"
       }
     },
     {
