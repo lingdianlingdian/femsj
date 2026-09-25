@@ -338,11 +338,37 @@
         "爆炒期间相关发射器与厨具无限量供应"
       ],
       "notes": "Apple App Store 编辑推荐；确认机制，不提供具体等级、倍率、容量、冷却秒数或持续时间"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY83_84",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/790906865650238207",
+      "observedAt": "2026-04-08",
+      "channel": "TapTap",
+      "claims": [
+        "Day83-84公开菜单/所需食材截图",
+        "Day84公开图可用于Producer→Output关系与Recipe输入/输出交叉验证"
+      ],
+      "notes": "菜单日仅证明最迟在该日已出现，不等同于精确unlockDay。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY90_RECIPE_DETAIL",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/812261385202305394?group_id=1191393",
+      "observedAt": "2026-06-07",
+      "channel": "TapTap",
+      "claims": [
+        "Day90公开详细菜谱截图",
+        "焦香洋葱饭加工面板倒计时4分32秒（272秒）"
+      ],
+      "notes": "使用Day90第9张公开菜谱详情图闭合durationSec；不据此强填厨具名称/等级、speedup或精确unlockDay。"
     }
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Seven exact early recipe durations are visually bound: 糖拌番茄20s, 彩椒脆片40s, 菌香芝士卷32s, 生切胡萝卜条80s, 鲜榨蓝莓汁20s, 草莓果露10s, 手打柠檬汁80s.",
-    "sourceCount": 28
+    "note": "Eight exact recipe durations are visually bound: 糖拌番茄20s, 彩椒脆片40s, 菌香芝士卷32s, 生切胡萝卜条80s, 鲜榨蓝莓汁20s, 草莓果露10s, 手打柠檬汁80s, 焦香洋葱饭272s.",
+    "sourceCount": 30
   }
 }
