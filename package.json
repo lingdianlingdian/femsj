@@ -25,6 +25,7 @@
     "art:anchor:ingest": "node tools/art-production-auditor/anchor-ingest.mjs",
     "art:anchor:qa:init": "node tools/art-production-auditor/anchor-qa-init.mjs",
     "art:anchor:lock": "node tools/art-production-auditor/anchor-lock.mjs",
-    "validate:story:all": "node tools/story-validator/validate-all.mjs"
+    "validate:story:all": "node tools/story-validator/validate-all.mjs",
+    "art:generate": "node tools/art-procedural-generator/generate.mjs"
   }
 }
