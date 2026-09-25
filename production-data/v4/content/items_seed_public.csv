@@ -116,3 +116,7 @@ item_id,name,type,evidence_status,unlock_day,chain_id,level,producer_id,asset_id
 "dish_mizhikaoji","蜜汁烤鸡","DISH","PUBLIC_IMAGE",84,,,,,,
 "dish_xinxianshenghao","新鲜生蚝","DISH","PUBLIC_IMAGE",84,,,,,,
 "dish_langmukele","朗姆可乐","DISH","PUBLIC_IMAGE",84,,,,,,
+"item_li","梨","INGREDIENT","PLAYER_REPORT",,,,,,
+"item_shuimitao","水蜜桃","INGREDIENT","PLAYER_REPORT",,,,,,
+"item_yumisui","玉米穗","INGREDIENT","EDITORIAL_OBSERVED",,,,,,
+"item_bingkuai","冰块","INGREDIENT","EDITORIAL_OBSERVED",,,,,,
