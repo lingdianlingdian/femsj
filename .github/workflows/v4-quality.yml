@@ -61,6 +61,9 @@ jobs:
       - name: Board-state smoke Day 10
         run: npm run simulate:balance:v3 -- production-data/v4/runtime/game_content_day001_010.json 10 300 20260925 OPTIMIZED
 
+      - name: Board-state balance gate
+        run: npm run gate:balance:v3
+
       - name: Parse critical JSON files
         shell: bash
         run: |
@@ -78,6 +81,7 @@ jobs:
             'production-data/v4/events/events_v4.json',
             'production-data/v4/runtime/game_content_day001_010.json',
             'production-data/v4/runtime/vertical_slice_balance_targets.json',
+            'production-data/v4/runtime/vertical_slice_board_targets.json',
             'research-data/evidence/source_registry_v4.json',
             'research-data/levels/public_image_assets_v4.json',
             'research-data/economy/observation_ledger_v4.json'
