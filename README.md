@@ -36,6 +36,7 @@
 - 42条音频资产规格 + Motion Manifest
 - 48个建设节点
 - 110日 Story Beat
+- Day1-10 可运行原创剧情：26 Scenes / 80 条原创 zh-CN 对白
 - 6套 LiveOps 活动蓝图
 - OpenAPI 后端合同
 - Remote Config / 灰度 / 回滚合同
