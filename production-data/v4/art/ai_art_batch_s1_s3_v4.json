@@ -1,14 +1,14 @@
 {
-  "version": "4.0",
+  "version": "4.1",
   "generatedAt": "2026-09-25",
-  "scope": "ART-S1/S2/S3 first production queue",
+  "scope": "ART-S1/S2/S3 Day1-10 production closure",
   "sourceQueue": "production-data/v4/art/art_production_queue_v4.csv",
   "rules": {
-    "originality": "Create original game art. Public references are allowed only for generic information hierarchy, readability, camera/perspective and category conventions.",
-    "execution": "Anchor review precedes family-scale production. Output is not APPROVED until all acceptance gates are recorded.",
-    "naming": "Final export filename must use the formal AssetId."
+    "originality": "Create original game art. Public references inform only generic information hierarchy, readability, camera/perspective and category conventions.",
+    "execution": "Anchor review precedes family-scale production. Output is not APPROVED until every acceptance gate is recorded.",
+    "naming": "Final export filename uses formal AssetId."
   },
-  "jobCount": 49,
+  "jobCount": 109,
   "jobs": [
     {
       "job_id": "JOB_UI_BG_GLOBAL",
@@ -22,10 +22,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 全局浅色背景. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 全局浅色背景. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -43,7 +43,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -58,10 +58,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 通用弹窗背板. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 通用弹窗背板. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -79,7 +79,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -97,10 +97,10 @@
         "Disabled",
         "Attention"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 主按钮. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 主按钮. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -118,7 +118,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -135,10 +135,10 @@
         "Pressed",
         "Disabled"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 次按钮. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 次按钮. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -156,7 +156,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -171,10 +171,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 体力Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 体力Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -192,7 +192,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -207,10 +207,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 金币Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 金币Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -228,7 +228,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -243,10 +243,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 钻石Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 钻石Chip. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -264,7 +264,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -281,10 +281,10 @@
         "Ready",
         "Submitted"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 订单卡背板. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with #543C2F warm text/outline logic. Must be 9-slice friendly where applicable and state-readable on mobile.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 订单卡背板. Follow V4 palette #FFF7E8 #FFFDF8 #F6A43A #78C65A #49B9F2 #F5C84C #EF5471 with warm brown #543C2F structural lines. Must be mobile-readable and 9-slice friendly where applicable.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -302,7 +302,7 @@
         "mobile readability",
         "asset id traceability",
         "9-slice safe where applicable",
-        "pressed/disabled/attention states not color-only"
+        "states not color-only"
       ]
     },
     {
@@ -317,10 +317,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 9×7棋盘框 for a 9x7 merge board with 76px logical cells. Keep low visual noise so board items remain dominant.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 9×7棋盘框 for a 9x7 merge board with 76px logical cells. Keep low visual noise so item icons remain dominant.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -352,10 +352,10 @@
         "Normal",
         "Highlight"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 开放格 for a 9x7 merge board with 76px logical cells. Keep low visual noise so board items remain dominant.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 开放格 for a 9x7 merge board with 76px logical cells. Keep low visual noise so item icons remain dominant.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -386,10 +386,10 @@
       "states": [
         "Locked"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 锁定格 for a 9x7 merge board with 76px logical cells. Keep low visual noise so board items remain dominant.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 锁定格 for a 9x7 merge board with 76px logical cells. Keep low visual noise so item icons remain dominant.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -420,10 +420,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 道具统一软阴影 for a 9x7 merge board with 76px logical cells. Keep low visual noise so board items remain dominant.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 道具统一软阴影 for a 9x7 merge board with 76px logical cells. Keep low visual noise so item icons remain dominant.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -454,10 +454,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 番茄; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 番茄; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -490,10 +490,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 彩椒; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 彩椒; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -526,10 +526,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 蘑菇; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 蘑菇; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -562,10 +562,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 辣椒; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 辣椒; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -598,10 +598,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 葱段; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 葱段; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -634,10 +634,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 胡萝卜; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 胡萝卜; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -670,10 +670,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 洋葱; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 洋葱; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -706,10 +706,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 咖啡豆; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 咖啡豆; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -742,10 +742,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 浓缩咖啡; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 浓缩咖啡; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -778,10 +778,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 咖啡; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 咖啡; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -814,10 +814,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 便携咖啡; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 便携咖啡; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -850,10 +850,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 冰咖啡; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 冰咖啡; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -886,10 +886,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 绿茶; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 绿茶; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -922,10 +922,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 玉米粒; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 玉米粒; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -958,10 +958,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 香草荚; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 香草荚; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -994,10 +994,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 玉米; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 玉米; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1030,10 +1030,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 香草籽; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 香草籽; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1066,10 +1066,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 生菜; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 生菜; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1102,10 +1102,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background icon of 纯牛奶; about 20-degree top-down view, compact centered silhouette, soft reusable floor shadow separated conceptually, appetizing/natural color, must remain recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 纯牛奶; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1138,10 +1138,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background finished-dish icon of 生菜沙拉; about 20-degree top-down view, food is the focal point and dishware is secondary, appetizing saturated colors, recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 生菜沙拉; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1174,10 +1174,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background finished-dish icon of 糖拌番茄; about 20-degree top-down view, food is the focal point and dishware is secondary, appetizing saturated colors, recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 糖拌番茄; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1210,10 +1210,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background finished-dish icon of 彩椒脆片; about 20-degree top-down view, food is the focal point and dishware is secondary, appetizing saturated colors, recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 彩椒脆片; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1246,10 +1246,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background finished-dish icon of 菌香芝士卷; about 20-degree top-down view, food is the focal point and dishware is secondary, appetizing saturated colors, recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 菌香芝士卷; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1282,10 +1282,10 @@
       "states": [
         "Normal"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a single transparent-background finished-dish icon of 生切胡萝卜条; about 20-degree top-down view, food is the focal point and dishware is secondary, appetizing saturated colors, recognizable at 64px.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 生切胡萝卜条; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1322,10 +1322,10 @@
         "Boosted",
         "Locked"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 厨房补给箱 in a friendly rounded 3/4 view as a clearly interactive producer, visually distinct from ordinary items and cookware. Design supports Ready, Tap, Cooldown, Boosted and Locked states without changing the base silhouette.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 厨房补给箱 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1342,7 +1342,7 @@
         "palette/outline consistency",
         "mobile readability",
         "asset id traceability",
-        "producer silhouette distinct from item/cookware",
+        "distinct producer silhouette",
         "all required states readable"
       ]
     },
@@ -1362,10 +1362,10 @@
         "Boosted",
         "Locked"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 咖啡补给台 in a friendly rounded 3/4 view as a clearly interactive producer, visually distinct from ordinary items and cookware. Design supports Ready, Tap, Cooldown, Boosted and Locked states without changing the base silhouette.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 咖啡补给台 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1382,7 +1382,7 @@
         "palette/outline consistency",
         "mobile readability",
         "asset id traceability",
-        "producer silhouette distinct from item/cookware",
+        "distinct producer silhouette",
         "all required states readable"
       ]
     },
@@ -1402,10 +1402,10 @@
         "Boosted",
         "Locked"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 谷物补给箱 in a friendly rounded 3/4 view as a clearly interactive producer, visually distinct from ordinary items and cookware. Design supports Ready, Tap, Cooldown, Boosted and Locked states without changing the base silhouette.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 谷物补给箱 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1422,7 +1422,7 @@
         "palette/outline consistency",
         "mobile readability",
         "asset id traceability",
-        "producer silhouette distinct from item/cookware",
+        "distinct producer silhouette",
         "all required states readable"
       ]
     },
@@ -1442,10 +1442,10 @@
         "Boosted",
         "Locked"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 备菜耗材箱 in a friendly rounded 3/4 view as a clearly interactive producer, visually distinct from ordinary items and cookware. Design supports Ready, Tap, Cooldown, Boosted and Locked states without changing the base silhouette.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 备菜耗材箱 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1462,7 +1462,7 @@
         "palette/outline consistency",
         "mobile readability",
         "asset id traceability",
-        "producer silhouette distinct from item/cookware",
+        "distinct producer silhouette",
         "all required states readable"
       ]
     },
@@ -1481,10 +1481,10 @@
         "Ready",
         "Collect"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 饮品调制台 in a rounded 3/4 view as a processing/cooking station, visually distinct from storage/supply producers. Design supports Idle, Cooking, Ready and Collect states.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 饮品调制台 in a rounded 3/4 view as a processing/cooking station, distinct from supply producers. Support Idle, Cooking, Ready and Collect states.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1501,8 +1501,8 @@
         "palette/outline consistency",
         "mobile readability",
         "asset id traceability",
-        "cookware distinct from producer",
-        "cooking/ready state readable"
+        "distinct from producer",
+        "cooking/ready states readable"
       ]
     },
     {
@@ -1517,10 +1517,10 @@
       "states": [
         "Play"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a transparent VFX concept for 合成; bold readable shapes, short mobile-game burst language, no dense particles, easy low-end fallback.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create transparent VFX for 合成; bold readable shapes, short burst language, low particle density and an obvious low-end fallback.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1553,10 +1553,10 @@
       "states": [
         "Play"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a transparent VFX concept for 生产; bold readable shapes, short mobile-game burst language, no dense particles, easy low-end fallback.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create transparent VFX for 生产; bold readable shapes, short burst language, low particle density and an obvious low-end fallback.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1589,10 +1589,10 @@
       "states": [
         "Play"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a transparent VFX concept for 烹饪完成; bold readable shapes, short mobile-game burst language, no dense particles, easy low-end fallback.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create transparent VFX for 烹饪完成; bold readable shapes, short burst language, low particle density and an obvious low-end fallback.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1629,10 +1629,10 @@
         "Back",
         "Expressions"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a character canon sheet for 店长-柚宁 (human). Fixed palette: primary #F3B05A, accent #FFF3DF, outline #5C4638. Fixed props: 米白围裙|橙色发夹|小记事本. Show front, 3/4, side, back and six expressions (Neutral|Happy|Expect|Surprised|Sad|Angry). Preserve identical proportions and fixed props across views.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 店长-柚宁; species human; role PROTAGONIST; primary #F3B05A; accent #FFF3DF; outline #5C4638; fixed props 米白围裙|橙色发夹|小记事本; personality 务实|温和|遇到突发状况会先解决问题再吐槽. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1650,8 +1650,8 @@
         "mobile readability",
         "asset id traceability",
         "fixed props identical across views",
-        "face/beak/eye/body proportions consistent",
-        "avatar readable at 64px"
+        "facial/body proportions consistent",
+        "64px identity retained"
       ]
     },
     {
@@ -1670,10 +1670,10 @@
         "Back",
         "Expressions"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a character canon sheet for 引导鹅-团团 (goose). Fixed palette: primary #FFF4D8, accent #F6B84B, outline #76543A. Fixed props: 橙黄小围巾|木质钥匙牌. Show front, 3/4, side, back and six expressions (Neutral|Happy|Expect|Surprised|Sad|Angry). Preserve identical proportions and fixed props across views.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 引导鹅-团团; species goose; role MAJOR_GUEST; primary #FFF4D8; accent #F6B84B; outline #76543A; fixed props 橙黄小围巾|木质钥匙牌; personality 热心|有点碎嘴|熟悉街区. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1691,8 +1691,8 @@
         "mobile readability",
         "asset id traceability",
         "fixed props identical across views",
-        "face/beak/eye/body proportions consistent",
-        "avatar readable at 64px"
+        "facial/body proportions consistent",
+        "64px identity retained"
       ]
     },
     {
@@ -1711,10 +1711,10 @@
         "Back",
         "Expressions"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create a character canon sheet for 小满 (goose). Fixed palette: primary #FFF1D0, accent #D96F4A, outline #76543A. Fixed props: 邮差包. Show front, 3/4, side, back and six expressions (Neutral|Happy|Expect|Surprised|Sad|Angry). Preserve identical proportions and fixed props across views.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 小满; species goose; role MAJOR_GUEST; primary #FFF1D0; accent #D96F4A; outline #76543A; fixed props 邮差包; personality 爽朗|爱讲旧街往事|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1732,8 +1732,8 @@
         "mobile readability",
         "asset id traceability",
         "fixed props identical across views",
-        "face/beak/eye/body proportions consistent",
-        "avatar readable at 64px"
+        "facial/body proportions consistent",
+        "64px identity retained"
       ]
     },
     {
@@ -1748,10 +1748,10 @@
       "states": [
         "Before"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 区域1建筑1改造前 as a modular transparent-background 3/4 world building. Preserve a stable bottom-center pivot, clear footprint, separable base/roof/sign/props/lights layers, no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑1改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1785,10 +1785,10 @@
         "After",
         "Alive"
       ],
-      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, no imitation of any existing game's protected character/icon/building/UI skin. Create 区域1建筑1改造后 as a modular transparent-background 3/4 world building. Preserve a stable bottom-center pivot, clear footprint, separable base/roof/sign/props/lights layers, no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑1改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
       "forbidden": [
         "photorealistic",
-        "3D render look",
+        "generic 3D render look",
         "thin noisy linework",
         "watermark",
         "brand logo",
@@ -1797,6 +1797,2347 @@
       ],
       "output_contract": {
         "filename": "street_01_build_01_after.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_BAOMIHUA",
+      "asset_id": "art_dish_baomihua",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 爆米花; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_baomihua.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_CAOMEIGUOLU",
+      "asset_id": "art_dish_caomeiguolu",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 草莓果露; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_caomeiguolu.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_PINGGUOGUOYIN",
+      "asset_id": "art_dish_pingguoguoyin",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 苹果果饮; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_pingguoguoyin.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_SHOUDANINGMENGZHI",
+      "asset_id": "art_dish_shoudaningmengzhi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 手打柠檬汁; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_shoudaningmengzhi.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_XIANZHALANMEIZHI",
+      "asset_id": "art_dish_xianzhalanmeizhi",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 鲜榨蓝莓汁; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_xianzhalanmeizhi.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_DISH_ZHENZHUNAICHA",
+      "asset_id": "art_dish_zhenzhunaicha",
+      "anchor_id": "ANCHOR_DISH_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Dish",
+      "source_size": "320x320",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background finished-dish icon of 珍珠奶茶; 15-30 degree top-down view, food is the focal point, dishware secondary, appetizing colors, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_dish_zhenzhunaicha.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_BINGTANG",
+      "asset_id": "art_item_bingtang",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 冰糖; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_bingtang.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_BOLIWAN",
+      "asset_id": "art_item_boliwan",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 玻璃碗; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_boliwan.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_CAOMEI",
+      "asset_id": "art_item_caomei",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 草莓; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_caomei.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_HONGCHA",
+      "asset_id": "art_item_hongcha",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 红茶; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_hongcha.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_HUANGYOU",
+      "asset_id": "art_item_huangyou",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 黄油; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_huangyou.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_LANMEI",
+      "asset_id": "art_item_lanmei",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 蓝莓; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_lanmei.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_NINGMENG",
+      "asset_id": "art_item_ningmeng",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 柠檬; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_ningmeng.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_PINGGUO",
+      "asset_id": "art_item_pingguo",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 苹果; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_pingguo.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_SHENHONGKAFEI",
+      "asset_id": "art_item_shenhongkafei",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 深烘咖啡; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_shenhongkafei.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_TANGJIANG",
+      "asset_id": "art_item_tangjiang",
+      "anchor_id": "ANCHOR_DRINK_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 糖浆; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_tangjiang.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_ITEM_ZHISHIPIAN",
+      "asset_id": "art_item_zhishipian",
+      "anchor_id": "ANCHOR_ITEM_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "BoardItem",
+      "source_size": "256x256",
+      "transparent": true,
+      "states": [
+        "Normal"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create a single transparent-background icon of 芝士片; 15-30 degree top-down view, compact centered silhouette, saturated but natural material color, soft shadow, recognizable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_item_zhishipian.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "recognizable at 64px",
+        "consistent 15-30 degree top-down perspective"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_PROD_SHUCAILEIZI",
+      "asset_id": "art_prod_shucaileizi",
+      "anchor_id": "ANCHOR_PROD_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Producer",
+      "source_size": "384x384",
+      "transparent": true,
+      "states": [
+        "Ready",
+        "Tap",
+        "Cooldown",
+        "Boosted",
+        "Locked"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 蔬菜篮子 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_prod_shucaileizi.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "distinct producer silhouette",
+        "all required states readable"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_PROD_YINLIAOGUI",
+      "asset_id": "art_prod_yinliaogui",
+      "anchor_id": "ANCHOR_PROD_02",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Producer",
+      "source_size": "384x384",
+      "transparent": true,
+      "states": [
+        "Ready",
+        "Tap",
+        "Cooldown",
+        "Boosted",
+        "Locked"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 饮料柜 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_prod_yinliaogui.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "distinct producer silhouette",
+        "all required states readable"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_PROD_SHUIGUOLANZI",
+      "asset_id": "art_prod_shuiguolanzi",
+      "anchor_id": "ANCHOR_PROD_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Producer",
+      "source_size": "384x384",
+      "transparent": true,
+      "states": [
+        "Ready",
+        "Tap",
+        "Cooldown",
+        "Boosted",
+        "Locked"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 水果篮子 in a rounded 3/4 view as an interactive producer, distinct from ordinary items and cookware. The base design must support Ready, Tap, Cooldown, Boosted and Locked states.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_prod_shuiguolanzi.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "distinct producer silhouette",
+        "all required states readable"
+      ]
+    },
+    {
+      "job_id": "JOB_ART_COOK_PREP_STATION",
+      "asset_id": "art_cook_prep_station",
+      "anchor_id": "ANCHOR_COOK_01",
+      "batch_id": "ART-S1",
+      "priority": "P0",
+      "category": "Cookware",
+      "source_size": "384x384",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Cooking",
+        "Ready",
+        "Collect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 备菜台 in a rounded 3/4 view as a processing/cooking station, distinct from supply producers. Support Idle, Cooking, Ready and Collect states.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "art_cook_prep_station.png",
+        "workspace": "art-source/v4/exports/art-s1/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "distinct from producer",
+        "cooking/ready states readable"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_MANAGER_001_AVATAR",
+      "asset_id": "char_manager_001_avatar",
+      "anchor_id": "ANCHOR_CHAR_01",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 店长-柚宁; species human; role PROTAGONIST; primary #F3B05A; accent #FFF3DF; outline #5C4638; fixed props 米白围裙|橙色发夹|小记事本; personality 务实|温和|遇到突发状况会先解决问题再吐槽. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_manager_001_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_MANAGER_001_STORY",
+      "asset_id": "char_manager_001_story",
+      "anchor_id": "ANCHOR_CHAR_01",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 店长-柚宁; species human; role PROTAGONIST; primary #F3B05A; accent #FFF3DF; outline #5C4638; fixed props 米白围裙|橙色发夹|小记事本; personality 务实|温和|遇到突发状况会先解决问题再吐槽. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_manager_001_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_MANAGER_001_SPINE",
+      "asset_id": "char_manager_001_spine",
+      "anchor_id": "ANCHOR_CHAR_01",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Talk",
+        "Cheer",
+        "Think"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 店长-柚宁; species human; role PROTAGONIST; primary #F3B05A; accent #FFF3DF; outline #5C4638; fixed props 米白围裙|橙色发夹|小记事本; personality 务实|温和|遇到突发状况会先解决问题再吐槽. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_manager_001_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GUIDE_001_AVATAR",
+      "asset_id": "char_guide_001_avatar",
+      "anchor_id": "ANCHOR_CHAR_02",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 引导鹅-团团; species goose; role MAJOR_GUEST; primary #FFF4D8; accent #F6B84B; outline #76543A; fixed props 橙黄小围巾|木质钥匙牌; personality 热心|有点碎嘴|熟悉街区. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_guide_001_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GUIDE_001_STORY",
+      "asset_id": "char_guide_001_story",
+      "anchor_id": "ANCHOR_CHAR_02",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 引导鹅-团团; species goose; role MAJOR_GUEST; primary #FFF4D8; accent #F6B84B; outline #76543A; fixed props 橙黄小围巾|木质钥匙牌; personality 热心|有点碎嘴|熟悉街区. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_guide_001_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GUIDE_001_SPINE",
+      "asset_id": "char_guide_001_spine",
+      "anchor_id": "ANCHOR_CHAR_02",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Talk",
+        "Cheer",
+        "Think"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 引导鹅-团团; species goose; role MAJOR_GUEST; primary #FFF4D8; accent #F6B84B; outline #76543A; fixed props 橙黄小围巾|木质钥匙牌; personality 热心|有点碎嘴|熟悉街区. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_guide_001_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_001_AVATAR",
+      "asset_id": "char_goose_001_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 小满; species goose; role MAJOR_GUEST; primary #FFF1D0; accent #D96F4A; outline #76543A; fixed props 邮差包; personality 爽朗|爱讲旧街往事|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_001_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_001_STORY",
+      "asset_id": "char_goose_001_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 小满; species goose; role MAJOR_GUEST; primary #FFF1D0; accent #D96F4A; outline #76543A; fixed props 邮差包; personality 爽朗|爱讲旧街往事|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_001_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_001_SPINE",
+      "asset_id": "char_goose_001_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 小满; species goose; role MAJOR_GUEST; primary #FFF1D0; accent #D96F4A; outline #76543A; fixed props 邮差包; personality 爽朗|爱讲旧街往事|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_001_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_002_CANON_SHEET",
+      "asset_id": "char_goose_002_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 栗子; species goose; role MAJOR_GUEST; primary #F7E4C5; accent #7BB36A; outline #76543A; fixed props 绿色头巾; personality 慢热|细心|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_002_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "fixed props identical across views",
+        "facial/body proportions consistent",
+        "64px identity retained"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_002_AVATAR",
+      "asset_id": "char_goose_002_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 栗子; species goose; role MAJOR_GUEST; primary #F7E4C5; accent #7BB36A; outline #76543A; fixed props 绿色头巾; personality 慢热|细心|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_002_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_002_STORY",
+      "asset_id": "char_goose_002_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 栗子; species goose; role MAJOR_GUEST; primary #F7E4C5; accent #7BB36A; outline #76543A; fixed props 绿色头巾; personality 慢热|细心|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_002_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_002_SPINE",
+      "asset_id": "char_goose_002_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 栗子; species goose; role MAJOR_GUEST; primary #F7E4C5; accent #7BB36A; outline #76543A; fixed props 绿色头巾; personality 慢热|细心|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_002_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_003_CANON_SHEET",
+      "asset_id": "char_goose_003_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 果冻; species goose; role MAJOR_GUEST; primary #FFF5E8; accent #E65B70; outline #76543A; fixed props 圆框眼镜; personality 紧张|认真|嘴馋|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_003_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "fixed props identical across views",
+        "facial/body proportions consistent",
+        "64px identity retained"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_003_AVATAR",
+      "asset_id": "char_goose_003_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 果冻; species goose; role MAJOR_GUEST; primary #FFF5E8; accent #E65B70; outline #76543A; fixed props 圆框眼镜; personality 紧张|认真|嘴馋|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_003_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_003_STORY",
+      "asset_id": "char_goose_003_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 果冻; species goose; role MAJOR_GUEST; primary #FFF5E8; accent #E65B70; outline #76543A; fixed props 圆框眼镜; personality 紧张|认真|嘴馋|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_003_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_003_SPINE",
+      "asset_id": "char_goose_003_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 果冻; species goose; role MAJOR_GUEST; primary #FFF5E8; accent #E65B70; outline #76543A; fixed props 圆框眼镜; personality 紧张|认真|嘴馋|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_003_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_004_CANON_SHEET",
+      "asset_id": "char_goose_004_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 阿麦; species goose; role MAJOR_GUEST; primary #F2DDC0; accent #5EA5C9; outline #76543A; fixed props 蓝色运动腕带; personality 直爽|精力旺盛|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_004_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "fixed props identical across views",
+        "facial/body proportions consistent",
+        "64px identity retained"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_004_AVATAR",
+      "asset_id": "char_goose_004_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 阿麦; species goose; role MAJOR_GUEST; primary #F2DDC0; accent #5EA5C9; outline #76543A; fixed props 蓝色运动腕带; personality 直爽|精力旺盛|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_004_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_004_STORY",
+      "asset_id": "char_goose_004_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 阿麦; species goose; role MAJOR_GUEST; primary #F2DDC0; accent #5EA5C9; outline #76543A; fixed props 蓝色运动腕带; personality 直爽|精力旺盛|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_004_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_004_SPINE",
+      "asset_id": "char_goose_004_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 阿麦; species goose; role MAJOR_GUEST; primary #F2DDC0; accent #5EA5C9; outline #76543A; fixed props 蓝色运动腕带; personality 直爽|精力旺盛|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_004_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_005_CANON_SHEET",
+      "asset_id": "char_goose_005_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 豆花; species goose; role MAJOR_GUEST; primary #FFF0D9; accent #B982C6; outline #76543A; fixed props 紫色丝带; personality 温柔|审美敏感|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_005_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "fixed props identical across views",
+        "facial/body proportions consistent",
+        "64px identity retained"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_005_AVATAR",
+      "asset_id": "char_goose_005_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 豆花; species goose; role MAJOR_GUEST; primary #FFF0D9; accent #B982C6; outline #76543A; fixed props 紫色丝带; personality 温柔|审美敏感|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_005_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_005_STORY",
+      "asset_id": "char_goose_005_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 豆花; species goose; role MAJOR_GUEST; primary #FFF0D9; accent #B982C6; outline #76543A; fixed props 紫色丝带; personality 温柔|审美敏感|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_005_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_005_SPINE",
+      "asset_id": "char_goose_005_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 豆花; species goose; role MAJOR_GUEST; primary #FFF0D9; accent #B982C6; outline #76543A; fixed props 紫色丝带; personality 温柔|审美敏感|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_005_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_006_CANON_SHEET",
+      "asset_id": "char_goose_006_canon_sheet",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterCanon",
+      "source_size": "2048x2048",
+      "transparent": true,
+      "states": [
+        "Front",
+        "ThreeQuarter",
+        "Side",
+        "Back",
+        "Expressions"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 山竹; species goose; role MAJOR_GUEST; primary #E9E0CF; accent #D08B45; outline #76543A; fixed props 棕色小马甲; personality 稳重|幽默|对白保持生活化. Create a consistent canon sheet showing front, 3/4, side, back, and six expressions. Preserve identical proportions and fixed props across every view.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_006_canon_sheet.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "fixed props identical across views",
+        "facial/body proportions consistent",
+        "64px identity retained"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_006_AVATAR",
+      "asset_id": "char_goose_006_avatar",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterAvatar",
+      "source_size": "512x512",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Sad",
+        "Angry",
+        "Surprised",
+        "Expect"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 山竹; species goose; role MAJOR_GUEST; primary #E9E0CF; accent #D08B45; outline #76543A; fixed props 棕色小马甲; personality 稳重|幽默|对白保持生活化. Create a 512x512 avatar family covering the required expressions, consistent with the character canon; strong face silhouette and readable at 64px.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_006_avatar.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "64px face readable",
+        "expression family consistent"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_006_STORY",
+      "asset_id": "char_goose_006_story",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterStory",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Neutral",
+        "Happy",
+        "Expect",
+        "Surprised",
+        "Sad",
+        "Angry"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 山竹; species goose; role MAJOR_GUEST; primary #E9E0CF; accent #D08B45; outline #76543A; fixed props 棕色小马甲; personality 稳重|幽默|对白保持生活化. Create a 3/4-body story portrait family for the required expressions; preserve face, body ratio, props and costume exactly across expressions.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_006_story.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "expression/crop consistent",
+        "no costume drift"
+      ]
+    },
+    {
+      "job_id": "JOB_CHAR_GOOSE_006_SPINE",
+      "asset_id": "char_goose_006_spine",
+      "anchor_id": "ANCHOR_CHAR_03",
+      "batch_id": "ART-S2",
+      "priority": "P0",
+      "category": "CharacterNPC",
+      "source_size": "1024x1024",
+      "transparent": true,
+      "states": [
+        "Idle",
+        "Walk",
+        "Eat",
+        "Cheer",
+        "Sad"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Character: 山竹; species goose; role MAJOR_GUEST; primary #E9E0CF; accent #D08B45; outline #76543A; fixed props 棕色小马甲; personality 稳重|幽默|对白保持生活化. Create a scene-character source design suitable for Spine rigging; clean separable limbs/body/props, strong motion silhouette, consistent with the canon.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "char_goose_006_spine.png",
+        "workspace": "art-source/v4/exports/art-s2/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "canon identity exact",
+        "rig-friendly separation",
+        "performance budget compatible"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_02_BEFORE",
+      "asset_id": "street_01_build_02_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑2改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_02_before.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_02_AFTER",
+      "asset_id": "street_01_build_02_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑2改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_02_after.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_03_BEFORE",
+      "asset_id": "street_01_build_03_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑3改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_03_before.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_03_AFTER",
+      "asset_id": "street_01_build_03_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑3改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_03_after.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_04_BEFORE",
+      "asset_id": "street_01_build_04_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑4改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_04_before.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_04_AFTER",
+      "asset_id": "street_01_build_04_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑4改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_04_after.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_05_BEFORE",
+      "asset_id": "street_01_build_05_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑5改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_05_before.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_05_AFTER",
+      "asset_id": "street_01_build_05_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑5改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_05_after.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_06_BEFORE",
+      "asset_id": "street_01_build_06_before",
+      "anchor_id": "ANCHOR_BUILD_01",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "Before"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑6改造前 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_06_before.png",
+        "workspace": "art-source/v4/exports/art-s3/",
+        "metadata_required": true
+      },
+      "acceptance": [
+        "originality gate",
+        "palette/outline consistency",
+        "mobile readability",
+        "asset id traceability",
+        "shared pivot/footprint with counterpart",
+        "bounding-box drift <= 8%"
+      ]
+    },
+    {
+      "job_id": "JOB_STREET_01_BUILD_06_AFTER",
+      "asset_id": "street_01_build_06_after",
+      "anchor_id": "ANCHOR_BUILD_02",
+      "batch_id": "ART-S3",
+      "priority": "P0",
+      "category": "Building",
+      "source_size": "1536x1536",
+      "transparent": true,
+      "states": [
+        "After",
+        "Alive"
+      ],
+      "prompt_spec": "Original production asset for a warm healing neighborhood food-street casual mobile game; 2D hand-painted with light volume, clean large shapes, deep warm-brown outline, soft upper-left lighting, no text, no logo, no watermark, and no imitation of any existing game's protected character, icon, building, UI skin, or composition. Create 区域1建筑6改造后 as a modular transparent-background 3/4 world building. Preserve stable bottom-center pivot and footprint, with separable base/roof/sign/props/lights; no readable signage. It must pair with its Before/After counterpart without camera or footprint drift.",
+      "forbidden": [
+        "photorealistic",
+        "generic 3D render look",
+        "thin noisy linework",
+        "watermark",
+        "brand logo",
+        "baked-in text",
+        "competitor-specific protected visual design"
+      ],
+      "output_contract": {
+        "filename": "street_01_build_06_after.png",
         "workspace": "art-source/v4/exports/art-s3/",
         "metadata_required": true
       },
