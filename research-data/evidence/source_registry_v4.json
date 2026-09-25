@@ -295,11 +295,31 @@
         "二十多天已经明显受体力/背包/加速券影响"
       ],
       "notes": "近期玩家体验"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY1_5",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/790520777484013452",
+      "claims": [
+        "Day1-5逐单经营菜单需求"
+      ],
+      "notes": "玩家公开逐日记录；菜单文字可直接转录，作为需求证据，不代表后台数值配置。"
+    },
+    {
+      "id": "SRC_TAPTAP_DAY6_10",
+      "grade": "C",
+      "type": "PLAYER_MENU",
+      "url": "https://www.taptap.cn/moment/790611816005766899",
+      "claims": [
+        "Day6-10逐单经营菜单需求"
+      ],
+      "notes": "玩家公开逐日记录；含需求食材与菜单文字。"
     }
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Added specific player-report sources for economy/cooldown/Day75/card evidence.",
-    "sourceCount": 25
+    "note": "Added stable Day1-10 menu source IDs for runtime evidence traceability.",
+    "sourceCount": 27
   }
 }
