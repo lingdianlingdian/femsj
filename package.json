@@ -28,6 +28,7 @@
     "validate:story:all": "node tools/story-validator/validate-all.mjs",
     "art:generate": "node tools/art-procedural-generator/generate.mjs",
     "runtime:build:full": "node tools/runtime-full-builder/build.mjs",
-    "runtime:check:full": "node tools/runtime-full-builder/build.mjs --check"
+    "runtime:check:full": "node tools/runtime-full-builder/build.mjs --check",
+    "gate:balance:full": "node tools/balance-simulator/full-gate.mjs"
   }
 }
