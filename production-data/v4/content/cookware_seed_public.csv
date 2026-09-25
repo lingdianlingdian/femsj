@@ -1,0 +1,5 @@
+cookware_id,name,evidence_status,source_id,level,queue_size,speed_modifier,unlock_day,asset_id,notes
+"cook_grill","烤架","PUBLIC_HANDSON","SRC_YOUXICHA","","","","","art_cook_grill","肉肠/牛胸肉加工分支有明确实机拆解"
+"cook_prep_station","备菜台","PUBLIC_HANDSON","SRC_YOUXICHA","","","","","art_cook_prep_station","菌香芝士卷多输入加工有明确实机拆解"
+"cook_soup_pot","汤锅","EDITORIAL_OBSERVED","SRC_XIAOMI_EDITORIAL","","","","","art_cook_soup_pot","第三方编辑稿明确点名，需实机图复核"
+"cook_oven","烤箱","EDITORIAL_OBSERVED","SRC_XIAOMI_EDITORIAL","","","","","art_cook_oven","第三方编辑稿明确点名，需实机图复核"
