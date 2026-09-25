@@ -9,6 +9,7 @@
     "audit:data": "node tools/data-auditor/audit.mjs",
     "audit:content": "node tools/content-reference-auditor/audit.mjs",
     "audit:runtime": "node tools/runtime-readiness/audit.mjs",
-    "audit:runtime:strict": "node tools/runtime-readiness/audit.mjs --strict"
+    "audit:runtime:strict": "node tools/runtime-readiness/audit.mjs --strict",
+    "gate:balance:vertical": "node tools/balance-simulator/gate.mjs"
   }
 }
