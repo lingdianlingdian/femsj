@@ -1,11 +1,11 @@
 {
   "version": "4.0",
   "generatedAt": "2026-09-25",
-  "count": 109,
+  "count": 117,
   "severity": {
-    "P0": "Release blocker",
-    "P1": "Must pass before public release",
-    "P2": "Polish/quality"
+    "P0": 78,
+    "P1": 34,
+    "P2": 5
   },
   "cases": [
     {
@@ -1806,6 +1806,176 @@
       ],
       "tags": [
         "observability"
+      ]
+    },
+    {
+      "id": "TC_EVENT_001",
+      "area": "LIVEOPS",
+      "title": "活动里程碑字段合同一致",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "加载包含milestones的活动配置",
+      "steps": [
+        "执行配置校验",
+        "遍历所有milestone"
+      ],
+      "expected": [
+        "仅接受rewards数组",
+        "旧reward字段被拒绝或迁移",
+        "每个里程碑至少1个奖励"
+      ],
+      "tags": [
+        "schema",
+        "event",
+        "milestone"
+      ]
+    },
+    {
+      "id": "TC_EVENT_002",
+      "area": "LIVEOPS",
+      "title": "里程碑阈值严格递增",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "活动存在2个以上milestone",
+      "steps": [
+        "构造重复或倒序threshold",
+        "执行配置校验"
+      ],
+      "expected": [
+        "配置校验失败",
+        "错误信息定位到eventId"
+      ],
+      "tags": [
+        "event",
+        "milestone",
+        "invariant"
+      ]
+    },
+    {
+      "id": "TC_EVENT_003",
+      "area": "LIVEOPS",
+      "title": "竞速活动必须配置匹配参数",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "type=RACE",
+      "steps": [
+        "删除matchmaking",
+        "执行配置校验"
+      ],
+      "expected": [
+        "配置校验失败",
+        "不得启动无匹配规则竞速"
+      ],
+      "tags": [
+        "event",
+        "race",
+        "matchmaking"
+      ]
+    },
+    {
+      "id": "TC_EVENT_004",
+      "area": "LIVEOPS",
+      "title": "赛季通行证等级数有效",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "type=PASS",
+      "steps": [
+        "将levels设为0",
+        "执行配置校验"
+      ],
+      "expected": [
+        "配置校验失败"
+      ],
+      "tags": [
+        "event",
+        "pass"
+      ]
+    },
+    {
+      "id": "TC_EVENT_005",
+      "area": "LIVEOPS",
+      "title": "卡册保底参数有效",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "type=ALBUM且guarantee.enabled=true",
+      "steps": [
+        "将pityPoints设为0",
+        "执行配置校验"
+      ],
+      "expected": [
+        "配置校验失败",
+        "不会发布无效保底参数"
+      ],
+      "tags": [
+        "event",
+        "album",
+        "pity"
+      ]
+    },
+    {
+      "id": "TC_EVENT_006",
+      "area": "LIVEOPS",
+      "title": "活动奖励可作为卡册进度源",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "卡册progressSources包含EVENT_REWARD",
+      "steps": [
+        "完成一个活动里程碑",
+        "结算卡包或活动奖励",
+        "刷新卡册进度"
+      ],
+      "expected": [
+        "EVENT_REWARD被合法识别",
+        "进度只增加一次"
+      ],
+      "tags": [
+        "event",
+        "album",
+        "idempotency"
+      ]
+    },
+    {
+      "id": "TC_EVENT_007",
+      "area": "LIVEOPS",
+      "title": "活动持续时间单位互斥",
+      "severity": "P1",
+      "automation": "AUTO",
+      "preconditions": "任一活动配置",
+      "steps": [
+        "同时设置durationHours和durationDays",
+        "执行配置校验"
+      ],
+      "expected": [
+        "配置校验失败",
+        "禁止多时间单位歧义"
+      ],
+      "tags": [
+        "event",
+        "duration",
+        "schema"
+      ]
+    },
+    {
+      "id": "TC_EVENT_008",
+      "area": "LIVEOPS",
+      "title": "到期奖励自动邮件补发",
+      "severity": "P0",
+      "automation": "AUTO",
+      "preconditions": "活动settlement=AUTO_MAIL且玩家已达成未领取里程碑",
+      "steps": [
+        "令活动到期",
+        "触发结算两次",
+        "读取Ledger与邮件"
+      ],
+      "expected": [
+        "只生成一次奖励Ledger",
+        "只生成一封有效奖励邮件",
+        "重复结算不重复发奖"
+      ],
+      "tags": [
+        "event",
+        "settlement",
+        "idempotency"
       ]
     }
   ]
