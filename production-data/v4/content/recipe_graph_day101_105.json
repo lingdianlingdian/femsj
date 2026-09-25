@@ -1,0 +1,1355 @@
+{
+  "version": "4.0",
+  "recipes": [
+    {
+      "recipeEvidenceId": "r101_01",
+      "day": 101,
+      "name": "奶油",
+      "rawIngredients": [
+        "奶油"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "奶油",
+          "itemId": "item_naiyou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_02",
+      "day": 101,
+      "name": "酥烤肥蟹",
+      "rawIngredients": [
+        "螃蟹"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "螃蟹",
+          "itemId": "item_pangxie",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_03",
+      "day": 101,
+      "name": "乌龙茶",
+      "rawIngredients": [
+        "乌龙茶"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "乌龙茶",
+          "itemId": "item_wulongcha",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_04",
+      "day": 101,
+      "name": "早餐三明治",
+      "rawIngredients": [
+        "芝士片",
+        "蛋",
+        "培根",
+        "纯牛奶",
+        "蛋",
+        "小麦粉",
+        "玻璃碗"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "芝士片",
+          "itemId": "item_zhishipian",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "培根",
+          "itemId": "item_peigen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "纯牛奶",
+          "itemId": "item_chunniunai",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "小麦粉",
+          "itemId": "item_xiaomaifen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "玻璃碗",
+          "itemId": "item_boliwan",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": "截图中配方为多段中间食谱，先保存原始可见材料文字，后续拆DAG"
+    },
+    {
+      "recipeEvidenceId": "r101_05",
+      "day": 101,
+      "name": "汤力水",
+      "rawIngredients": [
+        "汤力水"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "汤力水",
+          "itemId": "item_tanglishui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_06",
+      "day": 101,
+      "name": "晶莹鲜虾饺",
+      "rawIngredients": [
+        "虾",
+        "矿泉水",
+        "小麦粉",
+        "蒸笼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "虾",
+          "itemId": "item_xia",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "矿泉水",
+          "itemId": "item_kuangquanshui",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "小麦粉",
+          "itemId": "item_xiaomaifen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蒸笼",
+          "itemId": "tool_zhenglong",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_07",
+      "day": 101,
+      "name": "糖豆",
+      "rawIngredients": [
+        "糖豆"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "糖豆",
+          "itemId": "item_tangdou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_08",
+      "day": 101,
+      "name": "朗姆可乐",
+      "rawIngredients": [
+        "朗姆",
+        "可乐"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "朗姆",
+          "itemId": "item_langmu",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "可乐",
+          "itemId": "item_kele",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_09",
+      "day": 101,
+      "name": "手撕紫甘蓝",
+      "rawIngredients": [
+        "紫甘蓝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "紫甘蓝",
+          "itemId": "item_ziganlan",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r101_10",
+      "day": 101,
+      "name": "酥香鳕鱼",
+      "rawIngredients": [
+        "鳕鱼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "鳕鱼",
+          "itemId": "item_xueyu",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_11",
+      "day": 102,
+      "name": "炭烤琵琶腿",
+      "rawIngredients": [
+        "琵琶腿"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "琵琶腿",
+          "itemId": "item_pipatui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_12",
+      "day": 102,
+      "name": "香菇肠粉",
+      "rawIngredients": [
+        "香菇",
+        "茶楼秘制配方3",
+        "肥鹅牌酱油"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "香菇",
+          "itemId": "item_xianggu",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方3",
+          "itemId": "special_tea_formula_3",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "肥鹅牌酱油",
+          "itemId": "item_feie_jiangyou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_13",
+      "day": 102,
+      "name": "乌龙茶",
+      "rawIngredients": [
+        "乌龙茶"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "乌龙茶",
+          "itemId": "item_wulongcha",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_14",
+      "day": 102,
+      "name": "椰汁奶白小丸",
+      "rawIngredients": [
+        "冰糖",
+        "椰奶",
+        "茶楼秘制配方1"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "冰糖",
+          "itemId": "item_bingtang",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "椰奶",
+          "itemId": "item_yenai",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方1",
+          "itemId": "special_tea_formula_1",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_15",
+      "day": 102,
+      "name": "新鲜生蚝",
+      "rawIngredients": [
+        "生蚝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "生蚝",
+          "itemId": "item_shenghao",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_16",
+      "day": 102,
+      "name": "威士忌苏打",
+      "rawIngredients": [
+        "威士忌",
+        "苏打水"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "威士忌",
+          "itemId": "item_weishiji",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "苏打水",
+          "itemId": "item_sudashui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_17",
+      "day": 102,
+      "name": "姜汁水",
+      "rawIngredients": [
+        "姜汁水"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "姜汁水",
+          "itemId": "item_jiangzhishui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_18",
+      "day": 102,
+      "name": "流沙奶黄包",
+      "rawIngredients": [
+        "黄油",
+        "鸡蛋",
+        "冰糖",
+        "矿泉水",
+        "小麦粉",
+        "茶楼秘制配方2",
+        "玻璃碗",
+        "蒸笼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "黄油",
+          "itemId": "item_huangyou",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "鸡蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "冰糖",
+          "itemId": "item_bingtang",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "矿泉水",
+          "itemId": "item_kuangquanshui",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "小麦粉",
+          "itemId": "item_xiaomaifen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方2",
+          "itemId": "special_tea_formula_2",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "玻璃碗",
+          "itemId": "item_boliwan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蒸笼",
+          "itemId": "tool_zhenglong",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_19",
+      "day": 102,
+      "name": "大杯美式",
+      "rawIngredients": [
+        "大杯美式"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "大杯美式",
+          "itemId": null,
+          "resolution": "UNRESOLVED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "NEEDS_TOKEN_REVIEW",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r102_20",
+      "day": 102,
+      "name": "手撕紫甘蓝",
+      "rawIngredients": [
+        "紫甘蓝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "紫甘蓝",
+          "itemId": "item_ziganlan",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image3"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_21",
+      "day": 103,
+      "name": "烤土豆片",
+      "rawIngredients": [
+        "土豆"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "土豆",
+          "itemId": "item_tudou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_22",
+      "day": 103,
+      "name": "新鲜生蚝",
+      "rawIngredients": [
+        "生蚝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "生蚝",
+          "itemId": "item_shenghao",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_23",
+      "day": 103,
+      "name": "葡萄果肉饮",
+      "rawIngredients": [
+        "葡萄"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "葡萄",
+          "itemId": "item_putao",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_24",
+      "day": 103,
+      "name": "焦糖马拉糕",
+      "rawIngredients": [
+        "鸡蛋",
+        "焦糖",
+        "小麦粉",
+        "茶楼秘制配方1",
+        "蒸笼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "鸡蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "焦糖",
+          "itemId": "item_jiaotang",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "小麦粉",
+          "itemId": "item_xiaomaifen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方1",
+          "itemId": "special_tea_formula_1",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蒸笼",
+          "itemId": "tool_zhenglong",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_25",
+      "day": 103,
+      "name": "黄金烤肘子",
+      "rawIngredients": [
+        "肘子"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "肘子",
+          "itemId": "item_zhouzi",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_26",
+      "day": 103,
+      "name": "威士忌苏打",
+      "rawIngredients": [
+        "威士忌",
+        "苏打水"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "威士忌",
+          "itemId": "item_weishiji",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "苏打水",
+          "itemId": "item_sudashui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_27",
+      "day": 103,
+      "name": "燕麦",
+      "rawIngredients": [
+        "燕麦"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "燕麦",
+          "itemId": null,
+          "resolution": "UNRESOLVED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "NEEDS_TOKEN_REVIEW",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_28",
+      "day": 103,
+      "name": "手撕紫甘蓝",
+      "rawIngredients": [
+        "紫甘蓝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "紫甘蓝",
+          "itemId": "item_ziganlan",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r103_29",
+      "day": 103,
+      "name": "大杯美式",
+      "rawIngredients": [
+        "大杯美式"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "大杯美式",
+          "itemId": null,
+          "resolution": "UNRESOLVED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image1"
+      },
+      "graphStatus": "NEEDS_TOKEN_REVIEW",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_30",
+      "day": 104,
+      "name": "什锦海鲜汤",
+      "rawIngredients": [
+        "番茄",
+        "混合香叶",
+        "鱿鱼",
+        "扇贝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "番茄",
+          "itemId": "item_fanqie",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "混合香叶",
+          "itemId": "item_hunhexiangye",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "鱿鱼",
+          "itemId": "item_youyu",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "扇贝",
+          "itemId": "item_shanbei",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_31",
+      "day": 104,
+      "name": "甜蛋酒",
+      "rawIngredients": [
+        "鸡蛋",
+        "茶楼秘制配方5"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "鸡蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方5",
+          "itemId": "special_tea_formula_5",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_32",
+      "day": 104,
+      "name": "烟熏牛胸肉",
+      "rawIngredients": [
+        "牛胸肉"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "牛胸肉",
+          "itemId": "item_niuxiongrou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_33",
+      "day": 104,
+      "name": "新鲜生蚝",
+      "rawIngredients": [
+        "生蚝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "生蚝",
+          "itemId": "item_shenghao",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_34",
+      "day": 104,
+      "name": "鹅鹅手打柠檬茶",
+      "rawIngredients": [
+        "花茶",
+        "柠檬"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "花茶",
+          "itemId": "item_huacha",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "柠檬",
+          "itemId": "item_ningmeng",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_35",
+      "day": 104,
+      "name": "黄金烤肘子",
+      "rawIngredients": [
+        "肘子"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "肘子",
+          "itemId": "item_zhouzi",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_36",
+      "day": 104,
+      "name": "手撕紫甘蓝",
+      "rawIngredients": [
+        "紫甘蓝"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "紫甘蓝",
+          "itemId": "item_ziganlan",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_37",
+      "day": 104,
+      "name": "炭烧金枪鱼串",
+      "rawIngredients": [
+        "金枪鱼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "金枪鱼",
+          "itemId": "item_jinqiangyu",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": "菜名依据截图视觉转录，后续用第二来源复核"
+    },
+    {
+      "recipeEvidenceId": "r104_38",
+      "day": 104,
+      "name": "巧克力",
+      "rawIngredients": [
+        "巧克力"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "巧克力",
+          "itemId": "item_qiaokeli",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r104_39",
+      "day": 104,
+      "name": "蜜汁烤鸡",
+      "rawIngredients": [
+        "带骨全鸡"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "带骨全鸡",
+          "itemId": "item_daiguquanji",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn373988image0"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_40",
+      "day": 105,
+      "name": "珍珠奶茶",
+      "rawIngredients": [
+        "绿茶",
+        "纯牛奶",
+        "糖浆"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "绿茶",
+          "itemId": "item_lvcha",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "纯牛奶",
+          "itemId": "item_chunniunai",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "糖浆",
+          "itemId": "item_tangjiang",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_41",
+      "day": 105,
+      "name": "咸水角",
+      "rawIngredients": [
+        "香菇",
+        "五花肉",
+        "大米",
+        "茶楼秘制配方4"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "香菇",
+          "itemId": "item_xianggu",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "五花肉",
+          "itemId": "item_wuhuarou",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "大米",
+          "itemId": "item_dami",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方4",
+          "itemId": "special_tea_formula_4",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_42",
+      "day": 105,
+      "name": "鹅鹅手打柠檬茶",
+      "rawIngredients": [
+        "花茶",
+        "柠檬"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "花茶",
+          "itemId": "item_huacha",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "柠檬",
+          "itemId": "item_ningmeng",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_43",
+      "day": 105,
+      "name": "酥炸大鸡腿",
+      "rawIngredients": [
+        "洋葱",
+        "鸡腿"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "洋葱",
+          "itemId": "item_yangcong",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "鸡腿",
+          "itemId": "item_jitui",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_44",
+      "day": 105,
+      "name": "威士忌酸酒",
+      "rawIngredients": [
+        "冰糖",
+        "威士忌",
+        "柠檬"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "冰糖",
+          "itemId": "item_bingtang",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "威士忌",
+          "itemId": "item_weishiji",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "柠檬",
+          "itemId": "item_ningmeng",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_45",
+      "day": 105,
+      "name": "流沙奶黄包",
+      "rawIngredients": [
+        "黄油",
+        "鸡蛋",
+        "冰糖",
+        "矿泉水",
+        "小麦粉",
+        "茶楼秘制配方2",
+        "玻璃碗",
+        "蒸笼"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "黄油",
+          "itemId": "item_huangyou",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "鸡蛋",
+          "itemId": "item_jidan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "冰糖",
+          "itemId": "item_bingtang",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "矿泉水",
+          "itemId": "item_kuangquanshui",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "小麦粉",
+          "itemId": "item_xiaomaifen",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "茶楼秘制配方2",
+          "itemId": "special_tea_formula_2",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "玻璃碗",
+          "itemId": "item_boliwan",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "蒸笼",
+          "itemId": "tool_zhenglong",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_46",
+      "day": 105,
+      "name": "奶油",
+      "rawIngredients": [
+        "奶油"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "奶油",
+          "itemId": "item_naiyou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_47",
+      "day": 105,
+      "name": "彩椒土豆丝",
+      "rawIngredients": [
+        "彩椒",
+        "土豆"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "彩椒",
+          "itemId": "item_caijiao",
+          "resolution": "MAPPED"
+        },
+        {
+          "raw": "土豆",
+          "itemId": "item_tudou",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    },
+    {
+      "recipeEvidenceId": "r105_48",
+      "day": 105,
+      "name": "酥烤肥蟹",
+      "rawIngredients": [
+        "螃蟹"
+      ],
+      "normalizedInputs": [
+        {
+          "raw": "螃蟹",
+          "itemId": "item_pangxie",
+          "resolution": "MAPPED"
+        }
+      ],
+      "evidence": {
+        "kind": "PUBLIC_IMAGE",
+        "confidence": "C",
+        "sourceRef": "turn284610image2"
+      },
+      "graphStatus": "TOKEN_MAPPED",
+      "note": null
+    }
+  ]
+}
