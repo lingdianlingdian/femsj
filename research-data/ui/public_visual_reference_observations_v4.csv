@@ -1,0 +1,7 @@
+source_id,source_type,page_url,visual_scope,observations,allowed_use,last_checked
+"VIS_REF_TAPTAP_BOARD_01","PLAYER_REPORT","https://www.taptap.cn/forum/g1191393","主盘/订单/Producer","顶部资源栏+横向订单卡+9x7盘面；物品使用高饱和色和大轮廓，Producer状态叠加明显","STRUCTURE_READABILITY_ONLY","2026-09-25"
+"VIS_REF_TAPTAP_COOK_01","PLAYER_REPORT","https://www.taptap.cn/app/835993/topic","烹饪互动","料理场景使用暖暗室内背景，食材提示卡保持高亮前景；烹饪主体与提示层分离","STRUCTURE_STATE_ONLY","2026-09-25"
+"VIS_REF_APPSTORE_01","OFFICIAL","https://apps.apple.com/cn/app/%E8%82%A5%E9%B9%85%E7%BE%8E%E9%A3%9F%E8%A1%97/id6758614459","官方截图/产品定位","官方页面确认合成、菜谱、经营小店、顾客和市井氛围；截图仅用于确认系统类别与整体可读性","PRODUCT_SCOPE_ONLY","2026-09-25"
+"VIS_REF_GOOGLEPLAY_01","OFFICIAL","https://play.google.com/store/apps/details?id=com.hortor.femsj.asia","官方截图/产品定位","官方页面确认合成高级食材、烹饪菜谱、建设小店、肥鹅顾客；不提取受版权保护的具体造型","PRODUCT_SCOPE_ONLY","2026-09-25"
+"VIS_REF_TENCENT_01","OFFICIAL_DISTRIBUTION","https://sj.qq.com/appdetail/wxd2901d992defc4a9","街区/顾客","可观察街区采用俯视斜角、建筑/喷泉/NPC分层；仅作为相机与场景密度参考","CAMERA_DENSITY_ONLY","2026-09-25"
+"VIS_REF_XIAOMI_01","OFFICIAL_DISTRIBUTION","https://game.xiaomi.com/game/62434975","店铺集合页","可观察店铺卡片/建设进度的信息组织；正式V4店铺卡与建筑造型保持原创","INFORMATION_HIERARCHY_ONLY","2026-09-25"
