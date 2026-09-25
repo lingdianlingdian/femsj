@@ -316,9 +316,11 @@
       "claims": [
         "Day6-10逐单经营菜单需求",
         "Day6-10公开实机截图中可见至少20秒加工倒计时",
-        "Day6-10公开实机截图中可见至少10秒加工倒计时"
+        "Day6-10公开实机截图中可见至少10秒加工倒计时",
+        "Day7菌香芝士卷加工面板倒计时32秒",
+        "Day7生切胡萝卜条加工面板倒计时1分20秒"
       ],
-      "notes": "玩家公开逐日记录；含需求食材与菜单文字。；2026-09-25二次核图：可确认截图内存在20s与10s加工倒计时，但当前搜索图裁切不足以可靠绑定到具体Recipe，暂按OBSERVED_UNBOUND处理。"
+      "notes": "玩家公开逐日记录；含需求食材与菜单文字。；2026-09-25二次核图：可确认截图内存在20s与10s加工倒计时，但当前搜索图裁切不足以可靠绑定到具体Recipe，暂按OBSERVED_UNBOUND处理。；后续公开图片检索拿到更完整Day7配方面板：菌香芝士卷32s、生切胡萝卜条1m20s可与订单/输入闭合；胡萝卜条器具名称仍未确认。"
     },
     {
       "id": "SRC_APPSTORE_EDITORIAL_TW",
@@ -335,7 +337,7 @@
   ],
   "audit": {
     "updatedAt": "2026-09-25",
-    "note": "Added image-level Day6-10 observed cooking timers (20s/10s) as unbound evidence; no recipe binding guessed.",
+    "note": "Promoted Day7 exact recipe durations: 菌香芝士卷 32s and 生切胡萝卜条 80s; cookware identity for carrot recipe remains unresolved.",
     "sourceCount": 28
   }
 }
