@@ -1,0 +1,1840 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-26",
+  "engine": "Cocos Creator 3.8 LTS",
+  "architecture": "persistent App.scene + screen Prefabs loaded from resources",
+  "shellScene": "App",
+  "designResolution": {
+    "width": 750,
+    "height": 1334
+  },
+  "tallResolution": {
+    "width": 750,
+    "height": 1624
+  },
+  "screens": [
+    {
+      "screenId": "UI00",
+      "name": "Boot/启动",
+      "route": "/boot",
+      "prefabResourcePath": "ui/screens/UI00",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "Logo",
+        "VersionLabel",
+        "PatchProgress"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI01",
+      "name": "账号登录/渠道授权",
+      "route": "/login",
+      "prefabResourcePath": "ui/screens/UI01",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "GuestLogin",
+        "WeChatLogin",
+        "DouyinLogin",
+        "PhoneLogin",
+        "AppleLogin",
+        "Agreement"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI02",
+      "name": "资源更新",
+      "route": "/patch",
+      "prefabResourcePath": "ui/screens/UI02",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "PatchProgress",
+        "RemainSize",
+        "RetryButton"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI03",
+      "name": "开场剧情",
+      "route": "/story/opening",
+      "prefabResourcePath": "ui/screens/UI03",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "CharacterPortrait",
+        "Nameplate",
+        "Dialogue",
+        "Skip"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI04",
+      "name": "4×7教学棋盘",
+      "route": "/tutorial/board",
+      "prefabResourcePath": "ui/screens/UI04",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "Board4x7",
+        "GuideHand",
+        "OrderCard",
+        "Producer",
+        "TutorialMask"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI05",
+      "name": "9×7合成主盘",
+      "route": "/board",
+      "prefabResourcePath": "ui/screens/UI05",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "ResourceBar",
+        "OrderCarousel",
+        "Board9x7",
+        "UtilityBar",
+        "EventDock"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI06",
+      "name": "订单详情",
+      "route": "/board/order/:id",
+      "prefabResourcePath": "ui/screens/UI06",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Customer",
+        "Requirements",
+        "Reward",
+        "SourceHint"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI07",
+      "name": "物品详情",
+      "route": "/board/item/:id",
+      "prefabResourcePath": "ui/screens/UI07",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Icon",
+        "Name",
+        "Level",
+        "Source",
+        "Uses",
+        "SellButton"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI08",
+      "name": "合成链图鉴",
+      "route": "/album/items/:chain",
+      "prefabResourcePath": "ui/screens/UI08",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "ChainGraph",
+        "LockedNode",
+        "SourceProducer",
+        "UseRecipes"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI09",
+      "name": "发射器详情",
+      "route": "/board/producer/:id",
+      "prefabResourcePath": "ui/screens/UI09",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "ProducerArt",
+        "Capacity",
+        "Cooldown",
+        "OutputTags",
+        "UpgradeHint"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI10",
+      "name": "厨具加工面板",
+      "route": "/board/cookware/:id",
+      "prefabResourcePath": "ui/screens/UI10",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "InputSlots",
+        "RecipeList",
+        "Timer",
+        "Start",
+        "SpeedUp"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI11",
+      "name": "菜谱图鉴",
+      "route": "/recipes",
+      "prefabResourcePath": "ui/screens/UI11",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "CategoryTabs",
+        "RecipeGrid",
+        "MaterialList",
+        "CookwareTag"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI12",
+      "name": "仓库/储物柜",
+      "route": "/storage",
+      "prefabResourcePath": "ui/screens/UI12",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "StorageGrid",
+        "BoardPreview",
+        "ExpandButton",
+        "GemPrice"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI13",
+      "name": "体力补充",
+      "route": "/energy",
+      "prefabResourcePath": "ui/screens/UI13",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "CurrentEnergy",
+        "RegenTimer",
+        "AdRefill",
+        "GemRefill",
+        "Offer"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI14",
+      "name": "主街/美食街",
+      "route": "/street",
+      "prefabResourcePath": "ui/screens/UI14",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "StreetWorld",
+        "BuildHotspots",
+        "NPC",
+        "ActivityDock",
+        "EnterBoard"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI15",
+      "name": "建设节点详情",
+      "route": "/build/:id",
+      "prefabResourcePath": "ui/screens/UI15",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "BeforeAfter",
+        "Cost",
+        "Reward",
+        "BuildButton"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI16",
+      "name": "建设完成",
+      "route": "/build/:id/complete",
+      "prefabResourcePath": "ui/screens/UI16",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "BuildingReveal",
+        "Reward",
+        "NextNode"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI17",
+      "name": "剧情对白",
+      "route": "/story/:id",
+      "prefabResourcePath": "ui/screens/UI17",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "Portrait",
+        "Nameplate",
+        "Dialogue",
+        "Continue",
+        "Skip"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI18",
+      "name": "经营日完成",
+      "route": "/day/:id/complete",
+      "prefabResourcePath": "ui/screens/UI18",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "DayBadge",
+        "Rewards",
+        "Unlocks",
+        "BuildProgress",
+        "NextDay"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI19",
+      "name": "新内容解锁",
+      "route": "/unlock/:id",
+      "prefabResourcePath": "ui/screens/UI19",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "NewIcon",
+        "Name",
+        "Description",
+        "GoButton"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI20",
+      "name": "商店首页",
+      "route": "/shop",
+      "prefabResourcePath": "ui/screens/UI20",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "ProductGrid",
+        "PurchaseLimit",
+        "RefreshTimer",
+        "RefreshButton"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI21",
+      "name": "钻石充值",
+      "route": "/iap/gems",
+      "prefabResourcePath": "ui/screens/UI21",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "SkuCards",
+        "Bonus",
+        "Price",
+        "Restore"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI22",
+      "name": "限时礼包",
+      "route": "/offer/:id",
+      "prefabResourcePath": "ui/screens/UI22",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Countdown",
+        "Contents",
+        "Price",
+        "Close"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI23",
+      "name": "升级礼包",
+      "route": "/offer/level/:id",
+      "prefabResourcePath": "ui/screens/UI23",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Milestone",
+        "Contents",
+        "Price",
+        "Countdown"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI24",
+      "name": "奖励广告确认",
+      "route": "/reward-ad/:id",
+      "prefabResourcePath": "ui/screens/UI24",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Reward",
+        "RemainingCount",
+        "Watch",
+        "Cancel"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI25",
+      "name": "活动中心",
+      "route": "/events",
+      "prefabResourcePath": "ui/screens/UI25",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "EventCards",
+        "Countdowns",
+        "RedDots"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI26",
+      "name": "时空追逐",
+      "route": "/events/race",
+      "prefabResourcePath": "ui/screens/UI26",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Goal",
+        "Milestones",
+        "MiniRanking",
+        "Countdown"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI27",
+      "name": "芝士漂流",
+      "route": "/events/drift",
+      "prefabResourcePath": "ui/screens/UI27",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "ProgressRoute",
+        "Milestones",
+        "FinalPack",
+        "Countdown"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI28",
+      "name": "爆炒时刻",
+      "route": "/events/boost",
+      "prefabResourcePath": "ui/screens/UI28",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Countdown",
+        "BoostRules",
+        "AffectedProducers",
+        "Progress"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI29",
+      "name": "烹调争霸赛",
+      "route": "/events/cook-contest",
+      "prefabResourcePath": "ui/screens/UI29",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "HeroArt",
+        "Countdown",
+        "Multiplier",
+        "Progress",
+        "Rewards"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI30",
+      "name": "卡册首页",
+      "route": "/album",
+      "prefabResourcePath": "ui/screens/UI30",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "SeasonHeader",
+        "Sets",
+        "Progress",
+        "StarCurrency"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI31",
+      "name": "卡组详情",
+      "route": "/album/set/:id",
+      "prefabResourcePath": "ui/screens/UI31",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "CardSlots",
+        "SetReward",
+        "MissingCount"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI32",
+      "name": "开卡包",
+      "route": "/album/open/:pack",
+      "prefabResourcePath": "ui/screens/UI32",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Pack",
+        "RevealCards",
+        "NewBadge",
+        "DuplicateValue",
+        "Skip"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI33",
+      "name": "重复卡/星星兑换",
+      "route": "/album/exchange",
+      "prefabResourcePath": "ui/screens/UI33",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "StarBalance",
+        "ExchangeItems",
+        "Guarantee"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI34",
+      "name": "赛季/通行证",
+      "route": "/season",
+      "prefabResourcePath": "ui/screens/UI34",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "FreeTrack",
+        "PaidTrack",
+        "Level",
+        "Tasks",
+        "BuyPass"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI35",
+      "name": "邮箱",
+      "route": "/mail",
+      "prefabResourcePath": "ui/screens/UI35",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "MailList",
+        "Attachment",
+        "ClaimAll",
+        "Expiry"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI36",
+      "name": "任务/成就",
+      "route": "/tasks",
+      "prefabResourcePath": "ui/screens/UI36",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Daily",
+        "Weekly",
+        "Achievements",
+        "Claim"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI37",
+      "name": "设置",
+      "route": "/settings",
+      "prefabResourcePath": "ui/screens/UI37",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Music",
+        "Sfx",
+        "Vibration",
+        "Notifications",
+        "Language",
+        "Account"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI38",
+      "name": "账号绑定",
+      "route": "/account",
+      "prefabResourcePath": "ui/screens/UI38",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "Bindings",
+        "UID",
+        "BindButtons",
+        "ConflictInfo"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI39",
+      "name": "帮助/客服",
+      "route": "/support",
+      "prefabResourcePath": "ui/screens/UI39",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "FAQ",
+        "Contact",
+        "Privacy",
+        "Terms"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI40",
+      "name": "网络断开",
+      "route": "modal:offline",
+      "prefabResourcePath": "ui/screens/UI40",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "Message",
+        "Retry",
+        "OfflineHint"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI41",
+      "name": "资源不足通用弹窗",
+      "route": "modal:resource-shortage",
+      "prefabResourcePath": "ui/screens/UI41",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "ResourceIcon",
+        "NeedHave",
+        "Sources",
+        "GoButton"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI42",
+      "name": "通用奖励弹窗",
+      "route": "modal:reward",
+      "prefabResourcePath": "ui/screens/UI42",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "RewardGrid",
+        "Confirm"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI43",
+      "name": "排行榜",
+      "route": "/ranking/:event",
+      "prefabResourcePath": "ui/screens/UI43",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "SelfRank",
+        "Rows",
+        "RewardTiers",
+        "Countdown"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI44",
+      "name": "公告/更新说明",
+      "route": "/news",
+      "prefabResourcePath": "ui/screens/UI44",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "EMPTY",
+        "ERROR",
+        "LOCKED",
+        "EXPIRED"
+      ],
+      "componentTypes": [
+        "RichText",
+        "Banner",
+        "JumpLinks"
+      ],
+      "network": {
+        "policy": "server-backed",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "screenId": "UI45",
+      "name": "隐私/用户协议",
+      "route": "/legal",
+      "prefabResourcePath": "ui/screens/UI45",
+      "sourceContract": "production-data/v4/ui/screens_v4.json",
+      "states": [
+        "LOADING",
+        "READY",
+        "ERROR"
+      ],
+      "componentTypes": [
+        "Terms",
+        "Privacy",
+        "Agree",
+        "Decline"
+      ],
+      "network": {
+        "policy": "local-first",
+        "timeoutMs": 8000,
+        "retry": "safe-idempotent-only"
+      },
+      "status": "PENDING_EDITOR_GENERATION"
+    }
+  ],
+  "sharedComponents": [
+    {
+      "componentId": "cmp_resource_bar",
+      "name": "顶部资源栏",
+      "sourcePrefab": "ui/common/ResourceBar.prefab",
+      "resourcePath": "ui/common/ResourceBar",
+      "category": "HUD",
+      "states": [
+        "NORMAL",
+        "ENERGY_REGEN",
+        "VALUE_CHANGE"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_resource_chip",
+      "name": "资源Chip",
+      "sourcePrefab": "ui/common/ResourceChip.prefab",
+      "resourcePath": "ui/common/ResourceChip",
+      "category": "HUD",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "ATTENTION"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_primary_button",
+      "name": "主按钮",
+      "sourcePrefab": "ui/common/PrimaryButton.prefab",
+      "resourcePath": "ui/common/PrimaryButton",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "DISABLED",
+        "LOADING",
+        "ATTENTION"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_secondary_button",
+      "name": "次按钮",
+      "sourcePrefab": "ui/common/SecondaryButton.prefab",
+      "resourcePath": "ui/common/SecondaryButton",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED",
+        "DISABLED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_close_button",
+      "name": "关闭按钮",
+      "sourcePrefab": "ui/common/CloseButton.prefab",
+      "resourcePath": "ui/common/CloseButton",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_back_button",
+      "name": "返回按钮",
+      "sourcePrefab": "ui/common/BackButton.prefab",
+      "resourcePath": "ui/common/BackButton",
+      "category": "CONTROL",
+      "states": [
+        "NORMAL",
+        "PRESSED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_countdown",
+      "name": "倒计时",
+      "sourcePrefab": "ui/common/Countdown.prefab",
+      "resourcePath": "ui/common/Countdown",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "WARNING",
+        "EXPIRED"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_reward_item",
+      "name": "奖励项",
+      "sourcePrefab": "ui/common/RewardItem.prefab",
+      "resourcePath": "ui/common/RewardItem",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "NEW",
+        "CLAIMED"
+      ],
+      "minTouch": 64,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_reward_grid",
+      "name": "奖励网格",
+      "sourcePrefab": "ui/common/RewardGrid.prefab",
+      "resourcePath": "ui/common/RewardGrid",
+      "category": "DATA",
+      "states": [
+        "NORMAL",
+        "SCROLL"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_common_modal",
+      "name": "通用Modal",
+      "sourcePrefab": "ui/common/CommonModal.prefab",
+      "resourcePath": "ui/common/CommonModal",
+      "category": "MODAL",
+      "states": [
+        "OPENING",
+        "READY",
+        "CLOSING",
+        "BLOCKED"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_toast",
+      "name": "Toast",
+      "sourcePrefab": "ui/common/Toast.prefab",
+      "resourcePath": "ui/common/Toast",
+      "category": "FEEDBACK",
+      "states": [
+        "INFO",
+        "SUCCESS",
+        "WARNING",
+        "ERROR"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_red_dot",
+      "name": "红点",
+      "sourcePrefab": "ui/common/RedDot.prefab",
+      "resourcePath": "ui/common/RedDot",
+      "category": "FEEDBACK",
+      "states": [
+        "DOT",
+        "NUMBER"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_loading",
+      "name": "加载态",
+      "sourcePrefab": "ui/common/Loading.prefab",
+      "resourcePath": "ui/common/Loading",
+      "category": "STATE",
+      "states": [
+        "SPINNER",
+        "SKELETON"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_empty_state",
+      "name": "空态",
+      "sourcePrefab": "ui/common/EmptyState.prefab",
+      "resourcePath": "ui/common/EmptyState",
+      "category": "STATE",
+      "states": [
+        "DEFAULT",
+        "ACTIONABLE"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_error_state",
+      "name": "错误态",
+      "sourcePrefab": "ui/common/ErrorState.prefab",
+      "resourcePath": "ui/common/ErrorState",
+      "category": "STATE",
+      "states": [
+        "NETWORK",
+        "SERVER",
+        "CONTENT"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_order_carousel",
+      "name": "订单横条",
+      "sourcePrefab": "ui/board/OrderCarousel.prefab",
+      "resourcePath": "ui/board/OrderCarousel",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "SCROLLING"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_order_card",
+      "name": "订单卡",
+      "sourcePrefab": "ui/board/OrderCard.prefab",
+      "resourcePath": "ui/board/OrderCard",
+      "category": "BOARD",
+      "states": [
+        "UNMET",
+        "PARTIAL",
+        "READY",
+        "SUBMITTING",
+        "COMPLETE"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_requirement_item",
+      "name": "订单需求物",
+      "sourcePrefab": "ui/board/RequirementItem.prefab",
+      "resourcePath": "ui/board/RequirementItem",
+      "category": "BOARD",
+      "states": [
+        "MISSING",
+        "OWNED",
+        "SATISFIED"
+      ],
+      "minTouch": 64,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_board_grid",
+      "name": "棋盘网格",
+      "sourcePrefab": "ui/board/BoardGrid.prefab",
+      "resourcePath": "ui/board/BoardGrid",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "DRAGGING",
+        "LOCKED_GROUP_HIGHLIGHT"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_board_cell",
+      "name": "棋盘格",
+      "sourcePrefab": "ui/board/BoardCell.prefab",
+      "resourcePath": "ui/board/BoardCell",
+      "category": "BOARD",
+      "states": [
+        "EMPTY",
+        "OCCUPIED",
+        "LOCKED",
+        "BLOCKED",
+        "MERGE_TARGET",
+        "COOK_TARGET",
+        "ORDER_REQUIRED"
+      ],
+      "minTouch": 76,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_board_item",
+      "name": "棋盘物",
+      "sourcePrefab": "ui/board/BoardItem.prefab",
+      "resourcePath": "ui/board/BoardItem",
+      "category": "BOARD",
+      "states": [
+        "IDLE",
+        "DRAG",
+        "MERGE",
+        "SPAWN",
+        "SELECTED"
+      ],
+      "minTouch": 76,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_producer_node",
+      "name": "生产器节点",
+      "sourcePrefab": "ui/board/ProducerNode.prefab",
+      "resourcePath": "ui/board/ProducerNode",
+      "category": "BOARD",
+      "states": [
+        "READY",
+        "TAP",
+        "COOLDOWN",
+        "EMPTY",
+        "BOOSTED",
+        "LOCKED"
+      ],
+      "minTouch": 76,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_cookware_node",
+      "name": "厨具节点",
+      "sourcePrefab": "ui/board/CookwareNode.prefab",
+      "resourcePath": "ui/board/CookwareNode",
+      "category": "BOARD",
+      "states": [
+        "IDLE",
+        "COOKING",
+        "READY",
+        "COLLECT"
+      ],
+      "minTouch": 76,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_storage_grid",
+      "name": "仓库网格",
+      "sourcePrefab": "ui/board/StorageGrid.prefab",
+      "resourcePath": "ui/board/StorageGrid",
+      "category": "BOARD",
+      "states": [
+        "NORMAL",
+        "FULL",
+        "EXPANDABLE"
+      ],
+      "minTouch": 76,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_recipe_card",
+      "name": "菜谱卡",
+      "sourcePrefab": "ui/recipe/RecipeCard.prefab",
+      "resourcePath": "ui/recipe/RecipeCard",
+      "category": "RECIPE",
+      "states": [
+        "LOCKED",
+        "UNLOCKED",
+        "AVAILABLE",
+        "MISSING_INPUT"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_chain_node",
+      "name": "合成链节点",
+      "sourcePrefab": "ui/album/ChainNode.prefab",
+      "resourcePath": "ui/album/ChainNode",
+      "category": "CATALOG",
+      "states": [
+        "LOCKED",
+        "KNOWN",
+        "SELECTED"
+      ],
+      "minTouch": 72,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_build_hotspot",
+      "name": "建设热点",
+      "sourcePrefab": "ui/street/BuildHotspot.prefab",
+      "resourcePath": "ui/street/BuildHotspot",
+      "category": "STREET",
+      "states": [
+        "LOCKED",
+        "AVAILABLE",
+        "AFFORDABLE",
+        "COMPLETE"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_npc_hotspot",
+      "name": "NPC热点",
+      "sourcePrefab": "ui/street/NPCHotspot.prefab",
+      "resourcePath": "ui/street/NPCHotspot",
+      "category": "STREET",
+      "states": [
+        "IDLE",
+        "STORY_AVAILABLE",
+        "QUEST_AVAILABLE"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_product_card",
+      "name": "商店商品卡",
+      "sourcePrefab": "ui/shop/ProductCard.prefab",
+      "resourcePath": "ui/shop/ProductCard",
+      "category": "SHOP",
+      "states": [
+        "AVAILABLE",
+        "SOLD_OUT",
+        "LOCKED",
+        "PURCHASING"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_offer_card",
+      "name": "礼包卡",
+      "sourcePrefab": "ui/shop/OfferCard.prefab",
+      "resourcePath": "ui/shop/OfferCard",
+      "category": "SHOP",
+      "states": [
+        "AVAILABLE",
+        "EXPIRING",
+        "EXPIRED",
+        "PURCHASING"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_event_card",
+      "name": "活动入口卡",
+      "sourcePrefab": "ui/event/EventCard.prefab",
+      "resourcePath": "ui/event/EventCard",
+      "category": "EVENT",
+      "states": [
+        "LOCKED",
+        "ACTIVE",
+        "ENDING",
+        "ENDED",
+        "SETTLEMENT"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_milestone_track",
+      "name": "里程碑轨道",
+      "sourcePrefab": "ui/event/MilestoneTrack.prefab",
+      "resourcePath": "ui/event/MilestoneTrack",
+      "category": "EVENT",
+      "states": [
+        "NORMAL",
+        "CLAIMABLE",
+        "COMPLETE"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_ranking_row",
+      "name": "排行行",
+      "sourcePrefab": "ui/event/RankingRow.prefab",
+      "resourcePath": "ui/event/RankingRow",
+      "category": "EVENT",
+      "states": [
+        "NORMAL",
+        "SELF",
+        "PROMOTED"
+      ],
+      "minTouch": 64,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_multiplier_selector",
+      "name": "倍率选择器",
+      "sourcePrefab": "ui/event/MultiplierSelector.prefab",
+      "resourcePath": "ui/event/MultiplierSelector",
+      "category": "EVENT",
+      "states": [
+        "X1",
+        "X3",
+        "X10",
+        "DISABLED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_album_set",
+      "name": "卡册套组",
+      "sourcePrefab": "ui/album/AlbumSet.prefab",
+      "resourcePath": "ui/album/AlbumSet",
+      "category": "ALBUM",
+      "states": [
+        "INCOMPLETE",
+        "COMPLETE",
+        "CLAIMED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_card_slot",
+      "name": "卡位",
+      "sourcePrefab": "ui/album/CardSlot.prefab",
+      "resourcePath": "ui/album/CardSlot",
+      "category": "ALBUM",
+      "states": [
+        "LOCKED",
+        "MISSING",
+        "OWNED",
+        "NEW",
+        "DUPLICATE"
+      ],
+      "minTouch": 72,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_pass_track",
+      "name": "通行证轨道",
+      "sourcePrefab": "ui/pass/PassTrack.prefab",
+      "resourcePath": "ui/pass/PassTrack",
+      "category": "PASS",
+      "states": [
+        "LOCKED",
+        "CLAIMABLE",
+        "CLAIMED"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_mail_row",
+      "name": "邮件行",
+      "sourcePrefab": "ui/mail/MailRow.prefab",
+      "resourcePath": "ui/mail/MailRow",
+      "category": "MAIL",
+      "states": [
+        "UNREAD",
+        "READ",
+        "CLAIMABLE",
+        "CLAIMED",
+        "EXPIRED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_task_row",
+      "name": "任务行",
+      "sourcePrefab": "ui/task/TaskRow.prefab",
+      "resourcePath": "ui/task/TaskRow",
+      "category": "TASK",
+      "states": [
+        "ACTIVE",
+        "CLAIMABLE",
+        "CLAIMED",
+        "EXPIRED"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_dialogue_box",
+      "name": "对白框",
+      "sourcePrefab": "ui/story/DialogueBox.prefab",
+      "resourcePath": "ui/story/DialogueBox",
+      "category": "STORY",
+      "states": [
+        "TYPING",
+        "READY",
+        "CHOICE"
+      ],
+      "minTouch": 88,
+      "status": "PENDING_EDITOR_GENERATION"
+    },
+    {
+      "componentId": "cmp_character_portrait",
+      "name": "剧情立绘",
+      "sourcePrefab": "ui/story/CharacterPortrait.prefab",
+      "resourcePath": "ui/story/CharacterPortrait",
+      "category": "STORY",
+      "states": [
+        "ENTER",
+        "IDLE",
+        "EXPRESSION",
+        "EXIT"
+      ],
+      "minTouch": 0,
+      "status": "PENDING_EDITOR_GENERATION"
+    }
+  ]
+}
