@@ -1,5 +1,5 @@
 {
-  "version": "4.0",
+  "version": "4.1",
   "generatedAt": "2026-09-25",
   "rules": {
     "originality": "All outputs must be original. Public references may inform information hierarchy, readability, generic camera angle and category conventions only; never copy competitor-specific characters, icons, buildings, UI skins, logos or text.",
@@ -54,7 +54,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_ITEM_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_ITEM_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_DRINK_01",
@@ -74,7 +79,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_DRINK_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_DRINK_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_DISH_01",
@@ -94,7 +104,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_DISH_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_DISH_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_PROD_01",
@@ -114,7 +129,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_PROD_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_PROD_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_COOK_01",
@@ -134,7 +154,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_COOK_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_COOK_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_CHAR_01",
@@ -155,7 +180,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_CHAR_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_CHAR_02",
@@ -176,19 +206,25 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_CHAR_02.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_02.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_BUILD_01",
       "target": "ANCHOR_BUILD_01",
-      "kind": "building_pair",
+      "kind": "building_anchor",
       "size": "1536x1536",
       "transparent": true,
-      "prompt_spec": "Original small Chinese neighborhood food-street storefront shown as a before/after pair on the same canvas, identical camera and footprint. Before: tired but safe facade, faded awning, sparse props. After: clean warm lively storefront, new awning, plants, hanging lights, steam detail. 3/4 game-world view, warm hand-painted 2D, no readable text, no logo. No readable storefront signage or logos. Preserve identical camera, footprint and bottom-center pivot across paired states.",
+      "prompt_spec": "Original small Chinese neighborhood food-street storefront in BEFORE condition only. Tired but safe facade, faded awning, sparse props, a little wear and dust but no ruin or danger. 3/4 game-world view, warm hand-painted 2D, transparent background, no readable sign, no logo. Stable bottom-center pivot and footprint reserved for a paired AFTER state.",
       "acceptance": [
-        "before/after same pivot and geometry",
-        "upgrade feels meaningful",
-        "modular sign/awning/props/lights layers implied"
+        "clear BEFORE/repair-needed state",
+        "stable bottom-center pivot",
+        "modular base/roof/sign/props/lights structure",
+        "camera and footprint suitable for exact pairing with ANCHOR_BUILD_02"
       ],
       "forbidden": [
         "match-3 board, swap puzzle, cascade puzzle, match lines",
@@ -196,7 +232,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_BUILD_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_BUILD_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_UI_01",
@@ -217,7 +258,12 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_UI_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_UI_01.json"
+      }
     },
     {
       "job_id": "JOB_ANCHOR_BOARD_01",
@@ -237,7 +283,119 @@
         "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
         "unrequested foods, props, buildings or characters not named by the current job",
         "poster layout or collage when the job requests one isolated runtime asset"
-      ]
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_BOARD_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_BOARD_01.json"
+      }
+    },
+    {
+      "job_id": "JOB_ANCHOR_PROD_02",
+      "target": "ANCHOR_PROD_02",
+      "kind": "style_anchor",
+      "size": "768x768",
+      "transparent": true,
+      "prompt_spec": "Original coffee supply counter producer for a cozy Merge-2 food-street game. Compact countertop station with coffee beans, small canisters and a simple dispenser zone; cream, coffee-brown and restrained teal palette; rounded 3/4 view; large readable silhouette; transparent background; no text. Must visually read as a Producer, not cookware or a finished drink.",
+      "acceptance": [
+        "distinct from ordinary items and cookware",
+        "coffee family identity clear",
+        "large readable interaction face",
+        "supports Ready/Cooldown/Boosted overlays"
+      ],
+      "forbidden": [
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_PROD_02.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_PROD_02.json"
+      }
+    },
+    {
+      "job_id": "JOB_ANCHOR_CHAR_03",
+      "target": "ANCHOR_CHAR_03",
+      "kind": "canon_sheet",
+      "size": "2048x2048",
+      "transparent": false,
+      "prompt_spec": "Original anthropomorphic goose major guest named Xiaoman for a neighborhood food-street game. Fixed canon: warm cream feathers, postal shoulder bag; palette #FFF1D0 primary, #D96F4A accent, #76543A outline. Retired-postman personality: cheerful, grounded, likes old-street stories. Show front, 3/4, side, back and six expressions Neutral/Happy/Expect/Surprised/Sad/Angry. Render only Xiaoman; no extra people or animals; no text or labels.",
+      "acceptance": [
+        "postal bag fixed in every view",
+        "goose species unmistakable",
+        "beak/eye/body proportions consistent",
+        "silhouette clearly distinct from Tuantuan",
+        "64px identity retained"
+      ],
+      "forbidden": [
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_CHAR_03.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_CHAR_03.json"
+      }
+    },
+    {
+      "job_id": "JOB_ANCHOR_BUILD_02",
+      "target": "ANCHOR_BUILD_02",
+      "kind": "building_anchor",
+      "size": "1536x1536",
+      "transparent": true,
+      "prompt_spec": "Original small Chinese neighborhood food-street storefront in AFTER/ALIVE condition only, paired to the same geometry and camera as ANCHOR_BUILD_01. Clean warm lively facade, repaired awning, plants, hanging lights and subtle steam/life details; 3/4 game-world view; transparent background; no readable signage, no logo. Preserve the same bottom-center pivot, footprint, camera and main massing as the BEFORE state.",
+      "acceptance": [
+        "clear AFTER/ALIVE upgrade",
+        "same camera and footprint as ANCHOR_BUILD_01",
+        "bounding-box drift target <=8%",
+        "modular base/roof/sign/props/lights structure"
+      ],
+      "forbidden": [
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_BUILD_02.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_BUILD_02.json"
+      }
+    },
+    {
+      "job_id": "JOB_ANCHOR_FX_01",
+      "target": "ANCHOR_FX_01",
+      "kind": "vfx_style_anchor",
+      "size": "1024x1024",
+      "transparent": true,
+      "prompt_spec": "Original casual mobile-game VFX style anchor containing exactly three separated effect concepts with no labels: Merge completion burst, Producer spawn burst, Cook-ready sparkle/steam cue. Use compact readable shapes, warm orange plus restrained green/blue accents, clean emissive highlights, low particle density and transparent background. Effects must be easy to simplify for low-end devices and must not obscure the underlying item or timer.",
+      "acceptance": [
+        "three effect families visually distinct",
+        "readable on mobile",
+        "low particle density",
+        "clear low-end fallback language",
+        "does not cover critical object center"
+      ],
+      "forbidden": [
+        "match-3 board, swap puzzle, cascade puzzle, match lines",
+        "cats, dogs, unrelated mascots or unrelated human characters",
+        "readable Chinese text, readable English text, logo, slogan, store name, fake asset label",
+        "unrequested foods, props, buildings or characters not named by the current job",
+        "poster layout or collage when the job requests one isolated runtime asset"
+      ],
+      "output_contract": {
+        "filename": "ANCHOR_FX_01.png",
+        "workspace": "art-source/v4/anchors/",
+        "qa_file": "art-source/v4/qa/anchors/ANCHOR_FX_01.json"
+      }
     }
-  ]
+  ],
+  "jobCount": 14
 }
