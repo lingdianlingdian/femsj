@@ -13,6 +13,7 @@
     "gate:balance:vertical": "node tools/balance-simulator/gate.mjs",
     "simulate:balance:v3": "node tools/balance-simulator-v3/simulate.mjs",
     "gate:balance:v3": "node tools/balance-simulator-v3/gate.mjs",
-    "validate:story": "node tools/story-validator/validate.mjs"
+    "validate:story": "node tools/story-validator/validate.mjs",
+    "gate:economy:vertical": "node tools/economy-slice-auditor/audit.mjs"
   }
 }
