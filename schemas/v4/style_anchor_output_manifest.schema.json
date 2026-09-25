@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://femsj.local/schemas/v4/style_anchor_output_manifest.schema.json",
+  "title": "femsj V4 Style Anchor Output Manifest",
+  "type": "object",
+  "required": ["version", "outputs"],
+  "properties": {
+    "version": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "outputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["anchor_id","job_id","file_path","width","height","format","sha256","status"],
+        "properties": {
+          "anchor_id": { "type": "string" },
+          "job_id": { "type": "string" },
+          "file_path": { "type": "string", "pattern": "^art-source/v4/anchors/" },
+          "width": { "type": "integer", "minimum": 1 },
+          "height": { "type": "integer", "minimum": 1 },
+          "format": { "enum": ["PNG"] },
+          "sha256": { "type": "string", "pattern": "^[a-f0-9]{64}$" },
+          "status": { "enum": ["CONCEPT_REVIEW","CANON_LOCKED"] },
+          "qa_file": { "type": "string" },
+          "reviewer": { "type": "string" },
+          "reviewedAt": { "type": "string" }
+        },
+        "additionalProperties": true
+      }
+    }
+  },
+  "additionalProperties": true
+}
