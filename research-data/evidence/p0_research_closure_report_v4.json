@@ -4,7 +4,7 @@
   "issue1": {
     "orderRegistry": 651,
     "verifiedOrders": 113,
-    "devBlueprintOrders": 538,
+    "devBlueprintOrders": 346,
     "persistedPublicImageAssets": 116,
     "pendingVisualAssets": 112,
     "publicEvidenceDays": [
