@@ -16,8 +16,8 @@
 | Item公开种子 | 持续扩充（Day101-105 +41；Day80/84 +15） | 🟡 持续扩充 |
 | Producer公开种子 | 4类 | 🟡 名称/部分产出已落库，容量/冷却/权重待采 |
 | Transformation公开种子 | 6条 + Day101-105 Recipe 48条 | 🟡 Recipe Token已映射稳定ID，继续拆DAG |
-| Asset Manifest | 353条 | 🟡 已从示例表升级为实际生产表 |
-| Character Canon | 26个原创角色 | ✅ Canon数据已落库；最终正式立绘/Spine待制作 |
+| Asset Manifest | 389条 | ✅ 389/389 正式原创输出已 APPROVED |
+| Character Canon | 26个原创角色 | ✅ 26/26 Canon/Avatar/Story/Spine 正式资源已闭合 |
 | Build Nodes | 48节点 | ✅ 原创4区蓝图 |
 | Story | 110日 / 268 Scenes / 821条对白 | ✅ 全量原创剧情与 zh-CN 本地化已落库并通过 Story Gate |
 | LiveOps Event | 6套 | ✅ 可配置蓝图 |
@@ -65,10 +65,8 @@
 - ✅ 音频/动效生产规格
 
 仍缺：
-- 最终正式原创 Item / Producer / Cookware 图标
-- 最终角色立绘/Spine
-- 最终建筑成图与环境资源
-- Cocos 实际 Prefab 接入与截图验收
+- Cocos 实际 Prefab / Atlas / Scene 接入
+- 真机截图、分辨率、弱网与性能验收
 
 ## P1（主体已补齐）
 - ✅ 完整 API Contract
@@ -149,7 +147,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - Verified Requirement unresolved：0
 - UI Screens：46
 - Shared UI Components：41
-- Asset Manifest：353
+- Asset Manifest：389
 - Original Character Canon：26
 - Audio Assets：42
 - Build Nodes：48
@@ -169,7 +167,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 新增 `tools/runtime-readiness/audit.mjs`，把 Runtime 缺口机器化统计。
 - ✅ 新增 `npm run audit:runtime`（报告模式）与 `npm run audit:runtime:strict`（发版阻断模式）。
 - ✅ CI 已加入 Runtime readiness 报告，不会用伪造值让当前研究阶段强行通过 strict。
-- 当前关键缺口：651 单仅 113 单有 evidence-backed normalized requirements；Producer/Cookware/Recipe 精确参数仍是 P0-B；Customer/Reward/Dependency 仍未生产化。
+- 当前研究精度缺口：651 单中 113 单 requirements 有公开证据支持，538 单使用明确标记的 DEV_BLUEPRINT；Producer/Cookware/Recipe 原作精确参数仍是 P0-B。原创运行时 Customer/Reward/Dependency 已生产化。
 - 说明文档：`docs/production/V4/19_Runtime生产就绪门禁.md`。
 
 ## Day1-10 可运行垂直切片
@@ -223,7 +221,7 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 
 ## Day1-10 美术合同闭合
 
-- ✅ Asset Manifest：353 条。
+- ✅ Asset Manifest：389 条。
 - ✅ Style Anchor：14 个。
 - ✅ 首批正式生产队列：109 项。
 - ✅ S1-S3 可执行 AI Art Job：109 项，和队列 1:1 闭合。
@@ -249,15 +247,48 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 
 ## 2026-09-25 全量美术资源入库完成
 
-- ✅ Asset Manifest：353 / 353 已有正式原创 PNG。
+- ✅ Asset Manifest：389 / 389 已有正式原创 PNG。
 - ✅ Style Anchor：14 / 14 已生成并 CANON_LOCKED。
-- ✅ Production Queue：353 / 353 已闭合到执行 Job。
-- ✅ 正式美术输出：353 / 353 APPROVED。
-- ✅ Anchor + 正式资源实际 PNG：367 张已提交至 `art-source/v4/`。
-- ✅ QA 文件：367 份；每张资源有独立 QA / SHA-256 / 尺寸记录。
+- ✅ Production Queue：389 / 389 已闭合到执行 Job。
+- ✅ 正式美术输出：389 / 389 APPROVED。
+- ✅ Style Anchor 14 + 正式资源 389，共 403 张 PNG 已提交至 `art-source/v4/`。
+- ✅ 正式资源与 Anchor 均有 QA / SHA-256 / 尺寸记录。
 - ✅ 4 区 × 12 BuildNode × Before/After：96 张建筑资产全部入库。
-- ✅ 26 位角色 Avatar / NPC 及已定义 Canon/Story 资源全部入库。
+- ✅ 26 位角色 Canon Sheet / Avatar / Story Portrait / NPC(Spine合同) 全部入库并绑定。
 - ✅ UI / Board / Item / Dish / Producer / Cookware / VFX 全类别均有正式文件。
 - ✅ `npm run audit:art` 与 `npm run audit:art:files` 在生成工作流中通过。
 - ✅ 全量生成提交：`8ca610945ab2854320fca6dfe2b396e28c3c0685`。
 - ℹ️ Cocos Prefab/Atlas 的实际挂载属于引擎接入阶段；美术源资产、运行时 PNG、映射合同和 QA 已全部在仓库。
+
+## Day1-110 全量可执行 Runtime
+
+- ✅ 主配置：`production-data/v4/runtime/game_content_day001_110.json`。
+- ✅ 143 Items / 8 Transformations / 14 Producers / 5 Cookware / 52 Recipes / 651 Orders / 110 Days / 48 Build Nodes / 6 Events。
+- ✅ 113 单 requirements 为 evidence-backed；538 单为显式 `DEV_BLUEPRINT` 原创补全。
+- ✅ Config Validator：0 error。
+- ✅ Reference Errors：0；Missing Item Assets：0。
+- ✅ Order Registry：651 / 651 对齐。
+- ✅ Story Hook：110 / 110；Build：48 / 48。
+- ✅ Deterministic Builder：`tools/runtime-full-builder/build.mjs`；`npm run runtime:check:full` 已进 CI。
+- ✅ 全 110 天 Monte Carlo Reachability：110 / 110 resolved，0 unresolved。
+- ✅ 全周期趋势门禁：Day30 / 60 / 90 / 110 固定 Seed 回归。
+- 当前全周期峰值基线：Energy P90≈357.9、Wait P90≈3260s、PeakCells P90=16、ManualActions P90≈378.9。
+- 说明：`docs/production/V4/24_110日Runtime与美术闭合报告.md`。
+
+## Day1-110 全量美术绑定
+
+- ✅ `runtime_art_bindings_day001_110_v4.json` 已覆盖全部 Runtime 内容。
+- ✅ 143 Item / 14 Producer / 5 Cookware / 26 Character / 48 BuildNode。
+- ✅ 共 382 个唯一绑定 AssetId，Missing=0。
+- ✅ Asset Manifest：389 / 389 APPROVED；Binary Output：389 / 389 APPROVED。
+- ✅ `npm run audit:art:runtime-full` 已进 CI 并通过。
+
+## 当前完成定义状态
+
+- ✅ 1. 110日每个 Order 均已有可执行 requirements/rewards/dependencies（其中未公开转录部分明确为 DEV_BLUEPRINT）。
+- ✅ 2. Item/Producer/Recipe/Cookware 引用闭合。
+- ⏳ 3. 46页 Cocos 实际 Scene/Prefab 状态、适配、弱网、幂等截图验收尚未执行。
+- ✅ 4. Asset Manifest 正式资源 Canon/尺寸/Bundle/状态闭合。
+- ✅ 5. Balance Simulator 已对 110 / 110 天跑通。
+- ✅ 6. Config Validator 0 error。
+- ⏳ 7. QA P0/P1 用例已有合同，但需在真实 Cocos Runtime 上执行并收证据。
