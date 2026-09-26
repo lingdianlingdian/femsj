@@ -61,8 +61,8 @@ npm run audit:content
 若存在可运行完整配置，再运行：
 
 ```powershell
-npm run validate:config -- production-data/v4/runtime/game_content.json
-npm run simulate:balance -- production-data/v4/runtime/game_content.json
+npm run validate:config -- production-data/v4/runtime/game_content_day001_110.json
+npm run simulate:balance -- production-data/v4/runtime/game_content_day001_110.json
 ```
 
 ## UI
