@@ -28,6 +28,12 @@ jobs:
           node --version
           npm --version
 
+      - name: Validate OpenAPI syntax and references
+        run: npm run openapi:check
+
+      - name: Type-check Cocos TypeScript
+        run: npm run cocos:types:check
+
       - name: CSV structural audit
         run: npm run audit:data
 
@@ -139,6 +145,9 @@ jobs:
       - name: Verify Cocos UI contracts
         run: npm run cocos:contracts:check
 
+      - name: Verify Cocos navigation concurrency
+        run: npm run cocos:navigation:test
+
       - name: Verify Cocos runtime/story/art resources
         run: npm run cocos:resources:check
 
@@ -153,6 +162,12 @@ jobs:
 
       - name: Verify Cocos board domain regressions
         run: npm run cocos:board:test
+
+      - name: Verify event config mutation regressions
+        run: npm run validate:events:regression
+
+      - name: Audit AUTO QA execution coverage
+        run: npm run qa:auto:coverage
 
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
