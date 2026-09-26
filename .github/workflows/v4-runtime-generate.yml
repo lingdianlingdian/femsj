@@ -22,6 +22,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: v4-runtime-generate-main
@@ -65,16 +66,26 @@ jobs:
           process.exit(errors.length?1:0);
           NODE
 
-      - name: Commit generated runtime
+      - name: Publish generated runtime PR
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          BRANCH="automation/v4-runtime-generated"
           git config user.name "femsj-runtime-bot"
           git config user.email "femsj-runtime-bot@users.noreply.github.com"
+          git switch -C "$BRANCH"
           git add production-data/v4/runtime/game_content_day001_110.json production-data/v4/runtime/game_content_day001_110_report.json
           if git diff --cached --quiet; then
-            echo "No generated runtime changes to commit."
+            echo "No generated runtime changes to publish."
             exit 0
           fi
-          git commit -m "runtime(v4): generate executable 110-day config"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          git commit -m "runtime(v4): regenerate executable 110-day config"
+          git push --force origin HEAD:"$BRANCH"
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            echo "Generation PR already exists; branch updated."
+          else
+            gh pr create --base main --head "$BRANCH" \
+              --title "runtime(v4): regenerate executable 110-day config" \
+              --body "Automated runtime regeneration. Merge only after V4 Quality Gates pass."
+          fi
