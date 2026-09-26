@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 concurrency:
   group: v4-art-generate-main
@@ -52,15 +53,26 @@ jobs:
           find art-source/v4/qa -type f -name '*.json' | wc -l
           du -sh art-source/v4 || true
 
-      - name: Commit generated art
+      - name: Publish generated art PR
         shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
+          BRANCH="automation/v4-art-generated"
           git config user.name "femsj-art-bot"
           git config user.email "femsj-art-bot@users.noreply.github.com"
+          git switch -C "$BRANCH"
           git add art-source/v4 production-data/v4/art
           if git diff --cached --quiet; then
-            echo "No generated changes to commit."
+            echo "No generated changes to publish."
             exit 0
           fi
-          git commit -m "art(v4): generate complete Day1-10 original art pack"
-          git push origin HEAD:main
+          git commit -m "art(v4): regenerate production art"
+          git push --force origin HEAD:"$BRANCH"
+          if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
+            echo "Generation PR already exists; branch updated."
+          else
+            gh pr create --base main --head "$BRANCH" \
+              --title "art(v4): regenerate production art" \
+              --body "Automated art regeneration. Merge only after V4 Quality Gates pass."
+          fi
