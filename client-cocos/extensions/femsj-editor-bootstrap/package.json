@@ -1,0 +1,38 @@
+{
+  "package_version": 2,
+  "version": "0.1.0",
+  "name": "femsj-editor-bootstrap",
+  "description": "Generate and audit the femsj V4 App scene shell and 46 screen template nodes.",
+  "main": "./dist/main.js",
+  "author": "femsj",
+  "editor": ">=3.8.0 <4.0.0",
+  "contributions": {
+    "scene": {
+      "script": "./dist/scene.js"
+    },
+    "menu": [
+      {
+        "path": "Developer/FEMSJ",
+        "label": "Generate V4 App Shell",
+        "message": "generate-app-shell"
+      },
+      {
+        "path": "Developer/FEMSJ",
+        "label": "Audit V4 App Shell",
+        "message": "audit-app-shell"
+      }
+    ],
+    "messages": {
+      "generate-app-shell": {
+        "methods": [
+          "generateAppShell"
+        ]
+      },
+      "audit-app-shell": {
+        "methods": [
+          "auditAppShell"
+        ]
+      }
+    }
+  }
+}
