@@ -1,0 +1,18 @@
+{
+  "version": "4.0",
+  "policy": "EXECUTED means the named QA case is exercised by a deterministic repository runner. CONTRACT_ONLY means the case exists in qa/v4/test_cases_v4.json but is not yet executed by repository CI.",
+  "executed": [
+    {"id":"TC_BOARD_001","runner":"npm run cocos:board:test"},
+    {"id":"TC_BOARD_002","runner":"npm run cocos:board:test"},
+    {"id":"TC_BOARD_003","runner":"npm run cocos:board:test"},
+    {"id":"TC_BOARD_004","runner":"npm run cocos:board:test"},
+    {"id":"TC_BOARD_007","runner":"npm run cocos:board:test"},
+    {"id":"TC_BOARD_008","runner":"npm run cocos:board:test"},
+    {"id":"TC_EVENT_001","runner":"npm run validate:events:regression"},
+    {"id":"TC_EVENT_002","runner":"npm run validate:events:regression"},
+    {"id":"TC_EVENT_003","runner":"npm run validate:events:regression"},
+    {"id":"TC_EVENT_004","runner":"npm run validate:events:regression"},
+    {"id":"TC_EVENT_005","runner":"npm run validate:events:regression"},
+    {"id":"TC_EVENT_007","runner":"npm run validate:events:regression"}
+  ]
+}
