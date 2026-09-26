@@ -142,8 +142,8 @@ jobs:
       - name: Verify Cocos runtime/story/art resources
         run: npm run cocos:resources:check
 
-      - name: Verify Cocos runtime/story resources
-        run: npm run cocos:resources:check
+      - name: Verify Cocos board domain regressions
+        run: npm run cocos:board:test
 
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
