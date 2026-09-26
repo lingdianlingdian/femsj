@@ -49,7 +49,7 @@ const atlasGroups=logicalBundles.map(bundle=>{
     assetIds:members.map(x=>x.assetId),
     folder:`client-cocos/assets/resources/art/${bundle}/atlas`,
     expectedPac:`client-cocos/assets/resources/art/${bundle}/atlas/auto-atlas.pac`,
-    status:members.length?'PENDING_EDITOR_ATLAS_GENERATION':'NOT_REQUIRED'
+    status:members.length?(fs.existsSync(`client-cocos/assets/resources/art/${bundle}/atlas/auto-atlas.pac`)?'READY':'PENDING_EDITOR_ATLAS_GENERATION'):'NOT_REQUIRED'
   };
 });
 
