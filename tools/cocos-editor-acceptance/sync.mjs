@@ -1,32 +1,30 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
+import { inspectJsonEvidence, inspectPngEvidence } from './evidence-lib.mjs';
 
 const file='production-data/v4/ui/cocos_editor_acceptance_v4.json';
 const data=JSON.parse(fs.readFileSync(file,'utf8'));
 
-function evidenceResult(path){
-  if(!path||!fs.existsSync(path)) return 'PENDING';
-  if(path.endsWith('.png')) return 'PASS';
-  try{
-    const value=JSON.parse(fs.readFileSync(path,'utf8'));
-    return value.result==='PASS'?'PASS':value.result==='FAIL'?'FAIL':'PENDING';
-  }catch{
-    return 'FAIL';
-  }
+function screenshotResult(path, width, height){
+  return inspectPngEvidence(path, width, height).result;
+}
+
+function jsonEvidenceResult(path, kind){
+  return inspectJsonEvidence(path, kind).result;
 }
 
 data.scene.status=fs.existsSync(data.scene.expectedPath)?'READY':'PENDING_EDITOR_GENERATION';
 
 for(const row of data.screens||[]){
   row.editorStatus=fs.existsSync(row.prefabPath)?'READY':'PENDING_EDITOR_GENERATION';
-  row.resolution750x1334=evidenceResult(row.evidence?.resolution750x1334);
-  row.resolution750x1624=evidenceResult(row.evidence?.resolution750x1624);
-  row.stateRegression=evidenceResult(row.evidence?.stateRegression);
+  row.resolution750x1334=screenshotResult(row.evidence?.resolution750x1334,750,1334);
+  row.resolution750x1624=screenshotResult(row.evidence?.resolution750x1624,750,1624);
+  row.stateRegression=jsonEvidenceResult(row.evidence?.stateRegression,'state');
 }
 
 for(const key of Object.keys(data.deviceAcceptance||{})){
   const path=data.deviceEvidence?.[key];
-  const result=evidenceResult(path);
+  const result=jsonEvidenceResult(path,'device');
   data.deviceAcceptance[key]=result==='PENDING'?'PENDING_REAL_DEVICE':result;
 }
 
