@@ -1,0 +1,10 @@
+{
+  "result": "PASS",
+  "testedAt": "YYYY-MM-DDTHH:mm:ss+08:00",
+  "states": [
+    "LOADING",
+    "READY",
+    "ERROR"
+  ],
+  "notes": "Copy into screens/UIxx/state-regression.json only after actual regression."
+}

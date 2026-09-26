@@ -1,0 +1,7 @@
+{
+  "result": "PASS",
+  "testedAt": "YYYY-MM-DDTHH:mm:ss+08:00",
+  "device": "actual device/model",
+  "build": "actual build identifier",
+  "notes": "Replace this template with measured evidence under one of the fixed device filenames."
+}

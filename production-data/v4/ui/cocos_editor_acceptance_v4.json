@@ -15,7 +15,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI00/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI00/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI00/state-regression.json"
+      }
     },
     {
       "screenId": "UI01",
@@ -23,7 +28,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI01/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI01/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI01/state-regression.json"
+      }
     },
     {
       "screenId": "UI02",
@@ -31,7 +41,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI02/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI02/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI02/state-regression.json"
+      }
     },
     {
       "screenId": "UI03",
@@ -39,7 +54,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI03/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI03/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI03/state-regression.json"
+      }
     },
     {
       "screenId": "UI04",
@@ -47,7 +67,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI04/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI04/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI04/state-regression.json"
+      }
     },
     {
       "screenId": "UI05",
@@ -55,7 +80,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI05/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI05/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI05/state-regression.json"
+      }
     },
     {
       "screenId": "UI06",
@@ -63,7 +93,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI06/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI06/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI06/state-regression.json"
+      }
     },
     {
       "screenId": "UI07",
@@ -71,7 +106,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI07/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI07/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI07/state-regression.json"
+      }
     },
     {
       "screenId": "UI08",
@@ -79,7 +119,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI08/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI08/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI08/state-regression.json"
+      }
     },
     {
       "screenId": "UI09",
@@ -87,7 +132,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI09/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI09/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI09/state-regression.json"
+      }
     },
     {
       "screenId": "UI10",
@@ -95,7 +145,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI10/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI10/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI10/state-regression.json"
+      }
     },
     {
       "screenId": "UI11",
@@ -103,7 +158,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI11/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI11/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI11/state-regression.json"
+      }
     },
     {
       "screenId": "UI12",
@@ -111,7 +171,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI12/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI12/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI12/state-regression.json"
+      }
     },
     {
       "screenId": "UI13",
@@ -119,7 +184,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI13/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI13/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI13/state-regression.json"
+      }
     },
     {
       "screenId": "UI14",
@@ -127,7 +197,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI14/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI14/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI14/state-regression.json"
+      }
     },
     {
       "screenId": "UI15",
@@ -135,7 +210,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI15/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI15/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI15/state-regression.json"
+      }
     },
     {
       "screenId": "UI16",
@@ -143,7 +223,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI16/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI16/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI16/state-regression.json"
+      }
     },
     {
       "screenId": "UI17",
@@ -151,7 +236,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI17/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI17/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI17/state-regression.json"
+      }
     },
     {
       "screenId": "UI18",
@@ -159,7 +249,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI18/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI18/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI18/state-regression.json"
+      }
     },
     {
       "screenId": "UI19",
@@ -167,7 +262,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI19/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI19/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI19/state-regression.json"
+      }
     },
     {
       "screenId": "UI20",
@@ -175,7 +275,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI20/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI20/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI20/state-regression.json"
+      }
     },
     {
       "screenId": "UI21",
@@ -183,7 +288,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI21/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI21/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI21/state-regression.json"
+      }
     },
     {
       "screenId": "UI22",
@@ -191,7 +301,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI22/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI22/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI22/state-regression.json"
+      }
     },
     {
       "screenId": "UI23",
@@ -199,7 +314,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI23/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI23/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI23/state-regression.json"
+      }
     },
     {
       "screenId": "UI24",
@@ -207,7 +327,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI24/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI24/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI24/state-regression.json"
+      }
     },
     {
       "screenId": "UI25",
@@ -215,7 +340,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI25/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI25/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI25/state-regression.json"
+      }
     },
     {
       "screenId": "UI26",
@@ -223,7 +353,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI26/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI26/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI26/state-regression.json"
+      }
     },
     {
       "screenId": "UI27",
@@ -231,7 +366,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI27/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI27/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI27/state-regression.json"
+      }
     },
     {
       "screenId": "UI28",
@@ -239,7 +379,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI28/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI28/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI28/state-regression.json"
+      }
     },
     {
       "screenId": "UI29",
@@ -247,7 +392,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI29/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI29/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI29/state-regression.json"
+      }
     },
     {
       "screenId": "UI30",
@@ -255,7 +405,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI30/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI30/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI30/state-regression.json"
+      }
     },
     {
       "screenId": "UI31",
@@ -263,7 +418,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI31/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI31/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI31/state-regression.json"
+      }
     },
     {
       "screenId": "UI32",
@@ -271,7 +431,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI32/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI32/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI32/state-regression.json"
+      }
     },
     {
       "screenId": "UI33",
@@ -279,7 +444,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI33/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI33/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI33/state-regression.json"
+      }
     },
     {
       "screenId": "UI34",
@@ -287,7 +457,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI34/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI34/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI34/state-regression.json"
+      }
     },
     {
       "screenId": "UI35",
@@ -295,7 +470,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI35/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI35/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI35/state-regression.json"
+      }
     },
     {
       "screenId": "UI36",
@@ -303,7 +483,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI36/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI36/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI36/state-regression.json"
+      }
     },
     {
       "screenId": "UI37",
@@ -311,7 +496,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI37/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI37/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI37/state-regression.json"
+      }
     },
     {
       "screenId": "UI38",
@@ -319,7 +509,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI38/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI38/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI38/state-regression.json"
+      }
     },
     {
       "screenId": "UI39",
@@ -327,7 +522,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI39/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI39/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI39/state-regression.json"
+      }
     },
     {
       "screenId": "UI40",
@@ -335,7 +535,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI40/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI40/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI40/state-regression.json"
+      }
     },
     {
       "screenId": "UI41",
@@ -343,7 +548,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI41/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI41/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI41/state-regression.json"
+      }
     },
     {
       "screenId": "UI42",
@@ -351,7 +561,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI42/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI42/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI42/state-regression.json"
+      }
     },
     {
       "screenId": "UI43",
@@ -359,7 +574,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI43/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI43/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI43/state-regression.json"
+      }
     },
     {
       "screenId": "UI44",
@@ -367,7 +587,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI44/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI44/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI44/state-regression.json"
+      }
     },
     {
       "screenId": "UI45",
@@ -375,7 +600,12 @@
       "editorStatus": "PENDING_EDITOR_GENERATION",
       "resolution750x1334": "PENDING",
       "resolution750x1624": "PENDING",
-      "stateRegression": "PENDING"
+      "stateRegression": "PENDING",
+      "evidence": {
+        "resolution750x1334": "client-cocos/acceptance/screens/UI45/750x1334.png",
+        "resolution750x1624": "client-cocos/acceptance/screens/UI45/750x1624.png",
+        "stateRegression": "client-cocos/acceptance/screens/UI45/state-regression.json"
+      }
     }
   ],
   "deviceAcceptance": {
@@ -384,5 +614,12 @@
     "idempotentRepeatedTap": "PENDING_REAL_DEVICE",
     "performance": "PENDING_REAL_DEVICE",
     "wechatMiniGameBuild": "PENDING_REAL_DEVICE"
+  },
+  "deviceEvidence": {
+    "safeArea": "client-cocos/acceptance/device/safe-area.json",
+    "weakNetworkRecovery": "client-cocos/acceptance/device/weak-network-recovery.json",
+    "idempotentRepeatedTap": "client-cocos/acceptance/device/idempotent-repeated-tap.json",
+    "performance": "client-cocos/acceptance/device/performance.json",
+    "wechatMiniGameBuild": "client-cocos/acceptance/device/wechat-mini-game-build.json"
   }
 }

@@ -349,3 +349,11 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ `ScreenRuntimeSession` 已挂接 `ScreenRouter`，页面销毁时同步清理 pending gate。
 - ✅ `cocos:contracts:check` 会阻止缺 states / interaction rules / acceptance / network timeout 的页面合同进入 main。
 - ⏳ 真机弱网与重复点击仍需实际设备做最终回归，但核心控制逻辑已不再依赖页面自行实现。
+
+
+## P0-C Evidence-driven Acceptance Sync
+
+- ✅ 新增 `npm run cocos:editor:sync`：自动扫描 App.scene、46 Prefab、92 张两分辨率截图、46 份状态回归和 5 类真机证据。
+- ✅ READY/PASS 只能由真实文件存在或证据 JSON 的 `result=PASS` 推导；CI 会反向拒绝“状态已通过但证据不存在”。
+- ✅ 46页验收证据路径已固定，后续 Editor/真机执行无需人工维护大表。
+- ⏳ 当前仓库仍无真实 Editor 产物/真机证据，因此状态保持 PENDING；这是真实外部执行缺口而非代码/合同缺口。
