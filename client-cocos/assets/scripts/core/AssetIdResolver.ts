@@ -26,6 +26,10 @@ export class AssetIdResolver {
     this.byId = new Map(map.assets.map(x => [x.assetId, x]));
   }
 
+  get count(): number {
+    return this.byId.size;
+  }
+
   getResourcePath(assetId: string): string {
     const entry = this.byId.get(assetId);
     if (!entry) throw new Error(`Unknown AssetId: ${assetId}`);
