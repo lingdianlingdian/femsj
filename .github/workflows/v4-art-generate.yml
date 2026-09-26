@@ -71,8 +71,10 @@ jobs:
           git push --force origin HEAD:"$BRANCH"
           if gh pr view "$BRANCH" --json number >/dev/null 2>&1; then
             echo "Generation PR already exists; branch updated."
-          else
-            gh pr create --base main --head "$BRANCH" \
+          elif gh pr create --base main --head "$BRANCH" \
               --title "art(v4): regenerate production art" \
-              --body "Automated art regeneration. Merge only after V4 Quality Gates pass."
+              --body "Automated art regeneration. Merge only after V4 Quality Gates pass."; then
+            echo "Generation PR created."
+          else
+            echo "::warning::Repository Actions settings do not permit GITHUB_TOKEN to create PRs. Generated branch $BRANCH was pushed and V4 Quality Gates will validate it automatically."
           fi

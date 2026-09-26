@@ -87,6 +87,7 @@ function synthAcceptance(cat){
 
 const existingJobAssets=new Set((jobs.jobs||[]).map(j=>j.asset_id));
 const existingQueueAssets=new Set(queue.rows.map(r=>r.asset_id));
+let jobListChanged=false;
 for(const a of assets.rows){
   if(existingJobAssets.has(a.asset_id)) continue;
   const category=synthJobCategory(a);
@@ -107,6 +108,7 @@ for(const a of assets.rows){
     acceptance:synthAcceptance(category)
   });
   existingJobAssets.add(a.asset_id);
+  jobListChanged=true;
   if(!existingQueueAssets.has(a.asset_id)){
     queue.rows.push({
       batch_id:'ART-FULL',
@@ -123,7 +125,7 @@ for(const a of assets.rows){
   }
 }
 jobs.version='4.2-full-manifest';
-jobs.generatedAt=new Date().toISOString();
+if(jobListChanged || !jobs.generatedAt) jobs.generatedAt=new Date().toISOString();
 jobs.jobCount=jobs.jobs.length;
 fs.writeFileSync(JOBS,JSON.stringify(jobs,null,2)+'\n');
 writeCsv(QUEUE,queue.header,queue.rows);
@@ -243,7 +245,17 @@ function sha(buf){return crypto.createHash('sha256').update(buf).digest('hex');}
 
 function generatePng(job,file){const [W,H]=dimensions(job);const [bw,bh]=baseSize(W,H);const bg=(job.transparent===false||job.category==='UI')?C.cream:C.transparent;const cv=canvas(bw,bh,bg);render(cv,job);const out=scaleNearest(cv,W,H);const bytes=png(out);fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,bytes);return {W,H,bytes};}
 
-const now=new Date().toISOString();
+function readJsonOrNull(file){
+  try{return JSON.parse(fs.readFileSync(file,'utf8'));}catch{return null;}
+}
+const runNow=new Date().toISOString();
+const previousAnchorManifest=readJsonOrNull(ANCHOR_OUT);
+const previousOutputManifest=readJsonOrNull(OUT);
+const previousReport=readJsonOrNull(P('production-data/v4/art/procedural_generation_report_v4.json'));
+const previousAnchorById=new Map((previousAnchorManifest?.outputs||[]).map(x=>[x.anchor_id,x]));
+const previousOutputById=new Map((previousOutputManifest?.outputs||[]).map(x=>[x.asset_id,x]));
+let anchorContentChanged=false;
+let outputContentChanged=false;
 
 // 1) 14 style anchors: deterministic original references + QA lock.
 const anchorRows=[];
@@ -252,14 +264,22 @@ for(const job of anchorJobs.jobs||[]){
   if(!anchor)throw new Error('Missing anchor '+job.target);
   const file=P('art-source/v4/anchors',job.target+'.png');
   const {W,H,bytes}=generatePng(job,file);
+  const digest=sha(bytes);
+  const previousAnchor=previousAnchorById.get(job.target);
+  const anchorUnchanged=previousAnchor?.sha256===digest;
+  if(!anchorUnchanged) anchorContentChanged=true;
   const qaRel='art-source/v4/qa/anchors/'+job.target+'.json';
-  const qa={version:'4.0',anchor_id:job.target,job_id:job.job_id,file_path:path.relative(ROOT,file).replaceAll('\\','/'),createdAt:now,reviewer:'OpenAI procedural-art pipeline',reviewedAt:now,decision:'APPROVE',hardGates:{originality:true,target_scope_only:true,no_baked_readable_text:true,no_unrequested_subjects:true,style_consistency:true},acceptance:(job.acceptance||[]).map(x=>({criterion:x,pass:true,note:'Deterministic V4 procedural canon; exact scope and palette contract.'})),notes:['Generated from repository-owned original procedural renderer; no third-party protected artwork.']};
+  const previousQa=readJsonOrNull(P(qaRel));
+  const reviewedAt=anchorUnchanged?(previousAnchor?.reviewedAt||previousQa?.reviewedAt||runNow):runNow;
+  const createdAt=anchorUnchanged?(previousQa?.createdAt||reviewedAt):runNow;
+  const qa={version:'4.0',anchor_id:job.target,job_id:job.job_id,file_path:path.relative(ROOT,file).replaceAll('\\','/'),createdAt,reviewer:'OpenAI procedural-art pipeline',reviewedAt,decision:'APPROVE',hardGates:{originality:true,target_scope_only:true,no_baked_readable_text:true,no_unrequested_subjects:true,style_consistency:true},acceptance:(job.acceptance||[]).map(x=>({criterion:x,pass:true,note:'Deterministic V4 procedural canon; exact scope and palette contract.'})),notes:['Generated from repository-owned original procedural renderer; no third-party protected artwork.']};
   fs.mkdirSync(P('art-source/v4/qa/anchors'),{recursive:true});fs.writeFileSync(P(qaRel),JSON.stringify(qa,null,2)+'\n');
   anchor.status='CANON_LOCKED';
-  anchorRows.push({anchor_id:job.target,job_id:job.job_id,file_path:path.relative(ROOT,file).replaceAll('\\','/'),width:W,height:H,format:'PNG',sha256:sha(bytes),status:'CANON_LOCKED',qa_file:qaRel,reviewer:qa.reviewer,reviewedAt:now});
+  anchorRows.push({anchor_id:job.target,job_id:job.job_id,file_path:path.relative(ROOT,file).replaceAll('\\','/'),width:W,height:H,format:'PNG',sha256:digest,status:'CANON_LOCKED',qa_file:qaRel,reviewer:qa.reviewer,reviewedAt});
 }
 writeCsv(ANCHORS,anchors.header,anchors.rows);
-fs.writeFileSync(ANCHOR_OUT,JSON.stringify({version:'4.0',updatedAt:now,outputs:anchorRows},null,2)+'\n');
+const anchorUpdatedAt=anchorContentChanged?runNow:(previousAnchorManifest?.updatedAt||runNow);
+fs.writeFileSync(ANCHOR_OUT,JSON.stringify({version:'4.0',updatedAt:anchorUpdatedAt,outputs:anchorRows},null,2)+'\n');
 
 // 2) 109 production resources + category-aware QA.
 const outputRows=[];
@@ -269,6 +289,10 @@ for(const job of jobs.jobs||[]){
   const rel=(job.output_contract?.workspace||'art-source/v4/exports/')+(job.output_contract?.filename||job.asset_id+'.png');
   const file=P(rel);
   const {W,H,bytes}=generatePng(job,file);
+  const digest=sha(bytes);
+  const previousOutput=previousOutputById.get(job.asset_id);
+  const outputUnchanged=previousOutput?.sha256===digest;
+  if(!outputUnchanged) outputContentChanged=true;
   const gates={canon:true,readability:true,perspective:true,palette:true,bundle:true,performance:true,originality:true};
   const extra={};
   if(['BoardItem','Dish'].includes(job.category))Object.assign(extra,{readability64:true,silhouette:true,family_consistency:true});
@@ -282,17 +306,23 @@ for(const job of jobs.jobs||[]){
   if(job.category==='Building')Object.assign(extra,{paired_pivot:true,paired_footprint:true,bounds_drift_lte_8pct:true,layerability:true,no_readable_signage:true});
   if(job.category==='VFX')Object.assign(extra,{low_end_fallback:true,critical_ui_clear:true});
   const qaRel='art-source/v4/qa/'+job.asset_id+'.json';
-  const qa={version:'4.0',asset_id:job.asset_id,job_id:job.job_id,category:job.category,file_path:rel,createdAt:now,reviewer:'OpenAI procedural-art pipeline',reviewedAt:now,decision:'APPROVE',gates:{...gates,...extra},notes:['Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text.']};
+  const previousQa=readJsonOrNull(P(qaRel));
+  const reviewedAt=outputUnchanged?(previousOutput?.reviewedAt||previousQa?.reviewedAt||runNow):runNow;
+  const createdAt=outputUnchanged?(previousQa?.createdAt||reviewedAt):runNow;
+  const qa={version:'4.0',asset_id:job.asset_id,job_id:job.job_id,category:job.category,file_path:rel,createdAt,reviewer:'OpenAI procedural-art pipeline',reviewedAt,decision:'APPROVE',gates:{...gates,...extra},notes:['Deterministic original V4 procedural asset. Exact source dimensions, RGBA PNG, no baked text.']};
   fs.mkdirSync(P('art-source/v4/qa'),{recursive:true});fs.writeFileSync(P(qaRel),JSON.stringify(qa,null,2)+'\n');
-  outputRows.push({asset_id:job.asset_id,job_id:job.job_id,file_path:rel,width:W,height:H,format:'PNG',sha256:sha(bytes),status:'APPROVED',generatedAt:now,reviewedAt:now,reviewer:qa.reviewer,qa_file:qaRel,gates});
+  const generatedAt=outputUnchanged?(previousOutput?.generatedAt||reviewedAt):runNow;
+  outputRows.push({asset_id:job.asset_id,job_id:job.job_id,file_path:rel,width:W,height:H,format:'PNG',sha256:digest,status:'APPROVED',generatedAt,reviewedAt,reviewer:qa.reviewer,qa_file:qaRel,gates});
   asset.status='APPROVED';
   const q=queue.rows.find(x=>x.asset_id===job.asset_id);if(q)q.status='APPROVED';
 }
 writeCsv(ASSETS,assets.header,assets.rows);
 writeCsv(QUEUE,queue.header,queue.rows);
-fs.writeFileSync(OUT,JSON.stringify({version:'4.0',updatedAt:now,statusFlow:['PLANNED','READY_FOR_CONCEPT','CONCEPT_REVIEW','CANON_LOCKED','GENERATED','CLEANUP','QA','APPROVED','INTEGRATED'],outputs:outputRows},null,2)+'\n');
+const outputUpdatedAt=outputContentChanged?runNow:(previousOutputManifest?.updatedAt||runNow);
+fs.writeFileSync(OUT,JSON.stringify({version:'4.0',updatedAt:outputUpdatedAt,statusFlow:['PLANNED','READY_FOR_CONCEPT','CONCEPT_REVIEW','CANON_LOCKED','GENERATED','CLEANUP','QA','APPROVED','INTEGRATED'],outputs:outputRows},null,2)+'\n');
 
 // 3) Generation report.
-const report={version:'4.0',generatedAt:now,renderer:'tools/art-procedural-generator/generate.mjs',styleAnchors:anchorRows.length,productionAssets:outputRows.length,approved:outputRows.length,categories:Object.fromEntries([...new Set((jobs.jobs||[]).map(x=>x.category))].map(k=>[k,(jobs.jobs||[]).filter(x=>x.category===k).length])),note:'Original deterministic V4 full-manifest art pack. Final Cocos prefab wiring is tracked separately from art approval.'};
+const reportGeneratedAt=(anchorContentChanged||outputContentChanged||jobListChanged)?runNow:(previousReport?.generatedAt||runNow);
+const report={version:'4.0',generatedAt:reportGeneratedAt,renderer:'tools/art-procedural-generator/generate.mjs',styleAnchors:anchorRows.length,productionAssets:outputRows.length,approved:outputRows.length,categories:Object.fromEntries([...new Set((jobs.jobs||[]).map(x=>x.category))].map(k=>[k,(jobs.jobs||[]).filter(x=>x.category===k).length])),note:'Original deterministic V4 full-manifest art pack. Final Cocos prefab wiring is tracked separately from art approval.'};
 fs.writeFileSync(P('production-data/v4/art/procedural_generation_report_v4.json'),JSON.stringify(report,null,2)+'\n');
 console.log(JSON.stringify(report,null,2));
