@@ -338,3 +338,14 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 新增 `cocos_editor_acceptance_v4.json`：App.scene、46 个 Prefab、两分辨率、状态回归、弱网/幂等/性能/微信小游戏真机结果全部显式登记。
 - ✅ 新增 `npm run cocos:editor:check`：只有实际 `.scene/.prefab` 文件存在时才允许把对应状态标成 READY；禁止只改状态不落文件。
 - ⏳ 当前环境未连接可执行 Cocos Creator 的桌面设备，因此 Editor 产物与真机验收仍保持 PENDING，不伪造。
+
+
+## P0-C Screen Runtime Guards
+
+- ✅ 46/46 Screen 运行时合同现在包含完整 components / layout / interactionRules / network / analytics / acceptance，而非只保留 route/state 摘要。
+- ✅ `ScreenViewStateController`：页面只能切换到 `screens_v4.json` 声明的状态。
+- ✅ `IdempotentActionGate`：同一幂等键在请求完成前只执行一次底层 action，连续点击复用同一 Promise。
+- ✅ `NetworkPolicyRunner`：遵循每页 timeout；仅当合同为 `safe-idempotent-only` 且调用声明 idempotent 时允许重试。
+- ✅ `ScreenRuntimeSession` 已挂接 `ScreenRouter`，页面销毁时同步清理 pending gate。
+- ✅ `cocos:contracts:check` 会阻止缺 states / interaction rules / acceptance / network timeout 的页面合同进入 main。
+- ⏳ 真机弱网与重复点击仍需实际设备做最终回归，但核心控制逻辑已不再依赖页面自行实现。

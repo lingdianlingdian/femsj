@@ -1,5 +1,26 @@
 export type ScreenAssetStatus = 'PENDING_EDITOR_GENERATION' | 'READY';
 
+export interface ScreenNetworkContract {
+  policy: string;
+  timeoutMs: number;
+  retry: string;
+}
+
+export interface ScreenComponentContract {
+  id: string;
+  type: string;
+  minTouch: number;
+  visibleWhen?: string;
+}
+
+export interface ScreenLayoutRegion {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+  role: string;
+}
+
 export interface ScreenPrefabContract {
   screenId: string;
   name: string;
@@ -8,7 +29,12 @@ export interface ScreenPrefabContract {
   sourceContract: string;
   states: string[];
   componentTypes: string[];
-  network: Record<string, unknown> | null;
+  components: ScreenComponentContract[];
+  layout: Record<string, ScreenLayoutRegion>;
+  interactionRules: string[];
+  network: ScreenNetworkContract | null;
+  analytics: string[];
+  acceptance: string[];
   status: ScreenAssetStatus;
 }
 

@@ -1,10 +1,12 @@
 import { instantiate, Node, Prefab, resources } from 'cc';
 import type { ScreenRouteResolution } from './ScreenContract';
 import { ScreenContractRepository } from './ScreenContractRepository';
+import { ScreenRuntimeSession } from './ScreenRuntimeSession';
 
 export class ScreenRouter {
   private current: Node | null = null;
   private currentRoute: ScreenRouteResolution | null = null;
+  private currentSession: ScreenRuntimeSession | null = null;
   readonly contracts = new ScreenContractRepository();
 
   constructor(private readonly host: Node) {}
@@ -26,9 +28,11 @@ export class ScreenRouter {
     });
 
     const next = instantiate(prefab);
+    this.currentSession?.destroy();
     this.current?.destroy();
     this.current = next;
     this.currentRoute = resolved;
+    this.currentSession = new ScreenRuntimeSession(resolved.contract);
     this.host.addChild(next);
     return next;
   }
@@ -42,9 +46,15 @@ export class ScreenRouter {
     };
   }
 
+  getCurrentSession(): ScreenRuntimeSession | null {
+    return this.currentSession;
+  }
+
   clear(): void {
+    this.currentSession?.destroy();
     this.current?.destroy();
     this.current = null;
     this.currentRoute = null;
+    this.currentSession = null;
   }
 }

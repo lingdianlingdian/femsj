@@ -77,3 +77,11 @@ Canvas
 ```
 
 再使用 **Audit V4 App Shell** 校验 46 个 Screen ID。正式 Scene/Prefab 必须由 Creator Editor 保存/生成，之后更新 `production-data/v4/ui/cocos_editor_acceptance_v4.json`；`npm run cocos:editor:check` 会校验状态与真实文件是否一致。
+
+
+## Screen Runtime Guards
+
+- 页面状态：`ScreenViewStateController` 只允许进入对应 Screen Contract 声明的状态。
+- 防重复点击：`IdempotentActionGate` 按 idempotency key 合并并发调用。
+- 弱网重试：`NetworkPolicyRunner` 只对明确幂等操作执行 safe retry，并应用页面 timeout。
+- `ScreenRouter` 每页创建独立 `ScreenRuntimeSession`，离开页面自动释放。
