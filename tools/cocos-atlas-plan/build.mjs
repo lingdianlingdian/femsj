@@ -30,7 +30,7 @@ const assets=rows.map(x=>{
     subcategory:x.subcategory,
     logicalBundle:x.bundle,
     physicalBundle:'resources',
-    resourcePath:`art/${x.asset_id}`,
+    resourcePath:`art/${x.bundle}/${atlasCandidate?'atlas':'standalone'}/${x.asset_id}`,
     sourceFormat:x.format,
     atlasPolicy:atlasCandidate?'SPRITE_ATLAS_CANDIDATE':'STANDALONE',
     targetAtlas:atlasCandidate?`atlas_${x.bundle}`:null,
@@ -47,6 +47,8 @@ const atlasGroups=logicalBundles.map(bundle=>{
     physicalBundle:'resources',
     assetCount:members.length,
     assetIds:members.map(x=>x.assetId),
+    folder:`client-cocos/assets/resources/art/${bundle}/atlas`,
+    expectedPac:`client-cocos/assets/resources/art/${bundle}/atlas/auto-atlas.pac`,
     status:members.length?'PENDING_EDITOR_ATLAS_GENERATION':'NOT_REQUIRED'
   };
 });
