@@ -29,11 +29,71 @@
         "VersionLabel",
         "PatchProgress"
       ],
+      "components": [
+        {
+          "id": "UI00_1",
+          "type": "Logo",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI00_2",
+          "type": "VersionLabel",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI00_3",
+          "type": "PatchProgress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "BOOT_START",
+        "PATCH_COMPLETE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -58,11 +118,90 @@
         "AppleLogin",
         "Agreement"
       ],
+      "components": [
+        {
+          "id": "UI01_1",
+          "type": "GuestLogin",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI01_2",
+          "type": "WeChatLogin",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI01_3",
+          "type": "DouyinLogin",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI01_4",
+          "type": "PhoneLogin",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI01_5",
+          "type": "AppleLogin",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI01_6",
+          "type": "Agreement",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "LOGIN_SHOW",
+        "LOGIN_SUCCESS",
+        "LOGIN_FAIL"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -84,11 +223,72 @@
         "RemainSize",
         "RetryButton"
       ],
+      "components": [
+        {
+          "id": "UI02_1",
+          "type": "PatchProgress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI02_2",
+          "type": "RemainSize",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI02_3",
+          "type": "RetryButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "PATCH_SHOW",
+        "PATCH_RETRY",
+        "PATCH_FAIL"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -108,11 +308,78 @@
         "Dialogue",
         "Skip"
       ],
+      "components": [
+        {
+          "id": "UI03_1",
+          "type": "CharacterPortrait",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI03_2",
+          "type": "Nameplate",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI03_3",
+          "type": "Dialogue",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI03_4",
+          "type": "Skip",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "STORY_START",
+        "STORY_SKIP",
+        "STORY_COMPLETE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -133,11 +400,83 @@
         "Producer",
         "TutorialMask"
       ],
+      "components": [
+        {
+          "id": "UI04_1",
+          "type": "Board4x7",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI04_2",
+          "type": "GuideHand",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI04_3",
+          "type": "OrderCard",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI04_4",
+          "type": "Producer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI04_5",
+          "type": "TutorialMask",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 850,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "TUTORIAL_STEP",
+        "TUTORIAL_COMPLETE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -161,11 +500,85 @@
         "UtilityBar",
         "EventDock"
       ],
+      "components": [
+        {
+          "id": "UI05_1",
+          "type": "ResourceBar",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI05_2",
+          "type": "OrderCarousel",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI05_3",
+          "type": "Board9x7",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI05_4",
+          "type": "UtilityBar",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI05_5",
+          "type": "EventDock",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 850,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "BOARD_ENTER",
+        "PRODUCER_TAP",
+        "ITEM_MERGE",
+        "BOARD_FULL"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -188,11 +601,77 @@
         "Reward",
         "SourceHint"
       ],
+      "components": [
+        {
+          "id": "UI06_1",
+          "type": "Customer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI06_2",
+          "type": "Requirements",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI06_3",
+          "type": "Reward",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI06_4",
+          "type": "SourceHint",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ORDER_DETAIL_SHOW",
+        "ORDER_SOURCE_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -217,11 +696,89 @@
         "Uses",
         "SellButton"
       ],
+      "components": [
+        {
+          "id": "UI07_1",
+          "type": "Icon",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI07_2",
+          "type": "Name",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI07_3",
+          "type": "Level",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI07_4",
+          "type": "Source",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI07_5",
+          "type": "Uses",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI07_6",
+          "type": "SellButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ITEM_DETAIL_SHOW",
+        "ITEM_SELL"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -244,11 +801,77 @@
         "SourceProducer",
         "UseRecipes"
       ],
+      "components": [
+        {
+          "id": "UI08_1",
+          "type": "ChainGraph",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI08_2",
+          "type": "LockedNode",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI08_3",
+          "type": "SourceProducer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI08_4",
+          "type": "UseRecipes",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "CHAIN_SHOW",
+        "CHAIN_NODE_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -272,11 +895,82 @@
         "OutputTags",
         "UpgradeHint"
       ],
+      "components": [
+        {
+          "id": "UI09_1",
+          "type": "ProducerArt",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI09_2",
+          "type": "Capacity",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI09_3",
+          "type": "Cooldown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI09_4",
+          "type": "OutputTags",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI09_5",
+          "type": "UpgradeHint",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "PRODUCER_DETAIL_SHOW"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -300,11 +994,84 @@
         "Start",
         "SpeedUp"
       ],
+      "components": [
+        {
+          "id": "UI10_1",
+          "type": "InputSlots",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI10_2",
+          "type": "RecipeList",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI10_3",
+          "type": "Timer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI10_4",
+          "type": "Start",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI10_5",
+          "type": "SpeedUp",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "COOK_PANEL_SHOW",
+        "COOK_START",
+        "COOK_SPEEDUP"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -327,11 +1094,77 @@
         "MaterialList",
         "CookwareTag"
       ],
+      "components": [
+        {
+          "id": "UI11_1",
+          "type": "CategoryTabs",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI11_2",
+          "type": "RecipeGrid",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI11_3",
+          "type": "MaterialList",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI11_4",
+          "type": "CookwareTag",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "RECIPE_BOOK_SHOW",
+        "RECIPE_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -354,11 +1187,77 @@
         "ExpandButton",
         "GemPrice"
       ],
+      "components": [
+        {
+          "id": "UI12_1",
+          "type": "StorageGrid",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI12_2",
+          "type": "BoardPreview",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI12_3",
+          "type": "ExpandButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI12_4",
+          "type": "GemPrice",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "STORAGE_SHOW",
+        "STORAGE_EXPAND"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -382,11 +1281,83 @@
         "GemRefill",
         "Offer"
       ],
+      "components": [
+        {
+          "id": "UI13_1",
+          "type": "CurrentEnergy",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI13_2",
+          "type": "RegenTimer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI13_3",
+          "type": "AdRefill",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI13_4",
+          "type": "GemRefill",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI13_5",
+          "type": "Offer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ENERGY_PANEL_SHOW",
+        "ENERGY_REFILL"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -410,11 +1381,83 @@
         "ActivityDock",
         "EnterBoard"
       ],
+      "components": [
+        {
+          "id": "UI14_1",
+          "type": "StreetWorld",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI14_2",
+          "type": "BuildHotspots",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI14_3",
+          "type": "NPC",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI14_4",
+          "type": "ActivityDock",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI14_5",
+          "type": "EnterBoard",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "STREET_ENTER",
+        "BUILD_HOTSPOT_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -437,11 +1480,77 @@
         "Reward",
         "BuildButton"
       ],
+      "components": [
+        {
+          "id": "UI15_1",
+          "type": "BeforeAfter",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI15_2",
+          "type": "Cost",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI15_3",
+          "type": "Reward",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI15_4",
+          "type": "BuildButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "BUILD_DETAIL_SHOW",
+        "BUILD_START"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -463,11 +1572,70 @@
         "Reward",
         "NextNode"
       ],
+      "components": [
+        {
+          "id": "UI16_1",
+          "type": "BuildingReveal",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI16_2",
+          "type": "Reward",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI16_3",
+          "type": "NextNode",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "BUILD_COMPLETE_SHOW"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -488,11 +1656,83 @@
         "Continue",
         "Skip"
       ],
+      "components": [
+        {
+          "id": "UI17_1",
+          "type": "Portrait",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI17_2",
+          "type": "Nameplate",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI17_3",
+          "type": "Dialogue",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI17_4",
+          "type": "Continue",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI17_5",
+          "type": "Skip",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "STORY_BEAT",
+        "STORY_COMPLETE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -516,11 +1756,83 @@
         "BuildProgress",
         "NextDay"
       ],
+      "components": [
+        {
+          "id": "UI18_1",
+          "type": "DayBadge",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI18_2",
+          "type": "Rewards",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI18_3",
+          "type": "Unlocks",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI18_4",
+          "type": "BuildProgress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI18_5",
+          "type": "NextDay",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "DAY_COMPLETE_SHOW",
+        "DAY_REWARD_CLAIM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -543,11 +1855,77 @@
         "Description",
         "GoButton"
       ],
+      "components": [
+        {
+          "id": "UI19_1",
+          "type": "NewIcon",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI19_2",
+          "type": "Name",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI19_3",
+          "type": "Description",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI19_4",
+          "type": "GoButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "UNLOCK_SHOW",
+        "UNLOCK_GO"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -570,11 +1948,78 @@
         "RefreshTimer",
         "RefreshButton"
       ],
+      "components": [
+        {
+          "id": "UI20_1",
+          "type": "ProductGrid",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI20_2",
+          "type": "PurchaseLimit",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI20_3",
+          "type": "RefreshTimer",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI20_4",
+          "type": "RefreshButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "SHOP_SHOW",
+        "SHOP_BUY",
+        "SHOP_REFRESH"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -597,11 +2042,78 @@
         "Price",
         "Restore"
       ],
+      "components": [
+        {
+          "id": "UI21_1",
+          "type": "SkuCards",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI21_2",
+          "type": "Bonus",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI21_3",
+          "type": "Price",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI21_4",
+          "type": "Restore",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "IAP_SHOW",
+        "IAP_START",
+        "IAP_RESULT"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -624,11 +2136,78 @@
         "Price",
         "Close"
       ],
+      "components": [
+        {
+          "id": "UI22_1",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI22_2",
+          "type": "Contents",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI22_3",
+          "type": "Price",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI22_4",
+          "type": "Close",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "OFFER_SHOW",
+        "OFFER_BUY",
+        "OFFER_CLOSE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -651,11 +2230,77 @@
         "Price",
         "Countdown"
       ],
+      "components": [
+        {
+          "id": "UI23_1",
+          "type": "Milestone",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI23_2",
+          "type": "Contents",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI23_3",
+          "type": "Price",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI23_4",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "LEVEL_OFFER_SHOW",
+        "LEVEL_OFFER_BUY"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -678,11 +2323,78 @@
         "Watch",
         "Cancel"
       ],
+      "components": [
+        {
+          "id": "UI24_1",
+          "type": "Reward",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI24_2",
+          "type": "RemainingCount",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI24_3",
+          "type": "Watch",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI24_4",
+          "type": "Cancel",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "AD_PROMPT_SHOW",
+        "AD_START",
+        "AD_COMPLETE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -704,11 +2416,71 @@
         "Countdowns",
         "RedDots"
       ],
+      "components": [
+        {
+          "id": "UI25_1",
+          "type": "EventCards",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI25_2",
+          "type": "Countdowns",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI25_3",
+          "type": "RedDots",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "EVENT_CENTER_SHOW",
+        "EVENT_CARD_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -731,11 +2503,77 @@
         "MiniRanking",
         "Countdown"
       ],
+      "components": [
+        {
+          "id": "UI26_1",
+          "type": "Goal",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI26_2",
+          "type": "Milestones",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI26_3",
+          "type": "MiniRanking",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI26_4",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "RACE_SHOW",
+        "RACE_REWARD_CLAIM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -758,11 +2596,77 @@
         "FinalPack",
         "Countdown"
       ],
+      "components": [
+        {
+          "id": "UI27_1",
+          "type": "ProgressRoute",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI27_2",
+          "type": "Milestones",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI27_3",
+          "type": "FinalPack",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI27_4",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "DRIFT_SHOW",
+        "DRIFT_REWARD_CLAIM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -785,11 +2689,78 @@
         "AffectedProducers",
         "Progress"
       ],
+      "components": [
+        {
+          "id": "UI28_1",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI28_2",
+          "type": "BoostRules",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI28_3",
+          "type": "AffectedProducers",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI28_4",
+          "type": "Progress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "BOOST_SHOW",
+        "BOOST_START",
+        "BOOST_END"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -813,11 +2784,83 @@
         "Progress",
         "Rewards"
       ],
+      "components": [
+        {
+          "id": "UI29_1",
+          "type": "HeroArt",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI29_2",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI29_3",
+          "type": "Multiplier",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI29_4",
+          "type": "Progress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI29_5",
+          "type": "Rewards",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "COOK_CONTEST_SHOW",
+        "COOK_CONTEST_MULTIPLIER"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -840,11 +2883,77 @@
         "Progress",
         "StarCurrency"
       ],
+      "components": [
+        {
+          "id": "UI30_1",
+          "type": "SeasonHeader",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI30_2",
+          "type": "Sets",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI30_3",
+          "type": "Progress",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI30_4",
+          "type": "StarCurrency",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ALBUM_SHOW",
+        "ALBUM_SET_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -866,11 +2975,71 @@
         "SetReward",
         "MissingCount"
       ],
+      "components": [
+        {
+          "id": "UI31_1",
+          "type": "CardSlots",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI31_2",
+          "type": "SetReward",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI31_3",
+          "type": "MissingCount",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ALBUM_SET_SHOW",
+        "CARD_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -894,11 +3063,84 @@
         "DuplicateValue",
         "Skip"
       ],
+      "components": [
+        {
+          "id": "UI32_1",
+          "type": "Pack",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI32_2",
+          "type": "RevealCards",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI32_3",
+          "type": "NewBadge",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI32_4",
+          "type": "DuplicateValue",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI32_5",
+          "type": "Skip",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "PACK_OPEN_START",
+        "CARD_REVEAL",
+        "PACK_OPEN_END"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -920,11 +3162,71 @@
         "ExchangeItems",
         "Guarantee"
       ],
+      "components": [
+        {
+          "id": "UI33_1",
+          "type": "StarBalance",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI33_2",
+          "type": "ExchangeItems",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI33_3",
+          "type": "Guarantee",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ALBUM_EXCHANGE_SHOW",
+        "ALBUM_EXCHANGE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -948,11 +3250,84 @@
         "Tasks",
         "BuyPass"
       ],
+      "components": [
+        {
+          "id": "UI34_1",
+          "type": "FreeTrack",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI34_2",
+          "type": "PaidTrack",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI34_3",
+          "type": "Level",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI34_4",
+          "type": "Tasks",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI34_5",
+          "type": "BuyPass",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "PASS_SHOW",
+        "PASS_CLAIM",
+        "PASS_BUY"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -975,11 +3350,77 @@
         "ClaimAll",
         "Expiry"
       ],
+      "components": [
+        {
+          "id": "UI35_1",
+          "type": "MailList",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI35_2",
+          "type": "Attachment",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI35_3",
+          "type": "ClaimAll",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI35_4",
+          "type": "Expiry",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "MAIL_SHOW",
+        "MAIL_CLAIM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1002,11 +3443,77 @@
         "Achievements",
         "Claim"
       ],
+      "components": [
+        {
+          "id": "UI36_1",
+          "type": "Daily",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI36_2",
+          "type": "Weekly",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI36_3",
+          "type": "Achievements",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI36_4",
+          "type": "Claim",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "TASK_SHOW",
+        "TASK_CLAIM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1031,11 +3538,89 @@
         "Language",
         "Account"
       ],
+      "components": [
+        {
+          "id": "UI37_1",
+          "type": "Music",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI37_2",
+          "type": "Sfx",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI37_3",
+          "type": "Vibration",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI37_4",
+          "type": "Notifications",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI37_5",
+          "type": "Language",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI37_6",
+          "type": "Account",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "SETTINGS_SHOW",
+        "SETTING_CHANGE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1058,11 +3643,77 @@
         "BindButtons",
         "ConflictInfo"
       ],
+      "components": [
+        {
+          "id": "UI38_1",
+          "type": "Bindings",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI38_2",
+          "type": "UID",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI38_3",
+          "type": "BindButtons",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI38_4",
+          "type": "ConflictInfo",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "ACCOUNT_SHOW",
+        "ACCOUNT_BIND"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1085,11 +3736,77 @@
         "Privacy",
         "Terms"
       ],
+      "components": [
+        {
+          "id": "UI39_1",
+          "type": "FAQ",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI39_2",
+          "type": "Contact",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI39_3",
+          "type": "Privacy",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI39_4",
+          "type": "Terms",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "SUPPORT_SHOW",
+        "FAQ_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1108,11 +3825,71 @@
         "Retry",
         "OfflineHint"
       ],
+      "components": [
+        {
+          "id": "UI40_1",
+          "type": "Message",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI40_2",
+          "type": "Retry",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI40_3",
+          "type": "OfflineHint",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "NETWORK_ERROR",
+        "NETWORK_RETRY"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1132,11 +3909,77 @@
         "Sources",
         "GoButton"
       ],
+      "components": [
+        {
+          "id": "UI41_1",
+          "type": "ResourceIcon",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI41_2",
+          "type": "NeedHave",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI41_3",
+          "type": "Sources",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI41_4",
+          "type": "GoButton",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "RESOURCE_SHORTAGE_SHOW",
+        "RESOURCE_SOURCE_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1154,11 +3997,65 @@
         "RewardGrid",
         "Confirm"
       ],
+      "components": [
+        {
+          "id": "UI42_1",
+          "type": "RewardGrid",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI42_2",
+          "type": "Confirm",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "REWARD_POPUP_SHOW",
+        "REWARD_CONFIRM"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1181,11 +4078,76 @@
         "RewardTiers",
         "Countdown"
       ],
+      "components": [
+        {
+          "id": "UI43_1",
+          "type": "SelfRank",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI43_2",
+          "type": "Rows",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI43_3",
+          "type": "RewardTiers",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI43_4",
+          "type": "Countdown",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "RANKING_SHOW"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1207,11 +4169,71 @@
         "Banner",
         "JumpLinks"
       ],
+      "components": [
+        {
+          "id": "UI44_1",
+          "type": "RichText",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI44_2",
+          "type": "Banner",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI44_3",
+          "type": "JumpLinks",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "server-backed",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "NEWS_SHOW",
+        "NEWS_LINK_CLICK"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     },
     {
@@ -1231,11 +4253,77 @@
         "Agree",
         "Decline"
       ],
+      "components": [
+        {
+          "id": "UI45_1",
+          "type": "Terms",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI45_2",
+          "type": "Privacy",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI45_3",
+          "type": "Agree",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        },
+        {
+          "id": "UI45_4",
+          "type": "Decline",
+          "minTouch": 88,
+          "visibleWhen": "state-dependent"
+        }
+      ],
+      "layout": {
+        "top": {
+          "x": 24,
+          "y": 36,
+          "w": 702,
+          "h": 96,
+          "role": "title/resource/safe area"
+        },
+        "content": {
+          "x": 24,
+          "y": 148,
+          "w": 702,
+          "h": 1000,
+          "role": "primary content"
+        },
+        "bottom": {
+          "x": 24,
+          "y": 1160,
+          "w": 702,
+          "h": 126,
+          "role": "actions/navigation"
+        }
+      },
+      "interactionRules": [
+        "任何支付/领奖/资源扣减按钮必须防重复点击并带幂等键",
+        "关闭/返回行为必须可预测；Modal关闭回到触发页而不是强跳主街",
+        "触控热区不小于88×88逻辑像素",
+        "重要状态不能只靠颜色表达"
+      ],
       "network": {
         "policy": "local-first",
         "timeoutMs": 8000,
         "retry": "safe-idempotent-only"
       },
+      "analytics": [
+        "LEGAL_SHOW",
+        "LEGAL_AGREE"
+      ],
+      "acceptance": [
+        "750×1334和750×1624无关键内容裁切",
+        "刘海/胶囊/底部手势区不遮挡关键CTA",
+        "中文文案放大10%不爆版",
+        "弱网/错误态可恢复",
+        "连续点击不会重复扣资源或重复领奖"
+      ],
       "status": "PENDING_EDITOR_GENERATION"
     }
   ],
