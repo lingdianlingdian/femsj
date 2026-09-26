@@ -85,3 +85,20 @@ Canvas
 - 防重复点击：`IdempotentActionGate` 按 idempotency key 合并并发调用。
 - 弱网重试：`NetworkPolicyRunner` 只对明确幂等操作执行 safe retry，并应用页面 timeout。
 - `ScreenRouter` 每页创建独立 `ScreenRuntimeSession`，离开页面自动释放。
+
+
+## Acceptance Evidence Sync
+
+编辑器/真机完成后，不手工改状态；把证据文件放到约定路径，然后执行：
+
+```powershell
+npm run cocos:editor:sync
+npm run cocos:editor:check
+```
+
+约定：
+- 页面截图：`acceptance/screens/UIxx/750x1334.png` 与 `750x1624.png`
+- 页面状态回归：`acceptance/screens/UIxx/state-regression.json`，内容必须有 `{"result":"PASS"}` 或 `FAIL`
+- 真机证据：`acceptance/device/*.json`，同样使用 `result: PASS|FAIL`
+
+`sync` 只根据真实文件提升状态；`check` 反向验证 PASS/READY 不得脱离证据存在。
