@@ -38,6 +38,8 @@
     "research:closure:build": "node tools/p0-research-closure/build.mjs",
     "research:closure:check": "node tools/p0-research-closure/build.mjs --check",
     "cocos:routes:test": "node tools/cocos-contract-builder/route-regression.mjs",
-    "cocos:resources:check": "node tools/cocos-resource-sync/check.mjs"
+    "cocos:resources:check": "node tools/cocos-resource-sync/check.mjs",
+    "cocos:resources:sync": "node tools/cocos-resource-sync/sync.mjs",
+    "cocos:board:test": "node tools/cocos-resource-sync/board-regression.mjs"
   }
 }
