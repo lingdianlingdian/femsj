@@ -357,3 +357,15 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ READY/PASS 只能由真实文件存在或证据 JSON 的 `result=PASS` 推导；CI 会反向拒绝“状态已通过但证据不存在”。
 - ✅ 46页验收证据路径已固定，后续 Editor/真机执行无需人工维护大表。
 - ⏳ 当前仓库仍无真实 Editor 产物/真机证据，因此状态保持 PENDING；这是真实外部执行缺口而非代码/合同缺口。
+
+
+## P0-C Atlas / Bundle / Startup Self-Test
+
+- ✅ 389/389 Cocos art binaries 已按现有逻辑 bundle 重组到 `art/<bundle>/atlas|standalone/`；无重复扁平副本。
+- ✅ 10 个逻辑 bundle 保留自 `assets_master.csv#bundle`；当前物理加载仍使用 Cocos 内置 `resources` bundle，未来拆 Asset Bundle 不改 AssetId。
+- ✅ 213 个静态 Sprite 标记为 Auto Atlas 候选，176 个 Spine/粒子/PSD-intent 资源保持 standalone。
+- ✅ 每个 atlas 文件夹固定 `auto-atlas.pac` 期望路径；只有真实 Editor 文件存在时状态才可变 READY。
+- ✅ AssetId import map 现在由 Atlas plan + 389 APPROVED art outputs 确定性生成。
+- ✅ `StartupSelfTest` 已挂到 BootController：启动前检查 110 Days、651 Orders、389 AssetId、46 Screen、参数路由、modal 路由、Day1 Dialogue、Merge-2；失败即阻止进入 /boot。
+- ✅ `cocos:atlas:check` / `cocos:asset-map:check` 已进入 CI。
+- ⏳ Auto Atlas 的 `.pac/.meta` 与实际构建 DrawCall/包体收益仍必须由 Creator Editor/真机构建验证。
