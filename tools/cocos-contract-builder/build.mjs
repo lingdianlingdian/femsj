@@ -27,7 +27,12 @@ const manifest = {
     sourceContract: 'production-data/v4/ui/screens_v4.json',
     states: s.states || [],
     componentTypes: (s.components || []).map((x) => x.type),
+    components: s.components || [],
+    layout: s.layout || {},
+    interactionRules: s.interactionRules || [],
     network: s.network || null,
+    analytics: s.analytics || [],
+    acceptance: s.acceptance || [],
     status: 'PENDING_EDITOR_GENERATION'
   })),
   sharedComponents: (components.components || []).map((c) => ({
@@ -50,6 +55,10 @@ if (new Set(manifest.screens.map(x => x.route)).size !== 46) errors.push('duplic
 for (const s of manifest.screens) {
   if (!/^UI\d{2}$/.test(s.screenId)) errors.push(`invalid screenId ${s.screenId}`);
   if (!s.route || !s.prefabResourcePath) errors.push(`${s.screenId}: missing route/prefab path`);
+  if (!s.states.length) errors.push(`${s.screenId}: missing states`);
+  if (!s.interactionRules.length) errors.push(`${s.screenId}: missing interaction rules`);
+  if (!s.acceptance.length) errors.push(`${s.screenId}: missing acceptance rules`);
+  if (!s.network || !Number.isFinite(s.network.timeoutMs)) errors.push(`${s.screenId}: invalid network contract`);
 }
 for (const c of manifest.sharedComponents) {
   if (!c.componentId || !c.sourcePrefab || !c.resourcePath) errors.push(`${c.componentId || 'UNKNOWN'}: incomplete prefab contract`);
