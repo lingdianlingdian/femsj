@@ -52,6 +52,12 @@ jobs:
       - name: Binary art file audit
         run: npm run audit:art:files
 
+      - name: Verify art generator is deterministic
+        shell: bash
+        run: |
+          npm run art:generate
+          git diff --exit-code -- art-source/v4 production-data/v4/art
+
       - name: Full runtime art binding audit
         run: npm run audit:art:runtime-full
 
