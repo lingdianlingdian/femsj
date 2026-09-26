@@ -2,7 +2,7 @@ name: V4 Quality Gates
 
 on:
   push:
-    branches: [main]
+    branches: [main, 'automation/**']
   pull_request:
     branches: [main]
 
