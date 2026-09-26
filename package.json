@@ -42,6 +42,10 @@
     "cocos:resources:sync": "node tools/cocos-resource-sync/sync.mjs",
     "cocos:board:test": "node tools/cocos-resource-sync/board-regression.mjs",
     "cocos:editor:check": "node tools/cocos-editor-acceptance/check.mjs",
-    "cocos:editor:sync": "node tools/cocos-editor-acceptance/sync.mjs"
+    "cocos:editor:sync": "node tools/cocos-editor-acceptance/sync.mjs",
+    "cocos:atlas:build": "node tools/cocos-atlas-plan/build.mjs",
+    "cocos:atlas:check": "node tools/cocos-atlas-plan/build.mjs --check",
+    "cocos:asset-map:build": "node tools/cocos-asset-map/build.mjs",
+    "cocos:asset-map:check": "node tools/cocos-asset-map/build.mjs --check"
   }
 }
