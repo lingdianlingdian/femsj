@@ -1,4 +1,3 @@
-// @ts-nocheck
 /**
  * Pure route-pattern matcher shared by the Cocos runtime and Node regression tests.
  *
