@@ -102,3 +102,17 @@ npm run cocos:editor:check
 - 真机证据：`acceptance/device/*.json`，同样使用 `result: PASS|FAIL`
 
 `sync` 只根据真实文件提升状态；`check` 反向验证 PASS/READY 不得脱离证据存在。
+
+
+## Atlas / Bundle Plan
+
+- 当前物理加载：Cocos `resources` bundle。
+- 逻辑分包：沿用 `assets_master.csv` 的 10 个 bundle。
+- 目录：`assets/resources/art/<logicalBundle>/atlas/` 与 `standalone/`。
+- 静态 Sprite Atlas 候选：213；独立资源：176。
+- Editor 对每个非空 `atlas/` 文件夹创建 `auto-atlas.pac` 后，运行 `npm run cocos:atlas:build` 更新 READY 状态。
+- `npm run cocos:asset-map:check` 保证 389 AssetId 路径与 Atlas plan 同步。
+
+## Startup Self-Test
+
+`BootController` 在打开 UI00 之前运行 `StartupSelfTest`。Runtime/Screen/AssetId/Dialogue/Merge-2 任一核心链失败都会中止启动并输出结构化错误。
