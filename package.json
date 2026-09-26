@@ -46,6 +46,12 @@
     "cocos:atlas:build": "node tools/cocos-atlas-plan/build.mjs",
     "cocos:atlas:check": "node tools/cocos-atlas-plan/build.mjs --check",
     "cocos:asset-map:build": "node tools/cocos-asset-map/build.mjs",
-    "cocos:asset-map:check": "node tools/cocos-asset-map/build.mjs --check"
+    "cocos:asset-map:check": "node tools/cocos-asset-map/build.mjs --check",
+    "cocos:navigation:test": "node tools/cocos-contract-builder/navigation-regression.mjs",
+    "cocos:types:check": "npx --yes --package typescript@5.6.3 tsc -p client-cocos/tsconfig.ci.json",
+    "openapi:check": "npx --yes swagger-cli@4.0.4 validate api/openapi-v4.yaml",
+    "validate:events:regression": "node tools/config-validator/event-regression.mjs",
+    "qa:auto:coverage": "node tools/qa-auto-coverage/check.mjs",
+    "qa:auto:strict": "node tools/qa-auto-coverage/check.mjs --strict"
   }
 }
