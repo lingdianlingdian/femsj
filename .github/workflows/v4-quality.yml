@@ -163,6 +163,9 @@ jobs:
       - name: Verify Cocos AssetId import map
         run: npm run cocos:asset-map:check
 
+      - name: Verify Cocos editor evidence validators
+        run: npm run cocos:editor:evidence:test
+
       - name: Verify Cocos editor/device acceptance registry
         run: npm run cocos:editor:check
 

@@ -52,6 +52,8 @@
     "openapi:check": "npx --yes swagger-cli@4.0.4 validate api/openapi-v4.yaml",
     "validate:events:regression": "node tools/config-validator/event-regression.mjs",
     "qa:auto:coverage": "node tools/qa-auto-coverage/check.mjs",
-    "qa:auto:strict": "node tools/qa-auto-coverage/check.mjs --strict"
+    "qa:auto:strict": "node tools/qa-auto-coverage/check.mjs --strict",
+    "cocos:editor:evidence:test": "node tools/cocos-editor-acceptance/evidence-regression.mjs",
+    "cocos:editor:progress": "node tools/cocos-editor-acceptance/progress.mjs"
   }
 }

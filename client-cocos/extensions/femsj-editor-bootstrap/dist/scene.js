@@ -74,7 +74,9 @@ exports.methods = {
     for (const screenId of screenIds) {
       const node = ensureChild(templates, screenId);
       configureFullRect(node, 750, 1334);
-      node.active = false;
+      // Keep the staging parent inactive, but keep each template root active so a
+      // Creator-generated Prefab remains visible after ScreenRouter instantiates it.
+      node.active = true;
     }
 
     for (const child of [...templates.children]) {
@@ -88,17 +90,19 @@ exports.methods = {
       screenHost: screenHost.name,
       screenTemplates: templates.children.map((x) => x.name).sort(),
       screenCount: templates.children.length,
-      next: 'Save as App.scene, then convert each staging child to a prefab using Creator asset workflow.',
+      next: 'Save as App.scene, then convert each active staging child to a prefab using Creator asset workflow.',
     };
   },
 
   auditAppShell(screenIds) {
     const { canvas, safeAreaRoot, screenHost, templates } = findShell();
-    const actual = new Set((templates && templates.children || []).map((x) => x.name));
+    const children = (templates && templates.children) || [];
+    const actual = new Set(children.map((x) => x.name));
     const missing = screenIds.filter((id) => !actual.has(id));
     const extra = [...actual].filter((id) => !screenIds.includes(id));
+    const inactiveScreenTemplates = children.filter((x) => screenIds.includes(x.name) && !x.active).map((x) => x.name).sort();
     return {
-      result: canvas && safeAreaRoot && screenHost && templates && missing.length === 0 && extra.length === 0 ? 'PASS' : 'FAIL',
+      result: canvas && safeAreaRoot && screenHost && templates && missing.length === 0 && extra.length === 0 && inactiveScreenTemplates.length === 0 ? 'PASS' : 'FAIL',
       hasCanvas: !!canvas,
       hasSafeAreaRoot: !!safeAreaRoot,
       hasScreenHost: !!screenHost,
@@ -107,6 +111,7 @@ exports.methods = {
       actualScreens: actual.size,
       missing,
       extra,
+      inactiveScreenTemplates,
     };
   },
 };

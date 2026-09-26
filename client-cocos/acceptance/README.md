@@ -26,7 +26,7 @@ screens/UI45/
 }
 ```
 
-只有真实截图存在时，`cocos:editor:sync` 才会将对应分辨率状态提升为 PASS。
+只有真实 PNG 存在且 IHDR 像素尺寸分别严格为 750×1334 / 750×1624 时，`cocos:editor:sync` 才会将对应分辨率状态提升为 PASS。
 
 ## Real-device evidence
 
@@ -55,6 +55,11 @@ screens/UI45/
 ```powershell
 npm run cocos:editor:sync
 npm run cocos:editor:check
+npm run cocos:editor:progress
 ```
 
-CI 会拒绝没有真实证据文件的 READY/PASS。
+- `cocos:editor:check` 会校验 PNG 真实尺寸，并校验状态回归 JSON 的 `result/testedAt/states/notes` 与真机 JSON 的 `result/testedAt/device/build/notes`。
+- `cocos:editor:progress` 只读汇总 App.scene、46 Prefab、92 截图、46 状态回归、5 真机证据及 5 个必需 Auto Atlas 的当前进度，不生成任何验收证据。
+- Windows / Creator 3.8 的最短执行顺序见 `WINDOWS-CREATOR-3.8-RUNBOOK.md`。
+
+CI 会拒绝没有真实证据文件的 READY/PASS，也会拒绝错误尺寸 PNG 或结构不完整的 PASS JSON。
