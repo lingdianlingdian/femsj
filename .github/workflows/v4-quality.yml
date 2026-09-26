@@ -139,6 +139,12 @@ jobs:
       - name: Verify Cocos UI contracts
         run: npm run cocos:contracts:check
 
+      - name: Verify Cocos runtime/story/art resources
+        run: npm run cocos:resources:check
+
+      - name: Verify Cocos runtime/story resources
+        run: npm run cocos:resources:check
+
       - name: Vertical economy source-sink gate
         run: npm run gate:economy:vertical
 
