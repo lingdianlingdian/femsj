@@ -1,0 +1,388 @@
+{
+  "version": "4.0",
+  "generatedAt": "2026-09-26",
+  "engine": "Cocos Creator 3.8 LTS",
+  "policy": "Do not mark editor/device work complete without editor-generated assets and captured acceptance evidence.",
+  "scene": {
+    "id": "App",
+    "expectedPath": "client-cocos/assets/App.scene",
+    "status": "PENDING_EDITOR_GENERATION"
+  },
+  "screens": [
+    {
+      "screenId": "UI00",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI00.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI01",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI01.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI02",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI02.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI03",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI03.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI04",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI04.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI05",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI05.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI06",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI06.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI07",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI07.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI08",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI08.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI09",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI09.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI10",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI10.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI11",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI11.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI12",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI12.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI13",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI13.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI14",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI14.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI15",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI15.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI16",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI16.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI17",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI17.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI18",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI18.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI19",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI19.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI20",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI20.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI21",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI21.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI22",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI22.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI23",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI23.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI24",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI24.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI25",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI25.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI26",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI26.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI27",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI27.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI28",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI28.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI29",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI29.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI30",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI30.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI31",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI31.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI32",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI32.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI33",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI33.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI34",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI34.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI35",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI35.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI36",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI36.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI37",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI37.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI38",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI38.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI39",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI39.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI40",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI40.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI41",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI41.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI42",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI42.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI43",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI43.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI44",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI44.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    },
+    {
+      "screenId": "UI45",
+      "prefabPath": "client-cocos/assets/resources/ui/screens/UI45.prefab",
+      "editorStatus": "PENDING_EDITOR_GENERATION",
+      "resolution750x1334": "PENDING",
+      "resolution750x1624": "PENDING",
+      "stateRegression": "PENDING"
+    }
+  ],
+  "deviceAcceptance": {
+    "safeArea": "PENDING_REAL_DEVICE",
+    "weakNetworkRecovery": "PENDING_REAL_DEVICE",
+    "idempotentRepeatedTap": "PENDING_REAL_DEVICE",
+    "performance": "PENDING_REAL_DEVICE",
+    "wechatMiniGameBuild": "PENDING_REAL_DEVICE"
+  }
+}

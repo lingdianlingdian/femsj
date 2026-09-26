@@ -329,3 +329,12 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ AssetIdResolver + 389 AssetId→resources 路径映射已落库。
 - ✅ 新增 `npm run cocos:resources:check` 并接入 V4 Quality Gates。
 - ⏳ 唯一仍不能在当前无 Editor/无真机环境中伪造的部分：Cocos Editor 正式生成 `.scene/.prefab/.meta`、46页可视化挂载、Atlas导入元数据以及真机截图/性能/弱网验收。
+
+
+## P0-C Editor 自动化与验收登记
+
+- ✅ 新增 Creator 3.8 项目扩展 `client-cocos/extensions/femsj-editor-bootstrap/`。
+- ✅ Developer → FEMSJ 菜单可在当前场景生成 `Canvas/SafeAreaRoot/ScreenHost` + UI00–UI45 共 46 个模板节点，并可审计缺失/多余节点。
+- ✅ 新增 `cocos_editor_acceptance_v4.json`：App.scene、46 个 Prefab、两分辨率、状态回归、弱网/幂等/性能/微信小游戏真机结果全部显式登记。
+- ✅ 新增 `npm run cocos:editor:check`：只有实际 `.scene/.prefab` 文件存在时才允许把对应状态标成 READY；禁止只改状态不落文件。
+- ⏳ 当前环境未连接可执行 Cocos Creator 的桌面设备，因此 Editor 产物与真机验收仍保持 PENDING，不伪造。

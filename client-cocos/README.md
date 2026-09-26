@@ -58,3 +58,22 @@ npm run cocos:contracts:check
 - `cocos:resources:check`：逐字节检查 Runtime/Story 镜像，并校验 389 PNG 的 SHA-256。
 
 当前剩余必须由 Cocos Creator Editor / 真机产生的产物继续保持 `PENDING_EDITOR_GENERATION`，不得手写伪造。
+
+
+## Editor 一键生成
+
+Creator 3.8 项目扩展：`extensions/femsj-editor-bootstrap/`。
+
+启用后使用 **Developer → FEMSJ → Generate V4 App Shell**，会在当前场景创建：
+
+```text
+Canvas
+└─ SafeAreaRoot
+   ├─ ScreenHost
+   └─ ScreenTemplateStaging
+      ├─ UI00
+      ├─ ...
+      └─ UI45
+```
+
+再使用 **Audit V4 App Shell** 校验 46 个 Screen ID。正式 Scene/Prefab 必须由 Creator Editor 保存/生成，之后更新 `production-data/v4/ui/cocos_editor_acceptance_v4.json`；`npm run cocos:editor:check` 会校验状态与真实文件是否一致。

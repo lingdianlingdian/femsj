@@ -142,6 +142,9 @@ jobs:
       - name: Verify Cocos runtime/story/art resources
         run: npm run cocos:resources:check
 
+      - name: Verify Cocos editor/device acceptance registry
+        run: npm run cocos:editor:check
+
       - name: Verify Cocos board domain regressions
         run: npm run cocos:board:test
 
