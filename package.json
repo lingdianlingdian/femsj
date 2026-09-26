@@ -41,6 +41,7 @@
     "cocos:resources:check": "node tools/cocos-resource-sync/check.mjs",
     "cocos:resources:sync": "node tools/cocos-resource-sync/sync.mjs",
     "cocos:board:test": "node tools/cocos-resource-sync/board-regression.mjs",
-    "cocos:editor:check": "node tools/cocos-editor-acceptance/check.mjs"
+    "cocos:editor:check": "node tools/cocos-editor-acceptance/check.mjs",
+    "cocos:editor:sync": "node tools/cocos-editor-acceptance/sync.mjs"
   }
 }
