@@ -318,3 +318,14 @@ node tools/balance-simulator/simulate.mjs <game_content.json> [day]
 - ✅ 新增确定性 `tools/cocos-contract-builder/build.mjs` 与 `npm run cocos:contracts:check`，并接入 CI。
 - ⏳ 当前仍没有由 Cocos Editor 正式生成的 `.scene/.prefab/.meta`；状态保持 `PENDING_EDITOR_GENERATION`，禁止手写伪造序列化资源。
 - ⏳ 下一验收：Cocos Editor 生成 App.scene + UI00/UI01/UI02 首批 Prefab，随后扩至46/46，并做750×1334/750×1624截图、弱网、幂等与性能回归。
+
+
+## P0-C Runtime / Dialogue / Board / Art 代码侧闭合
+
+- ✅ Cocos Runtime Loader 已接入完整 110 日 Runtime（651 Orders），资源镜像与生产配置逐字节 freshness 校验。
+- ✅ 11/11 Story Slice + 11/11 zh-CN Locale 已进入 Cocos resources；Dialogue Repository / Player 已落库。
+- ✅ Merge-2 Board 域层已落库：9×7=63格、Spawn / Move / Merge / Remove、Runtime MERGE2 Rule Index。
+- ✅ 389/389 APPROVED PNG 已真实复制到 `client-cocos/assets/resources/art/`，SHA-256 与正式美术输出逐项校验。
+- ✅ AssetIdResolver + 389 AssetId→resources 路径映射已落库。
+- ✅ 新增 `npm run cocos:resources:check` 并接入 V4 Quality Gates。
+- ⏳ 唯一仍不能在当前无 Editor/无真机环境中伪造的部分：Cocos Editor 正式生成 `.scene/.prefab/.meta`、46页可视化挂载、Atlas导入元数据以及真机截图/性能/弱网验收。

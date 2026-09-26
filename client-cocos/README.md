@@ -47,3 +47,14 @@ npm run cocos:contracts:check
 ```
 
 该命令验证 46/46 Screen、41/41 Component、唯一 route 与生成映射 freshness。
+
+
+## 代码侧 Runtime / Story / Board / Art
+
+- `RuntimeConfigRepository`：加载 110 日 / 651 Order 正式 Runtime。
+- `DialogueRepository + DialoguePlayer`：按 10 日 slice 加载 268 Scene / 821 条本地化对白。
+- `BoardModel + MergeRuleIndex`：63 格 Merge-2 域模型，规则来自正式 Runtime transformations。
+- `AssetIdResolver`：389 个正式 AssetId 对应 Cocos resources 图片。
+- `cocos:resources:check`：逐字节检查 Runtime/Story 镜像，并校验 389 PNG 的 SHA-256。
+
+当前剩余必须由 Cocos Creator Editor / 真机产生的产物继续保持 `PENDING_EDITOR_GENERATION`，不得手写伪造。

@@ -37,6 +37,7 @@
     "cocos:contracts:check": "node tools/cocos-contract-builder/build.mjs --check && npm run cocos:routes:test",
     "research:closure:build": "node tools/p0-research-closure/build.mjs",
     "research:closure:check": "node tools/p0-research-closure/build.mjs --check",
-    "cocos:routes:test": "node tools/cocos-contract-builder/route-regression.mjs"
+    "cocos:routes:test": "node tools/cocos-contract-builder/route-regression.mjs",
+    "cocos:resources:check": "node tools/cocos-resource-sync/check.mjs"
   }
 }
