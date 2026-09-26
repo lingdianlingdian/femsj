@@ -1,6 +1,6 @@
 {
   "version": "4.2-full-manifest",
-  "generatedAt": "2026-09-25T10:46:53.459Z",
+  "generatedAt": "2026-09-26T03:06:23.011Z",
   "scope": "ART-S1/S2/S3 + ART-S4 full 110-day content production jobs",
   "sourceQueue": "production-data/v4/art/art_production_queue_v4.csv",
   "rules": {
