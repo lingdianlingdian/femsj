@@ -27,6 +27,36 @@ assert.equal(moved.revision, 2);
 assert.equal(board.get(1).instanceId, 'explicit_a');
 assert.equal(board.get(0), null);
 
+// TC_BOARD_002: same item with a MERGE2 rule produces exactly one upgraded instance.
+const mergeBoard = new BoardModel(mergeRules);
+mergeBoard.spawn(0, 'item_a', 'merge_a_1');
+mergeBoard.spawn(1, 'item_a', 'merge_a_2');
+const mergeMutation = mergeBoard.move(0, 1);
+assert.equal(mergeMutation.kind, 'MERGE');
+assert.equal(mergeBoard.get(0), null);
+assert.equal(mergeBoard.get(1).itemId, 'item_b');
+
+// TC_BOARD_003: a non-mergeable occupied target leaves board state unchanged.
+const rejectBoard = new BoardModel(mergeRules);
+rejectBoard.spawn(0, 'item_a', 'reject_a');
+rejectBoard.spawn(1, 'item_x', 'reject_x');
+const rejectBefore = rejectBoard.snapshot();
+const rejectRevision = rejectBoard.getRevision();
+assert.throws(() => rejectBoard.move(0, 1), /non-mergeable/);
+assert.deepEqual(rejectBoard.snapshot(), rejectBefore);
+assert.equal(rejectBoard.getRevision(), rejectRevision);
+
+// TC_BOARD_004: a full board cannot lose an instance on an invalid move.
+const fullBoard = new BoardModel(mergeRules);
+for (let cell = 0; cell < BoardModel.CELL_COUNT; cell += 1) {
+  fullBoard.spawn(cell, cell % 2 === 0 ? 'item_a' : 'item_x', `full_${cell}`);
+}
+assert.equal(fullBoard.findFirstEmpty(), null);
+const fullBefore = fullBoard.snapshot();
+assert.throws(() => fullBoard.move(0, 1), /non-mergeable/);
+assert.deepEqual(fullBoard.snapshot(), fullBefore);
+assert.equal(fullBoard.snapshot().filter(Boolean).length, 63);
+
 // TC_BOARD_007 / 008: LOCKED and BLOCKED cells reject placement/operation.
 board.setCellState(2, 'LOCKED');
 const revisionAfterLock = board.getRevision();
@@ -69,10 +99,12 @@ console.log(JSON.stringify({
   status: 'PASS',
   cells: BoardModel.CELL_COUNT,
   covers: [
-    'revision',
-    'move identity',
-    'LOCKED',
-    'BLOCKED',
+    'TC_BOARD_001 revision + move identity',
+    'TC_BOARD_002 legal merge',
+    'TC_BOARD_003 illegal merge preserves state',
+    'TC_BOARD_004 full board preserves instances',
+    'TC_BOARD_007 LOCKED',
+    'TC_BOARD_008 BLOCKED',
     'instanceId uniqueness',
     'merge uniqueness',
     'first empty operable cell'

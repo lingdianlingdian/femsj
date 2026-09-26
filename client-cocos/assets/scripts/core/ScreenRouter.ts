@@ -2,11 +2,13 @@ import { instantiate, Node, Prefab, resources } from 'cc';
 import type { ScreenRouteResolution } from './ScreenContract';
 import { ScreenContractRepository } from './ScreenContractRepository';
 import { ScreenRuntimeSession } from './ScreenRuntimeSession';
+import { LatestNavigationGate } from './LatestNavigationGate';
 
 export class ScreenRouter {
   private current: Node | null = null;
   private currentRoute: ScreenRouteResolution | null = null;
   private currentSession: ScreenRuntimeSession | null = null;
+  private readonly navigationGate = new LatestNavigationGate();
   readonly contracts = new ScreenContractRepository();
 
   constructor(private readonly host: Node) {}
@@ -16,6 +18,7 @@ export class ScreenRouter {
   }
 
   async open(route: string): Promise<Node> {
+    const navigationToken = this.navigationGate.begin();
     const resolved = this.contracts.resolveRoute(route);
     if (!resolved) throw new Error(`Unknown screen route: ${route}`);
 
@@ -26,6 +29,10 @@ export class ScreenRouter {
         (err, asset) => err ? reject(err) : resolve(asset)
       );
     });
+
+    if (!this.navigationGate.isCurrent(navigationToken)) {
+      throw new Error(`Navigation superseded: ${route}`);
+    }
 
     const next = instantiate(prefab);
     this.currentSession?.destroy();
@@ -51,6 +58,7 @@ export class ScreenRouter {
   }
 
   clear(): void {
+    this.navigationGate.invalidate();
     this.currentSession?.destroy();
     this.current?.destroy();
     this.current = null;

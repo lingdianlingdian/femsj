@@ -5,6 +5,13 @@ export class BoardModel {
   static HEIGHT = 7;
   static CELL_COUNT = BoardModel.WIDTH * BoardModel.HEIGHT;
 
+  mergeRules;
+  cells;
+  cellStates;
+  usedInstanceIds;
+  sequence = 0;
+  revision = 0;
+
   constructor(mergeRules) {
     this.mergeRules = mergeRules;
     this.cells = Array(BoardModel.CELL_COUNT).fill(null);
